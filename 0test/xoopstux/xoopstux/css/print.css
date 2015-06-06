@@ -1,0 +1,192 @@
+html, body{
+  width: 95%;
+  margin: 0;
+  background-color: #fff;
+  padding: 0;
+  font-size: 9pt;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  color: #000;
+}
+
+#xo-noprint, #xo-canvas-leftcolumn, #xo-canvas-rightcolumn, #xo-language, #xo-userbar, xo-searchbar, #xo-top, body.theme-dialog #xo-banner, #xo-banner-ad, #xo-globalnav, #xo-uptop, #xo-breadcrumb, #xo-footer .validw3c, #xo-footer span.design, #xo-footer .rss, #xo-logger-output, #system-select_notifications,.itemFoot, #xo-smiley, #user_sigSmiley, #user_sigStyletext, select #user_sigFont, select #user_sigColor, select #user_sigFont, select #user_sigSize, span #xoopsHiddenText, hr, form [ name = notification_select ], input [ type = submit ], input [ type = reset ], input [ type = button ], td.foot, form #quick_reply, form [ name = forum_jumpbox ], select #topicoption, select #viewmode,.comUserStatus,.itemPermaLink,.itemFoot,.itemAdminLink, #xo-header-admin,.admin_layer{
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6, a #xo-site-title {
+  text-decoration: none;
+}
+
+h1{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.1em;
+}
+
+h3, h4, h5, h6,.comUserRank{
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  page-break-after:avoid !important;
+}
+
+img, abbr, acronym{
+  border: 0;
+}
+
+abbr [ title ]:after, acronym [ title ]:after{
+  content: "(" attr(title) ")";
+  font-style: italic;
+}
+
+blockquote, q{
+  font-style: italic;
+  quotes: "\00AB\00A0" "\00A0\00BB" "\0022" "\0022";
+}
+
+pre, code, table{
+  page-break-inside:avoid !important;
+}
+
+pre{
+  border: 1px dotted;
+  padding: 12pt;
+}
+
+table th{
+  padding-bottom: 1em;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#xo-page{
+  background-color: inherit;
+  color: #000;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+#xo-site-title{
+  background-color: inherit;
+  padding-left: 10px;
+  color: #006CD5;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: right;
+}
+
+#xo-site-slogan{
+  background-color: inherit;
+  padding-left: 40px;
+  color: #848383;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+#xo-footer{
+  margin-top: 50px;
+  color: #777;
+  font-size: .7em;
+  text-align: center;
+}
+
+#xo-footer a{
+  background-color: inherit;
+  color: #999;
+  text-decoration: none;
+}
+
+.xo-blocktitle{
+  background-color: inherit;
+  padding: .5em 0 .5em 0;
+  color: #006cd5;
+  font-size: 1.1em;
+}
+
+.xo-blockcontent{
+  font-size: .9em;
+  text-align: justify;
+}
+
+.xo-blockcontent a{
+  background-color: inherit;
+  color: #f00;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.xo-blockcontent a:after,.xo-blockcontent a [ href ]:after{
+  background-color: inherit;
+  color:#999 !important;
+  content: "[\00A0" attr(href) "\00A0]";
+  font-size: .8em;
+  text-decoration: none;
+}
+
+.item{
+  background-color: inherit;
+  padding: 5px;
+  color: #000;
+}
+
+#xo-canvas-content ul{
+  margin: 2px;
+  padding: 2px;
+  font-size: .9em;
+  text-align: left;
+  list-style: square inside;
+}
+
+#xo-canvas-content li,.comUserRankImg,.comUserName,.comUserImg{}
+
+form, input, select{
+  font-size: .9em;
+}
+
+input [ type = text ]{
+  border-width:0 0 1px 0 !important;
+  border-style: dotted;
+  border-color: #848383;
+}
+
+input [ type = checkbox ]{
+  margin: 0;
+  border: none;
+}
+
+select{
+  font-size: .8em;
+  border-width:0 0 1px 0 !important;
+  border-style: dotted;
+  border-color: #848383;
+}
+
+textarea{
+  height: auto;
+  overflow: hidden;
+  font-size: .9em;
+  font-style: italic;
+  border:1px dotted #848383 !important;
+}
+
+.comTitle{
+  background-color: inherit;
+  color: #006CD5;
+  font-size: .8em;
+}
+
+.comText{
+  padding: 2px;
+}
+
+.comUserStat,.comUserStatCaption,.comUserRankText,.comDateCaption{
+  font-size: .7em;
+}
+
+.comDate,.signature{
+  font-style: italic;
+  font-size: .7em;
+}

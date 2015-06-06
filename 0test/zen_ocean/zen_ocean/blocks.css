@@ -1,0 +1,114 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : blocks.css (version 2.0) - 22 mai 2007 */
+/* nice bubbles gif made by Andrea Ertel */
+/*========== listes dans les colonnes ==========*/
+.xo-canvas-column ul {
+	list-style-type:				none;
+	padding:							.5em;
+	margin:							0;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0;
+	padding-bottom:				0;
+	padding-left:					1em;
+
+}
+/* ====== format des cellules dans les colonnes ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+	border:							0 none;
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	margin:							0;
+	padding:							0;
+	border: 							0 !important;
+}
+/*===== Styles Colonne de Gauche =======*/
+#xo-canvas-leftcolumn {
+	padding-top: 					75px;
+	background: 					url(img/fische1.jpg) no-repeat 10px 0;
+}
+#xo-canvas-leftcolumn .xo-block {
+	padding-top:					4px;
+	margin-right:					11px;
+	margin-bottom:					10px;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	padding-left:					6px;
+	padding-bottom:				5px;
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+	font-size:						1.2em;
+	text-align: 					center;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+	min-height:						60px;
+	padding:							2px 8px 0;
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-leftcolumn .xo-blockcontent a {}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {}
+#xo-canvas-leftcolumn img {
+	margin: 							3px 3px 0 7px;
+	padding: 						3px;
+	border: 							1px solid #666;
+}
+#xo-canvas-leftcolumn img:hover {border: 1px solid #A6CDDF;}
+/*======== Styles Colonne de Droite ========*/
+#xo-canvas-rightcolumn {}
+#xo-canvas-rightcolumn .xo-block {}
+#xo-canvas-rightcolumn a {}
+#xo-canvas-rightcolumn a:hover {}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+	font-size:						1.2em;
+	text-align:						center;
+}	
+#xo-canvas-rightcolumn .xo-blockcontent {
+	padding:							.5em;
+}
+#xo-canvas-rightcolumn img {
+	margin: 							3px 3px 0 7px;
+	padding: 						3px;
+	border: 							1px solid #666;
+}
+#xo-canvas-rightcolumn a:hover {
+	text-decoration: 				none;
+}
+#xo-canvas-rightcolumn img:hover {border: 1px solid #A6CDDF;}
+/* ======= Styles du "Contenu Centre" ===========*/
+#xo-page .xo-blockszone > .xo-block {
+	background: 					url(img/blubba6.gif) no-repeat 40px 0;
+}
+.xo-block ul {
+	margin:							0;
+	padding:							0;
+	list-style-type:				none;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	margin:							0 .5em;
+	padding:							0 .25em;
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+	color:							#A6CDDF;
+	font-size:						1.2em;
+	text-transform: 				uppercase;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	padding:							.5em;
+	text-align: 					justify;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	margin: 							3px 3px 0 7px;
+	padding: 						3px;
+	border: 							1px solid #666 !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+	border: 							1px solid #A6CDDF !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {}
+
+
+

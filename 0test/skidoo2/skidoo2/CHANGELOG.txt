@@ -1,0 +1,19 @@
+This theme is based off of Ruthsarian's 'Skidoo Too" 3 column CSS layout:
+http://webhost.bridgew.edu/etribou/layouts/skidoo_too/index.html
+
+Converted to a XOOPS template by Technigrafa (xoops@technigrafa.com) on 8/2006
+
+FEATURES:
+1) Older browsers (< 5) will not get the CSS. This is by design because older browsers don't handle CSS well.
+2) Design offers printer friendly stylesheet
+3) Notifications, the user menu block and login block toggle on and off. This can be turned off in the stylesheet.
+4) Font size can be adjusted by the 3 icons in the theme (uses some javascript and cookies)
+
+KNOWN BUGS:
+1) The Content Module's DHTML menu doesn't work in IE with this theme unless you use the replacement template that is included with this theme - IE doesn't like the float:left. Also, I modified the left column to have a z-index: 5 instead of 4 to keep the popup menus from going behind the center column. Not sure how that will affect things, but they appear to be alright. 
+2) Although the HTML will validate by W3C, the CSS does not. Anyone want to help here?
+3) For some REALLY strange reason, the left column will shift down if you use the <em> , <i> or <div style="font-style:italics"> tags in the left column. *scratches head*
+4) The XOOPS calendar selector goes behind things. To fix this, edit /include/calendar-blue.css and add "z-index:5;" to the ".calendar, .calendar table" style.
+5) When resizing the browser window too small (below ~820 pixels wide) the middle blocks were stacking with widths greater than 43%. At 43% they don't stack, but there is a greater gap between the blocks when stretched out on wider resolutions. 
+CHANGELOG:
+09/04/06: Updated "Fixed" theme to now be non-fixed and renamed theme to "skidoo2." 

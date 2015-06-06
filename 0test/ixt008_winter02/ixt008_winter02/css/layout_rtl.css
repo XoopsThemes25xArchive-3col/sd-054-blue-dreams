@@ -1,0 +1,14 @@
+/*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: layout_rtl.css 350 2009-02-28 19:08:13Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+html, body {font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif;}
+#ixt-canvas-rightcolumn {float:left;width:170px;margin-top:-130px;z-index:120;}
+#ixt-canvas-leftcolumn {float:left;width:170px;z-index:120;}
+#ixt-page-topblocks.ixt-lcrpageblocks .ixt-blockszone, #ixt-page-bottomblocks.ixt-lcrpageblocks .ixt-blockszone {float:right;}

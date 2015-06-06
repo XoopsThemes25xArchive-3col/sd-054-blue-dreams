@@ -1,0 +1,45 @@
+		<div class="header">
+			<div class="top_info">
+			<!-- User -->
+				<div class="top_info_right">
+	<{if !$xoops_isuser}>
+					<p><b>Vous n'êtes pas connecté !</b> <a href="<{xoAppUrl user.php}>">Connectez-vous</a> pour vérivier vos messages.<br />
+					Voulez-vous <a href="<{xoAppUrl user.php}>">se connecter</a> ou <a href="<{xoAppUrl register.php}>">s'inscrire</a>?</p>
+	<{else}>
+		<!-- menu in recorded mode -->
+		Bienvenue&nbsp;<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_PROFILE}>"><{$xoops_uname}>&nbsp;:</a>
+<br />
+
+      <!-- for my message box  -->
+		<{xoInboxCount assign=pmcount}>
+		<a href="<{xoAppUrl viewpmsg.php}>">
+		<{if $pmcount}>
+			<!-- if I have messages -->
+			<a href="<{xoAppUrl viewpmsg.php}>">Messages (<{$pmcount}>)</a> |
+		<{else}>
+			<!-- if I do not have a message -->
+			<a href="<{xoAppUrl viewpmsg.php}>">Messages</a> |
+		<{/if}>
+		</a>
+		<!-- end my message box-->
+		<a href="<{xoAppUrl /user.php}>">Mon compte</a> |
+
+		<!-- additional link if I have rights of administration of module -->
+		<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>">Admin</a> |
+		<{/if}>
+		<!-- end additional link-->
+
+		<a href="<{xoAppUrl /user.php op=logout}>">Déconnexion</a> 
+	<{/if}>
+				</div>	
+        <!-- Banner -->	
+				<div class="top_info_left">
+					<{$xoops_banner}>
+				</div>
+			</div>
+			<!-- logo -->
+			<div class="logo">
+				<h1><a href="<{xoAppUrl }>" title="<{$xoops_sitename}>">Xinter<span class="orange">Vices</span></a><sup>Have fun!</sup></h1>
+			</div>
+		</div>

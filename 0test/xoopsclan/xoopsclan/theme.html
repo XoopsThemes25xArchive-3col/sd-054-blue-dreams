@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="eirenicon" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<style type="text/css" media="screen">
+</style>
+
+	<!-- Do not remove this comment!  
+	WireFrameOpacity theme is licensed under the Creative Commons 
+	Share & Share alike License. 2007, Mark F. Rabideau 
+
+	This theme owes its very existence to a number of generous Xoopsers including:
+	technigrafa, Xoopsdesign and StudioC. Without their help and earlier themes, 
+	I would never have been able to build this theme.
+	
+	Any use of this theme must retain this license.  Any improvements to the theme
+	need to be made available to the XOOPS Community- at http://xoops.org
+	-->	
+<{$xoops_module_header}>
+
+
+<script language="javascript" type="text/javascript" >
+
+/***********************************************
+* Document Text Sizer- Copyright 2003 - Taewook Kang. All rights reserved.
+* Coded by: Taewook Kang (http://www.txkang.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+<!-- textsizer.js-->
+
+//Specify affected tags. Add or remove from list:
+var tgs = new Array( 'div','td','tr');
+
+//Specify spectrum of different font sizes:
+var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+var startSz = 2;
+
+function ts( trgt,inc ) {
+if (!document.getElementById) return
+var d = document,cEl = null,sz = startSz,i,j,cTags;
+
+sz += inc;
+if ( sz < 0 ) sz = 0;
+if ( sz > 6 ) sz = 6;
+startSz = sz;
+
+if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+
+cEl.style.fontSize = szs[ sz ];
+
+for ( i = 0 ; i < tgs.length ; i++ ) {
+cTags = cEl.getElementsByTagName( tgs[ i ] );
+for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
+}
+} 
+</script>
+
+
+<!-- Module Header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+
+</head>
+
+<body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Remove this comment  and use the following 2 lines to Display XOOPS site slogan and Name if you want them
+<h1><{$xoops_sitename}></h1>
+<{$xoops_slogan}>
+-->	
+
+<!-- Remove this comment to utilize the flashbanner
+<div id="flashbanner">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="580" height="180">
+<param name="movie" value="<{$xoops_url}>/themes/XOOPSclan/images/banner.swf">
+<param name="play" value="true">
+<param name="loop" value="true">
+<param name="quality" value="high">
+<embed width="369" height="220" src="<{$xoops_url}>/themes/XOOPSclan/images/banner.swf" play="true" loop="true" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</object>
+</div>
+-->
+
+<div id="logo">
+<img src="<{$xoops_url}>/themes/XOOPSclan/images/logo.png">
+</div>
+
+</div>
+
+<!-- Header Links -->
+	<div id="toplinks">
+	<a href="<{$xoops_url}>"><b><font color="white">HOME</b></a>  |  
+	<a href="<{$xoops_url}>/search.php">Search</a>  | 
+	<a href="<{$xoops_url}>/modules/sitemap/index.php">Site Map</a>  | 
+	<a href="<{$xoops_url}>/modules/myCredits/index.php">Credits</a>  | 
+	<a href="<{$xoops_url}>/modules/globetrotter/index.php">Guest Map</a></font>
+	</div>
+
+<!-- Border Image -->
+<div id="bodyborder" align="left">
+<!-- Select Variable Font Size -->
+<h2><a href="javascript:ts('body',1)"><img src="<{$xoops_url}>/themes/XOOPSclan/images/plus.gif" border="0"></a> Font
+		<a href="javascript:ts('body',-1)"><img src="<{$xoops_url}>/themes/XOOPSclan/images/minus.gif" border="0"></a></h2></div>
+<!-- End Header -->
+<!-- Start Main Content Area -->
+<div id="container">
+
+<{if $xoops_lblocks && $xoops_rblocks}>
+             <div class="page pageThreeColumns">
+           <{elseif $xoops_lblocks}>
+             <div class="page pageLeftColumn">
+           <{elseif $xoops_rblocks}>
+             <div class="page pageRightColumn">
+           <{else}>
+             <div class="page pageFullWidth">
+<{/if}>
+
+<!-- Start Left Column -->
+<{if $xoops_showlblock == 1}>	
+  <div id="leftcolumn">
+	   <{foreach item=block from=$xoops_lblocks}>
+          <{include file="$xoops_theme/theme_blockleft.html"}>
+        <{/foreach}>
+<!-- more content here -->
+  </div>
+<{/if}>  
+<!-- End Left Column -->
+	
+<!-- Start Right Column -->
+	  
+	 <{if $xoops_showrblock == 1}>
+  <div id="rightcolumn">
+	   <{foreach item=block from=$xoops_rblocks}>
+          <{include file="$xoops_theme/theme_blockright.html"}>
+        <{/foreach}>
+<!-- more content here -->
+  </div>
+      <{/if}>
+<!-- End Right Column -->
+
+	
+<!-- Start Center Column -->
+	
+	<div id="centercolumn">
+<!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+	
+<!-- Start Center Center Column -->        
+		<fieldset> 
+		  <div id="centerCcolumn">
+		  	 <{foreach item=block from=$xoops_ccblocks}>
+      <{include file="$xoops_theme/theme_blockcenter_c.html"}>
+      <{/foreach}>
+	</div>
+<!-- End Center Center Column -->
+	
+<!-- Start Center Left Column -->
+
+		 <div id="centerLcolumn">
+	  <{foreach item=block from=$xoops_clblocks}>
+      <{include file="$xoops_theme/theme_blockcenter_l.html"}>
+      <{/foreach}>
+	</div>
+<!-- End Center Left Column -->
+	
+<!-- Start Center Right Column -->
+	    <div id="centerRcolumn">
+	  <{foreach item=block from=$xoops_crblocks}>
+       <{include file="$xoops_theme/theme_blockcenter_r.html"}>
+       <{/foreach}>
+	</div>
+<!-- End Center Right Column -->	
+        <{/if}>
+<!-- End display center blocks -->
+
+		          <div class="content">
+          <{$xoops_contents}>
+        </div>
+
+<!-- START - xoops 2.0.14 improved block positioning-->
+ <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+
+<!-- Start Bottom Center Center Column -->     
+	 <{if $xoBlocks.page_bottomcenter}>
+	
+     <div id="bottomCcolumn">
+		 <{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/theme_blockcenter_c.html"}><{/foreach}>
+	</div>
+	<{/if}>
+<!-- End Bottom Center Center Column -->     	
+	
+<!-- Start Bottom Left Center Column -->     
+	<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+	
+	<div id="bottomLcolumn">
+	  <{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/theme_blockcenter_l.html"}><{/foreach}>
+	</div>
+<!-- End Bottom Left Center Column -->     
+		
+<!-- Start Bottom Right Center Column -->     
+	<div id="bottomRcolumn">
+	  <{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/theme_blockcenter_r.html"}><{/foreach}>
+	</div></fieldset>
+	<{/if}>
+<!-- End Bottom Right Center Column -->     	
+ <{/if}>
+<!-- END - xoops 2.0.14 improved block positioning-->
+
+<!-- START - This is added so the footer stays in it's place-->
+        <div></div>
+<!-- END - This is added so the footer stays in it's place-->
+		
+<!-- more content here -->
+	</div>
+
+<!-- End Center Column -->
+</div>
+<!-- End Main Content Area -->
+
+<!-- Start Footer -->
+<div id="footer">
+	<hr />
+	<div>
+	<a href="<{$xoops_url}>/user.php"  target="_self">SITE LOGIN</a> |
+<!-- The following attribution must be retained -->
+	<a href="http://www.eirenicon.org">Theme designed by eirenicon l.l.c.</a><br />
+	<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/"><img alt="Creative Commons License" style="border-width: 0" src="http://i.creativecommons.org/l/by-sa/2.5/88x31.png"/></a>
+	<br />
+<!-- Edit the following to match your needs -->
+	<a href="mailto:webmaster@manager.com?subject=Message from the WireFrame Theme">site developed, hosted and managed by Your Name, Company © 2007 </a><br />
+	<a href="mailto:info@yourname.com?subject=Message from the XOOPSclan Site">All Site Content © 2007 by Client Name, Their Company. All rights reserved.</a>
+	</div>
+</div>
+<!-- End Footer -->
+
+</div> <!-- End Container -->
+
+</body>
+</html>

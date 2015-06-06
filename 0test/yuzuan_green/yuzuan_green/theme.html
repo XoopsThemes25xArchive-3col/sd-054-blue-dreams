@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$meta_robots}>" />
+<meta name="keywords" content="<{$meta_keywords}>" />
+<meta name="description" content="<{$meta_description}>" />
+<meta name="rating" content="<{$meta_rating}>" />
+<meta name="author" content="<{$meta_author}>" />
+<meta name="copyright" content="<{$meta_copyright}>" />
+<meta name="generator" content="Microsoft FrontPage 5.0" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<style type="text/css">
+<!--
+.STYLE2 {color: #339966}
+.STYLE4 {color: #6633FF}
+.STYLE5 {color: #33CC66}
+.STYLE10 {
+	color: #33CC66;
+	font-family: "华文中宋";
+}
+.STYLE12 {font-family: "华文中宋"}
+-->
+</style>
+</head>
+<body>
+
+<div align="center">
+  <table cellspacing="1" id="top" width="820">
+    <tr>
+      
+    </tr>
+    <tr><td class="subslogan" colspan="2"><{$xoops_slogan}></td>
+    </tr>
+    
+    <tr id="header">
+      <td width="7" id="headerlogo">　</td>
+	    <td width="820" id="headerbanner"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo.jpg"width="812"/></a></td>
+	    <td width="10"></td>
+    </tr>
+    
+    <tr>
+      
+    </tr>
+    <tr>
+      <td colspan="2" class="slogan01">
+  <marquee behavior='alternate' direction='left' scrolldelay='200' scrollamount='10' loop='continuous' onmouseover='this.stop()' onmouseout='this.start()'>&nbsp;&nbsp;<a href='http://bbs.f-wind.cn' title='孤雨随风'><font color=red><img src="<{$xoops_imageurl}>hamu.gif" />[本站关注]</font>:<span class="STYLE5">本站成功改版,欢迎并期待朋友关注我们的论坛和生活.<span class="STYLE12">EMAIL:</span><span class="STYLE10">luckmdw@126.com.QQ</span></span><span class="STYLE10">;</span><span class="STYLE5">24426079!!!!!!!!<img src="<{$xoops_imageurl}>hamu.gif" /></span></a> 
+  <table i></table></marquee></td>
+    </tr>
+  </table>
+  <table width="830" border="1" cellpadding="0" cellspacing="0">
+    <tr>
+      <td id="leftcolumn">
+        
+        <div align="left">
+  <!-- Start left blocks loop -->
+  <{foreach item=block from=$xoops_lblocks}>
+          <{include file="default/theme_blockleft.html"}>
+          <{/foreach}>
+          <!-- End left blocks loop -->      
+        </div></td>
+  
+      <td id="centercolumn">
+        
+        <div align="justify">
+  <!-- Display center blocks if any -->
+  <{if $xoops_showcblock == 1}>
+  <table cellspacing="0">
+    <tr>
+      <td id="centerCcolumn" colspan="2">
+        
+        <!-- Start center-center blocks loop -->
+        <{foreach item=block from=$xoops_ccblocks}>
+        <{include file="default/theme_blockcenter_c.html"}>
+        <{/foreach}>
+        <!-- End center-center blocks loop -->            </td>
+            </tr>
+    <tr>
+      <td id="centerLcolumn">
+        
+        <!-- Start center-left blocks loop -->
+        <{foreach item=block from=$xoops_clblocks}>
+        <{include file="default/theme_blockcenter_l.html"}>
+        <{/foreach}>
+        <!-- End center-left blocks loop -->            </td><td id="centerRcolumn">
+          
+          <!-- Start center-right blocks loop -->
+          <{foreach item=block from=$xoops_crblocks}>
+          <{include file="default/theme_blockcenter_r.html"}>
+          <{/foreach}>
+          <!-- End center-right blocks loop -->
+          
+          </td>
+            </tr>
+  </table>
+  <{/if}>
+  <!-- End display center blocks -->
+        </div>
+        <div id="content">
+          <div align="justify"><{$xoops_contents}>            </div>
+        </div>
+        <div align="justify"><{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+          <table cellspacing="0">
+            <{if $xoBlocks.page_bottomcenter}>
+            <tr><td id="bottomCcolumn" colspan="2">
+                <{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="default/theme_blockcenter_c.html"}><{/foreach}>
+                </td>
+		  </tr>
+            <{/if}>
+            <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+            <tr>
+              <td id="bottomLcolumn">
+                  <{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="default/theme_blockcenter_l.html"}><{/foreach}>              </td>
+			  <td id="bottomRcolumn">
+			    <{foreach from=$xoBlocks.page_bottomright item=block}><{include file="default/theme_blockcenter_r.html"}><{/foreach}>		      </td>
+		  </tr>
+            <{/if}>
+            </table>
+        <{/if}></div></td>
+  
+      <{if $xoops_showrblock == 1}>
+      
+      <td id="rightcolumn">
+        <div align="left">
+  <!-- Start right blocks loop -->
+  <{foreach item=block from=$xoops_rblocks}>
+          <{include file="default/theme_blockright.html"}>
+          <{/foreach}>        
+          <!-- End right blocks loop -->        
+        </div></td>
+  
+      <{/if}>    </tr>
+  </table>
+  <table cellspacing="1">
+    <tr id="footerbar">    </tr>
+    <tr id="footerbar">
+      <td width="830"  border:1bordercolor="#FF0000"  id="foot" bo>
+        <div align="center"></div>
+       <div align="center"><a href="http://f-wind.cn"  target="_blank"class="STYLE4">孤雨随风</a> All right reserved<a href="http://f-wind.cn" class="STYLE2"><img src="<{$xoops_imageurl}>email-91310.jpg" alt="给我发信" width="153" height="21" longdesc="mailto:luckmdw@126.com" /></a><span lang="zh-cn"><font color="#008000">
+        </font><a href="http://www.miibeian.gov.cn/"><font color="#008000">鲁ICP备</font>xxxxx</a></span>POWER BY  <a href="http://xoops.org.cn/"  title="XOOPS 是一个开放源代码的工具程序， 用于实现从小型到大型的动态交互社区，公司门户，企业内部网，网络日志等。安装到服务器主机后，网站管理员可以登陆到管理区，通过浏览器来管理内容信息。后台管理手段直观易用，不需要任何编程，而且Xoops还提供了方便的安装程序。"target="_blank">XOOPS</a></div>
+       <span lang="zh-cn"><a href="http://www.miibeian.gov.cn/"><span lang="zh-cn">
+        </a></span>
+         
+    <tr id="footerbar">
+      <td  id="foot"width="830" bordercolor="#FF0000" bo><img src="<{$xoops_imageurl}>footer01.gif" width="830" height="66" /></td>
+    </tr>
+  </table>
+  
+</div>
+</body>
+</html>

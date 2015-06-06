@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme by Aph3x http://www.aphexthemes.com -->
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script type="text/javascript" src="<{$xoops_imageurl}>chrome.js">
+
+/***********************************************
+* Chrome CSS Drop Down Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+</head>
+<body>
+<br />
+<table class="toptable" cellspacing="0">
+	<tr>
+		<td>
+<img src="<{$xoops_imageurl}>/imgs/heads_01.jpg" width="130" height="250">   </td>
+		<td id="headbg"> 
+	<div id="Stitle"><h1><{$xoops_sitename}></h1></div>
+	<br />
+	<div id="Sslogan"><h3><{$xoops_slogan}></h3></div>
+   </td>
+		<td>
+<img src="<{$xoops_imageurl}>/imgs/heads_03.jpg" width="251" height="250">   </td>
+ <tr>
+      <td id="headerbar" colspan="3">
+<div class="chromestyle" id="chromemenu">
+<ul>
+<li><a href="<{$xoops_url}>/">Home</a></li>
+<li><a href="#" rel="dropmenu1">Link 2</a></li>
+<li><a href="#" rel="dropmenu2">Link 3</a></li>
+<li><a href="#" rel="dropmenu3">Link 4</a></li>	
+</ul>
+</div>
+
+<!--1st drop down menu -->                                                   
+<div id="dropmenu1" class="dropmenudiv">
+<a href="<{$xoops_url}>/">Submenu 1</a>
+<a href="<{$xoops_url}>/">Submenu 2</a>
+<a href="<{$xoops_url}>/">Submenu 3</a>
+<a href="<{$xoops_url}>/">Submenu 4</a>
+<a href="<{$xoops_url}>/">Submenu 5</a>
+</div>
+
+
+<!--2nd drop down menu -->                                                
+<div id="dropmenu2" class="dropmenudiv" style="width: 150px;">
+<a href="<{$xoops_url}>/">Submenu 1</a>
+<a href="<{$xoops_url}>/">Submenu 2</a>
+<a href="<{$xoops_url}>/">Submenu 3</a>
+</div>
+
+<!--3rd drop down menu -->                                                   
+<div id="dropmenu3" class="dropmenudiv" style="width: 150px;">
+<a href="<{$xoops_url}>/">Submenu 1</a>
+<a href="<{$xoops_url}>/">Submenu 2</a>
+<a href="<{$xoops_url}>/">Submenu 3</a>
+</div>
+
+
+<script type="text/javascript">
+
+cssdropdown.startchrome("chromemenu")
+
+</script>
+</td>
+</tr>
+</table>
+  <table class="maintable" cellspacing="0">
+    <tr>
+      <td id="leftcolumn">
+<br />
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blocks">
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+        <td class="cornerTLB">&nbsp;</td>
+        <td class="cornerTCB">&nbsp;</td>
+        <td class="cornerTRB">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+  <td class="cornerCL"><img src="<{$xoops_imageurl}>imgs/blocks_06.png" alt="" width="10" height="96" /></td>
+  <td class="cornerCC">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="sparks-K/sideblock.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+      </td>
+		</td>
+         <td class="cornerCR"><img src="<{$xoops_imageurl}>imgs/blocks_10.png" alt="" width="10" height="96" /></td>
+     </tr>
+    </table></td>  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="cornerBL">&nbsp;</td>
+        <td class="cornerBC">&nbsp;</td>
+        <td class="cornerBR">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+      <td id="centercolumn">
+        <br />
+<!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+        <table cellspacing="0">
+		<tr>
+			<td id="centerCcolumn" colspan="2">
+			<!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+
+<{/foreach}>			<!-- End center-center blocks loop -->
+			</td>
+		</tr>
+		<tr>
+			<td id="centerLcolumn">		
+			<!-- Start center-left blocks loop -->
+			<{foreach item=block from=$xoops_clblocks}>
+				<{include file="sparks-K/blocks.html"}>
+			<{/foreach}>
+			<!-- End center-left blocks loop -->
+			</td>
+			<td id="centerRcolumn">		
+			<!-- Start center-right blocks loop -->
+			<{foreach item=block from=$xoops_crblocks}>
+				<{include file="sparks-K/blocks.html"}>
+			<{/foreach}>
+			<!-- End center-right blocks loop -->
+			</td>
+		</tr>
+        </table>
+        <{/if}>
+        <!-- End display center blocks -->
+       <{if $xoops_contents}>
+	 <div id="content">
+          <{$xoops_contents}>
+        </div>
+       <{/if}>
+	 <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+        <table cellspacing="0">
+        <{if $xoBlocks.page_bottomcenter}>
+		<tr><td id="bottomCcolumn" colspan="2">
+			<{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="sparks-K/blocks.html"}><{/foreach}>
+			</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+			<td id="bottomLcolumn">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="sparks-K/blocks.html"}><{/foreach}>
+			</td>
+			<td id="bottomRcolumn">
+				<{foreach from=$xoBlocks.page_bottomright item=block}><{include file="sparks-K/blocks.html"}><{/foreach}>
+			</td>
+		</tr>
+        <{/if}>
+        </table>
+        <{/if}>
+      </td>
+      <{if $xoops_showrblock == 1}>
+    <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="sparks-K/blocks.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+</td>
+		<{/if}>
+</tr>
+  </table>
+
+<table class="footertable" cellspacing="0">
+      <tr>
+        <td><a href="#" title="Back to top of page" ><img src="<{$xoops_imageurl}>imgs/up.png" width="25" height="25" alt="" /></a></td>
+        <td id="footerbar"><{$xoops_footer}></td>
+        <td><a href="#" title="Back to top of page" ><img src="<{$xoops_imageurl}>imgs/up.png" width="25" height="25" alt="" /></a></td>
+      </tr>
+</table>
+</body>
+</html>

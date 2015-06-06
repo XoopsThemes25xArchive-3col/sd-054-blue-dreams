@@ -1,0 +1,17 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<table style="padding-bottom: 2em">
+<tr>
+    <th><{$smarty.const._AM_NEWS_WHOS_WHO}></th>
+</tr>
+<tr>
+    <td align="center"><{$smarty.const._NW_NEWS_LIST_OF_AUTHORS}></td>
+</tr>
+<{foreach item=who from=$whoswho}>
+<tr class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+    <td><a href="<{$xoops_url}>/modules/news/newsbythisauthor.php?uid=<{$who.uid}>"><{$who.name}></a></td>
+</tr>
+<{/foreach}>
+</table>
+<!-- if you don't use morphogenesis gabarit : </div> -->
+

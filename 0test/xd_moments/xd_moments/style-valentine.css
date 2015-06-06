@@ -1,0 +1,79 @@
+@import url(style.css);
+
+
+
+#header .logo {
+	background-image: url(images/valentine/bg_banner.gif);
+	background-color: #a10404;
+}
+
+#header_banner-b {
+	background-image: url(images/valentine/valentine-header-img.jpg);
+}
+
+
+a {color: #AE4D83; }
+a:hover {color: #79AACE;}
+
+
+li {	color: #666666; }
+
+.itemHead { color: #79AACE;}
+
+#leftcolumn .blockTitle, #rightcolumn .blockTitle {	color: #000; }
+
+.centercol {}
+
+.centercol .blockTitle { color: #A60000; }
+
+#centercolumn th {
+	background-color: #9B0004;
+	border-bottom-color: #640002;
+}
+#centercolumn th a { color: #FFFFFF;}
+
+
+#mainmenu a.menuSub {
+	color: #7A365B;
+}
+
+#usermenu a.highlight {
+	background-color: #9E4388;
+	color: #FFFFFF;
+}
+
+
+.outer {}
+.head {
+	background-color: #9B0004;
+	border-bottom-color: #640002;
+}
+.head a {
+	color: #EBC5E3;
+}
+.head a:hover {
+	color: #F0DBEA;
+}
+
+.even, tr.even td {
+	background-color: #F4F4F4;
+	border: 1px solid #E8E8E8;
+}
+td.even:hover, tr.even td:hover, .odd:hover, tr.odd td:hover {
+	background-color: #FFFFFF;
+}
+
+.odd, tr.odd td {
+	background-color: #F0F0F0;
+	border: 1px solid #E8E8E8;
+}
+.foot {
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#tabsE a {	background-image: url(images/valentine/tableftE.gif); }
+#tabsE a span { background-image: url(images/valentine/tabrightE.gif);}

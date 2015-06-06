@@ -1,0 +1,30 @@
+<h2 class="blockTitle"><{$title}></h2>
+<div class="blockContent">
+     <{$content}>
+	  <{if $xoops_isadmin == 1}>
+	 <div style="float:right"><a href="<{$xoops_url}>/modules/content/admin/index.php?op=submit&return=1&id=<{$id}>"><img src="<{$xoops_url}>/modules/content/images/add.gif" alt="" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="<{$xoops_url}>/modules/content/admin/index.php?op=edit&id=<{$id}>&return=1"><img src="<{$xoops_url}>/modules/content/images/edit.gif" alt="" border="0" /></a></div>
+	 <{/if}>
+     <div style="float:left">
+					<a href="print.php?id=<{$id}>" target="_new"><img src="<{$xoops_url}>/modules/content/images/print.gif" alt="" width="16" height="16" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="<{$mail_link}>"><img src="<{$xoops_url}>/modules/content/images/email.gif" alt="" width="16" height="10" border="0" /></a></div>
+	 </div>
+
+<{if $nocomments == 0}>
+
+<div style="text-align: center; padding: 3px; margin: 3px;">
+  <{$commentsnav}>
+  <{$lang_notice}>
+</div> 
+
+<div style="margin: 3px; padding: 3px;">
+<!-- start comments loop -->
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+<!-- end comments loop -->
+</div>
+<{/if}>

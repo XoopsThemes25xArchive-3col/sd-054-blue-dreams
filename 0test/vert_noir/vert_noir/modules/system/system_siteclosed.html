@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+
+	<{assign var=theme_name value=$xoops_theme}>
+
+<!-- titre de la page et meta descriptions -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+
+<!-- Pour la transition des pages -->
+<meta http-equiv="Page-Enter" content="revealtrans(duration=1, transition=23)" />
+<meta http-equiv="Page-Exit" content="revealtrans(duration=1, transition=23)" />
+
+<!-- chemin du favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icon.png}>" />
+
+<!-- Css du thème -->
+	<link rel="stylesheet" type="text/css" media="screen" href="<{xoImgUrl layout-soup.css}>" /><!-- feuille de style pour l'architecture du thème -->
+	<!--<link rel="stylesheet" type="text/css" media="screen" href="<{xoImgUrl style.css}>" />-->  <!-- lien à utiliser en association avec la feuille print.css -->
+	<link rel="stylesheet" type="text/css" media="all" href="<{xoImgUrl style.css}>" /> <!-- à commenter si la ligne ci-dessus est active -->
+	<!--<link rel="stylesheet" type="text/css" media="print" href="<{xoImgUrl print.css}>" />-->  <!-- feuille de style pour l'impression -->
+	<!--<link rel="stylesheet" type="text/css" media="aural" href="<{xoImgUrl aural.css}>" />-->  <!-- feuille de style pour la fonction audio de certains navigateurs -->
+
+<{$xoops_module_header}>
+
+<!-- Scripts -->
+<script type="text/javascript" src="<{$xoops_url}>/jseffects/rel.js"></script>
+<!-- Scripts -->
+
+<!-- pour la transparence des images au format png sous ie -->
+<!--[if lte IE 6]>
+	<script type="text/javascript">
+		var WEBFX_PNG_PATTERN=".*.png";
+		var WEBFX_PNG_BLANK = "<{xoImgUrl /jseffects/img/blank.gif}>";
+	</script>
+	<style type="text/css">
+	img { behavior: url(<{xoImgUrl /jseffects/pngbehavior.htc}>); }
+	</style>
+<![endif]-->
+
+</head>
+<body>
+
+<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+<div class="xo-wrapper">
+<div id="xo-bgstatic" class="<{$xoops_dirname}>"></div>
+<div id="xo-header" class="<{$xoops_dirname}>">
+<div id="xo-top">
+<!-- include du bloc Langues dans le header -->
+<{includeq file="$theme_name/language.html"}>
+<!-- include du bloc Utilisateur dans le header -->
+<{includeq file="$theme_name/userbar.html"}>
+</div>
+	<!-- début de la boucle des bannières -->
+<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+	<div id="xo-banner" class="commercial" id="<{$xoops_dirname}>"><!-- avec affichage activée de la bannière -->
+        <a id="xo-main-logo" class="commercial" href="<{xoAppUrl /}>" title=""><img src="<{xoImgUrl img/header-logo_small.gif}>" alt="<{$xoops_sitename}>" /></a>
+		<a id="xo-site-title"  class="commercial" href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><{$smarty.const.THEME_NAME}></a>
+		<div id="xo-site-slogan" class="commercial"><{$smarty.const.THEME_DESC}>"</div>
+		<div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+	</div>
+<{else}>
+
+	<div id="xo-banner" id="<{$xoops_dirname}>"><!-- avec affichage de la bannière désactivé -->
+		<a id="xo-main-logo" href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/header-logo_small.gif}>" alt="<{$xoops_sitename}>" /></a>
+		<a id="xo-site-title" href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><{$xoops_sitename}></a>
+		<div id="xo-site-slogan"><{$xoops_slogan}></div>
+	</div>
+<{/if}>
+	</div>
+
+	<div id="xo-canvas-content">
+		<table id="xo-canvas-columns" cellspacing="0">
+		<tr>
+			<td id="xo-page" align="center">
+			<div id="xo-siteclose"><{$lang_siteclosemsg}></div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="xo-footer">
+   	<!-- infos sur le designer -->
+		<div class="design">Design by : <a rel="external" href="http://labs.xoofoo.org/">XooFoo</a> - <a rel="external" href="http://www.frxoops.org/" title="XOOPS Project French Communauty">XOOPS French Communauty</a></div>
+	<!-- fin des infos designer -->
+		<div class="copyright"><{$xoops_footer}></div>
+
+	</div>
+	<!--{xo-logger-output}-->
+</div>
+</div>
+
+
+</body>
+</html>

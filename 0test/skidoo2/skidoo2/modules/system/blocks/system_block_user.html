@@ -1,0 +1,17 @@
+<span class="edit"><a href="javascript:toggleLayer('usermenu');" title="Show user menu">show user menu</a> <{if $block.new_messages > 0}>(<span style="color:#ff0000; font-weight: bold;"><{$block.new_messages}></span>)<{/if}></span>
+    <ul id="usermenu">
+      <{if $xoops_isadmin}>
+        <li><a class="menuTop" href="<{$xoops_url}>/admin.php"><{$block.lang_adminmenu}></a></li>
+	    <li><a href="<{$xoops_url}>/user.php"><{$block.lang_youraccount}></a></li>
+      <{else}>
+		<li><a class="menuTop" href="<{$xoops_url}>/user.php"><{$block.lang_youraccount}></a></li>
+      <{/if}>
+      <li><a href="<{$xoops_url}>/edituser.php"><{$block.lang_editaccount}></a></li>
+      <li><a href="<{$xoops_url}>/notifications.php"><{$block.lang_notifications}></a></li>
+      <{if $block.new_messages > 0}>
+       <li><a class="highlight" href="<{$xoops_url}>/viewpmsg.php"><{$block.lang_inbox}> (<span style="color:#ff0000; font-weight: bold;"><{$block.new_messages}></span>)</a></li>
+      <{else}>
+       <li><a href="<{$xoops_url}>/viewpmsg.php"><{$block.lang_inbox}></a></li>
+      <{/if}>
+      <li><a href="<{$xoops_url}>/user.php?op=logout"><{$block.lang_logout}></a></li>
+    </ul>

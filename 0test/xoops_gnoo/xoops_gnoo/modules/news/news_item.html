@@ -1,0 +1,24 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<table>
+	<tr>
+		<td class="itemTitle" style="padding-top: 2.5em"><{$story.title}></td>
+	</tr>
+	<tr>
+		<td class="itemPoster" style="text-align: right; padding-bottom: 1.5em;">
+        	<{if $story.files_attached}><{$story.attached_link}>&nbsp;<{/if}>
+        	<{if $story.poster != ''}><{$lang_postedby}> <{$story.poster}><{/if}> 
+        	<{$lang_on}> <{$story.posttime}>
+        	(<{$story.hits}> <{$lang_reads}>)<br />
+        	<{$news_by_the_same_author_link}>
+        </td>
+	</tr>
+	<tr>
+		<td class="itemText"><{$story.imglink}><{$story.text}></td>
+	</tr>
+	<tr>
+		<td class="itemFoot"><{$story.adminlink}><{if $rates}><b><{$lang_ratingc}></b> <{$story.rating}> (<{$story.votes}>) | <a href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>" rel="nofollow"><{$lang_ratethisnews}></a> | <{/if}><{$story.morelink}>
+        </td>
+	</tr>
+</table>
+<!-- if you don't use morphogenesis gabarit : </div> -->

@@ -1,0 +1,28 @@
+/*========== listes dans les colonnes ==========*/
+.xo-canvas-column ul 
+.xo-canvas-column ul ul 
+/* ====== format des cellules dans les colonnes ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td 
+/*===== Styles Colonne de Gauche =======*/
+#xo-canvas-leftcolumn .xo-block 
+#xo-canvas-leftcolumn .xo-blocktitle 
+#xo-canvas-leftcolumn .xo-blockcontent 
+* html #xo-canvas-leftcolumn .xo-blockcontent 
+#xo-canvas-leftcolumn .xo-blockcontent a 
+#xo-canvas-leftcolumn .xo-blockcontent a:hover 
+/*======== Styles Colonne de Droite ========*/
+#xo-canvas-rightcolumn 
+#xo-canvas-rightcolumn a 
+#xo-canvas-rightcolumn a:hover 
+#xo-canvas-rightcolumn .xo-blocktitle 
+#xo-canvas-rightcolumn .xo-blockcontent 
+
+/* ======= Styles du "Contenu Centre" ===========*/
+.xo-block ul 
+#xo-page .xo-blockszone .xo-blocktitle 
+#xo-page .xo-blockszone .xo-blockcontent 
+#xo-page .xo-blockszone .xo-blockcontent a 
+#xo-page .xo-blockszone .xo-blockcontent a:hover 
+
+
+

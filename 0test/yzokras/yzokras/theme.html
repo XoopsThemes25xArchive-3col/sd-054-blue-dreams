@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml"	lang="<{$xoops_langcode}>" xml:lang="<{$xoops_langcode}>">
+<head>
+<!-- paramètres pour le positionnement des blocs haut et bas -->
+<{* Center blocks display order valid values are:  lrc (left right / center) lcr (left center right) clr (center / left right)	*}>
+	<{assign var=theme_top_order value=clr}>
+	<{assign var=theme_bottom_order value=clr}>
+<!-- indique le nom du thème -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+
+<!-- titre de la page et meta descriptions -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+
+<!-- chemin du favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl /favicon.ico}>" />
+	
+<!-- Css du thème -->
+	<link rel="stylesheet" type="text/css" media="screen" href="<{xoImgUrl /layout-soup.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Blue" href="<{xoImgUrl /style.css}>" />
+
+<{$xoops_module_header}>
+
+<!-- pour la transparence des images au format png sous ie -->
+<!--[if lt IE 6]>
+	<script type="text/javascript">
+		var WEBFX_PNG_PATTERN=".*.png";
+		var WEBFX_PNG_BLANK = "<{xoImgUrl /jseffects/img/blank.gif}>";
+	</script>
+	<style type="text/css">
+	img { behavior: url(<{xoImgUrl /jseffects/pngbehavior.htc}>); }
+	</style>
+<![endif]-->		
+		
+</head>
+<body  class="<{$xoops_dirname}>-theme-default" id="<{$xoops_dirname}>">
+<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>
+<{elseif $xoBlocks.canvas_left}><{assign var=columns_layout value='leftcolumn-layout'}>
+<{elseif $xoBlocks.canvas_right}><{assign var=columns_layout value='rightcolumn-layout'}>
+<{/if}>
+<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+<div id="xo-header">
+<div id="xo-top">
+<!-- include du bloc Recherche dans le header -->
+<{includeq file="$theme_name/searchbar.html"}>
+<!-- include du bloc Utilisateur dans le header -->
+<{includeq file="$theme_name/userbar.html"}>
+</div>
+	<!-- début de la boucle des bannières -->
+<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+<div id="xo-banner" class="commercial"><!-- avec affichage activée de la bannière -->
+        <a id="xo-main-logo" class="commercial" href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/logo_chichon.png}>" alt="<{$xoops_sitename}>" /></a>
+		<a id="xo-site-title"  class="commercial" href="<{xoAppUrl /}>">Chi... Chon</a>
+		<div id="xo-site-slogan" class="commercial">"birth of evolution"</div>
+		<div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+	</div>
+<{else}>
+
+	<div id="xo-banner"><!-- avec affichage de la bannière désactivé -->
+		<a id="xo-main-logo" href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/logo_chichon.png}>" alt="<{$xoops_sitename}>" /></a>
+		<a id="xo-site-title" href="<{xoAppUrl /}>"><{$xoops_sitename}></a>
+		<div id="xo-site-slogan"><{$xoops_slogan}></div>
+	</div>
+	<!-- fin de la boucle des bannière -->
+<{/if}>
+<!-- menu horizontal du header -->
+		<{includeq file="$theme_name/globalnav.html"}>
+	</div>
+<!-- fin du menu horizontal du header -->
+
+<!-- Ne pas modifier la partie ci-dessous, c'est supposé être l'architecture standard que chacun doit utiliser -->			
+	<div id="xo-canvas-content">
+		<{if $xoBlocks.canvas_top}>
+		<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
+			zoneClass='' zoneId='xo-canvas-header'
+		}>
+		<{/if}>
+		<table id="xo-canvas-columns" cellspacing="0">
+		<tr>
+			<{if $xoBlocks.canvas_left}>
+			<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_left
+				zoneClass='xo-canvas-column' zoneId='xo-canvas-leftcolumn' zoneTag='td'
+			}>
+			<{/if}>
+			<td id="xo-page">
+				<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+				<div class="xo-blockszone-xo-<{$theme_top_order}>pageblocks" id="xo-page-topblocks">
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}>
+				</div>
+				<{/if}>
+				<{if $xoops_contents}><div id="xo-content"><{$xoops_contents}></div><{/if}>
+				<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomcenter or $xoBlocks.page_bottomright}>
+				<div class="xo-blockszone-xo-<{$theme_bottom_order}>pageblocks" id="xo-page-bottomblocks">
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}>
+				</div>
+				<{/if}>
+			</td>
+			<{if $xoBlocks.canvas_right}>
+			<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_right
+				zoneClass='xo-canvas-column' zoneId='xo-canvas-rightcolumn' zoneTag='td'
+			}>
+			<{/if}>
+		</tr>
+		</table>
+		<{if $xoBlocks.canvas_bottom}>
+		<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_bottom
+			zoneClass='' zoneId='xo-canvas-footer'
+		}>
+		<{/if}>
+	</div>
+	<div id="xo-footer">
+<!-- link for rss -->
+	<div class="rss floatright"><a href="<{xoAppUrl /backend.php}>"><img src="<{xoImgUrl img/feed.png}>" alt="Prendre le fil RSS" /></a></div>
+<!-- end rss linkl -->
+<!-- infos sur le designer -->
+<div class="design floatleft">Design : <a href="http://www.xoofoo.org/" title="XooFoo.org - Kris Productions">XOOFOO.org</a></div><div class="copyright"><{$xoops_footer}></div>
+<!-- fin des infos designer -->
+	</div>
+<!--{xo-logger-output}-->
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+#xo-globalnav{
+position: relative;
+display: block;
+background: #7f8400 url(../img/menubg.gif) repeat-x top left;
+height: 3.5em;
+padding: 0em 1.0em 0em 1.0em;
+margin-bottom: 2px;	
+}
+
+#xo-globalnav img{
+padding: 0;
+margin: 0;
+}
+
+#xo-globalnav .x2-label{
+display: none;
+}
+
+* html #xo-globalnav{
+line-height: 2em;
+}
+
+#xo-globalnav ul{
+list-style-type: none;
+width: 100%;
+position: absolute;
+top: .8em;
+}
+
+#xo-globalnav ul li{
+position: relative;
+display: inline;
+float: left;
+z-index:auto !important ;
+z-index: 1000;
+width: auto;
+}
+
+#xo-globalnav ul li a{
+padding: 0.5em 1.0em 0.9em 1.0em;
+color: #fff;
+margin: 0 40px 0 10px;
+display: block;
+float:none !important ;
+float: left;
+line-height: 2em;
+padding: 0;
+text-decoration: none;
+font-weight: bold;
+text-align: center;
+}
+
+#xo-globalnav ul li a:hover{
+color: #C9C08D;
+background-color: transparent;
+font-style: normal;
+text-decoration: none;
+}
+
+#xo-globalnav ul li ul{
+display: none;
+border-top: none;
+border-right: none;
+border-bottom: 1px solid #fff;
+border-left: none;
+width: 150px;
+margin: 0;
+padding: 0;
+}
+
+#xo-globalnav ul li:hover a{
+
+}
+
+#xo-globalnav ul li:hover ul{
+display: block;
+position: absolute;
+z-index: 999;
+top: 2em;
+margin-top: 0em;
+left: 0;
+}
+
+* #xo-globalnav table{
+position: absolute;
+top: -1px;
+left: 0;
+border-collapse: collapse;
+}
+
+#xo-globalnav ul li a:hover ul{
+display: block;
+position: absolute;
+z-index: 999;
+top: 30px;
+top: 2em;
+left: 0;
+margin-top: 0.1em;
+}
+
+#xo-globalnav ul li ul li{
+background-color: #7f8400;
+margin: 0;
+padding: 0;
+}
+
+
+#xo-globalnav ul li:hover ul li{
+display: block;
+width: 150px !important;
+border-right: 1px solid #fff;
+border-left: 1px solid #fff;
+top: .7em;
+margin: 0;
+padding: 0;
+}
+
+#xo-globalnav ul li a:hover ul li a{
+display: block;
+height: 1px;
+line-height: 1.3em;
+padding: 10px;
+border: none;
+font-weight: normal;
+}
+
+#xo-globalnav ul li:hover ul li a{
+font-size: .9em;
+width: 140px !important;
+text-align:left !important;
+padding: 0 5px 0 5px;
+margin: 0;
+
+}
+#xo-globalnav ul li:hover ul li a:hover{
+color: #C9C08D;
+background-color: #767b00;
+text-decoration: none;
+width: 140px !important;
+margin: 0;
+padding: 0 5px 0 5px;
+}

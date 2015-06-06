@@ -1,0 +1,6 @@
+<{php}>
+$mod = $GLOBALS['xoopsModule'];
+$dirname = (isset($mod) ? $mod->getVar('dirname') :'system');
+$GLOBALS['xoopsTpl']->assign( 'xoops_cmod', $dirname );
+<{/php}>
+

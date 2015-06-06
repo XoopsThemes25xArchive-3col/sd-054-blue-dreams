@@ -1,0 +1,70 @@
+img {border: 0;}
+
+#xoopsHiddenText {visibility: hidden; color: #000000; font-weight: normal; font-style: normal; text-decoration: none;}
+
+.pagneutral {font-size: 10px; width: 16px; height: 19px;text-align: center; background-image: url(./images/pagneutral.gif);}
+.pagact {font-size: 10px; width: 16px; height: 19px;text-align: center; background-image: url(./images/pagact.gif);}
+.paginact {font-size: 10px; width: 16px; height: 19px;text-align: center; background-image: url(./images/paginact.gif);}
+
+
+.CPbigTitle{
+	font-size: 20px;
+	color: #1E90FF;
+	background: no-repeat left top;
+	font-weight: bold;
+	height: 40px;
+	vertical-align: middle;
+	padding: 10px 0 0 50px;
+	border-bottom: 3px solid #1E90FF;
+}
+.CPindexOptions{
+	padding: 4px;
+	vertical-align: top;
+}
+.CPmediumTitle{
+	font-weight: bold;
+	font-size: 14px;
+	color: #FF4500;
+}
+div.cpicon{
+	margin: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+div.cpicon a { 
+	display: block; float: left;
+	height: 100px !important;
+	height: 100px; 
+	width: 110px !important;
+	width: 110px; 
+	vertical-align: middle; 
+	text-decoration : none;
+	border: 1px solid #CCCCCC;
+	padding: 2px 5px 1px 5px;
+	margin: 3px;
+	color: #666666;
+}
+div.cpicon a:hover{
+	background-color: #FFF6C1;
+	border: 1px solid #FF9900;
+	color: #1E90FF;
+}
+
+div.cpicon img { margin-top: 8px; margin-bottom: 8px; }
+div.cpicon span {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+}
+div.cpicon span.uno{
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: Blue;
+}
+div.cpicon span.unor{
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #CC0000;
+}

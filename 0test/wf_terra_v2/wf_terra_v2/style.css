@@ -1,0 +1,215 @@
+html {
+scrollbar-face-color: #666688; 
+scrollbar-highlight-color: #CCCCFF; 
+scrollbar-shadow-color: #666688; 
+scrollbar-3dlight-color: #999999; 
+scrollbar-arrow-color: #CCCCFF; 
+scrollbar-track-color: #000000; 
+scrollbar-darkshadow-color: #333333;
+}
+
+body {
+color: #FFFFFF; 
+background-color: transparent; 
+margin: 0; 
+padding: 0; 
+background-image: url('images/background.jpg'); 
+background-repeat: repeat; 
+background-position: right bottom;
+}
+
+table {
+width: 100%; 
+margin: 5; 
+spacing: 5; 
+padding: 5; 
+font-size: 12px; 
+text-align:left; 
+align:center;}
+
+table#table {
+width: 80%;
+background-image: url('images/header.jpg'); 
+background-repeat: no-repeat; 
+background-position: center top;
+}
+
+table td {
+padding: 5; 
+vertical-align: top; 
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#content {
+padding: 9px; 
+text-align: left; 
+color: #FFFFFF; 
+font-weight: normal; 
+padding: 10px; 
+background-color: transparent; 
+border-bottom: 1px solid #666688; 
+border-right: 1px solid #9999BB;
+border-top: 1px solid #9999BB; 
+border-left: 1px solid #9999BB; 
+background-image: url('images/comet.gif'); 
+background-repeat: no-repeat; 
+background-position: right 75%;
+}
+
+a {
+color: #BBBBEE; 
+text-decoration: none; 
+font-weight: bold; 
+background-color: transparent;
+}
+
+a:hover {
+color: #FFFFFF; 
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul {margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li {margin-left: 2px; list-style: square inside; color: #FFFFFF; background-color: transparent}
+
+input.formButton {}
+
+.outer {border-bottom: 1px solid #666688; border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+.head {background-color: #444466; padding: 5px; font-weight: bold;}
+.even {background-color: #777799; padding: 5px; }
+.odd {background-color: #9999BB; padding: 5px; }
+.foot {background-color: #555577; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #777799; padding: 5px;}
+tr.odd td {background-color: #9999BB; padding: 5px;}
+
+.item {border: 0px solid #000000;}
+.itemHead {padding: 9px; background-color: #333399; color: #FFFFFF; font-weight: bold; text-align: left; }
+.itemInfo {text-align: right; padding: 3px; background-color: #333399; color: #FFFFFF;}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #FFFFFF; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {text-align:left; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em; color: #FFFFFF;}
+.itemText:first-letter {font-size: 133%; font-weight: bold; color: #FFFFFF;}
+.itemFoot {text-align: right; padding: 3px; background-color: transparent}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #666688; font-weight:bold; border: 1px solid silver; background-color: transparent; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #FF0000; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0px none;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+th {background-color: #444466; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+td#headerbanner_left {vertical-align: bottom; background-color: transparent;}
+td#headerbar {text-align: center; vertical-align: middle; font-size:80%; }
+td#headerbar_login {text-align: center; vertical-align: bottom; align:right; font-size:80%; }
+td#headerbarleft {text-align: left; vertical-align: middle; font-size:80%; }
+
+td#leftcolumn {width: 170px; font-size:12px; text-align: left;}
+td#leftcolumn th {color: #FFFFFF; vertical-align: middle; align: center;}
+td#leftcolumn div.blockTitle {padding: 9px; background-color: transparent; color: #777799; font-weight: bold; text-align: center; border-bottom: 1px solid #666688; border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+td#leftcolumn div.blockContent {padding: 3px; line-height: 120%; background-color: transparent; border-bottom: 1px solid #666688; border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+
+td#centercolumn th {padding: 6px; color: #FFFFFF; font-weight: bold; text-align: left; }
+td#centercolumn {align:center;}
+td#centercolumn div.blockContent {text-align: left; padding: 3px; margin-right: 0px; margin-left: 0px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+td#centerCcolumn {padding: 1px 3px 1px 3px;}
+td#centerCcolumn legend.blockTitle {padding: 3px; width:170px; background-color: transparent; color: #777799; font-weight: bold; text-align: center; border-bottom: 1px solid #666688; border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+td#centerCcolumn div.blockContent {padding-left: 20px; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+td#centerLcolumn {width: 50%; padding: 0px 3px 0px 0px; text-align: left;}
+td#centerLcolumn legend.blockTitle {padding: 3px; background-color: transparent; color: #777799; font-weight: bold; text-align: center; border-bottom: 1px solid #666688;border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+td#centerLcolumn div.blockContent {padding-left: 3px; margin-left: 3px; margin-right: 2px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+td#centerRcolumn {width: 50%; padding: 0px 3px 0px 0px; text-align: left;}
+td#centerRcolumn legend.blockTitle {
+padding: 3px; 
+background-color: transparent; 
+color: #777799; 
+font-weight: bold; 
+text-align: center; 
+border-bottom: 1px solid #666688;
+border-right: 1px solid #666688;
+border-top: 1px solid #9999BB; 
+border-left: 1px solid #9999BB;
+}
+
+td#centerRcolumn div.blockContent {padding-left: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+td#bottomCcolumn {padding: 1px 3px 1px 3px;}
+td#bottomCcolumn legend.blockTitle {padding: 3px; width:170px; background-color: transparent; color: #777799; font-weight: bold; text-align: center; border-bottom: 1px solid #666688; border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+td#bottomCcolumn div.blockContent {padding-left: 20px; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+td#bottomLcolumn {width: 50%; padding: 0px 3px 0px 0px; text-align: left;}
+td#bottomLcolumn legend.blockTitle {padding: 3px; background-color: transparent; color: #777799; font-weight: bold; text-align: center; border-bottom: 1px solid #666688;border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+td#bottomLcolumn div.blockContent {padding-left: 3px; margin-left: 3px; margin-right: 2px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+td#bottomRcolumn {width: 50%; padding: 0px 3px 0px 0px; text-align: left;}
+td#bottomRcolumn legend.blockTitle {
+padding: 3px; 
+background-color: transparent; 
+color: #777799; 
+font-weight: bold; 
+text-align: center; 
+border-bottom: 1px solid #666688;
+border-right: 1px solid #666688;
+border-top: 1px solid #9999BB; 
+border-left: 1px solid #9999BB;
+}
+
+td#bottomRcolumn div.blockContent {padding-left: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%; background-color: transparent;}
+
+
+td#rightcolumn {
+width: 170px; 
+font-size:12px; 
+text-align: left;
+background-image: url('images/sun_light.gif'); 
+background-repeat: no-repeat; 
+background-position: right 85%;
+}
+
+td#rightcolumn th {color: #FFFFFF; vertical-align: middle;}
+td#rightcolumn div.blockTitle {padding: 9px; background-color: transparent; color: #777799; font-weight: bold; text-align: center; border-bottom: 1px solid #666688; border-right: 1px solid #666688;border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+td#rightcolumn div.blockContent {padding: 3px; line-height: 120%; background-color: transparent; border-bottom: 1px solid #666688;border-right: 1px solid #666688;border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+
+td#usermenu a {background-color: transparent; text-align:left; display: block;}
+td#usermenu a:hover {color: #FFFFFF;}
+td#usermenu a.highlight {background-color: #666688; color: #0000FF;}
+
+td#mainmenu a {background-color: transparent; text-align:left; display: block; }
+td#mainmenu a:hover {color: #FFFFFF;}
+td#mainmenu a.menuSub {padding-left: 9px; color: #666688;}
+
+div.xoopsQuote {background: #DDDDDD; color: #666666; border: 1px inset #666688; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote a {color: #004477; font-weight:bold;}
+div.xoopsQuote a:hover {color: #FFDD00; font-weight:bold; }
+
+div.xoopsCode { background: #DDDDDD; color: #666666; border: 1px inset #666688; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+div.errorMsg { background-color: #DDDDDD; text-align: center; border-bottom: 1px solid #666688; border-right: 1px solid #666688;border-top: 1px solid #9999BB; border-left: 1px solid #9999BB; font-weight: bold; padding: 10px;}
+
+div.confirmMsg {color: #666688; text-align: center; font-weight: bold; padding: 10px; background-color: transparent; border-bottom: 1px solid #666688; border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+
+div.resultMsg {color: #666688; text-align: center; font-weight: bold; padding: 10px; background-color: transparent; border-bottom: 1px solid #666688;border-right: 1px solid #666688; border-top: 1px solid #9999BB; border-left: 1px solid #9999BB;}
+
+tr#footerbar {
+color: #FFFFFF; 
+text-align: center; 
+vertical-align: middle;
+}

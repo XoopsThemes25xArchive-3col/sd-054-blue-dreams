@@ -1,0 +1,62 @@
+/* ------ Left column / Right column content------ */
+#xo-canvas-leftcolumn .xo-block, #xo-canvas-rightcolumn .xo-block {
+	margin-top:	10px;
+	background:#fff;
+	border:1px solid #CCCCCC;
+}
+
+#xo-canvas-leftcolumn .xo-blocktitle, #xo-canvas-rightcolumn .xo-blocktitle {
+	border: 3px solid #fff;
+	padding: 3px;
+	background: url(images/menu_t.jpg) repeat-x;
+	text-align:center;
+
+}
+#xo-canvas-leftcolumn .xo-blocktitle h3, #xo-canvas-rightcolumn .xo-blocktitle h3 {
+	color: #fff;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent, #xo-canvas-rightcolumn .xo-blockcontent {
+	padding: 0.5em;
+}
+
+#xo-canvas-leftcolumn .xo-block.system .xo-blockcontent {
+	padding: 0;
+}
+
+#xo-canvas-leftcolumn th, #xo-canvas-rightcolumn th {
+	background-color: #f3ac03;
+	color: #4F8C31;
+}
+
+/* ------ Center column content ------ */
+#xo-page th {
+	background-color: #f3ac03;
+	color: #4F8C31;
+}
+
+#xo-page .xo-block {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	
+}
+
+#xo-page .xo-blocktitle {
+	padding: .2em;
+	
+	margin: 0 .5em;
+}
+
+#xo-page .xo-blocktitle h3 {
+	color: #4F8C31;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+#xo-page .xo-blockcontent {
+	padding: .5em;
+}

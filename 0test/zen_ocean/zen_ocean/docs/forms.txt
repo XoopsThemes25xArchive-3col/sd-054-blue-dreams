@@ -1,0 +1,22 @@
+/*======= Style pour les formulaires, boutons, zones de texte, ... ========*/
+
+.xo-block form 
+#xo-content form 
+
+.xo-block .formButtons 
+
+label 
+
+.xo-formfield 
+.xo-formbuttons 
+
+#xo-content .xo-formfield.required label:after 
+select 
+select[name=timezone_offset] 
+input[type=text], input[type=password], textarea 
+input[type=text], input[type=password] 
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus 
+
+textarea 
+

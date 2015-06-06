@@ -1,0 +1,15 @@
+<span class="edit"><a href="javascript:toggleLayer('hidelogin');" title="Click to login">click to login</a></span>
+<div id="hidelogin">
+	<form style="margin-top: 0px;" action="<{$xoops_url}>/user.php" method="post">
+    <div><{$block.lang_username}></div>
+   <div><input type="text" name="uname" size="12" value="<{$block.unamevalue}>" maxlength="25" /></div>
+    <div><{$block.lang_password}></div>
+    <div><input type="password" name="pass" size="12" maxlength="32" /></div>
+    <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+    <input type="hidden" name="op" value="login" />
+    <div><input type="submit" value="<{$block.lang_login}>" /></div>
+    <{$block.sslloginlink}>
+</form>
+<div><a href="<{$xoops_url}>/user.php#lost"><{$block.lang_lostpass}></a></div>
+<div><a href="<{$xoops_url}>/register.php"><{$block.lang_registernow}></a></div>
+</div>

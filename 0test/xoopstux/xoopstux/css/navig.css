@@ -1,0 +1,175 @@
+#xo-globalnav {
+  clear: both;
+  border: 0px;
+  padding-left: 2.5em;
+  margin: 0;
+  z-index: 5;
+  text-align: center;
+}
+
+* html #xo-globalnav {
+  height: 30px;
+}
+
+#xo-globalnav ul {
+  min-height: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 500;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+#xo-globalnav li {
+  display: inline;
+  float: left;
+  min-height: 26px;
+  position: relative;
+  text-align: left;
+  padding: 5px 14px 5px 14px;
+  margin: 0;
+  font-size: .9em;
+}
+
+#xo-globalnav li ul {
+  width: 128px;
+  height: auto;
+  top: 100%;
+  left: 0px;
+  font-weight: normal;
+  font-size: 1em;
+  border-top: 1px solid #000;
+  padding: 0 2px 0 2px;
+}
+
+#xo-globalnav li ul li {
+  text-align: left;
+  width: 100px;
+  height: auto;
+  min-height: auto;
+  display: block;
+}
+
+#xo-globalnav li.LargeMenu ul li {
+  text-align: left;
+  width: 156px;
+  height: auto;
+  min-height: auto;
+  display: block;
+}
+
+#xo-globalnav ul li a {
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+#xo-globalnav a:hover {
+  text-decoration: none;
+}
+
+#xo-globalnav li li ul {
+  top: 0;
+  left: 0;
+}
+
+#xo-globalnav li li:hover ul {
+  left: 150px;
+}
+
+#xo-globalnav ul ul, #xo-globalnav ul li:hover ul ul, #xo-globalnav ul ul li:hover ul ul, #xo-globalnav ul ul ul li:hover ul ul, #xo-globalnav ul ul ul ul li:hover ul ul {
+  position: absolute;
+  display: none;
+}
+
+#xo-globalnav li:hover ul, #xo-globalnav ul li:hover ul, #xo-globalnav ul ul li:hover ul, #xo-globalnav ul ul ul li:hover ul, #xo-globalnav ul ul ul ul li:hover ul, #xo-globalnav ul ul ul ul ul li:hover ul {
+  display: block;
+}
+
+#xo-globalnav #PhpWebcontent {
+  display: none;
+}
+
+#xo-globalnav, #xo-globalnav a, #xo-globalnav a:active, #xo-globalnav a:hover, #xo-globalnav a:visited {}
+
+#xo-globalnav ul li ul li {
+  background-color: #3b3b3b;
+}
+
+#xo-globalnav ul li ul li:hover {
+  background-color: #4b4b4b;
+}
+
+#xo-globalnav .sitemap a {
+  color: #639ace;
+}
+
+#xo-globalnav a:visited.sitemap {
+  color: #91b8dd;
+}
+
+#xo-globalnav .sitemap a:hover {
+  color: #3676b0;
+}
+
+#xo-globalnav a.news {
+  color: #54d143;
+}
+
+#xo-globalnav a:visited.news {
+  color: #87df7b;
+}
+
+#xo-globalnav a:hover.news {
+  color: #44aa37;
+}
+
+#xo-globalnav a.mydownloads {
+  color: #f34c30;
+}
+
+#xo-globalnav a:visited.mydownloads {
+  color: ##f7816e;
+}
+
+#xo-globalnav a:hover.mydownloads {
+  color: #cc4129;
+}
+
+#xo-globalnav a.mylinks {
+  color: #fa8a0a;
+}
+
+#xo-globalnav a:visited.mylinks {
+  color: #fbad53;
+}
+
+#xo-globalnav a:hover.mylinks {
+  color: #d47508;
+}
+
+#xo-globalnav a.extgallery {
+  color: #a7b560;
+}
+
+#xo-globalnav a:visited.extgallery {
+  color: #c1cb8f;
+}
+
+#xo-globalnav a:hover.extgallery {
+  color: #848f4c;
+}
+
+#xo-globalnav a.contact {
+  color: #de9b59;
+}
+
+#xo-globalnav a:visited.contact {
+  color: #e8b98a;
+}
+
+#xo-globalnav a:hover.contact {
+  color: #b88149;
+}

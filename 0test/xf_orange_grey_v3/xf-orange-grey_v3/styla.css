@@ -1,0 +1,236 @@
+/*  
+Theme Name: xf_orange_grey_V3 95%
+Theme URI: http://xoopsfactory.com 
+Description: just another clone from a CSS XOPS theme of mine <a href="http://xoopsfactory.com">XOOPS FACTORY</a>.
+Version: 1.0 | 30.12.2005
+Author: Michael Hokamp [aka studioC] 
+Author URI: http://hokamp.info
+*/
+
+
+@import url(blocks.css);
+
+body { 
+color: #333;    
+text-align: center; 
+background: #999;
+margin: 0px;
+font-family: Verdana,Arial,Sans-serif;
+font-size: 12px;
+line-height: 16px;
+}
+#page {
+text-align: center;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+width: 95%;
+background: #fff;
+border-left: 4px solid #fff;
+border-right: 4px solid #fff;
+}
+#topheader {
+text-align: right;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+background: #f1f1f1;
+border-bottom: 4px solid #999;
+}
+#header {
+text-align: left;
+border: 0px;
+border-top: 4px solid #fff;
+border-bottom: 4px solid #fff;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+background: url(images/header.gif) #fc0 top right no-repeat;
+height: 90px;
+}
+#logo {
+height: 83px;
+margin: 0px 0px;
+padding: 0px;
+}
+#logo h1 {
+margin: 0px 0px;
+padding: 0px;
+}
+#logo span {
+display: none;
+}
+#logo a {
+display: block;
+background: url(images/logo.gif) no-repeat;
+width: 230px;
+height: 90px;
+color: #000;
+}
+#logo a:hover {
+display: block;
+width: 230px;
+height: 90px;
+color: #000;
+}
+#bottomheader {
+text-align: left;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+background: #f1f1f1;
+border-bottom: 4px solid #999;
+border-top: 4px solid #999;
+}
+#xoopsbanner {
+padding: 10px 10px 10px 10px;
+}
+#pagelayer0, #pagelayerArray1, #pagelayerArray0 {
+text-align: left;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+}
+#pagelayerArray0 {
+background: url(images/left2.gif) #fff top left repeat-y;  
+}
+#pagelayerArray1 {
+background: url(images/left.gif) #fff top left repeat-y;  
+}
+#pagelayer {
+background: #fff;  
+}
+#containerArray0, #containerArray1, #container0 {
+text-align: left;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+}
+#contentArray0 {
+padding: 0px;
+margin-top: 0px;
+margin-left: 180px;
+margin-right: 10px;     
+text-align:justify;
+}
+#contentArray1 {
+padding: 0px;
+margin-top: 0px;
+margin-left: 360px;
+margin-right: 10px;     
+text-align:justify;
+}
+#content0 {
+padding: 0px;
+margin-left: 5px;
+margin-right: 5px;     
+}
+#blockleft {
+float: left;
+width: 170px;
+margin: 0px;
+margin-right: 0px;
+padding: 0px;
+color: #333;
+}
+#blockleft2 {
+float: left;
+width: 180px;
+margin: 0px;
+margin-right: 0px;
+padding: 0px;
+color: #333;
+}
+#clear {
+clear:both;
+}
+#footer {
+background: url(images/pagefooter.gif) #fff top right no-repeat;
+height: 80px;
+color: #fff;
+}
+#footnav {
+text-align: right;
+border: 0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+height: 20px;
+background: #f1f1f1;
+border-top: 4px solid #999;
+}
+p {
+padding: 10px;
+padding-left: 0px;
+margin: 0px;
+}
+h1 {
+margin: 0px;
+font-size: 15px;
+padding: 10px;
+padding-left: 0px;
+}
+h2, h3 {
+margin: 0px;
+font-size: 13px;
+padding: 10px;
+padding-left: 0px;
+}
+img {
+border: 0px;
+}
+b {
+font-size: 13px;
+color: #666;
+}
+a {
+text-decoration: none;
+color: #666;
+}
+a:hover{
+text-decoration: none;
+color: #fff;
+background: #666;
+}
+table {
+width: 100%;
+font-family: Verdana,Arial,Sans-serif;
+font-size: 12px;
+line-height: 18px;
+}
+textarea {
+width: 300px;
+}
+fieldset {padding:10px;border: 1px dotted #ccc;}
+legend {padding:10px;background:#fff;}
+#modulcontent h1 {
+color: #333;
+}
+hr {
+height:1px;
+color: #fff;
+background: #fff;
+}
+small {
+font-size: 12px;
+color: #999;
+}
+
+
+/* This CSS is part of the xf_orange_grey_V2 XOOPS theme from michael [aka studioC] <a href="http://xoopsfactory.com">XOOPS FACTORY</a> */

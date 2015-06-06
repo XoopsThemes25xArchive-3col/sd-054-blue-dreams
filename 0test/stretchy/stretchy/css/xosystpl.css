@@ -1,0 +1,39 @@
+/* style sheet for templates html to system module */
+
+/*============== Styles for system_redirect.html =================*/
+#xo-redirect {
+	width:								900px;
+	margin:								0 auto;
+	font-weight:						bold;
+	text-align:							center;
+}
+.header {
+	height : 							161px;
+   background: 						url(../img/bg_head.gif);
+  	background-repeat: 				no-repeat;
+	background-position: 			top left;
+}
+.notreload {	color:	#000;}
+.notreload a {
+	background-color: 				inherit;
+	color:								#ff0000;
+	font-weight:						bold;
+	text-decoration: 					none;
+}
+.message {
+	width: 								900px;
+	height : 							382px;
+   background: 						url(../img/bg_middle.gif);
+  background-repeat: 				no-repeat;
+	background-position: 			top left;
+	font-size:							1.2em;
+	text-align:							center;
+}
+#xo-redirect .message img{	padding:	1em;}
+.foot {
+	height: 								113px;
+	background: 						url(../img/bg_foot.gif);
+	background-repeat: 				no-repeat;
+	background-position: 			top left;
+}
+/* ------------------------ BLOCKS SYSTEM MODULE ------------------------ */

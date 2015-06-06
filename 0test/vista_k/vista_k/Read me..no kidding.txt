@@ -1,0 +1,44 @@
+This is info file about vista_k theme made by aphex@aphexthemes.com
+
+Fixes 29Nov. 2007:
+
+
+-added missing property to blocks contents for IE browsers
+-added extra css codes strictly for news article
+-added template "news_item.html" for better integration of the articles in the theme
+-minor alignments issues 
+
+
+---------------------/////////////------------------------
+
+
+
+
+
+Header links:
+
+Since the theme file has separate codes to function well on all major browsers the links in the header need to be set twice, thats
+right TWICE!!!
+
+one time for IE series  and the second time for all the other browsers
+
+Theme has separate codes because IE6 and older can't make transparency of png files
+
+So...PAY ATTENTION at hrefs id :
+
+<a href="#" id="articles">  means this is the link for the first button in this case "Articles"
+
+now if you scroll down right after the first <!--[if IE]><![if !IE]><![endif]--> you will find its "other then IE" duplicate.
+
+If i'm to set a real link for articles i will have to eddit both instants otherwise link will work either only on IE either on other browsers
+
+
+Footer: footer image cotains a "theme by aphex" which is actualy part of the footer image, you may NOT delete nor recreate the image
+to have it without that text, to do that you will have to contact me!
+
+Thats it 
+
+Enjoy.
+
+Ah...btw....header PSD is included in the package for customization of links ;)
+

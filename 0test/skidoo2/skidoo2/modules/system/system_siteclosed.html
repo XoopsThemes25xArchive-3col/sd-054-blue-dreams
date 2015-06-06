@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+	<style type="text/css">
+		@import "<{$xoops_themecss}>";
+	</style>
+</head>
+<body>
+<div id="pageWrapper">
+    <div id="masthead">
+      <div style="vertical-align: middle; text-align:center;"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>/images/logo.gif"  alt="<{$xoops_sitename}>" /></a></div>
+	</div>
+
+<div style="background-color:#FFFF99; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;"><{$lang_siteclosemsg}></div>
+  
+  <div style="text-align:center;padding:10px;">
+		<form action="<{$xoops_url}>/user.php" method="post">
+		<strong><{$lang_login}>: </strong>
+		<span><{$lang_username}><input type="text" name="uname" size="12" value="" /></span>
+		<span><{$lang_password}><input type="password" name="pass" size="12" /></span>
+		<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+		<input type="hidden" name="xoops_login" value="1" />
+		<input type="submit" value="<{$lang_login}>" />
+  		</form>
+	</div>
+      <div id="footer" style="height:8px; border-bottom: 1px solid silver; border-top: 1px solid silver;padding:10px;text-align:center"><{$xoops_footer}></div>
+	</div> <!-- end pageWrapper -->
+  </body>
+</html>

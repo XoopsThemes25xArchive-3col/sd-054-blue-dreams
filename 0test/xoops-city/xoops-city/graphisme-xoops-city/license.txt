@@ -1,0 +1,11 @@
+- Graphisme pour le thème Xoops City
+
+- Création de SabOUm Infographiste / WebDesign
+  http://www.saboum.com
+
+- License : Creative Commons Paternité 2.0
+  http://creativecommons.org/licenses/by/2.0/fr/
+  
+- Réaliser avec le logiciel vectoriel Inkscape 
+  http://www.inkscape.org
+

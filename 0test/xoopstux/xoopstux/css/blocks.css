@@ -1,0 +1,109 @@
+.xo-canvas-column ul{
+  margin: 0;
+  padding: .5em;
+  list-style-type: none;
+}
+
+.xo-canvas-column ul ul{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1em;
+}
+
+.xo-canvas-column .outer,.xo-canvas-column .outer td{
+  background-color: transparent;
+  border: 0 none;
+}
+
+.xo-canvas-column .outer,.xo-canvas-column .outer img{
+  margin: 0;
+  padding: 0;
+  border:0 !important;
+}
+
+#xo-canvas-leftcolumn .xo-block{
+  margin: 0;
+  background-color: transparent;
+  color: #fff;
+  width: 210px;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent{
+  background-color: inherit;
+  padding: 2px 8px 0;
+  color: #fff;
+}
+
+* html #xo-canvas-leftcolumn .xo-blockcontent{
+  height: 110px;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a{
+  background-color: inherit;
+  text-decoration: none;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a:hover{
+  background-color: inherit;
+  text-decoration: underline;
+}
+
+#xo-canvas-leftcolumn img{
+  margin: 0;
+  padding: 0;
+}
+
+#xo-canvas-rightcolumn{
+  background-color: transparent;
+}
+
+#xo-canvas-rightcolumn .xo-block{
+  margin: 0;
+  background-color: transparent;
+  padding-top: 4px;
+}
+
+#xo-canvas-rightcolumn .xo-blockcontent{
+  background-color: transparent;
+  padding: .5em;
+  color: #848383;
+}
+
+#xo-canvas-rightcolumn img, #xo-canvas-rightcolumn img:hover{}
+
+#xo-page .xo-blockszone >.xo-block{
+  border: none;
+  padding: 2em;
+}
+
+.xo-block ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#xo-page .xo-blockszone .xo-blocktitle{
+  color: #fff;
+  line-height: normal;
+  font-family: "Trebuchet MS", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent{
+  background-color: inherit;
+  padding: 1em .5em .5em .5em;
+  color: #848383;
+  text-align: justify;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img:hover{
+  background-color: transparent;
+  border: none;
+}

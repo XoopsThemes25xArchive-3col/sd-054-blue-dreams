@@ -1,0 +1,109 @@
+
+body {color: white; background: black; margin: 0; padding: 0;}
+
+table {width: 100%; margin: 5; padding: 5; font-size: small}
+table td {padding: 0; border-width: 0; vertical-align: top; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+a {color: white; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: yellow;}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #2F5376}
+
+input.formButton {}
+
+.item {border: 1px solid #cccccc;}
+.itemHead {padding: 3px; background-image: url(images/footer.gif); color: #000000;}
+.itemInfo {text-align: right; padding: 3px; background-image: url(images/on.gif)}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-image: url(images/footer.gif)}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {background-color: grey; color: #FFFFFF; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+td#headerbanner {width: 100%; background-image: url(images/head_bg.jpg); vertical-align: middle; text-align:center;}
+
+td#leftcolumn {width: 170px; font-size:12px;background-image: url(images/back_ground.jpg);background-repeat: repeat-x;}
+td#leftcolumn th {background-color: transparent; color: #FFFFFF; vertical-align: middle;}
+td#leftcolumn div.blockTitle {padding: 3px; background-image: url(images/block_title.jpg); color: black; font-weight: bold;text-align: center;}
+td#leftcolumn div.blockContent {padding: 3px; line-height: 120%; line-height: 120%;}
+
+
+#centercolumn {font-size: 12px;}
+#centercolumn th {background-image: url(images/block_title.jpg); color: #000000; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {padding: 3px; color: #000000; font-weight: bold;background-image: url(images/block_title.jpg); background-repeat: repeat-x; border-left: 2px solid #a3a3a3; border-right: 2px solid #a3a3a3;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {border-left: 2px dotted #ffffff; border-right: 2px dotted #ffffff; border-bottom: 2px dotted #ffffff; padding: 3px;background-image: url(images/bloc_ground.jpg);background-repeat: repeat-y; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+	width: 50%; padding: 0px 3px 0px 0px;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+	padding: 3px; color: #000000; font-weight: bold; margin-top: 0px;background-image: url(images/block_title.jpg); background-repeat: repeat-x; border-left: 2px solid #a3a3a3; border-right: 2px solid #a3a3a3;}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {border-left: 2px dotted #ffffff; border-right: 2px dotted #ffffff; border-bottom: 2px dotted #ffffff;padding: 3px; line-height: 120%;background-image: url(images/blok_ground.jpg);
+}
+
+div#content {text-align: left; padding: 8px;}
+
+td#rightcolumn {width: 170px; font-size:12px;background-image: url(images/back_ground.jpg);background-repeat: repeat-x;}
+td#rightcolumn th {background-color: transparent; color: #FFFFFF; vertical-align: middle;}
+td#rightcolumn div.blockTitle {padding: 3px; background-image: url(images/block_title.jpg); color: black; font-weight: bold;text-align: center;}
+td#rightcolumn div.blockContent {padding: 3px; line-height: 120%;}
+
+tr#footerbar {text-align:center; background-image: url(images/footer.gif);}
+
+td#mainmenu a {display: block; margin: 0; padding: 4px;}
+td#mainmenu a:hover {border-top: 1px solid silver; border-right: 1px solid #666666; border-bottom: 1px solid #666666; border-left: 1px solid silver;}
+td#mainmenu a.menuTop {padding-left: 3px;}
+td#mainmenu a.menuMain {padding-left: 3px;}
+td#mainmenu a.menuSub {padding-left: 9px; }
+
+td#usermenu a {display: block; margin: 0; padding: 4px;}
+td#usermenu a:hover {border-top: 1px solid silver; border-right: 1px solid #666666; border-bottom: 1px solid #666666; border-left: 1px solid silver;}
+td#usermenu a.menuTop {}
+td#usermenu a.highlight {background-color: #fcc;}
+
+.outer {border: 1px solid white;}
+.head {background-color: grey; padding: 5px; font-weight: bold;}
+.even {background-image: url(images/bm.gif); padding: 5px;}
+.odd {background-image: url(images/er.gif); padding: 5px;}
+.foot {background-image: url(images/er.gif); padding: 5px; font-weight: bold;}
+.srchbutton {border: 0px none;}
+.topnav {font-size: 100%;}
+td#headerlogo {background-image: url(images/head_bg.jpg);}
+tr.even td {background-image: url(images/bm.gif); padding: 5px;}
+tr.odd td {background-image: url(images/bm.gif); padding: 5px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: yellow; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}

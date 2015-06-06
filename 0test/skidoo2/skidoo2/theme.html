@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+		<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+		<meta name="robots" content="<{$xoops_meta_robots}>" />
+		<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+		<meta name="description" content="<{$xoops_meta_description}>" />
+		<meta name="rating" content="<{$xoops_meta_rating}>" />
+		<meta name="author" content="<{$xoops_meta_author}>" />
+		<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+		<meta name="generator" content="XOOPS" />
+		<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+		<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+		<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+		<style type="text/css">
+			@import "<{$xoops_themecss}>";
+		</style>
+		
+		<!-- REMOVE  THESE LINES AFTER THEME IS DEVELOPED -->
+		<style type="text/css"><!-- 
+			@import "style.css"; 
+		--></style>
+		<!-- END REMOVE -->
+		
+		<link rel="stylesheet" href="<{$xoops_imageurl}>print.css" type="text/css" media="print" />
+		
+			<{$xoops_module_header}>
+	
+	<script type="text/javascript">
+		<!--
+		<{$xoops_js}>
+		//-->
+	</script>
+		
+		<script type="text/javascript" src="<{$xoops_imageurl}>utilities.js"></script>
+		<script type="text/javascript">
+		<!--
+			var font_sizes = new Array( 105, 130, 150 ); 
+			var current_font_size = 0;
+ 			if ( ( typeof( NN_reloadPage ) ).toLowerCase() != 'undefined' ) { NN_reloadPage( true ); }
+			if ( ( typeof( opacity_init  ) ).toLowerCase() != 'undefined' ) { opacity_init(); }
+			if ( ( typeof( set_min_width ) ).toLowerCase() != 'undefined' ) { set_min_width( 'pageWrapper' , 780 ); }
+			if ( ( typeof( loadFontSize ) ).toLowerCase() != 'undefined' ) { event_attach( 'onload' , loadFontSize ); }
+		//-->
+		</script>
+		
+		<script type="text/javascript">
+		function toggleLayer(whichLayer)
+			{
+			if (document.getElementById)
+			{
+			// this is the way the standards work
+			var style2 = document.getElementById(whichLayer).style;
+			style2.display = style2.display? "":"block";
+			}
+			else if (document.all)
+			{
+			// this is the way old msie versions work
+			var style2 = document.all[whichLayer].style;
+			style2.display = style2.display? "":"block";
+			}
+			else if (document.layers)
+			{
+			// this is the way nn4 works
+			var style2 = document.layers[whichLayer].style;
+			style2.display = style2.display? "":"block";
+			}
+			}
+		</script>
+	
+	<{if !$xoops_rblocks}>
+		<style type="text/css"><!-- 
+		#outerColumnContainer {border-right:none;}
+		--></style>
+	<{/if}>
+	
+	<{if !$xoops_lblocks}>
+		<style type="text/css"><!-- 
+		#outerColumnContainer {border-left:none;}
+		--></style>
+	<{/if}>
+	
+	</head>
+	<body>
+		<div id="pageWrapper">
+			<div id="masthead" class="inside">
+
+<!-- masthead content begin -->
+
+		<div id="logo"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/logo.gif" alt="<{$xoops_sitename}>" /></a></div>
+		<h2 id="title"><a href="<{$xoops_url}>"><{$xoops_slogan}></a></h2>
+		<div id="banner"><{$xoops_banner}></div>
+		<div style="clear:both;"></div>
+
+<!-- masthead content end -->
+
+				<hr class="hide" />
+			</div>
+			<div class="hnav">
+			
+<script type="text/javascript">
+<!--
+	var browser = new browser_detect();
+	if ( browser.versionMajor > 4 || !( browser.isIE || browser.isNS ) )
+	{
+		/* only offer style/font changing to version 5 and later browsers
+		 * which have javascript enabled. curiously, if you print this out
+		 * in NS4, NS4 breaks for some reason. 
+		 */
+		document.write('									\
+			<span class="fontsize-set">							\
+				<a href="#" onclick="setFontSize(0); return false;"			\
+					><img src="<{$xoops_imageurl}>images/font_small.gif" width="17" height="21"	\
+						alt="Small Font" title="Small Font"			\
+				/><\/a>									\
+				<a href="#" onclick="setFontSize(1); return false;"			\
+					><img src="<{$xoops_imageurl}>images/font_medium.gif" width="17" height="21" 	\
+						alt="Medium Font" title="Medium Font"			\
+				/><\/a>									\
+				<a href="#" onclick="setFontSize(2); return false;"			\
+					><img src="<{$xoops_imageurl}>images/font_large.gif" width="17" height="21"	\
+						alt="Large Font" title="Large Font"			\
+				/><\/a>									\
+			<\/span>										\
+		');
+	}
+//-->
+</script>	
+
+<{php}> 
+global $xoopsModule , $xoopsUser ;
+$xoops_url = XOOPS_URL ;
+$submenu_str = "" ; // put default submenu html inside quotes on this line to the left
+$mainmenu_str = "Welcome to our website!&nbsp;&nbsp;" ; // put default mainmenu html inside quotes on this line to the left
+if( isset( $xoopsModule ) && is_object( $xoopsModule ) ) {
+	$dirname = $xoopsModule->getVar( 'dirname' ) ;
+	$mainmenu_str = str_replace( "/modules/$dirname/'" , "/modules/$dirname/' style='background: #C0CCD9;'" , $mainmenu_str ) ;
+	$sublinks =& $xoopsModule->subLink();
+	if( count( $sublinks ) > 0 ) {
+	$mainmenu_str = "" ;
+	if( $xoopsUser ) {$mainmenu_str = "<ul><li><a href='$xoops_url/user.php'>View Account</a></li></ul>" ;}
+		$submenu_str .= "<ul>";
+		    foreach( $sublinks as $sublink ) {
+		    $submenu_str .= "<li><a href='$xoops_url/modules/$dirname/{$sublink['url']}'>{$sublink['name']}</a></li>";
+		    }
+		    $submenu_str .= "</ul>" ;
+	}
+} else {
+	if( $xoopsUser ) {
+	$mainmenu_str = "<strong>User Menu:</strong>&nbsp;&nbsp;" ; 
+		$pm_handler =& xoops_gethandler('privmessage');
+		$criteria = new CriteriaCompo(new Criteria('read_msg', 0));
+		$criteria->add(new Criteria('to_userid', $xoopsUser->getVar('uid')));
+		$new_messages = $pm_handler->getCount($criteria);
+		if( $xoopsUser->isadmin() ) $admin_link = "<li><a href='$xoops_url/admin.php' target='_blank'>Admin</a></li>" ;
+		if( $new_messages > 0 ) {
+			$pm_str = "<span style='color:#FFFF66; font-weight: bold;'> ($new_messages)</span>" ;
+			$pm_class = "class='highlight'" ;
+		} else {
+			$pm_str = '' ;
+			$pm_class = '' ;
+		}
+		$submenu_str .= "<ul><li><a href='$xoops_url/user.php'>View Account</a></li><li><a href='$xoops_url/edituser.php'>Edit Account</a></li><li><a href='$xoops_url/notifications.php'>Notifications</a><li><a href='$xoops_url/viewpmsg.php' $pm_class>Inbox$pm_str</a></li><li><a href='$xoops_url/user.php?op=logout'>Logout</a></li>$admin_link</ul>" ;
+	}
+}
+echo $mainmenu_str ;
+echo $submenu_str ;
+<{/php}>
+
+<!-- horizontal nav end -->
+
+				<hr class="hide" />
+			</div>
+			<div id="outerColumnContainer">
+				<div id="innerColumnContainer">
+					<div id="SOWrap">
+						<div id="middleColumn">
+							<div class="inside">
+
+<!--- middle (main content) column begin -->
+
+<{if $xoops_showcblock == 1}>
+		
+
+				<!-- Start center-center-top blocks loop -->
+				<{foreach item=block from=$xoops_ccblocks}>
+					<fieldset class="centerCcolumn">
+					<legend class="blockTitle"><strong><{$block.title}></strong></legend>
+					<div class="blockContent"><{$block.content}></div>
+					</fieldset>
+				<{/foreach}>
+				<!-- End center-center-top blocks loop -->
+			
+				<!-- Start center-left blocks loop -->
+				<{foreach item=block from=$xoops_clblocks}>
+					<fieldset class="centerLcolumn"><legend class="blockTitle"><strong><{$block.title}></strong></legend>
+					<div class="blockContent"><{$block.content}></div>
+					</fieldset>
+				<{/foreach}>
+				<!-- End center-left blocks loop -->
+			
+				<!-- Start center-right blocks loop -->
+				<{foreach item=block from=$xoops_crblocks}>
+					<fieldset class="centerRcolumn">
+					<legend class="blockTitle"><strong><{$block.title}></strong></legend>
+					<p class="blockContent"><{$block.content}></p>
+					</fieldset>
+				<{/foreach}>
+				<!-- End center-right blocks loop -->
+				
+				<div style="clear:both"></div>
+
+			<!-- End centercolumn -->
+			
+
+		<{/if}> <!-- End display center blocks -->
+
+<div id="content"><{$xoops_contents}></div>
+
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+				
+		
+		<{if $xoBlocks.page_bottomcenter}>
+				<!-- Start center-center-bottom blocks loop -->
+				<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+					<fieldset class="centerCcolumn">
+					<legend class="blockTitle"><strong><{$block.title}></strong></legend>
+					<div class="blockContent"><{$block.content}></div>
+					</fieldset>
+				<{/foreach}>
+				<!-- End center-center-bottom blocks loop -->
+		<{/if}>
+		
+		<{if $xoBlocks.page_bottomleft}>
+				<!-- Start center-left-bottom blocks loop -->
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+					<fieldset class="centerLcolumn">
+					<legend class="blockTitle"><strong><{$block.title}></strong></legend>
+					<div class="blockContent"><{$block.content}></div>
+					</fieldset>
+				<{/foreach}>
+				<!-- End center-left-bottom blocks loop -->
+		<{/if}>
+		
+		<{if $xoBlocks.page_bottomright}>
+				<!-- Start center-right-bottom blocks loop -->
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+					<fieldset class="centerRcolumn">
+					<legend class="blockTitle"><strong><{$block.title}></strong></legend>
+					<div class="blockContent"><{$block.content}></div>
+					</fieldset>
+				<{/foreach}>
+				<!-- End center-right-bottom blocks loop -->
+		<{/if}>
+
+<div style="clear:both"></div>
+
+	<{/if}>
+
+<!--- middle (main content) column end -->
+
+								<hr class="hide" />
+							</div>
+						</div>
+						<div id="leftColumn">
+							<div class="inside">
+
+<!--- left column begin -->
+
+	<!-- Start left blocks loop -->
+	<{foreach item=block from=$xoops_lblocks}>
+	<fieldset>
+	<legend class="blockTitle"><{$block.title}></legend>
+	<div class="blockContent"><{$block.content}></div>
+	</fieldset>
+	<{/foreach}>
+	<!-- End left blocks loop -->
+
+<!--- left column end -->
+
+								<hr class="hide" />
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="rightColumn">
+						<div class="inside">
+
+<!--- right column begin -->
+
+<!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>
+	<fieldset>
+	<legend class="blockTitle"><{$block.title}></legend>
+	<div class="blockContent"><{$block.content}></div>
+	</fieldset>
+<{/foreach}>
+<!-- End right blocks loop -->
+
+<!--- right column end -->
+
+							<hr class="hide" />
+						</div>
+					</div>
+					<div class="clear"></div>
+
+				</div>
+			</div>
+			<div id="footer" class="inside">
+
+<!-- footer begin -->
+
+				<hr class="hide" />
+				<div style="margin:0;">
+					<div id="copyright">Copyright &copy; by <a href="<{$xoops_url}>" target="_self"><{$xoops_sitename}></a></div>
+					<div><{$xoops_footer}></div>
+				</div>
+
+<!-- footer end -->
+
+				<hr class="hide" />
+			</div>
+		</div>
+	</body>
+</html>

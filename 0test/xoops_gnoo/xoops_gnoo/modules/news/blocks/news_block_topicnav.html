@@ -1,0 +1,10 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<ul>
+<{foreach item=topic from=$block.topics}>
+<li class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+<a href="<{$xoops_url}>/modules/news/index.php?storytopic=<{$topic.id}>"><{$topic.title}> (<{$topic.news_count}>)</a>
+</li>
+<{/foreach}>
+</ul>
+<!-- if you don't use morphogenesis gabarit : </div> -->

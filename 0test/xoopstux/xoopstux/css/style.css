@@ -1,0 +1,391 @@
+@import url(content.css);
+
+@import url(blocks.css);
+
+@import url(color.css);
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+}
+
+html, body{
+  margin: 0;
+  background-color: #363636;
+  padding: 0;
+  color: #666;
+  font-family: Verdana, Helvetica, "Lucida Grande", sans-serif;
+  font-size: .87em;
+}
+
+body.site_closed form{
+  padding: 1em 35%;
+}
+
+#xo-wrapper, #xo-bgstatic, #xo-canvas-rightcolumn, #xo-main-logo.commercial, #xo-uptop a, #xo-uptop a:hover{}
+
+#xo-canvas{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #848383;
+}
+
+body.theme-dialog #xo-canvas{
+  margin: 0 6px;
+}
+
+#xo-canvas-content{
+  margin: 0;
+  padding: 0;
+  color: #848383;
+}
+
+#xo-page{
+  background-color: #363636;
+  color: #848383;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#xo-content{
+  background-color: #363636;
+  clear: both;
+  margin: 0;
+  padding:0 5em 0 5em !important;
+  color: #848383;
+  z-index: 1;
+  display: block;
+}
+
+#xo-logger-output{
+  font-size: .8em;
+}
+
+#xo-header{
+  width:100% !important;
+  height: 246px;
+  background-color: transparent;
+  background-image: url(../img/head_back.gif);
+  background-repeat: repeat-x;
+  background-x-position: center;
+  background-y-position: top;
+}
+
+#xo-banner{
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 206px;
+  z-index: 10;
+  background-color: transparent;
+  color: #848383;
+}
+
+#xo-banner.commercial{
+  height: 156px;
+}
+
+#xo-banner .tuxlogo{
+  position: absolute;
+  top: 87px;
+  z-index: 2;
+  width: 130px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#xo-banner.commercial .tuxlogo{
+  position: absolute;
+  top: 37px;
+  z-index: 2;
+  width: 130px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+#connect {
+padding: .2em .5em .2em .5em; 
+display: online; 
+float: right; 
+background-color: #424242;
+margin-right: 2em; 
+border-right: 1px #222222 solid;
+border-bottom: 1px #222222 solid;
+border-left: 1px #222222 solid;
+}
+
+#sitemap .tuxlogo, #system .tuxlogo{
+  left: 17px;
+  background-image: url(../img/tux_home_120.png);
+}
+
+#news .tuxlogo{
+  left: 140px;
+  background-image: url(../img/tux_articles_120.png);
+}
+
+#mydownloads .tuxlogo{
+  left: 282px;
+  background-image: url(../img/tux_telechargement_120.png);
+}
+
+#extgallery .tuxlogo, #xoopspoll .tuxlogo{
+  left: 420px;
+  background-image: url(../img/tux_themes_120.png);
+}
+
+#mylinks .tuxlogo{
+  left: 560px;
+  background-image: url(../img/tux_annuaire_120.png);
+}
+
+#flux .tuxlogo, #fluxrss .tuxlogo, #d3pipes .tuxlogo{
+  left: 670px;
+  background-image: url(../img/tux_flux_120.png);
+}
+
+#contact .tuxlogo, #liaise .tuxlogo, #tellafriend .tuxlogo{
+  left: 760px;
+  background-image: url(../img/tux_contact_120.png);
+}
+
+#xo-banner-ad{
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  float: right;
+}
+
+#xo-banner-ad object, #xo-banner-ad img{
+  display: block;
+  float: right;
+  margin-top: 39px;
+  margin-right: 60px;
+  padding-top: 0px;
+  z-index: 1;
+}
+
+#sitemap #back-ad, #system #back-ad{
+  background-image: url(../img/xoops_banner_2.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+#news #back-ad{
+  background-image: url(../img/xoops_banner_3.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+#mydownloads #back-ad{
+  background-image: url(../img/xoops_banner_4.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+#extgallery #back-ad, #xoopspoll #back-ad{
+  background-image: url(../img/xoops_banner_5.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+#mylinks #back-ad{
+  background-image: url(../img/xoops_banner_6.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+#flux #back-ad, #fluxrss #back-ad, #d3pipes #back-ad{
+  background-image: url(../img/xoops_banner_8.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+#contact #back-ad, #liaise #back-ad, #tellafriend #back-ad{
+  background-image: url(../img/xoops_banner_7.gif);
+  display: block;
+  float: right;
+  width: 470px;
+  margin-top: 5px;
+  margin-right: 99px;
+  height: 95px;
+}
+
+body.theme-dialog #xo-banner{
+  height: 48px;
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+#xo-site-title{
+  position: relative;
+  background-color: transparent;
+  padding: 10px 0 0 20px;
+  font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+a #xo-site-title, a:hover #xo-site-title, #xo-site-title.commercial a:hover{
+  background-color: inherit;
+}
+
+#xo-site-title.commercial, #xo-site-slogan.commercial{
+  top: 10px;
+}
+
+#sitemap a:visited #xo-site-title, #system a:visited #xo-site-title {
+  color: #639ace;
+}
+
+#news a:visited #xo-site-title{
+  color: #54d143;
+}
+
+#mydownloads a:visited #xo-site-title{
+  color: #f34c30;
+}
+
+#mylinks a:visited #xo-site-title{
+  color: #fa8a0a;
+}
+
+#extgallery a:visited #xo-site-title, #xoopspoll a:visited #xo-site-title{
+  color: #a7b560;
+}
+
+#flux a:visited #xo-site-title, #fluxrss a:visited #xo-site-title, #d3pipes a:visited #xo-site-title{
+  color: #dadada;
+}
+
+#contact a:visited #xo-site-title, #liaise a:visited #xo-site-title, #tellafriend a:visited #xo-site-title{
+  color: #de9b59;
+}
+
+#xo-site-slogan{
+  position: relative;
+  padding-left: 20px;
+}
+
+#xo-main-logo{
+  position: absolute;
+  width: auto;
+  top: 15px;
+  background: inherit;
+  padding-left: 10px;
+  color: #848383;
+}
+
+#xo-banner form{
+  display: inline;
+  margin: 0;
+}
+
+#xo-banner input{
+  width: 8em;
+  margin: 0 0 0 2px;
+  background-color: #E2E2E2;
+  color: #333;
+}
+
+#xo-uptop{
+  background-color: trnasparent;
+  padding: 1em;
+  color: inherit;
+  font-size: .9em;
+  text-align: right;
+}
+
+#xo-footer{
+  height: 30px;
+  margin: 0;
+  padding-top: 10px;
+  background-color: transparent;
+  background-image: url(../img/foot_back.gif);
+  background-repeat: repeat-x;
+  background-x-position: center;
+  background-y-position: bottom;
+  color: #ccc;
+  font-size: .8em;
+  text-align: center;
+}
+
+
+#rss, #uptop, #lock{
+  padding-right: 1em;
+  display: inline;
+}
+
+#footbadge{
+  background-color: transparent;
+}
+
+.titreniv1 {
+font-size: 1.4em;
+font-weight: bold;
+margin: 2em 0 1em 0;
+padding: .5em;
+background-color: #3a3a3a;
+border-color: #222;
+}
+
+.titreniv2 {
+font-size: 1.2em;
+font-weight: bold;
+margin: 1em;
+padding: .5em;
+}
+
+.titreniv3 {
+font-size: 1.1em;
+font-weight: bold;
+margin: 1em 2em 1em 2em;
+padding: .5em;
+}
+
+.retrait1 {
+margin: 0 1em 1em 1em;
+}
+
+.retrait2 {
+margin: 0 2em 1em 2em;
+}
+
+.retrait3 {
+margin: 0 3em 1em 3em;
+}
+
+/***** for Xoops 2.0.14+ compatibility *****/
+#mainmenu a, #usermenu a {display: block;}

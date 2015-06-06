@@ -1,0 +1,111 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work  */
+/* Mor.pho.GEN.e.sis version 1.1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 1.2) - 12 juillet 2008 */
+/*modif Xoops Noel design by saboum  (http://www.saboum.com) */
+/*======= Style pour les formulaires, boutons, zones de texte, ... ========*/
+
+.xo-block form {
+	margin:						0;
+	padding:						0;
+}
+#xo-content form {
+	margin:						0;
+	background-color:			transparent;
+}
+
+.xo-block .formButtons {
+	text-align:					center;
+	padding:						.5em;
+}
+
+label {
+	display:						block;
+	padding:						0;
+	background-color:			transparent;
+}
+.xo-formfield {
+	margin-bottom:				.2em;
+	background-color:			transparent;
+}
+.xo-formbuttons, .formButton, button {
+	font-family: 				Geneva, Arial, Helvetica, sans-serif;
+	color: 						#fff;
+	background-color: 		#37738C;
+	font-size:					.9em;
+	border: 						1px solid #ccc;
+	font-variant: 				small-caps;
+}
+.xo-formbuttons:hover, .formButton:hover, button:hover {
+	cursor:						pointer;
+	border: 						1px solid #505050 !important;
+	color: 						#505050;
+	background-color:			#AAE8FDc;
+}
+
+#xo-content .xo-formfield.required label:after {
+	content:						'*';
+	color:						#ff0000;
+	background-color: 		#fff;
+}
+select {
+	color:						#333;
+	background-color:			#fff;
+	font-size: 					.9em;
+}
+select[name=timezone_offset] {
+	color:						#333;
+	background-color:			#fff;
+	font-size:					.9em;
+}
+input[type=submit], input[type=reset], input[type=button] {
+	font-family: 				Geneva, Arial, Helvetica, sans-serif;
+	color: 						#fff;
+	background-color: 		#37738C;
+	font-size:					.9em;
+	border: 						1px solid #000;
+	font-variant: 				small-caps;
+}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
+	cursor:						pointer;
+	border: 						1px solid #505050;
+	color: 						#000;
+	background-color:			#AAE8FD;
+}
+
+input[type=text], input[type=password], input[type=checkbox], textarea {
+	border:						1px solid #999;
+	margin:						2px 0;
+	padding-left:				.2em;
+	color:						#333;
+	background-color:			#fff;
+}
+input[type=text], input[type=password] {}
+input[type=text]:hover, input[type=password]:hover {
+	color:						#333;
+	background-color:			#E9E9E9;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:hover, textarea:focus {
+	border-color:				#666F7D;
+	outline:						1px solid #666F7D;
+}
+textarea { width: 			95%;}
+label {font-weight: 			bold;}
+fieldset {
+	padding: 					1em;
+	line-height: 				1.8em;
+}
+fieldset a {
+	color: 						#ff0000;
+	background-color: 		inherit;
+	font-weight: 				bold;
+	text-transform: 			uppercase;
+}
+fieldset a:hover {
+	text-decoration: 			underline;
+}
+legend {
+	font-size: 					1.1em;
+	font-weight: 				bold;
+}
+

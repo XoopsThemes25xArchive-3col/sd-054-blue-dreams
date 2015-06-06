@@ -1,0 +1,28 @@
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: header.html 250 2009-02-23 10:32:53Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div id="ixt-top_header_wrap">
+ <div class="ixt-top_header">
+  <div id="ixt-logo_wrap">
+   <{if $ixt_banner and $ixt_banner != '&nbsp;'}>
+    <{includeq file="$theme_tpl/banner_commercial.html"}>
+   <{else}>
+    <{includeq file="$theme_tpl/banner.html"}>
+   <{/if}>
+  </div>
+  <div id="rss_wrap">
+   <div id="rss"></div>
+   <div id="ixt-headerrss">
+    <{if $cms == "xoops"}><a href="/backend.php" title="RSS">&nbsp;</a>
+    <{else}><a href="#" title="RSS">&nbsp;</a><{/if}>
+   </div>
+  </div>
+ </div>
+</div>

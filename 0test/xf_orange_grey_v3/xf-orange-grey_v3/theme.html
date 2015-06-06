@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<{assign var=theme_name value=$xoTheme->folderName}>
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_pagetitle}>, <{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_pagetitle}>, <{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<{$xoops_url}>/backend.php" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>styla.css" /> 
+<{$xoops_module_header}>
+<!-- this [x]html-Layout and XOOPS themefile is copyright 2005 by Michael Hokamp [aka studioC] <a href="http://xoopsfactory.com">XOOPS FACTORY</a> -->
+</head>
+<body>
+<div id="page">
+<div id="topheader"><a href="<{$xoops_url}>">HOME</a> | <a href="<{$xoops_url}>/modules/newbb/index.php">FORUM</a> | <a href="<{$xoops_url}>/modules/contact/index.php">CONTACT</a> | <a href="<{$xoops_url}>">LINK THREE</a> |  <a href="<{$xoops_url}>">LINK FOUR</a></div>
+<div id="header"><div id="logo">
+<h1><a href="<{$xoops_url}>" title="<{$xoops_pagetitle}> - <{$xoops_sitename}>"><span><strong><{$xoops_sitename}></strong> - <{$xoops_pagetitle}> </span></a></h1>
+</div></div>
+<div id="bottomheader"><a href="<{$xoops_url}>">TOPICNAV</a> | <a href="<{$xoops_url}>">LINK ONE</a> | <a href="<{$xoops_url}>">LINK TWO</a> | <a href="<{$xoops_url}>">LINK THREE</a> |  <a href="<{$xoops_url}>">LINK FOUR</a></div>	
+<div id="pagelayer<{$xoops_lblocks}><{$xoops_showrblock}>">
+<div id="container<{$xoops_lblocks}><{$xoops_showrblock}>">
+	<!-- Start left blocks loop -->
+	<{if $xoops_showlblock}>
+	<div id="blockleft">
+		<{foreach item=block from=$xoBlocks.canvas_left}>
+			<{includeq file="$theme_name/theme_blockleft.html"}>
+		<{/foreach}>
+	</div>
+	<{/if}>
+	<!-- End left blocks loop -->
+	<{if $xoops_showrblock}>
+	<div id="blockleft2">
+		<!-- Start right blocks loop -->
+		<{foreach item=block from=$xoBlocks.canvas_right}>
+			<{includeq file="$theme_name/theme_blockright.html"}>
+		<{/foreach}>
+		<!-- End right blocks loop -->
+	</div>
+	<{/if}>
+<div id="content<{$xoops_lblocks}><{$xoops_showrblock}>">
+<img src="<{$xoops_imageurl}>images/centerlogo.gif" width="250px" height="90px" alt="<{$xoops_sitename}>" />
+	<!-- Display center blocks if any -->
+	<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+		
+		<div style="width: 100%; display: block; float: left">
+			<div style="width: 50%; float: left; min-width: 300px"> 
+			<!-- Start center-right blocks loop -->
+				<{foreach item=block from=$xoBlocks.page_topright}>
+					<{includeq file="$theme_name/theme_blockcenter_r.html"}>
+				<{/foreach}>
+			<!-- End center-right blocks loop -->
+			</div>
+			<div style="width: 50%; float: left; min-width: 300px">
+			<!-- Start center-left blocks loop --> 
+				<{foreach item=block from=$xoBlocks.page_topleft}>
+					<{includeq file="$theme_name/theme_blockcenter_l.html"}>
+				<{/foreach}>
+			<!-- End center-left blocks loop -->
+			</div>
+		</div>
+		<br />
+		<!-- Start center-center blocks loop -->
+		<div style="width: 100%; display: block; float: left">
+			<{foreach item=block from=$xoBlocks.page_topcenter}>
+				<{includeq file="$theme_name/theme_blockcenter_c.html"}>
+			<{/foreach}>
+		</div>
+		<!-- End center-center blocks loop -->
+	<{/if}>
+	<!-- End center top blocks loop -->
+<div id="modulcontent"><{$xoops_contents}></div>
+	<!-- Start center bottom blocks loop -->
+	<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+		<{if $xoBlocks.page_bottomcenter}>
+		<div style="width: 100%; display: block; float: left">
+			<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+				<{include file="$theme_name/theme_blockcenter_c.html"}>
+			<{/foreach}>
+		</div>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<div style="width: 100%; display: block; float: left">
+			<div style="width: 50%; float: left; min-width: 300px"> 
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+					<{include file="$theme_name/theme_blockcenter_l.html"}>
+				<{/foreach}>
+			</div>
+			<div style="width: 50%; float: left; min-width: 300px"> 
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+					<{include file="$theme_name/theme_blockcenter_r.html"}>
+				<{/foreach}>
+			</div>
+		</div>
+		<{/if}>
+	<{/if}>
+	<!-- End center bottom blocks loop -->
+</div>
+<div id="clear"></div>
+<div id="footer"></div>
+</div></div>
+<div id="footnav"><a href="<{$xoops_url}>">HOME</a> | <a href="<{$xoops_url}>">LINK ONE</a> | <a href="<{$xoops_url}>">LINK TWO</a> | <a href="http://www.xoops.org">XOOPS</a> |  &copy;<a href="http://xoopsfactory.com">XOOPS FACTORY</a></div>
+</div><!-- close id page -->
+</body>
+</html>

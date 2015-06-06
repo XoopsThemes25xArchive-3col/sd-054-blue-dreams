@@ -1,0 +1,98 @@
+
+/* ------------------------ Blocks ------------------------ */
+.system-site_info {
+	width: 100%;	clear:				both;
+}
+.system-new_users {
+	font-size: .9em;	clear:				both;
+}
+.system-site_info li.group {
+	color:#333 !important;
+	background-color: inherit;
+	font-weight: 600;
+	font-style: italic;
+}
+.system-new_users ul, .system-site_info ul {
+	list-style-type:	none !important;
+	padding:			.25em;
+	margin:				0px;
+}
+.system-new_users li, .system-site_info li.user {
+	padding-left:		50px;
+	padding-bottom:		.25em;
+	list-style-type:	none !important;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center !important;
+}
+.system-new_users li, .system-site_info li {
+	clear:				both;
+	list-style-type:	none !important;
+}
+.system-new_users .avatar, .system-site_info .avatar {
+	width:				46px !important;
+	float:				left;
+	margin-left:		-54px !important;
+	margin-bottom:		4px;
+	border: 0 !important;
+}
+.system-site_info .recommend_us {
+	text-align:			center;
+	clear:				both;
+	padding-top:		.5em;
+}
+
+/* ------------------------ Block Main Menu ------------------------ */
+#mainmenu1 a.menuTop1, #mainmenu1 a.menuMain1 {margin:0; padding-left: 0px; }
+#mainmenu1 a.menuSub1 {
+	padding-left: 					5px;
+	padding-bottom:				1px;
+	font-style: 					italic;
+	background-color:				inherit;
+}
+#mainmenu1 a.menuSub1:hover {}
+
+#mainmenu1 ul {
+	margin: 							0;
+	padding: 						0;
+	list-style: 					none;
+}
+#mainmenu1 li {
+	position: 						relative;
+	list-style: 					none;
+}
+#mainmenu1 a {
+	display: 						block;
+	margin: 							0;
+	padding: 						1px 1px 1px 5px;
+	color: 							#555 !important;
+	background-color:				inherit;
+	font-weight: 					500;
+	border-width: 					1px;
+	border-style: 					solid;
+	border-color: 					#ccc #888 #555 #bbb;
+	text-decoration: 				none;
+}
+#mainmenu1 a:hover {
+	color: 							#32529C !important;
+	background-color: 			#E2E2E2 ;
+	text-decoration: 				none !important;
+}
+#mainmenu1 ul ul {
+position: 							absolute;
+top: 									0;
+left: 								100%;
+width: 								100%;
+}
+
+#mainmenu1 ul li a {}
+
+#mainmenu1 ul ul,
+#mainmenu1 ul li:hover ul {
+	display: 						none;
+	color:							#a00;
+	background-color: 			#fff ;
+}
+
+#mainmenu1 ul li:hover ul,
+#mainmenu1 ul ul li:hover ul {display: block;}

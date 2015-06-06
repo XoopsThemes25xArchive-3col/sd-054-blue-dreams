@@ -1,0 +1,22 @@
+Changelog Xeatol 2.0
+Oct 24, 2008 
+=============
+1 The theme's based now on Ds_reda Theme
+2 Changes display in the left/right/center blocks
+3 Userbar removed from the header
+4 Changes display in the main and user menu
+5 Good Compatibility with IE 6/7
+....
+
+Changelog Xeatol 2.1
+Oct 25, 2008 
+=============
+1 Redirect Page and Site closed Page customized
+
+Changelog Xeatol 2.2
+Oct 31, 2008 
+=============
+1 Bug fix on the header under IE 6
+2 Bug fix on the left column under IE 6
+
+

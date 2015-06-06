@@ -1,0 +1,193 @@
+/* 
+Theme Name: WDC_008_orange
+Description: WDC_008_orange developed by WebdesignCreators
+Version: 2.1
+Date: June 10th, 2009
+Author: WebdesignCreators
+Author URL: http://www.Webdesigncreators.com
+*/
+
+/*============== Start WDC special styles for WDC_008_orange =================*/
+
+html, body {color:#000000; margin:0; font-size:9pt; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#wdc_main {margin-left:auto;}
+#wdc_header {float:left; width:100%; height:87px; margin-top:0px; background:url(images/header/wdc_008_orange_header_bg.gif) repeat-x;}
+#wdc_header_left {float:left; text-align:left; padding-left:35px; padding-top:10px; width:770px; height:87px; background:url(images/header/wdc_008_orange_header.gif) no-repeat;}
+#wdc_header_slogan {float:left; font-weight:bold; font-size:1.3em; z-index:10; color:#ffffff; padding-left:10px;}
+#wdc_header_slogan a {font-size:2.0em; font-weight:bold; color:#ffffff;}
+#wdc_header_slogan a:hover {color:#000000;}
+#wdc_searchbar {float:left; line-height:25px; height:25px; width:100%; background-color:#d9d9d9;}
+#wdc_search {float:left;}
+#wdc_login {float:right; padding-right:10px;}
+#wdc_content_no_leftblock_no_rightblock {float:left; width:98%; margin-top:9px; margin-bottom:9px; margin-left:9px; margin-right:9px;} 
+#wdc_content_leftblock {float:right; width:79%; margin-top:9px;margin-bottom:9px; margin-right:9px;} 
+#wdc_content_rightblock {float:left; width:79%; margin-top:9px; margin-left:9px; margin-bottom:0px;} 
+#wdc_content_leftblock_rightblock {float:left; width:60%; height:auto; margin-top:9px; margin-bottom:9px;} 
+#wdc_footerbar {float:left; text-align:center; margin-top:10px; line-height:25px; width:100%; vertical-align:middle; width:100%; color:#000000; background:url(images/footer/wdc_005_orange_footer_bg.gif) repeat-x;}
+#wdc_banner {float:left; text-align:center; padding-top:10px; padding-bottom:10px; width:100%; vertical-align:middle; width:100%; color:#000000; background:#d9d9d9;}
+#wdc_opacity {float:left; filter:Alpha(opacity=60); opacity:0.6; moz-opacity:0.6; height:77px; /* Internet Explorer */} /* This is controlling the opacity of the headerlogo of the theme */
+
+/*============== End WDC special styles for WDC_008_orange =================*/
+
+/*============== Start link styles Header menu for WDC_008_orange =================*/
+
+#wdc_navbar {float:left; width:100%; line-height:44px; height:44px; vertical-align:middle; text-align:left; background:url(images/navi/wdc_008_orange_navi_bg.gif) repeat-x;}
+#wdc_navbar a {padding-top:14px; width:100%; padding-bottom:11px; line-height:44px; height:44px; text-align:center; color:#000000; background:url(images/navi/wdc_008_orange_navi_bg.gif) repeat-x; border-left: 1px solid #fff; border-right: 1px solid #fff;}
+#wdc_navbar a:hover {line-height:44px; height:44px; color:#000; background-position:0 -44px;}
+#wdc_navbar_left {float:left; line-height:44px; height:44px; width:211px; vertical-align:middle; text-align:center; background:url(images/header/wdc_008_orange_header_bottom.gif) no-repeat;}
+#wdc_navbar_links a {line-height:44px; height:44px; padding-left:10px; padding-right:10px; text-align:center; color:#000;}
+#wdc_navbar_links .active {font-size:1.1em; color:#000; text-align:center; line-height:44px; height:44px; padding-left:10px; padding-right:10px; background-position:0 -88px;}
+
+a.main_link_left {line-height:35px; height:35px; font-size:1.1em; font-weight:bold; color:#000000; border-right:2px solid #ffffff;}
+a.main_link_left:hover {color:#312d2d;}
+
+/*============== End link styles Header menu for WDC_008_orange =================*/
+
+/*============== Start link styles for WDC_008_orange =================*/
+
+a {color:#ff6000; text-decoration:none; font-weight:bold; background-color:transparent;}
+a:hover {color:#312d2d;}
+
+/*============== End link styles for WDC_008_orange =================*/
+
+/*============== Start text styles for WDC_008_orange =================*/
+
+h1 {font-size:1.8em; color:#ff6000; font-weight:bold;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin:2px; padding:2px; list-style:disc inside; text-align:left;}
+ol { margin:2px; padding:2px; list-style:decimal inside; text-align:left;}
+li { margin-left:2px; color:#ff6000;}
+img {border:0}
+
+/*============== End text styles for WDC_008_orange =================*/
+
+/*============== Start Xoops block styles for WDC_008_orange =================*/
+
+#leftcolumn {float:left; width:19%; font-size:1.1em; margin-right:9px; margin-top:9px;}
+#leftcolumn .blockTitle {background-color:#ff6000; line-height:28px; padding-left:9px; font-weight:bold;	color:#ffffff; font-size:1.0em; margin-top:0px;}
+#leftcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em;}
+
+#centercolumn {float:left; width:100%; font-size:1.0em;}
+#centercolumn th {background-color:#c0c0c0; color:#3f2f2f; vertical-align:middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a {background-color:#c0c0c0; color:#3f2f2f; vertical-align:middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a:hover {background-color:#4abdda; color:#e04d31; vertical-align:middle; padding-top:5px; padding-bottom:5px;}
+
+#centerCcolumn, #bottomCcolumn {float:left; width:100%; font-size:1.1em; margin-bottom:9px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {background-color:#ff6000; line-height:28px; padding-left:9px; font-weight:bold;	color:#ffffff; font-size:1.0em; margin-top:0px;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px;  text-align:left; line-height:1.2em; font-size:1.0em;}
+
+#centerLcolumn, #bottomLcolumn {float:left; width:49%; font-size:1.1em; padding-right:9px; margin-bottom:9px;}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {background-color:#ff6000; line-height:28px; padding-left:9px; font-weight:bold;	color:#ffffff; font-size:1.0em; margin-top:0px;}
+#centerLcolumn .blockContent, #bottomLcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px;  text-align:left; line-height:1.2em; font-size:1.0em;}
+
+#centerRcolumn, #bottomRcolumn {float:left; width:49%; font-size:1.1em; margin-bottom:9px;}
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {background-color:#ff6000; line-height:28px; padding-left:9px; font-weight:bold;	color:#ffffff; font-size:1.0em; margin-top:0px;}
+#centerRcolumn .blockContent, #bottomRcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px;  text-align:left; line-height:1.2em; font-size:1.0em;}
+
+#content {float:left; width:100%; text-align:left;}
+
+#rightcolumn {float:right; width:19%; font-size:1.1em; padding-left:0px; margin-right:0px; margin-top:9px;}
+#rightcolumn .blockTitle {background-color:#ff6000; line-height:28px; padding-left:9px;	color:#ffffff; font-weight:bold; font-size:1.0em; margin-top:0px;}
+#rightcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em;}
+
+#mainmenu a {display:block; padding:4px; color:#ff6000}
+#mainmenu a:hover {color:#312d2d;}
+#mainmenu a.menuTop {padding-left:3px;}
+#mainmenu a.menuMain {padding-left:3px;}
+#mainmenu a.menuSub {padding-left:9px;}
+
+#usermenu {font-size :.9em;}
+#usermenu a {display:block; margin:0; padding:2px; font-weight:normal; color:#ff6000;}
+#usermenu a:hover {color:#312d2d;}
+
+
+/*============== End Xoops block styles for WDC_008_orange =================*/
+
+/*============== Start Xoops styles for WDC_008_orange =================*/
+
+table {width:100%;}
+table td {padding:0; border-width:0; vertical-align:top; }
+.table_bg {}
+
+.item {border:1px solid #dcdbdb;}
+.itemHead {padding:3px; background-color:#dcdbdb; color:#000000;}
+.itemInfo {text-align:right; padding:3px; background-color:#dcdbdb;}
+.itemTitle a {font-size:1.2em; font-weight:bold; font-variant:small-caps; color:#000000; background-color:transparent;}
+.itemPoster {font-size:0.9em; font-style:italic;}
+.itemPostDate {font-size:0.9em; font-style:italic;}
+.itemStats {font-size:0.9em; font-style:italic;}
+.itemBody {padding-left:5px;}
+.itemText {margin-top:5px; margin-bottom:5px; line-height:1.5em;}
+.itemText:first-letter {font-size:1.3em; font-weight:bold;}
+.itemFoot {text-align:right; padding:3px; background-color:#dcdbdb;}
+.itemAdminLink {font-size:0.9em;}
+.itemPermaLink {font-size:0.9em;}
+
+#header {margin:0; padding:0;	height:80px; background:#ff6000; padding:2px;	color:#fff;	border:1px solid #ff6000;}
+#headerbanner {width:100%; vertical-align:middle; text-align:center;}
+#headerlogo img {padding:0;}
+#headerbar {border-bottom:1px solid #ff6000;}
+
+fieldset {border:1px solid #ff6000;}
+
+caption {font-weight:bold;}
+th, thead {padding:2px; color:#484848; vertical-align:middle; background-color:#e8e8e8;}
+.outer {background-color:#ff6000; line-height:21px; color:#000000; border:1px solid #ff6000; margin-top:10px;}
+.head {font-weight:bold; color:#fff; height:24px; line-height:22px; text-align:center; background-color:#ff6000;	border:1px solid #ff6000;}
+.head a {color:#fff;}
+.head a:hover {color:#fff; text-decoration:underline;}
+.even {background-color:#ede9e9; padding:5px; border:1px solid #ff6000;}
+.odd {background-color:#e0dede;	padding:5px; border:1px solid #ff6000;}
+.left {font-weight:bold;}
+.foot {background-color:#fff; font-weight:bold; border:1px solid #ff6000;}
+tr.even td {background-color:#f6b88f; border:1px solid #ff6000;}
+tr.odd td {background-color:#f0a471; border:1px solid #ff6000;}
+tr.even td {padding:5px;}
+tr.odd td {padding:5px; border:1px solid #ff6000;}
+tr.foot td {padding:5px; color:inherit; font-weight:bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  {padding:0.8em; text-align:center; margin-bottom:1em; border:2px solid #ddd;}
+.errorMsg  {background-color:#FBE3E4; color:#D12F19; border-color:#FBC2C4;}
+.confirmMsg {background-color:#FFF6BF; color:#817134; border-color:#FFD324;}
+.resultMsg {background-color:#E6EFC2; color:#529214; border-color:#C6D880;}
+.errorMsg a {color:#D12F19;}
+.confirmMsg a {color:#817134;}
+.successMsg a {color:#529214;}
+
+.xoopsCode {background:#fff; border:1px inset #000080; font-family:"Courier New",Courier,monospace; padding:0 6px 6px 6px; height:200px; overflow:auto; font-size:0.9em;}
+.xoopsQuote {background:#fff; border:1px inset #000080; font-family:"Courier New",Courier,monospace; padding:0 6px 6px 6px; font-size:0.9em;}
+blockquote {font-style:italic; line-height:1.4em;} 
+
+.comTitle {color:#484848; font-weight:bold; margin-bottom:2px;}
+.comText {padding:2px;}
+.comUserStat {font-size:0.9em; color:#484848; font-weight:bold; border:1px solid #7d0100; background-color:#dcdbdb; margin:2px; padding:2px;}
+.comUserStatCaption {font-weight:normal;}
+.comUserStatus {margin-left:2px; margin-top:10px; color:#7d0100; font-weight:bold; font-size:0.9em;}
+.comUserRank {margin:2px;}
+.comUserRankText {font-size:0.9em; font-weight:bold;}
+.comUserRankImg {border:0;}
+.comUserName a {color:#484848;}
+.comUserImg {margin:2px;}
+.comDate {font-weight:normal; font-style:italic; font-size:0.8em;}
+.comDateCaption {font-weight:bold; font-style:normal;}
+
+/*============== End Xoops styles for WDC_008_orange =================*/
+
+/*============== Start input styles for WDC_008_orange =================*/
+
+input.formButton {}
+
+.xo-formButtons, .xo-formButton, button {padding:0.25em; text-align:center;}
+
+input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {margin:3px 0 3px 0; background:#ff6000; color:#fff; font-size:0.9em; font-weight:bold; border:1px solid #7d0100; cursor:pointer;}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover {margin:3px 0 3px 0; background:#fff; color:#ff6000; font-size:0.9em; font-weight:bold; border:1px solid #ff6000; cursor:pointer;}
+input{border:1px solid #ff6000;	font:1.1em verdana, arial, helvetica, sans-serif;	background-color:#e0dede;}
+input:hover{border:1px solid #e0dede; font:1.1em verdana, arial, helvetica, sans-serif; background-color:#ff6000;}
+input:focus{border:1px solid #ff6000; font:1.1em verdana, arial, helvetica, sans-serif; background-color:#fff;}
+
+select{font-size:0.79em;}
+
+/*============== End input styles for WDC_008_orange =================*/

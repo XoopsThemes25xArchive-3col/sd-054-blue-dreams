@@ -1,0 +1,239 @@
+/* 
+Theme Name: WDC_003_red
+Description: WDC_003_red developed by WebdesignCreators
+Version: 2.1
+Date: June 10th, 2009
+Author: WebdesignCreators
+Author URL: http://www.Webdesigncreators.com
+*/
+
+/*============== Start WDC special styles for WDC_003_red =================*/
+
+html, body {color: #000000; font-size:9pt; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#ffffff;}
+#wdc_main {width:926px; margin-left:auto; margin-right:auto;}
+#wdc_header {width:926px; margin-left:auto; margin-right:auto;}
+#wdc_header_img {float:left; width:96px; line-height:100px; height:100px; vertical-align:middle; background: url(images/header/wdc_003_red_logo.gif) no-repeat;}
+#wdc_header_slogan {float:right; width:830px; margin-top:5px; height:100px; vertical-align:middle;}
+#wdc_content_no_leftblock_no_rightblock {width:100%; margin-left:auto; margin-right:auto; float:left; height:auto; line-height:100%; background-color:#ffffff;} 
+#wdc_content_leftblock {float:right; width:79%; margin-left:4px; height:auto; line-height:100%; background-color:#ffffff;} 
+#wdc_content_rightblock {float:left; width:79%; margin-left: 4px; height:auto; line-height:100%; background-color:#ffffff;} 
+#wdc_content_leftblock_rightblock {float:left; width:59%; height:auto; line-height:100%; background-color:#ffffff;} 
+#wdc_footerbar {float:left; text-align:center; margin-top:10px; vertical-align:middle; width:926px;}
+#wdc_banner {margin-left:auto; margin-right:auto; text-align:center; padding-top:10px;}
+#wdc_ads {text-align:center; border: 1px solid #f93915;}
+
+/*============== End WDC special styles for WDC_003_red =================*/
+
+/*============== Start link styles Header menu for WDC_003_red =================*/
+
+#wdc_navbar {float:left; text-align:center; line-height:49px; vertical-align:middle; width:926px; background: url(images/navi/wdc_003_red_navi_bg.gif) repeat-x;}
+#wdc_navbar_content {float:left; width:883px; text-align:center; }
+#wdc_navbar_left {float:left; height:49px; width:21px; background: url(images/navi/wdc_003_red_navi_left.gif) no-repeat}
+#wdc_navbar_right {float:right; height:49px; width:22px; background: url(images/navi/wdc_003_red_navi_right.gif) no-repeat}
+#wdc_navbar_links {line-height:49px; vertical-align:middle;}
+#wdc_navbar_links a:hover {color: #e04d31;}
+#wdc_navbar_links .active {font-size:1.3em; color:#000000; text-align:center; padding-left:10px; padding-right:10px;}
+
+a.main_link {text-align:center; padding-left:20px; padding-right:20px; font-size: 1.3em; font-weight: bold; color: #f93915;}
+a.main_link:hover {color: #e04d31;}
+
+/*============== Start link styles Header menu for WDC_003_red =================*/
+
+/*============== Start link styles for WDC_003_red =================*/
+
+a {color: #8f2612; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #fff600;}
+a.header_slogan {text-align: left; font-size: 2.5em; font-weight: bold; color: #f93915;}
+a.header_slogan:hover {color: #e04d31;}
+
+/*============== End link styles for WDC_003_red =================*/
+
+/*============== Start text styles for WDC_003_red =================*/
+
+h1 {font-size:1.8em; color:#a3a3a3; font-weight: bold;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #3f2f2f;}
+img {border:0;}
+
+/*============== End text styles for WDC_003_red =================*/
+
+/*============== Start Xoops block styles for WDC_003_red =================*/
+
+#leftcolumn {float:left; width:20%; font-size:1.1em;}
+#leftcolumn .blockTitle {text-align:center; line-height:42px; vertical-align:middle; padding-top:10px; color: #f93915; font-size:0.9em; font-weight:bold;}
+#leftcolumn .blockrighttop {background: url(images/blocks/left/wdc_003_red_leftblocks_bg_right_top.gif) top right no-repeat; margin:0; padding:0; margin-top:15px;}
+#leftcolumn .blocklefttop {background: url(images/blocks/left/wdc_003_red_leftblocks_bg_left_top.gif) top left no-repeat; margin:0; padding:0;}
+#leftcolumn .blockrightbottom {background: url(images/blocks/left/wdc_003_red_leftblocks_bg_right_bottom.gif) bottom right no-repeat; margin:0; padding:0;}
+#leftcolumn .blockleftbottom {background: url(images/blocks/left/wdc_003_red_leftblocks_bg_left_bottom.gif) bottom left no-repeat; margin:0; padding:0;}
+#leftcolumn .blockContent {padding-left:12px; padding-right:10px; padding-bottom:30px; text-align:left; line-height: 1.2em; color:#fff;}
+#leftcolumn .blockContent a {line-height: 1.2em; color:#fff; text-decoration:underline;}
+#leftcolumn .blockContent a:hover {color: #fff600;}
+
+#centercolumn {float: left; font-size: 1em;}
+#centercolumn th {background-color: #c0c0c0; color: #3f2f2f; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a {background-color: #c0c0c0; color: #3f2f2f; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a:hover {background-color: #4abdda; color: #e04d31; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+
+#centerCcolumn, #bottomCcolumn {float:left; width:99%; margin-left:7px; margin-right:5px; margin-top:15px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {text-align:center; line-height:45px; vertical-align:middle; padding-top:10px; color: #ffffff; font-size:0.9em; font-weight:bold;}
+#centerCcolumn .blockrighttop, #bottomCcolumn .blockrighttop {background: url(images/blocks/center/cc/wdc_003_red_center_c_blocks_bg_right_top.gif) top right no-repeat; margin:0; padding:0;}
+#centerCcolumn .blocklefttop, #bottomCcolumn .blocklefttop {background: url(images/blocks/center/cc/wdc_003_red_center_c_blocks_bg_left_top.gif) top left no-repeat; margin:0; padding:0;}
+#centerCcolumn .blockrightbottom, #bottomCcolumn .blockrightbottom {background: url(images/blocks/center/cc/wdc_003_red_center_c_blocks_bg_right_bottom.gif) bottom right no-repeat; margin:0; padding:0;}
+#centerCcolumn .blockleftbottom, #bottomCcolumn .blockleftbottom {background: url(images/blocks/center/cc/wdc_003_red_center_c_blocks_bg_left_bottom.gif) bottom left no-repeat; margin:0; padding:0;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding-left:20px; padding-right:20px; padding-bottom:30px; text-align:left; line-height: 1.2em;}
+
+#centerLcolumn, #bottomLcolumn {width:49%; margin-top:15px; margin-left:5px; margin-right:0px; margin-bottom:0px; float:left;}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {text-align:left; line-height:45px; vertical-align:middle; padding-left:15px; padding-top:5px; color: #f93915; font-size:0.9em; font-weight:bold;}
+#centerLcolumn .blockrighttop, #bottomLcolumn .blockrighttop {background: url(images/blocks/center/cl/wdc_003_red_center_l_blocks_bg_right_top.gif) top right no-repeat; margin:0; padding:0;}
+#centerLcolumn .blocklefttop, #bottomLcolumn .blocklefttop {background: url(images/blocks/center/cl/wdc_003_red_center_l_blocks_bg_left_top.gif) top left no-repeat; margin:0; padding:0;}
+#centerLcolumn .blockrightbottom, #bottomLcolumn .blockrightbottom {background: url(images/blocks/center/cl/wdc_003_red_center_l_blocks_bg_right_bottom.gif) bottom right no-repeat; margin:0; padding:0;}
+#centerLcolumn .blockleftbottom, #bottomLcolumn .blockleftbottom {background: url(images/blocks/center/cl/wdc_003_red_center_l_blocks_bg_left_bottom.gif) bottom left no-repeat; margin:0; padding:0;}
+#centerLcolumn .blockContent, #bottomLcolumn .blockContent {padding-top:20px; padding-left:35px; padding-right:20px; padding-bottom:25px; text-align:left; line-height: 1.2em; color:#fff;}
+#centerLcolumn .blockContent a, #bottomLcolumn .blockContent a {line-height: 1.2em; color:#fff; text-decoration:underline;}
+#centerLcolumn .blockContent a:hover, #bottomLcolumn .blockContent a:hover {color: #fff600;}
+
+#centerRcolumn, #bottomRcolumn {width:49%; margin-top:15px; margin-left:0px; margin-right:0px; margin-bottom:0px; float:right;}
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {text-align:right; line-height:45px; vertical-align:middle; padding-right:15px; padding-top:5px; color: #f93915; font-size:0.9em; font-weight:bold;}
+#centerRcolumn .blockrighttop, #bottomRcolumn .blockrighttop {background: url(images/blocks/center/cr/wdc_003_red_center_r_blocks_bg_right_top.gif) top right no-repeat; margin:0; padding:0;}
+#centerRcolumn .blocklefttop, #bottomRcolumn .blocklefttop {background: url(images/blocks/center/cr/wdc_003_red_center_r_blocks_bg_left_top.gif) top left no-repeat; margin:0; padding:0;}
+#centerRcolumn .blockrightbottom, #bottomRcolumn .blockrightbottom {background: url(images/blocks/center/cr/wdc_003_red_center_r_blocks_bg_right_bottom.gif) bottom right no-repeat; margin:0; padding:0;}
+#centerRcolumn .blockleftbottom, #bottomRcolumn .blockleftbottom {background: url(images/blocks/center/cr/wdc_003_red_center_r_blocks_bg_left_bottom.gif) bottom left no-repeat; margin:0; padding:0;}
+#centerRcolumn .blockContent, #bottomRcolumn .blockContent {padding-top:20px; padding-left:20px; padding-right:35px; padding-bottom:25px; text-align:left; line-height: 1.2em; color:#fff;}
+#centerRcolumn .blockContent a, #bottomRcolumn .blockContent a {line-height: 1.2em; color:#fff; text-decoration:underline;}
+#centerRcolumn .blockContent a:hover, #bottomRcolumn .blockContent a:hover {color: #fff600;}
+
+#content {width:98%; float:left; padding-left:5px; padding-right:5px; text-align: left; padding-top: 5px;}
+
+#rightcolumn {float:right; width:20%; font-size:1.1em;}
+#rightcolumn .blockTitle {text-align:center; line-height:42px; vertical-align:middle; padding-top:10px; color: #f93915; font-size:0.9em; font-weight:bold;}
+#rightcolumn .blockrighttop {background: url(images/blocks/right/wdc_003_red_rightblocks_bg_right_top.gif) top right no-repeat; margin:0; padding:0;}
+#rightcolumn .blocklefttop {background: url(images/blocks/right/wdc_003_red_rightblocks_bg_left_top.gif) top left no-repeat; margin:0; padding:0; margin-top:15px;}
+#rightcolumn .blockrightbottom {background: url(images/blocks/right/wdc_003_red_rightblocks_bg_right_bottom.gif) bottom right no-repeat; margin:0; padding:0;}
+#rightcolumn .blockleftbottom {background: url(images/blocks/right/wdc_003_red_rightblocks_bg_left_bottom.gif) bottom left no-repeat; margin:0; padding:0;}
+#rightcolumn .blockContent {padding-left:12px; padding-right:10px; padding-bottom:30px; text-align:left; line-height: 1.2em; color:#fff;}
+#rightcolumn .blockContent a {line-height: 1.2em; color:#fff; text-decoration:underline;}
+#rightcolumn .blockContent a:hover {color: #fff600;}
+
+#mainmenu a {background-color: transparent; display: block; padding: 4px; color:#ffffff;}
+#mainmenu a:hover {background-color: transparent; color:#fff600;}
+#mainmenu a.menuTop {padding-left: 3px;}
+#mainmenu a.menuMain {padding-left: 3px;}
+#mainmenu a.menuSub {padding-left: 9px;}
+
+#usermenu {	font-size : .9em;}
+#usermenu a {background-color:transparent; display:block; margin:0; padding:2px;font-weight :normal; color:#ffffff;}
+#usermenu a:hover {background-color: transparent; color:#fff600;}
+#usermenu a.menuTop {}
+#usermenu a.menuMain {}
+#usermenu a.highlight {}
+
+/*============== End Xoops block styles for WDC_003_red =================*/
+
+/*============== Start Xoops styles for WDC_003_red =================*/
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+.table_bg {}
+
+.item {border: 1px solid #f93915;}
+.itemHead {padding: 3px; background-color: #2A75C5; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+#header {margin:0; padding:0;	height:80px; background:#f93915; padding:2px;	color:#fff;	border:1px solid #f93915;}
+#headerbanner {width: 100%; vertical-align: middle; text-align:center;}
+#headerlogo img {padding: 0;}
+#headerbar {border-bottom: 1px solid #f93915;}
+
+fieldset {border: 1px solid #f93915;}
+
+caption {font-weight: bold;}
+th, thead {padding : 2px; color:#f93915; vertical-align : middle;}
+.outer {background-color:#ffffff; line-height:21px; color:#000000; border: 1px solid #f93915; margin-top:10px}
+.head {font-weight: bold;	color: #ffffff;	height: 24px;	line-height: 24px; vertical-align:middle;	text-align: center;	background-color: #f93915;	border: 1px solid #f93915;}
+.head a {font-weight: bold;	color: #ffffff;}
+.head a:hover {font-weight: bold;	color: #ffff00;}
+.even {background-color: #ffffff; padding:5px; border: 1px solid #f93915; color:#000000;}
+.odd {background-color: #ffffff; padding:5px; border: 1px solid #f93915;}
+.left {font-weight:bold;}
+.foot {background-color: #ffffff; font-weight: bold; border: 1px solid #f93915;}
+tr.even td {background-color: #ffffff; border: 1px solid #f93915;}
+tr.odd td {background-color: #ffffff; border: 1px solid #f93915;}
+tr.even td {padding: 5px;}
+tr.odd td {padding: 5px; border: 1px solid #f93915;}
+tr.foot td {padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  { background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg { background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg { background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a { background-color: transparent; color: #D12F19; }
+.confirmMsg a { background-color: transparent; color: #817134; }
+.successMsg a { background-color: transparent; color: #529214; }
+
+.xoopsCode { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; height: 200px; overflow: auto; font-size:.9em;}
+.xoopsQuote { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style : italic; line-height:1.4em;} 
+
+.comTitle {color:#f93915; font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #ffffff; font-weight:bold; border: 1px solid #f93915; background-color: #f93915; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #f93915; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #f93915;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.style1 {border-color: #f93915; border-width: 0;}
+
+/*============== End Xoops styles for WDC_003_red =================*/
+
+/*============== Start input styles for WDC_003_red =================*/
+
+input.formButton {}
+
+.xo-formButtons, .xo-formButton, button {padding:.25em; text-align:center;}
+
+input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {
+    margin:                 3px 0 3px 0;
+    background:             #D3D2D6 url(../img/button_bg.png) repeat-x left bottom;
+    color:                  #405A80;
+    font-size:              .9em;
+    font-weight:            bold;
+    border:                 1px solid #ccc;
+    cursor:                 pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover  {
+    background:             #E6EBFF url(../img/button-hover_bg.png) repeat-x left bottom;
+    color:                  #333;
+    cursor:                 pointer;
+}
+
+/*============== End input styles for WDC_003_red =================*/
+
+/*============== Start Styles in userbar.html for WDC_003_red =================*/
+
+#xo-userbar {bottom:3px; text-align:left;}
+#xo-userbar form {display:inline; padding:0;}
+#xo-userbar img {width:21px; height:20px;}
+#xo-uname {font-weight:bold; font-size:1.1em;}
+
+/*============== End Styles in userbar.html for WDC_003_red =================*/

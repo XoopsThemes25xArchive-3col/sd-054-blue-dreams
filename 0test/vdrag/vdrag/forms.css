@@ -1,0 +1,77 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work  */
+/* Mor.pho.GEN.e.sis version 1.1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : form.css (version 1.1.2) - 25 mars 2007 */
+
+/*======= Style pour les formulaires, boutons, zones de texte, ... ========*/
+
+.xo-block form {
+	margin:						0;
+	padding:						0;
+}
+#xo-content form {
+	margin:						0;
+	background:					transparent;
+}
+
+.xo-block .formButtons {
+	text-align:					center;
+	padding:						.5em;
+}
+
+label {
+	display:						block;
+	padding:						0;
+	background:					transparent;
+}
+.xo-formfield {
+	margin-bottom:				.2em;
+	background:					transparent;
+}
+.xo-formbuttons, .formButton {
+	font-family: 				Geneva, Arial, Helvetica, sans-serif;
+	color: 						#ccc;
+	background-color: 		#666;
+	font-size:					.9em;
+	border: 						1px solid #ccc;
+	font-variant: 				small-caps;
+}
+
+#xo-content .xo-formfield.required label:after {
+	content:						'*';
+	color:						#ff0000;
+	background-color: 		#fff;
+}
+select {
+	background:					#fff;
+	color:						#333;
+	font-size: 					.9em;
+}
+select[name=timezone_offset] {
+	color:						#333;
+	font-size:					.9em;
+	background-color:			#fff;
+}
+input[type=submit], input[type=reset] {
+	font-family: 				Geneva, Arial, Helvetica, sans-serif;
+	color: 						#ccc;
+	background-color: 		#666;
+	font-size:					.9em;
+	border: 						1px solid #ccc;
+	font-variant: 				small-caps;
+}
+input[type=text], input[type=password], textarea {
+	border:						1px solid #999;
+	margin:						2px 0;
+	padding-left:				.2em;
+	background-color:			#fff;
+	color:						#333;
+}
+input[type=text], input[type=password] {}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	border-color:				#666F7D;
+	outline:						1px solid #666F7D;
+}
+
+textarea { width: 			95%;}
+

@@ -1,0 +1,84 @@
+/*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: layout.css 368 2009-02-28 20:32:26Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+/* --- Header --- */
+#ixt-header { clear:both; width:975px;  height:266px; position:relative; background-image:url(../img/ixt008_winter03_sticker.jpg); background-repeat:no-repeat; background-position:left top; }
+#ixt-header_full {  width:975px; height:266px; }
+#ixt-header_lbkg {}
+#ixt-header_rbkg { height:100%; overflow:hidden; }
+/* --- Banner --- */
+#ixt-banner { clear:both; position:relative; z-index:100; width:100%; height:80px; top:-120px; }
+#ixt-banner.commercial { position:relative; z-index:100; width:100%; height:80px; top:-120px; }
+#ixt-headerlogo { float:left; padding-left:640px; padding-top:10px; }
+#ixt-headerlogoup {padding-right:20px; padding-top:10px; padding-bottom:1px; height:55px; background-color:#243E48;}
+#ixt-headerbanner { position:absolute; top:75px; right:330px; }
+/* --- Top menu navigation rules --- */
+#ixt-globalnav { position:relative; top:25px; right:120px; float:right; z-index:120; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:1.2em; font-weight:bold; font-style:normal; text-align:left; }
+#ixt-globalnav ul { list-style-type:none; margin:0px; padding:2px 0 0 0; width:180px; }
+#ixt-globalnav li { height:22px; display:block; width:180px; font-weight:bold; }
+#ixt-globalnav li a { color:#065879; float:left; text-decoration:none; text-align:left; font-weight:bold; }
+#ixt-globalnav li a:hover { color:#FFFFFF; font-weight:bold; }
+/* --- Canvas rules --- */
+#ixt-menu { margin-left:-1px;height:100px;  width:975px; background-image:url(../img/ixt008_winter03_mbkg.jpg); background-repeat:no-repeat; }
+#ixt-canvas { }
+#ixt-canvas-columns { margin-top:0px; }
+#ixt-canvas-columns2 { margin-top:-1px; float:left; width:13.8461em; *width:13.50em;min-height:800px; color: #FFFFFF; }
+#ixt-canvas-columns2 a, #ixt-canvas-columns2 a.menuTop, #ixt-canvas-columns2 a.menuMain, #ixt-canvas-columns2 a.menuSub { color:#0033FF; }
+#ixt-canvas-columns2 a:hover, #ixt-canvas-columns2 a.menuSub:hover { color:#EDEDC0; }
+#ixt-canvas-columns2-st {}
+#ixt-canvas-columns2-bt { width:180px; height:11px; background-color:#FFFFFF; background-image:url(../img/ixt008_winter03_lbbkg.png); background-repeat:no-repeat; background-position:left top; position:relative; left:0px; z-index:100; }
+#ixt-canvas-columns2-lt { width:9px;height:12px;background-image:url(../img/lt.png);background-repeat:no-repeat;background-position:left top;}
+#ixt-canvas-columns2-t { width:12px; height:12px; background-image:url(../img/t.png); background-repeat:repeat-x; background-position:left top; }
+#ixt-canvas-columns2-rt { width:10px;height:12px;background-image:url(../img/rt.png);background-repeat:no-repeat;background-position:left top;}
+#ixt-canvas-columns2-l { width:9px; height:9px; background-image:url(../img/l.png); background-repeat:repeat-y; background-position:left top; }
+#ixt-canvas-columns2-r { width:10px; height:10px; background-image:url(../img/r.png); background-repeat:repeat-y; background-position:left top; }
+#ixt-canvas-columns2-lb { width:9px;height:12px;background-image:url(../img/lb.png);background-repeat:no-repeat;background-position:left top;}
+#ixt-canvas-columns2-b { width:12px; height:12px; background-image:url(../img/b.png); background-repeat:repeat-x; background-position:left top; }
+#ixt-canvas-columns2-rb { width:10px;height:12px;background-image:url(../img/rb.png);background-repeat:no-repeat;background-position:left top;}
+#ixt-canvas-columns2-body { padding-left:5px; padding-right:4px;width:168px; background-image:url(../img/lr.png); background-repeat:repeat-y; background-position:left top; }
+#ixt-canvas-columns2-head { width:180px;height:50px;background-image:url(../img/lr.png); background-repeat:repeat-y; background-position:left top; }
+#ixt-canvas-columns2-top { width:180px;height:10px;overflow:hidden;background-image:url(../img/ltr.png); background-repeat:no-repeat; background-position:left top; }
+#ixt-canvas-columns2-bottom { width:180px;height:11px; background-image:url(../img/lbr.png); background-repeat:no-repeat; background-position:left top; }
+* html #ixt-canvas-leftcolumn { }
+#ixt-canvas-leftcolumn { float:left; width:170px; margin-top:-90px; z-index:120; padding-left: 1px; }
+#ixt-canvas-leftcolumn a { }
+#ixt-canvas-leftcolumn a:hover { }
+* html #ixt-canvas-rightcolumn { }
+#ixt-canvas-rightcolumn { float:left; width:170px; z-index:120; padding-left: 1px; }
+#ixt-canvas-rightcolumn a { }
+#ixt-canvas-rightcolumn a:hover { }
+/* --- Canvas rules (when columns are visible) --- */
+#ixt-canvas.leftcolumn-layout #ixt-canvas-columns, #ixt-canvas.threecolumns-layout #ixt-canvas-columns { }
+#ixt-canvas.rightcolumn-layout #ixt-canvas-columns, #ixt-canvas.threecolumns-layout #ixt-canvas-columns { }
+/* --- Page (center column) rules --- */
+#ixt-page { width:662px; float:left; margin-left:55px; margin-top:10px; background:#FFFFFF; }
+#ixt-page table th, #ixt-page .divth { text-align:center; font-size:1.1em; }
+/* --- Top and bottom zones (2 columns) --- */
+#ixt-page-topleftblocks, #ixt-page-bottomleftblocks { float:left; width:48%; margin-left:1%; margin-right:1%; padding:0px; }
+#ixt-page-toprightblocks, #ixt-page-bottomrightblocks { float:right; width:48%; margin-left:1%; margin-right:1%; }
+* html #ixt-page-topleftblocks, * html #ixt-page-bottomleftblocks, * html #ixt-page-toprightblocks, * html #ixt-page-bottomrightblocks { width:47%; }
+#ixt-page-topcenterblocks, #ixt-page-bottomcenterblocks { clear:both; margin-left:1%; margin-right:1%; }
+/* --- Top and bottom zones (3 columns) --- */
+#ixt-page-topblocks.ixt-lcrpageblocks .ixt-blockszone, #ixt-page-bottomblocks.ixt-lcrpageblocks .ixt-blockszone { float:left; clear:none; width:31.2%; }
+* html #ixt-page-topblocks.ixt-lcrpageblocks .ixt-blockszone, * html #ixt-page-bottomblocks.ixt-lcrpageblocks .ixt-blockszone { width:30.6%; }
+#ixt-page-topblocks.ixt-lcrpageblocks #ixt-page-topleftblocks { }
+/* --- Main content --- */
+#ixt-canvas-content { }
+#ixt-canvas-content li { list-style:url(../img/ixt008_winter03_li4.png) inside; margin-left:2px; font-size:.9em; line-height:1.4em; }
+#ixt-content { position:relative; clear:both; padding-top:15px; padding-right:2%; padding-bottom:15px; padding-left:2%; }
+/* --- Footer --- */
+#ixt-prefooter {}
+#ixt-footer { clear:both; padding-top:0px; text-align:center; font-size:0.9em; color:#6BC7E7; margin-top:0px; height:165px; background-image:url(../img/ixt008_winter03_footer.jpg); background-repeat:no-repeat; background-position:left; }
+#ixt-footer a { color:#DE0119; }
+#ixt-footer a:hover { background-image:url(../img/ixt008_winter03_fbkg2.png); background-repeat:no-repeat; }
+/* --- SystemSiteClosed --- */
+#ixt-sclosed { background: url(../img/ixt008_winter03_body-bg.jpg) repeat-y; width: 1003px; color: #555555; font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0px auto 0px; padding: 0px; min-width:980px; }
+/* --- SystemPageRedirect --- */
+#ixt-sredirect { background: url(../img/ixt008_winter03_body-bg.jpg) repeat-y; width: 1003px; color: #555555; font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0px auto 0px; padding: 0px; min-width:980px; }

@@ -1,0 +1,50 @@
+<div id="xo-userbar">
+	<{if !$xoops_isuser}>
+		<!-- menu en mode anonyme -->
+		<form method="post" action="<{xoAppUrl /user.php op=login}>">
+			<{$smarty.const._LOGIN}>&nbsp;
+		<input name="uname" type="text" title="<{$smarty.const.THEME_DESC_PSEUDO}>" />&nbsp;&nbsp;<input name="pass" type="password" title="<{$smarty.const.THEME_DESC_PASSWORD}>"/>
+		<!--<input name="uname" type="text" value="<{$smarty.const.THEME_PSEUDO}>" onfocus="this.value=(this.value=='<{$smarty.const.THEME_PSEUDO}>')? '' : this.value ;" title="<{$smarty.const.THEME_DESC_PSEUDO}>"/>&nbsp;&nbsp;
+		<input name="pass" type="password" value="<{$smarty.const.THEME_PASSWORD}>" onfocus="this.value=(this.value=='<{$smarty.const.THEME_PASSWORD}>')? '' : this.value ;" title="<{$smarty.const.THEME_DESC_PASSWORD}>"/>&nbsp;-->
+		<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+		
+		<{if $lang_siteclosemsg}>
+		<input type="hidden" name="xoops_login" value="1" />
+		<{/if}>
+		<button type="submit"><img src="<{xoImgUrl icons/users/home.png}>" alt="<{$smarty.const._LOGIN}>" /></button>
+		<!--<input id="remember"type="checkbox" name="rememberme" value="On" title="<{$smarty.const.THEME_REMEMBER}>"/><{$smarty.const.THEME_REMEMBER}>-->
+			
+		</form>
+		&nbsp;+&nbsp;<a href="<{xoAppUrl /register.php}>" class="register" title="<{$smarty.const.THEME_REGISTER}>"><{$smarty.const.THEME_REGISTER}></a>
+	<{else}>
+		<!-- menu en mode enregistré -->
+		<{$smarty.const.THEME_WELLCOME}>&nbsp;<span id="xo-uname"><a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_PROFILE}>"><{$xoops_uname}></a></span>
+
+      <!--, nous sommes le <{$smarty.now|date_format:"%d %B %Y"}> si vous voulez afficher la date du jour il faut décommenter la ligne -->&nbsp;:
+
+      <!-- pour ma messagerie -->
+		<{xoInboxCount assign=pmcount}>
+		<a href="<{xoAppUrl viewpmsg.php}>">
+		<{if $pmcount}>
+			<!-- si j'ai des messages -->
+			<img src="<{xoImgUrl icons/users/inbox-full.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
+		<{else}>
+			<!-- si je n'ai pas de message -->
+			<img src="<{xoImgUrl icons/users/inbox.png}>" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+		<{/if}>
+		</a>
+		<!-- fin de ma messagerie -->
+
+		<a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img src="<{xoImgUrl icons/users/note_view.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
+		<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img src="<{xoImgUrl icons/users/profile.png}>" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a>
+		<a href="<{xoAppUrl /search.php}>" title="<{$smarty.const.THEME_DESC_SEARCH}>"><img src="<{xoImgUrl icons/users/find.png}>" alt="<{$smarty.const.THEME_DESC_SEARCH}>" /></a>
+
+		<!-- lien supplémentaire si j'ai des droits d'administration de module -->
+		<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>" title="<{$smarty.const._CPHOME}>"><img src="<{xoImgUrl icons/users/configuration.png}>" alt="<{$smarty.const._CPHOME}>" /></a>
+		<{/if}>
+		<!-- fin du lien supplémentaire -->
+
+		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img src="<{xoImgUrl icons/users/exit.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
+	<{/if}>
+</div>

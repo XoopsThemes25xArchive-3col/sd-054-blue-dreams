@@ -1,0 +1,38 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<table style="padding-bottom: 2em">
+	<tr>
+    	<th><{$lang_newsarchives}></th>
+	</tr>
+	<{foreach item=year from=$years}>
+	<{foreach item=month from=$year.months}>
+	<tr class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+    	<td><a href="<{$xoops_url}>/modules/news/archive.php?year=<{$year.number}>&amp;month=<{$month.number}>"><{$month.string}> <{$year.number}></a></td>
+	</tr>
+	<{/foreach}>
+	<{/foreach}>
+</table>
+<{if $show_articles == true}>
+<div class="left"><{$lang_storytotal}></div>
+<table style="padding-bottom: 2em">
+	<tr>
+		<th><{$lang_articles}></th>
+    	<th align="center"><{$lang_actions}></th>
+    	<th align="center"><{$lang_views}></th>
+    	<th align="center"><{$lang_date}></th>
+	</tr>
+	<{foreach item=story from=$stories}>
+	<tr class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+		<td><{$story.title}></td>
+  		<td align="center">
+      <a href="<{$story.print_link}>" rel="nofollow" target="_blank" title="<{$lang_printerpage}>"><img src="<{$xoops_url}>/modules/news/images/printable.png" border="0" alt="<{$lang_printer}>" /></a>
+      <!-- TELLAFRIEND : <a href="<{$story.mail_link|xoops_tellafriend}>" target="_top" title="<{$lang_sendstory}>"><img src="<{$xoops_url}>/modules/news/images/friend.png" border="0" alt="<{$lang_sendstory}>" /></a> -->
+      <a href="<{$story.mail_link|xoops_tellafriend}>" target="_top" /><img src="<{$xoops_url}>/modules/news/images/friend.png" border="0" alt="<{$lang_sendstory}>" /></a>
+      </td>
+  		<td align="center"><{$story.counter}></td>
+  		<td align="center"><{$story.date}></td>
+</tr>
+<{/foreach}>
+</table>
+<{/if}>
+<!-- if you don't use morphogenesis gabarit : </div> -->

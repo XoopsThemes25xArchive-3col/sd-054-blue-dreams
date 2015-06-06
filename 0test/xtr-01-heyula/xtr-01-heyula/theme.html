@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<!-- START HEADER-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="header" align="center">
+  <tr>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0" id="header_r1">
+  <tr>
+
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td  id="header_r2"><a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/logo.png}>" alt="Panther Software Publishing" width="240" height="115" border="0" /></a></td>
+    
+  </tr>
+</table>
+<table  id="Menu" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="854" class="menu"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="4" class="menubg2">&nbsp;</td>
+          <td width="67" class="menu_tabs"><a href="<{xoAppUrl /}>">Ana Sayfa</a></td>
+          <td width="4" class="menu_sep">&nbsp;</td>
+          <td width="64"class="menu_tabs"><a href="<{xoAppUrl modules/products/}>">Haberler</a></td>
+          <td width="4"class="menu_sep">&nbsp;</td>
+          <td width="75"class="menu_tabs"><a href="<{xoAppUrl modules/services/}>">Xoops-Tr</a></td>
+          <td width="4"class="menu_sep">&nbsp;</td>
+          <td width="100"class="menu_tabs"><a href="http://pantherwebs.com/">Tema</a></td>
+          <td width="4"class="menu_sep">&nbsp;</td>
+          <td width="86"class="menu_tabs"><a href="<{xoAppUrl modules/xhelp/}>">Resimler </a></td>
+          <td width="67"class="menu_sep"></td>
+          <td width="86"class="menu_tabs"><a href="<{xoAppUrl modules/liaise/}>">Ýletiþim</a></td>
+          <td width="67"class="menu_sep"></td>
+          <td width="86"class="menu_tabs"><a href="<{xoAppUrl modules/about/}>">Linkler</a></td>
+          <td align="right"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="0" height="0" class="search" align="right"><form style="margin: 4px;" action="<{$xoops_url}>/search.php" method="get">
+      <input type="text" name="query" size="14" />
+      <input type="hidden" name="action" value="results" />
+      <input name="submit" type="submit" value="Search" />    
+              </form></td>
+  </tr>
+</table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+<table cellspacing="0" id="Main" align="center">
+    <tr>
+	  <{if $xoops_showlblock == 1}>
+      <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="$xoops_theme/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->      </td>
+     <{/if}>
+      <td id="centercolumn">
+        <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+  <table cellspacing="0" class="centercol">
+    <tr>
+      <td id="centerCcolumn" colspan="2">
+        <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="$xoops_theme/theme_blockcenter_c.html"}> <{/foreach}>
+        <!-- End center-center blocks loop -->      </td>
+    </tr>
+    <tr>
+      <td id="centerLcolumn">
+        <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="$xoops_theme/theme_blockcenter_l.html"}> <{/foreach}>
+        <!-- End center-left blocks loop -->      </td>
+      <td id="centerRcolumn">
+        <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="$xoops_theme/theme_blockcenter_r.html"}> <{/foreach}>
+        <!-- End center-right blocks loop -->      </td>
+    </tr>
+  </table>
+<{/if}>
+  <!-- End display center blocks -->
+  <div class="content"> <{$xoops_contents}> </div>
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+  <table cellspacing="0" class="centercol">
+<{if $xoBlocks.page_bottomcenter}>
+    <tr>
+      <td id="bottomCcolumn" colspan="2"> <{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/theme_blockcenter_c.html"}><{/foreach}> </td>
+    </tr>
+<{/if}> <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+    <tr>
+      <td id="bottomLcolumn"> <{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/theme_blockcenter_l.html"}><{/foreach}> </td>
+      <td id="bottomRcolumn"> <{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/theme_blockcenter_r.html"}><{/foreach}> </td>
+    </tr>
+<{/if}>
+  </table>
+<{/if}> </td>
+      <{if $xoops_showrblock == 1}>
+
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="$xoops_theme/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->      </td>
+
+      <{/if}>    </tr>
+    <tr>
+      <td colspan="3" class="footer">
+      
+           Tema Tasarým<a href="http://www.vuslat.info"> B.Heyula</a></p></td>
+    </tr>
+</table>
+
+
+</body>
+</html>

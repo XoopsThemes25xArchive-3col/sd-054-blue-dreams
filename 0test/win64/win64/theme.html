@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<!-- Trabis Hacked Here  http://www.xuups.com/ -->
+<{php}>
+global $xoopsUser, $xoopsTpl;
+if (is_object($xoopsUser)) {
+    foreach ($xoopsUser->vars as $key => $value) {
+        $user[$key] = $value;
+    }
+    foreach ($user as $key => $value) {
+        foreach ($user[$key] as $key1 => $value1) {
+            if ($key1 == 'value') {
+                if ($key == 'last_login') {
+                    $value1 = date('d/m/Y H:i:s', (isset($_SESSION ['xoopsUserLastLogin'])) ? $_SESSION ['xoopsUserLastLogin'] : time ());
+                }
+                $user[$key] = $value1;
+            }
+        }
+    }
+    $pm_handler =& xoops_gethandler('privmessage');
+    $criteria = new CriteriaCompo(new Criteria('read_msg', 0));
+    $criteria->add(new Criteria('to_userid', $xoopsUser->getVar('uid')));
+    $user['new_messages'] = $pm_handler->getCount($criteria);
+    $xoopsTpl->assign ('user', $user);
+}
+<{/php}>
+<!-- Trabis Ended Hack -->
+<head>
+<!-- WIN64 Theme by aphex http://www.aphexthemes.com -->
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS/ICMS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/themes/win64/css/style.css" />
+<{$xoops_module_header}>
+<script type="text/javascript" src="<{$xoops_url}>/themes/win64/jq/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+	$(function() {
+        $('.bubbleInfo').each(function () {
+            var distance = 10;
+            var time = 250;
+            var hideDelay = 800;
+
+            var hideDelayTimer = null;
+
+            var beingShown = false;
+            var shown = false;
+            var trigger = $('.trigger', this);
+            var info = $('.popup', this).css('opacity', 0);
+
+
+            $([trigger.get(0), info.get(0)]).mouseover(function () {
+                if (hideDelayTimer) clearTimeout(hideDelayTimer);
+                if (beingShown || shown) {
+                    // don't trigger the animation again
+                    return;
+                } else {
+                    // reset position of info box
+                    beingShown = true;
+
+                    info.css({
+                        top: -10,
+                        left: 50,
+                        display: 'block'
+                    }).animate({
+                        top: '-=' + distance + 'px',
+                        opacity: 1
+                    }, time, 'swing', function() {
+                        beingShown = false;
+                        shown = true;
+                    });
+                }
+
+                return false;
+            }).mouseout(function () {
+                if (hideDelayTimer) clearTimeout(hideDelayTimer);
+                hideDelayTimer = setTimeout(function () {
+                    hideDelayTimer = null;
+                    info.animate({
+                        top: '-=' + distance + 'px',
+                        opacity: 0
+                    }, time, 'swing', function () {
+                        shown = false;
+                        info.css('display', 'none');
+                    });
+
+                }, hideDelay);
+
+                return false;
+            });
+        });
+
+});
+
+});
+</script>
+
+<style type="text/css" media="screen">
+    <!--
+.bubbleInfo {
+	width: 69px;
+	height: 66px;
+	position: absolute;
+	margin-top: -17px;
+	z-index: +10;
+}
+.trigger {
+   position: absolute;
+}
+     
+        /* Bubble pop-up */
+
+.popup {
+   	position: absolute;
+   	display: none;
+   	z-index: 55;
+   	border-collapse: collapse;
+   	background-image: url(<{$xoops_url}>/themes/win64/visual/bubblm.png);
+   	height: 139px;
+   	width: 250px;
+}
+
+
+    -->
+</style>
+</head>
+<body>
+<!-- ### START OF MAIN WRAPPER ### -->
+<div class="wrapper">
+<!--### START OF HEADER ### -->
+<div class="header">
+        <h1><{$xoops_sitename}></h1>
+<!--        <h2>Active Page Title</h2>  -->
+        <h3><{$xoops_slogan}></h3>
+</div>
+<!-- ### END OF HEADER ### -->
+
+<!-- ### START OF HEAD MENU ### -->
+
+    <div class="bubbleInfo">
+        <div>
+            <img class="trigger" src="<{$xoops_url}>/themes/win64/visual/vista-new-ubtt.png" alt="Start" title="Start" />
+        </div>
+<div class="popup">
+<div class="popme">
+<div class="uname">
+<{$xoops_uname}>
+</div>
+<{if !$user_ownpage && $xoops_isuser == true}>
+<div class="uframe">
+<{else}>
+<div class="uframe2">
+<{/if}>
+<div class="av">
+<{if !$user_ownpage && $xoops_isuser == true}>
+<img src="<{$xoops_url}>/uploads/<{$user.user_avatar}>" width="50" height="50" alt="<{$xoops_uname}>' Avatar" title="<{$xoops_uname}>' Avatar" />
+<{else}>
+<img src="<{$xoops_url}>/themes/win64/visual/buddies_by_aphex.png" width="50" height="50" alt="<{$xoops_uname}>' Avatar" title="<{$xoops_uname}>' Avatar" />
+<{/if}>
+</div>
+</div>
+<{if $xoops_isadmin == true}>
+<div style="position: absolute;margin-top: 25px;margin-left:-23px"><a href="<{$xoops_url}>/admin.php"><img src="<{$xoops_url}>/themes/win64/visual/exec.png" width="15" height="15" alt="Admin" title="Admin" /></a></div>
+<{/if}>
+<{if !$user_ownpage && $xoops_isuser == true}>
+<div style="position: absolute;margin-top: -20px;margin-left:105px"><a href="<{$xoops_url}>/user.php?op=logout"><img src="<{$xoops_url}>/themes/win64/visual/exit.png" width="15" height="15" alt="Exit" title="Exit" /></a></div>
+<ul>
+<li><a href="<{$xoops_url}>/user.php">View Account</a></li>
+<li><a href="<{$xoops_url}>/edituser.php">Edit Account</a></li>
+<li><a href="<{$xoops_url}>/notifications.php">Notifications</a></li>
+<li><a href="<{$xoops_url}>/viewpmsg.php">Inbox</a></li>
+</ul>
+<{else}>
+<div style="padding-top: 60px">
+  <form style="margin-top: 0px;" action="<{$xoops_url}>/user.php" method="post">
+    <input type="text" name="uname" size="12" value="<{$block.unamevalue}>" maxlength="25" />
+    <input type="password" name="pass" size="12" maxlength="32" /><br />
+    <{if $block.rememberme }>
+    <input type="checkbox" name="rememberme" value="On" /><{$block.lang_rememberme}><br />
+    <{/if}>
+    <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+    <input type="hidden" name="op" value="login" />
+    <div style="margin-left: 60px;margin-top: 10px"><input type="submit" value="User Login" /></div>
+    <br />
+    <{$block.sslloginlink}>
+  </form>
+</div>
+<{/if}>
+</div>
+</div>
+    </div>
+<div class="headmenu">
+<div style="position: absolute">
+<div style="margin-left: 100px">
+<ul class="topmenu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu Link2</a></li>
+    <li><a href="#">Menu Link3</a></li>
+    <li><a href="#">Menu Link4</a></li>
+    <li><a href="#">Menu Link5</a></li>
+    <li><a href="#">Menu Link6</a></li>
+</ul>
+</div>
+</div>
+<div style="width: 120px;float: right;margin-right: 20px;margin-top: 7px;color: #fff;font-size: 11px;font-weight: bold">
+<script language="JavaScript" type="text/javascript">
+  <!--
+    var now = new Date();
+    var days = new Array(
+      'Sunday','Monday','Tuesday',
+      'Wednesday','Thursday','Friday','Saturday');
+    var months = new Array(
+      'Jan','Feb','Mar','Apr','May',
+      'Ju','Jul','Aug','Sept','Oct',
+      'Nov','Dec');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number)	{
+      return (number < 1000) ? number + 1900 : number;}
+    today =  days[now.getDay()] + ", " +
+	months[now.getMonth()] + " " +
+       date + " ";
+     document.write(today);
+  //-->
+</script>
+</div>
+</div>
+
+<!-- ### END OF HEAD MENU ### -->
+<div class="dbody">
+<div class="left">
+<!-- ## START OF NAVIGATION ## -->
+<{foreach item=block from=$xoops_lblocks}>
+	<div class="infobox">
+		<h2><{$block.title}></h2>
+	<div class="lrmain">
+<{$block.content}>
+	</div>
+<div class="lrbtm">
+</div>
+	</div>
+	<{/foreach}>
+<!-- ## END OF NAVIGATION ## -->
+
+
+</div>
+<!-- ### END OF LEFT COLUMN ### -->
+
+<!-- ### START OF RIGHT COLUMN ### -->
+<div class="right">
+<!-- ## START OF NAVIGATION ## -->
+<{foreach item=block from=$xoops_rblocks}>
+	<div class="infobox">
+		<h2><{$block.title}></h2>
+	<div class="lrmain">
+<{$block.content}>
+	</div>
+<div class="lrbtm">
+</div>
+	</div>
+	<{/foreach}>
+<!-- ## END OF NAVIGATION ## -->
+</div>
+<!-- ### END OF RIGHT COLUMN ### -->
+
+<!-- ### MAIN CONTENT START ### -->
+<{if $xoops_rblocks}>
+<div class="center">
+<{else}>
+<div class="centerer">
+<{/if}>
+<{foreach item=block from=$xoops_ccblocks}>
+<{if $xoops_rblocks}>
+<div class="post">
+<{else}>
+<div class="poster">
+<{/if}>
+<h2><{$block.title}></h2>
+<{if $xoops_rblocks}>
+	<div class="ccmain">
+<{else}>
+	<div class="ccmainer">
+<{/if}>
+<{$block.content}>
+	</div>
+<{if $xoops_rblocks}>
+<div class="ccbtm">
+<{else}>
+<div class="ccbtmer">
+<{/if}>
+</div>
+	<{/foreach}>
+</div>
+<{foreach item=block from=$xoops_clblocks}>
+<{if $xoops_rblocks}>
+<div class="post1">
+<{else}>
+<div class="poster1">
+<{/if}>
+<h2><{$block.title}></h2>
+<{if $xoops_rblocks}>
+	<div class="clrmain">
+<{else}>
+	<div class="clrmainer">
+<{/if}>
+<{$block.content}>
+	</div>
+<{if $xoops_rblocks}>
+<div class="clrbtm">
+<{else}>
+<div class="clrbtmer">
+<{/if}>
+</div>
+</div>
+	<{/foreach}>
+<{foreach item=block from=$xoops_crblocks}>
+<{if $xoops_rblocks}>
+<div class="post2">
+<{else}>
+<div class="poster2">
+<{/if}>
+<h2><{$block.title}></h2>
+<{if $xoops_rblocks}>
+	<div class="clrmain">
+<{else}>
+	<div class="clrmainer">
+<{/if}>
+<{$block.content}>
+	</div>
+<{if $xoops_rblocks}>
+<div class="clrbtm">
+<{else}>
+<div class="clrbtmer">
+<{/if}>
+</div>
+</div>
+	<{/foreach}>
+ <{if $xoops_contents}>
+<{if $xoops_rblocks}>
+  <div class="icxcontent">
+<{else}>
+  <div class="icxcontentr">
+<{/if}>
+           <{$xoops_contents}>
+  </div>
+<div class="clear"></div>
+<{/if}>
+      <{if $xoBlocks.page_bottomcenter}>
+	<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+<{if $xoops_rblocks}>
+<div class="post">
+<{else}>
+<div class="poster">
+<{/if}>
+<h2><{$block.title}></h2>
+<{if $xoops_rblocks}>
+	<div class="ccmain">
+<{else}>
+	<div class="ccmainer">
+<{/if}>
+<{$block.content}>
+	</div>
+<{if $xoops_rblocks}>
+<div class="ccbtm">
+<{else}>
+<div class="ccbtmer">
+<{/if}>
+</div>
+</div>
+	<{/foreach}>
+<{/if}>
+       <{if $xoBlocks.page_bottomleft}>
+		<{foreach from=$xoBlocks.page_bottomleft item=block}>
+<{if $xoops_rblocks}>
+<div class="post1">
+<{else}>
+<div class="poster1">
+<{/if}>
+<h2><{$block.title}></h2>
+<{if $xoops_rblocks}>
+	<div class="clrmain">
+<{else}>
+	<div class="clrmainer">
+<{/if}>
+<{$block.content}>
+	</div>
+<{if $xoops_rblocks}>
+<div class="clrbtm">
+<{else}>
+<div class="clrbtmer">
+<{/if}>
+</div>
+</div>
+	<{/foreach}>
+<{/if}>
+       <{if $xoBlocks.page_bottomright}>
+		<{foreach from=$xoBlocks.page_bottomright item=block}>
+<{if $xoops_rblocks}>
+<div class="post2">
+<{else}>
+<div class="poster2">
+<{/if}>
+<h2><{$block.title}></h2>
+<{if $xoops_rblocks}>
+	<div class="clrmain">
+<{else}>
+	<div class="clrmainer">
+<{/if}>
+<{$block.content}>
+	</div>
+<{if $xoops_rblocks}>
+<div class="clrbtm">
+<{else}>
+<div class="clrbtmer">
+<{/if}>
+</div>
+</div>
+	<{/foreach}>
+<{/if}>
+</div>
+<!--### END MAIN CONTENT ### -->
+<div class="clear"></div>
+</div>
+</div>
+<!-- ### END OF WRAPPER ### -->
+<!-- ### START OF FOOTER ### -->
+<div class="footer">
+<p><{$xoops_footer}></p>
+<br />
+<br />
+<div style="float: left;margin-top: -43px;margin-left: 10px;font-size:6px"><a href="http://www.aphexthemes.com" title="Designer's Link" target="_blank">Aph3x</a></div>
+</div>
+<!-- ### END OF FOOTER ### -->
+<br />
+<br />
+</body>
+</html>
+

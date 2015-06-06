@@ -1,0 +1,7 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<{$block.message}><br />
+<{if $block.story_id != ""}>
+  <a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$block.story_id}>"<{$block.htmltitle}>><{$block.story_title}></a>
+<{/if}>
+<!-- if you don't use morphogenesis gabarit : </div> -->

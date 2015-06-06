@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+	<{assign var=theme_plugin value=$xoTheme->folderName|cat:'/xoplugins'}>
+
+	<!-- Metas -->
+	<{includeq file="$theme_name/xometas.html"}>
+
+<!-- Scripts -->
+<{includeq file="$theme_name/xoscripts.html"}>	
+
+</head>
+<body>
+<div id="xo-bgstatic" class="<{$xoops_dirname}>">
+<div id="xo-bgstatic-top" class="<{$xoops_dirname}>">
+
+<div id="xo-wrapper" class="<{$xoops_dirname}>">
+<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+
+<div id="xo-header" class="<{$xoops_dirname}>">
+
+      <div id="xo-banner" class="<{$xoops_dirname}>">
+                
+        <div id="banner-elements">
+        <!-- display of the logo -->
+	      <a id="xo-main-logo" href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/header-logo_small.png}>" alt="<{$xoops_sitename}>" width="64px" height="64px" /></a>
+        <!-- display of the title of the site such as defined in the file theme.php of the file language to the root of the site -->
+	      <a id="xo-site-title" href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><{$xoops_sitename}></a>
+        <!-- display of the slogan of the site such as defined in the file theme.php of the file language to the root of the site -->
+	      <div id="xo-site-slogan"><{$xoops_slogan}></div>
+	      </div>  
+     </div>
+		
+		<div id="illustration">
+		
+		  <{if $xoops_banner and $xoops_banner != '&nbsp;'}> 
+	      <div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+	      <{includeq file="$theme_name/userbar_siteclosed.html"}>
+      <{else}>
+        <{includeq file="$theme_name/userbar_siteclosed.html"}>
+      <{/if}>
+    </div>
+
+	<!-- fin de la condition d'affichage en fonction de l'activation de la bannière -->
+	</div>
+		<div id="xo-siteclose"><{$lang_siteclosemsg}></div>
+
+	</div>
+	<!--{xo-logger-output}-->
+</div>
+</div>
+</div>
+
+</body>
+</html>

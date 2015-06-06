@@ -1,0 +1,30 @@
+<{php}>
+$mod = $GLOBALS['xoopsModule'];
+$dirname = (isset($mod) ? $mod->getVar('dirname') :'system');
+$GLOBALS['xoopsTpl']->assign( 'xoops_cmod', $dirname );
+<{/php}>
+<div id="connect">
+<{if !$xoops_isuser}>
+  <a href="<{xoAppUrl user.php}>" title="S'identifier"><img src="<{xoImgUrl icons/action/lock.png}>" width="16px" height="16px" alt="S'identifier"></a>
+<{else}>
+		<{xoInboxCount assign=pmcount}>
+		<a href="<{xoAppUrl viewpmsg.php}>">
+  	<{if $pmcount}>
+			<img src="<{xoImgUrl icons/users/inbox-full.png}>" width="16px" height="16px" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
+		<{else}>
+			<img src="<{xoImgUrl icons/users/inbox.png}>" width="16px" height="16px" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+		<{/if}>
+		</a>
+		<a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img src="<{xoImgUrl icons/users/note_view.png}>" width="16px" height="16px" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
+		<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img src="<{xoImgUrl icons/users/profile.png}>" width="16px" height="16px" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a>
+		<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>" title="<{$smarty.const._CPHOME}>"><img src="<{xoImgUrl icons/users/configuration.png}>" width="16px" height="16px" alt="<{$smarty.const._CPHOME}>" /></a>
+		<{/if}>
+		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img src="<{xoImgUrl icons/users/exit.png}>" width="16px" height="16px" alt="<{$smarty.const._LOGOUT}>"/></a>
+	<{/if}>
+	&nbsp;
+<a href="<{xoAppUrl modules/rss/rss.php}>" title="<{$smarty.const.THEME_RSS}>" target="_blank"><img src="<{xoImgUrl icons/action/feed.png}>" width="16px" height="16px" alt="<{$smarty.const.THEME_RSS}>"></a>
+</div>
+<div id="xo-breadcrumb" style="float: left; display: online">
+<a href="<{xoAppUrl}>" title="<{$smarty.const.THEME_HOME_DESC}>"><{$smarty.const.THEME_HOME}></a> >> <a href="<{$xoops_url}>/modules/<{$xoops_cmod}>/"><{$xoops_cmod}></a> >> <{$xoops_pagetitle}>
+</div>

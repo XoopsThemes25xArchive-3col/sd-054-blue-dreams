@@ -1,0 +1,21 @@
+<form style="margin-top: 0px;" action="<{$xoops_url}>/user.php" method="post">
+<table  border="0" cellspacing="0" cellpadding="2">
+  <tr>
+  	<td width="32" height="32" rowspan="3" valign="middle"><img src="<{$xoops_imageurl}>images/user_login.gif" width="32" height="32"></td>
+    <td>Usuário:</td>
+    <td>Senha:</td>
+  </tr>
+  <tr>
+    <td><input class="textbox" type="text" name="uname" size="12" value="" maxlength="25" /></td>
+    <td><input class="textbox" type="password" name="pass" size="12" maxlength="32" /></td>
+  </tr>
+  <tr>
+    <td><a href="<{$xoops_url}>/user.php#lost">Recuperar Senha</a>
+&nbsp;<br>
+<a href="<{$xoops_url}>/register.php"><b>Registre-se</b> Agora!</a></td>
+    <td><input type="hidden" name="xoops_redirect" value="/" />
+    <input type="hidden" name="op" value="login" />
+    <input class="button" type="submit" value="Entrar" /></td>
+  </tr>
+</table>
+</form>

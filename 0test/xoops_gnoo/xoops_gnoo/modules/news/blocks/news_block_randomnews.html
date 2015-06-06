@@ -1,0 +1,20 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<div id="news">
+<{foreach item=news from=$block.stories}>
+        <table id="paddingblock-random">
+        	<tr>
+            <td>
+			<a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$news.id}>" <{$news.infotips}>><{$news.title}></a> - <{$news.topic_title}> 
+            <{if $block.sort=='counter'}>
+            	[<{$news.hits}>]
+            <{elseif $block.sort=='published'}>
+            	[<{$news.date}>]
+            <{else}>
+            	[<{$news.rating}>]
+            <{/if}>
+             <br /><{$news.teaser}>
+            </td>
+            </tr>
+        </table>
+<{/foreach}>
+</div>

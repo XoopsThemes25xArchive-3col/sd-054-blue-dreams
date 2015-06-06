@@ -1,0 +1,291 @@
+  table th  {
+      text-align : left;
+}
+ ul {
+      margin : 2px;
+      padding : 2px;
+      list-style : decimal inside;
+      text-align : left;
+}
+ li {
+      margin-left : 2px;
+      list-style : disc inside;
+}
+ .bg1 {
+      background-color : #040404;
+}
+ .bg2 {
+      background-color : #443e31;
+}
+ .bg3 {
+      background-color : #c4b186;
+}
+ .bg4 {
+      background-color : #3c362b;
+}
+ .fg1 {
+      color : #ffffff;
+}
+ .fg2 {
+      color : #d6d6c5;
+}
+ FONT {
+      font-size : 9pt;
+      font-family : tahoma;
+}
+ TD {
+      font-size : 9pt;
+      font-family : tahoma;
+}
+ BODY {
+      font-weight : normal;
+      font-size : 12px;
+      margin : 0;
+      color : #000000;
+      font-family : Tahoma;
+      text-align : justify;
+}
+ INPUT {
+      font-size : 8pt;
+      color : #ffff00;
+      font-family : Tahoma;
+      background-color : #663300;
+}
+ TEXTAREA {
+      font-size : 8pt;
+      color : #ffff00;
+      font-family : Tahoma;
+      background-color : #663300;
+}
+ FORM {
+      font-size : 8pt;
+      font-family : Tahoma;
+}
+ SELECT {
+      font-size : 8pt;
+      color : #ffff00;
+      font-family : Tahoma;
+      background-color : #663300;
+}
+ A:link {
+      font-size : 8pt;
+      color : #993300;
+      font-family : Tahoma;
+      text-decoration : none;
+}
+ A:active {
+      font-size : 8pt;
+      color : #990000;
+      font-family : Tahoma;
+      text-decoration : none;
+}
+ A:visited {
+      font-size : 8pt;
+      color : #993300;
+      font-family : Tahoma;
+      text-decoration : none;
+}
+ A:hover {
+      font-size : 8pt;
+      color : #cc3300;
+      font-family : Tahoma;
+      text-decoration : none;
+}
+ .blockTitle {
+      color : #6b2c01;
+      padding : 2px;
+      font-weight : bold;
+      text-align : center;
+}
+ .blockContent {
+      font-family : Tahoma;
+      font-size : 8pt;
+      color : #333333;
+      padding-left : 20px;
+      padding-right : 2px;
+      padding-top : 2px;
+      padding-bottom : 2px;
+}
+ td#mainmenu a {
+      text-align : left;
+      color : #512f00;
+	  display: block;
+	  padding-bottom: 10px;
+}
+ td#mainmenu a:hover {
+      color : #6c3f00;
+}
+ td#usermenu a {
+      text-align : left;
+      color : #512f00;
+	  display: block;
+	  padding-bottom: 10px;
+}
+ td#usermenu a:hover {
+      color : #6c3f00;
+}
+ div.xoopsQuote {
+      background : #d7c188;
+      border : 1px solid #000000;
+      font-family : Tahoma;
+      color : #000000;
+      font-size : 8pt;
+      text-align : justify;
+}
+ div.xoopsCode {
+      background : #d7c188;
+      border : 1px solid #000000;
+      font-family : Courier New;
+      color : #000000;
+      text-align : left;
+      font-size : 8pt;
+}
+ .outer {
+      border : 1px solid #000000;
+      background-color : #cfc29a;
+}
+ .head {
+      background : #709fcf;
+      font-weight : bold;
+      padding : 5px;
+      text-indent : 0;
+}
+ .even {
+      background : #f3d79c;
+      border : 1px solid #000000;
+}
+ .odd {
+      border-left : 1px solid #707070;
+      border-right : 1px solid #000000;
+      border-top : 1px solid #707070;
+      border-bottom : 1px solid #000000;
+      background : #fff3ce;
+      padding : 5px;
+}
+ .foot {
+      background : #709fcf;
+      font-weight : bold;
+      padding : 5px;
+}
+ tr.even td {
+      background : #fffeea;
+      padding : 0;
+}
+ tr.odd td {
+      background : #fff9d2;
+      padding : 0;
+}
+ .item {
+      font-size : 1em;
+}
+ .itemHead {
+      background-color:#F1E3D1;
+}
+ .itemInfo {
+      text-align : left;
+      padding : 0;
+      background-color : #f0fcff;
+}
+ .itemTitle a {
+      font-size : 12pt;
+      font-weight : bold;
+      font-variant : small-caps;
+      color : #ff6600;
+}
+ .itemTitle a:hover {
+      font-size : 12pt;
+      font-weight : bold;
+      font-variant : small-caps;
+      color : #990033;
+      background-color : transparent;
+}
+ .itemPoster {
+      font-size : 90%;
+      font-style : italic;
+}
+ .itemPostDate {
+      font-size : 90%;
+      font-style : italic;
+}
+ .itemStats {
+      font-size : 90%;
+      font-style : italic;
+}
+ .itemBody {
+      padding-left : 5px;
+      text-align : justify;
+}
+ .itemText {
+      text-align : justify;
+      margin-top : 5px;
+      margin-bottom : 5px;
+      line-height : 1.5em;
+}
+ :first-letter.itemText {
+      text-align : left;
+}
+ .itemFoot {
+      padding : 3px;
+      background-color : #eadcaa;
+      text-align : left;
+}
+ .itemAdminLink {
+      font-size : 90%;
+}
+ .itemPermaLink {
+      font-size : 90%;
+      font-style : italic;
+}
+ .itemimg {
+      display : block;
+}
+ abbr , acronym , .help {
+      border-bottom : 1px dashed black;
+      cursor : help;
+}
+ .comTitle {
+      font-weight : bold;
+      margin-bottom : 2px;
+}
+ .comText {
+      float : left;
+      padding : 2px;
+      text-align : justify;
+}
+ .comUserStat {
+      border-style : solid;
+      font-size : 12px;
+      color : #cc3300;
+      margin : 3px;
+      padding : 3px;
+}
+ .comUserStatCaption {
+      font-weight : normal;
+}
+ .comUserRank {
+      margin : 2px;
+}
+ .comUserRankText {
+      font-size : 10px;
+      font-weight : bold;
+}
+ .comUserRankImg {
+      border : 0 none inherit;
+}
+ .comUserImg {
+      margin : 2px;
+}
+ .comDate {
+      font-weight : normal;
+      font-style : normal;
+      font-size : smaller;
+}
+ .comDateCaption {
+      font-weight : bold;
+      font-style : normal;
+}
+
+
+#centerCcolumn {width: 100%}
+#centerLcolumn, #centerRcolumn {width: 50%}
+#rightcolumn {width: 180px}

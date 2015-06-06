@@ -1,0 +1,200 @@
+/* 
+Theme Name: WDC_007_petrol
+Description: WDC_007_petrol developed by WebdesignCreators
+Version: 2.1
+Date: June 10th, 2009
+Author: WebdesignCreators
+Author URL: http://www.Webdesigncreators.com
+*/
+
+/*============== Start WDC special styles for WDC_007_petrol =================*/
+
+html, body {color:#000000; margin:0; font-size:9pt; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#wdc_main {margin-left:auto; overflow:hidden; margin-right:auto; width:900px; margin-top:0; border-left:1px solid #0e9694; border-right:1px solid #0e9694;}
+#wdc_header_top {float:left; width:100%; height:35px; margin-top:0px; margin-bottom:9px; margin-left:auto; margin-right:auto; background-color:#0e9694;}
+#wdc_header_logo {float:left; text-align:right; width:100%; height:115px; background:#dbe5ef url(images/header/wdc_007_petrol_header_bg.gif);}
+#wdc_header_slogan {float:right; color:#000000; padding-top:20px; padding-right:9px;}
+#wdc_header_slogan a {font-size:2.5em; font-weight:bold; color:#0e9694;}
+#wdc_header_slogan a:hover {color:#fff;}
+#wdc_header_styleswitch {text-align:right; padding-right:10px; line-height:35px;}
+#wdc_search {float:left; padding-top:3px;}
+#wdc_content {float:left; width:866px; height:auto; background:url(images/bg/WDC_007_petrol_content_bg.gif) repeat-y;}
+#wdc_content_no_leftblock_no_rightblock {float:left; width:98%; margin-bottom:9px; margin-left:9px; margin-right:9px; height:auto; line-height:100%;} 
+#wdc_content_leftblock {float:right; width:79%; margin-bottom:0px; margin-right:9px; height:auto; line-height:100%;} 
+#wdc_content_rightblock {float:left; width:79%; margin-left:9px; margin-bottom:0px; height:auto; line-height:100%;} 
+#wdc_content_leftblock_rightblock {float:left; width:60%; height:auto; margin-bottom:5px; line-height:100%;} 
+#wdc_footerbar {float:left; text-align:center; margin-top:10px; padding-top:10px; padding-bottom:10px; vertical-align:middle; width:100%; background-color:#0e9694; color:#fff;}
+#wdc_footerbar a {color:#fff;}
+#wdc_footerbar a:hover {color:#fff; text-decoration:underline;}
+#wdc_banner {float:left; text-align:center; padding-top:10px; padding-bottom:10px; vertical-align:middle; width:100%; background-color:#0e9694; color:#fff;}
+#wdc_ads {line-height:70px; vertical-align:middle; margin-top:9px; margin-bottom:9px; text-align:center;}
+
+/*============== End WDC special styles for WDC_007_petrol =================*/
+
+/*============== Start link styles Header menu for WDC_007_petrol =================*/
+
+#wdc_navbar {float:left; margin-top:9px; line-height:35px; height:35px; width:100%; margin-bottom:9px; vertical-align:middle; text-align:center; background-color:#0e9694;}
+#wdc_navbar a {padding-top:10px; padding-bottom:9px; line-height:35px; height:35px; padding-left:13px; padding-right:13px; text-align:center; color:#dbe5ef;}
+#wdc_navbar a:hover {line-height:35px; height:35px; color:#0e9694; background-color:#dbe5ef;}
+#wdc_navbar_links a {padding-top:10px; padding-bottom:9px; line-height:35px; height:35px; padding-left:10px; padding-right:10px; text-align:center; color:#fff;}
+#wdc_navbar_links .active {font-size:1.1em; text-align:center; line-height:35px; height:35px; color:#0e9694; background-color:#dbe5ef; padding-left:10px; padding-right:10px;}
+
+a.main_link_left {line-height:35px; height:35px; font-size:1.1em; font-weight:bold; color:#fff; border-right:1px solid #fff;}
+a.main_link_left:hover {color:#312d2d;}
+
+/*============== End link styles Header menu for WDC_007_petrol =================*/
+
+/*============== Start link styles for WDC_007_petrol =================*/
+
+a {color:#0e9694; text-decoration:none; font-weight:bold; background-color:transparent;}
+a:hover {color:#312d2d;}
+a.main_link_right {line-height:35px; height:35px; font-size:1.1em; font-weight:bold; color:#fff;}
+a.main_link_right:hover {color:#312d2d;}
+
+/*============== End link styles for WDC_007_petrol =================*/
+
+/*============== Start text styles for WDC_007_petrol =================*/
+
+h1 {font-size:1.8em; color:#a3a3a3; font-weight:bold;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin:2px; padding:2px; list-style:disc inside; text-align:left;}
+ol { margin:2px; padding:2px; list-style:decimal inside; text-align:left;}
+li { margin-left:2px; color:#3f2f2f;}
+img {border:0;}
+
+/*============== End text styles for WDC_007_petrol =================*/
+
+/*============== Start Xoops block styles for WDC_007_petrol =================*/
+
+#leftcolumn {float:left; background-color:#dbe5ef; width:19%; font-size:1.1em; line-height:100%; margin-right:9px; padding-bottom:32768px; margin-bottom:-32768px;}
+#leftcolumn .blockTitle {background-color:#0e9694; font-weight:bold; line-height:28px; padding-left:9px;	color:#fff; font-size:1.0em; margin-top:0px;}
+#leftcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em;}
+
+#centercolumn {float:left; width:100%; font-size:1.0em;}
+#centercolumn th {background-color:#c0c0c0; color:#3f2f2f; vertical-align:middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a {background-color:#c0c0c0; color:#3f2f2f; vertical-align:middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a:hover {background-color:#4abdda; color:#e04d31; vertical-align:middle; padding-top:5px; padding-bottom:5px;}
+
+#centerCcolumn, #bottomCcolumn {float:left; width:100%; font-size:1.1em; margin-bottom:9px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {background-color:#0e9694; font-weight:bold; line-height:28px; padding-left:9px;	color:#fff; font-size:1.0em; margin-top:0px;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em; font-size:1.0em;}
+
+#centerLcolumn, #bottomLcolumn {float:left; width:49%; font-size:1.1em; padding-right:9px; margin-bottom:9px;}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {background-color:#0e9694; font-weight:bold; line-height:28px; padding-left:9px;	color:#fff; font-size:1.0em; margin-top:0px;}
+#centerLcolumn .blockContent, #bottomLcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em; font-size:1.0em;}
+
+#centerRcolumn, #bottomRcolumn {float:left; width:49%; font-size:1.1em; margin-bottom:9px;}
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {background-color:#0e9694; font-weight:bold; line-height:28px; padding-left:9px;	color:#fff; font-size:1.0em; margin-top:0px;}
+#centerRcolumn .blockContent, #bottomRcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em; font-size:1.0em;}
+
+#content {width:100%; float:left; text-align:left;}
+
+#rightcolumn {float:right; background-color:#dbe5ef; width:19%; font-size:1.1em; padding-left:0px; margin-right:0px; padding-bottom:32768px; margin-bottom:-32768px;}
+#rightcolumn .blockTitle {background-color:#0e9694; font-weight:bold; line-height:28px; padding-left:9px;	color:#fff; font-size:1.0em; margin-top:0px;}
+#rightcolumn .blockContent {padding-left:5px; padding-right:5px; padding-bottom:5px; padding-top:10px; text-align:left; line-height:1.2em;}
+
+#mainmenu a {background-color:transparent; display:block; padding:4px; color:#0e9694;}
+#mainmenu a:hover {background-color:transparent; color:#312d2d;}
+#mainmenu a.menuTop {padding-left:3px;}
+#mainmenu a.menuMain {padding-left:3px;}
+#mainmenu a.menuSub {padding-left:9px;}
+
+#usermenu {	font-size :.9em;}
+#usermenu a {background-color:transparent; display:block; margin:0; padding:2px;font-weight :normal; color:#0e9694;}
+#usermenu a:hover {background-color:transparent; color:#312d2d;}
+#usermenu a.menuTop {}
+#usermenu a.menuMain {}
+#usermenu a.highlight {}
+
+/*============== End Xoops block styles for WDC_007_petrol =================*/
+
+/*============== Start Xoops styles for WDC_007_petrol =================*/
+
+table {width:100%;}
+table td {padding:0; border-width:0; vertical-align:top; }
+.table_bg {}
+
+.item {border:1px solid #dcdbdb;}
+.itemHead {padding:3px; background-color:#dcdbdb; color:#fff;}
+.itemInfo {text-align:right; padding:3px; background-color:#dcdbdb}
+.itemTitle a {font-size:1.2em; font-weight:bold; font-variant:small-caps; color:#fff; background-color:transparent;}
+.itemPoster {font-size:.9em; font-style:italic;}
+.itemPostDate {font-size:.9em; font-style:italic;}
+.itemStats {font-size:.9em; font-style:italic;}
+.itemBody {padding-left:5px;}
+.itemText {margin-top:5px; margin-bottom:5px; line-height:1.5em;}
+.itemText:first-letter {font-size:1.3em; font-weight:bold;}
+.itemFoot {text-align:right; padding:3px; background-color:#dcdbdb;}
+.itemAdminLink {font-size:.9em;}
+.itemPermaLink {font-size:.9em;}
+
+#header {margin:0; padding:0;	height:80px; background:#0e9694; padding:2px;	color:#fff;	border:1px solid #0e9694;}
+#headerbanner {width:100%; vertical-align:middle; text-align:center;}
+#headerlogo img {padding:0;}
+#headerbar {border-bottom:1px solid #0e9694;}
+
+fieldset {border:1px solid #0e9694;}
+
+caption {font-weight:bold;}
+th, thead {padding :2px; color:#484848; vertical-align :middle; background-color:#e8e8e8;}
+.outer {background-color:#9c9e9a; line-height:21px; color:#000000; border:1px solid #0e9694; margin-top:10px}
+.head {font-weight:bold; color:#fff; height:24px; line-height:22px; text-align:center; background-color:#0e9694;	border:1px solid #0e9694;}
+.head a {color:#fff;}
+.head a:hover {color:#fff; text-decoration:underline;}
+.even {background-color:#dbe5ef;	padding:5px;	border:1px solid #0e9694;}
+.odd {background-color:#b5c9dd;	padding:5px;	border:1px solid #0e9694;}
+.left {font-weight:bold;}
+.foot {background-color:#fff; font-weight:bold; border:1px solid #0e9694;}
+tr.even td {background-color:#dbe5ef; border:1px solid #0e9694;}
+tr.odd td {background-color:#b5c9dd; border:1px solid #0e9694;}
+tr.even td {padding:5px;}
+tr.odd td {padding:5px; border:1px solid #0e9694;}
+tr.foot td {padding:5px; color:inherit; font-weight:bold;}
+
+.errorMsg,.confirmMsg, .resultMsg { padding:.8em; text-align:center; margin-bottom:1em; border:2px solid #ddd;}
+.errorMsg {background-color:#FBE3E4; color:#D12F19; border-color:#FBC2C4;}
+.confirmMsg {background-color:#FFF6BF; color:#817134; border-color:#FFD324;}
+.resultMsg {background-color:#E6EFC2; color:#529214; border-color:#C6D880;}
+.errorMsg a {background-color:transparent; color:#D12F19;}
+.confirmMsg a {background-color:transparent; color:#817134;}
+.successMsg a {background-color:transparent; color:#529214;}
+
+.xoopsCode {background:#fff; border:1px inset #000080; font-family:"Courier New",Courier,monospace; padding:0 6px 6px 6px; height:200px; overflow:auto; font-size:.9em;}
+.xoopsQuote {background:#fff; border:1px inset #000080; font-family:"Courier New",Courier,monospace; padding:0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style :italic; line-height:1.4em;} 
+
+.comTitle {color:#484848; font-weight:bold; margin-bottom:2px;}
+.comText {padding:2px;}
+.comUserStat {font-size:.9em; color:#484848; font-weight:bold; border:1px solid #0e9694; background-color:#dcdbdb; margin:2px; padding:2px;}
+.comUserStatCaption {font-weight:normal;}
+.comUserStatus {margin-left:2px; margin-top:10px; color:#0e9694; font-weight:bold; font-size:.9em;}
+.comUserRank {margin:2px;}
+.comUserRankText {font-size:.9em;font-weight:bold;}
+.comUserRankImg {border:0;}
+.comUserName a {color:#484848;}
+.comUserImg {margin:2px;}
+.comDate {font-weight:normal; font-style:italic; font-size:.8em;}
+.comDateCaption {font-weight:bold; font-style:normal;}
+
+.style1 {border-color:#0e9694; border-width:0;}
+
+/*============== End Xoops styles for WDC_007_petrol =================*/
+
+/*============== Start input styles for WDC_007_petrol =================*/
+
+input.formButton {}
+
+.xo-formButtons, .xo-formButton, button {padding:.25em; text-align:center;}
+
+input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {margin:3px 0 3px 0; background:#0e9694; color:#fff; font-size:.9em; font-weight:bold; border:1px solid #0e9694; cursor:pointer;}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover {margin:3px 0 3px 0; background:#fff; color:#0e9694; font-size:.9em; font-weight:bold; border:1px solid #0e9694; cursor:pointer; }
+input {border:1px solid #0e9694;	font:1.1em verdana, arial, helvetica, sans-serif;	background-color:#dbe5ef;}
+input:hover {border:1px solid #dbe5ef;	font:1.1em verdana, arial, helvetica, sans-serif;	background-color:#0e9694;}
+input:focus {border:1px solid #0e9694;	font:1.1em verdana, arial, helvetica, sans-serif;	background-color:#fff;}
+
+select {font-size:0.79em;}
+
+/*============== End input styles for WDC_007_petrol =================*/

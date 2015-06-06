@@ -1,0 +1,323 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : content-data.css - 12 01 2008 */
+
+
+/*============== Style for userbar.html =================*/
+#xo-userbar {
+	display:							block;
+	float: 							right;
+	background-color: 			transparent;
+	padding-top: 					8px;
+	padding-right:					1em;
+	color:							#666;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0 -3px;
+	background-color:				transparent;
+	background-image: 			none;
+	padding:							0;
+	border:							none;
+	color: 							inherit;
+}
+#xo-userbar button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar img {
+	width: 							22px;
+	height: 							22px;
+}
+#xo-userbar input {
+	width: 							80px;
+	background-color: 			#c6c7c9;
+	color:							#333;
+}
+#xo-userbar input:hover {
+	background-color: 			#DBDCDC;
+	color:							#333;
+}
+#xo-userbar a {
+	background-color: 			inherit;
+	color: 							#32529C;
+	text-decoration:				none;
+}
+#xo-userbar a:hover {
+	background-color: 			inherit;
+	color: 							#EAAD7B;
+}
+a#xo-uname {
+	background-color:				inherit;
+	color: 							#ff0000;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+
+#xo-userbar .register {
+margin-left: 25px;
+}
+#xo-userbar .logout {
+margin-left: 25px;
+padding-right: .2em
+}
+/*========== Style for searchbar.html ==============*/
+#xo-searchbar {
+	display:							block;
+	float: 							left;
+	padding-top: 					1em;
+	margin-left : 					2em;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+#xo-searchbar input[type=text]{
+	background-color: 			#c6c7c9;
+	color:							#333;
+}
+#xo-searchbar input[type=text]:hover {
+	background-color:				#E2E2E2;
+	color:							#333;
+}
+/*=============  Style for language.html ============= */
+/*#xo-language {
+	display: 						block;
+	float:							left;
+	margin-top :					5px;
+	background-color: 			inherit;
+	padding-left: 					1em;
+	color:							#666;
+}
+#xo-language img{
+	width: 							22px;
+	height: 							22px;
+}*/
+/*============= Style for accessibilitybar.html ================*/
+#xo-accessibilitybar {
+	display:							block;
+	float: 							left;
+	padding-top: 					8px;
+	padding-left:					1.2em;
+}
+#xo-accessibilitybar a {
+	text-decoration: 				none;
+	border: 							none;
+}
+#xo-accessibilitybar img {
+	width: 							22px;
+	height: 							22px;
+}
+
+/*============== Styles for userbar_siteclosed.html =================*/
+#xo-userbar_siteclosed {
+	display:							block;
+	/*float: 							right;*/
+	text-align: center;
+	background-color: 			transparent;
+	padding-top: 					5px;
+	padding-right:					1em;
+	color:							#666;
+}
+#xo-userbar_siteclosed form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar_siteclosed button {
+	margin: 							0 -3px;
+	background-color:				transparent;
+	background-image: 			none;
+	color: 							inherit;
+	padding:							0;
+	border:							none;
+}
+#xo-userbar_siteclosed button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar_siteclosed button:hover {
+ 	border: 							0 !important;
+ }
+#xo-userbar_siteclosed input {
+	width: 							80px;
+	background-color: 			#c6c7c9;
+	color:							#333;
+}
+#xo-userbar_siteclosed input:hover {
+	background-color: 			#DBDCDC;
+	color:							#333;
+}
+/*============= Style for globalnav.html ================*/
+#xo-globalnav table {
+width: 620px;
+}
+* html #xo-globalnav { height: 20px; }
+
+#xo-globalnav a {
+	color:							#fff;
+	font-weight: 					700;
+	text-decoration:				none;
+}
+#xo-globalnav td {
+padding-top: 2px;
+}
+#xo-globalnav .nav {
+	background: url(../img/globalnav.gif) repeat-y top;
+}
+#xo-globalnav .nav:hover {
+	background: url(../img/globalnav_hover.gif) repeat-y top;
+}
+#xo-globalnav .nav90px {
+	background: url(../img/globalnav90.gif) repeat-y top;
+}
+#xo-globalnav .nav90px:hover {
+	background: url(../img/globalnav_hover90.gif) repeat-y top;
+}
+#xo-globalnav .nav100px {
+	background: url(../img/globalnav100.gif) repeat-y top;
+}
+#xo-globalnav .nav100px:hover {
+	background: url(../img/globalnav_hover100.gif) repeat-y top;
+}
+/*============= Style for breadcrumb.html ================*/
+#xo-breadcrumb {
+	background-color: 			inherit;
+	padding: 						0 0 15px 10px;
+	color : 							#666;
+	font-size:						.8em;
+}
+/*============== Styles for system_siteclosed.html =================*/
+#xo-siteclose {
+	width:							400px;
+	margin:							100px auto;
+	background-color:				#e2e2e2;
+	padding:							30px;
+	color:							#000;
+	font-size: 						1.2em;
+	font-weight: 					bold;
+	text-align: 					center;
+	border:							1px solid #666;
+}
+/*============== Styles for system_redirect.html =================*/
+#xo-redirect {
+	width:							780px;
+	margin:							50px auto;
+	padding:							1em;
+	font-weight:					bold;
+	text-align:						center;
+}
+#xo-redirect .notreload {
+	height:							28px;
+	background-color:				inherit;
+	padding-top:					2px;
+	color:							#000;
+}
+#xo-redirect .notreload a {
+	background-color: 			inherit;
+	color:							##5fb3f9;
+	font-weight:					bold;
+	text-decoration: 				none;
+}
+#xo-redirect .message {
+	min-height:						60px;
+	background-color: 			#f3f3f3;
+	padding:							1em;
+	color:							#333;
+	font-size:						1.1em;
+	text-align:						center;
+	border:		 					solid 1px #666;
+}
+#xo-redirect .message img{	padding:	1em;}
+
+
+/*======== others float class ======== */
+.floatleft {
+	float: 							left;
+	margin-top: 					1em;
+	margin-right : 				1em;
+	padding-left: 					4px;
+	border: 							0;
+}
+.floatright {
+	float: 							right;
+	margin: 							0 0 10px 10px;
+	padding: 						2px;
+	border: 							0;
+}
+/*========  others alignment class ======== */
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align:			justify; }
+.middle { vertical-align: 		middle;}
+.top { vertical-align: 			top;}
+.bottom { vertical-align: 		bottom;}
+/*========  others width class ======== */
+.width100 { width: 				100%; }
+.width95 {width:					95%}
+.width75 { width: 				75%; }
+.width50 { width: 				50%; }
+.width33 { width: 				33%; }
+.width25 { width: 				25%; }
+.width20 { width: 				20%; }
+
+/* ========= others font class ========== */
+.small {	font-size: .92em;}
+.smallcenter {
+font-size: .85em;
+text-align: center;
+padding-top: .5em;
+}
+.normal { font-size: 1em;}
+.big { font-size: 1.17em;}
+.maxi { font-size: 1.5em;}
+
+.bold { font-weight: bold;}
+.italic {font-style: italic;}
+/*========  others display class ======== */
+.clear { clear: 					both; }
+.block { display: 				block; }
+.hide  { display: 				none; }
+/* ======== others hypertext links ================ */
+a.printable, a.pdf, a.friend {
+	width:							22px;
+	height:							22px;
+	background-repeat:			no-repeat;
+	background-position:			left top;
+	text-indent:					-1000em;
+}
+a.printable	{	background-image: url(../icons/action/printable.png); }
+a.pdf	{	background-image: url(../icons/action/pdf.png); }
+a.friend	{	background-image: url(../icons/action/friend.png); }
+
+/*======== body for tinyeditor/inbetwen module ======== */
+body.mceContentBody {
+	background-color: 			#fff;
+	background-image: 			none;
+	color: 							#333;
+}
+/* ======== for accessibility ================ */
+/*a[hreflang]:after {
+	content: "\0000a0[alt+" attr(hreflang) "]";
+}
+a[accesskey]:after {
+	content: "\0000a0[alt+" attr(accesskey) "]";
+}*/
+
+/* -- signature in CBB/NewBB -- */
+.signature {
+	font-style: italic;
+	font-size: .9em;
+}
+
+/* ============ Style for notification form ============ */
+span.notification_title {
+	font-size:.9em;
+	font-weight:bold;
+}

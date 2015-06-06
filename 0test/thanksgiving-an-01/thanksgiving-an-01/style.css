@@ -1,0 +1,360 @@
+/*Use for normal text which didn't define*/
+body         { background-color:#ffe1bf; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; margin-top: 0px;}
+td           { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; vertical-align: top; }
+table 			 {width: 100%;}
+a:link       { color: #f88300; text-decoration: none;}/*Use for order links which are undefined*/
+a:visited    { color: #f88300; text-decoration: none;}
+a:active     { color: #f88300; text-decoration: none;}
+a:hover      { color: #fdbc00; text-decoration: none;}
+ul 
+{ 
+	margin: 0;
+}
+
+li 
+{ 
+	margin: 0;
+	padding-top: 5px;
+}
+
+.textarea    
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border: single #999999; 
+	border-width: 1px 1px 1px 1px; 
+	overflow:auto; 
+}
+input.textbox
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border-width: 1px 1px 1px 1px; 
+}
+.checkbox 
+{ 
+	font-family :Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color: #111111; 
+	font-weight:400; 
+}
+.submit
+{
+	font-family :Verdana, Arial, Helvetica, sans-serif;
+	font-size : 11px; 
+	color: #76033F; 
+	border: 1px solid #999999;
+}
+select 
+{ 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border-width: 1px 1px 1px 1px; 
+}
+
+/*item use for News module*/
+.item {margin-bottom: 8px;}
+.itemHead 
+{
+	padding: 4px; 
+	border-left: 8px solid #FCBB8B; 
+	border-bottom: 1px solid #7F7F7F; 
+	background-color: #ae5c00; 
+	color: #000000; 
+	font-weight: bold;
+}
+.itemInfo 
+{
+	padding: 4px; 
+	text-align: left; 
+	color: #f88300;
+}
+.itemTitle a:link, .itemTitle a:visited 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 4px 10px;
+}
+.itemTitle a:hover
+{
+	color: #fdbc00;
+	text-decoration: none;
+}
+
+.itemPoster {font-size: 90%;}
+.itemPostDate {font-size: 90%;}
+.itemStats {font-size: 90%;}
+.itemBody {padding: 8px;}
+.itemText {line-height: 1.5em; margin: 1px;}
+.itemFoot {text-align: right; padding: 4px; border-bottom: 2px solid #B7B9B5; color: #f88300;}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+/*Use for header of table*/
+th {background-color: #92BD5D; color: #FFFFFF; padding-left: 5px; vertical-align : middle; font-size: 11px;}
+
+td#leftcolumn 
+{
+	width: 160px; 
+	background-color: #FFFFFF; 
+	padding-left:5px;
+} 
+td#leftcolumn th {}
+td#leftcolumn .blockTitle 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	color: #FFFFFF; 
+	background-image:url('./images/title_bg.gif');  
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+}
+td#leftcolumn .blockContent 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	color: #f88300;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border:1px solid #fdd6ab;
+}
+#leftcolumn a:link
+{
+	color:#f88300;
+	text-decoration: none;
+}
+#leftcolumn a:visited
+{
+	color:#f88300;
+	text-decoration: none;
+}
+#leftcolumn a:hover
+{
+	color:#fdbc00;
+	text-decoration: underline;
+}
+td#mainmenu a 
+{	
+}
+td#mainmenu a:hover 
+{
+}
+         
+td#mainmenu a.menuTop 
+{
+	text-decoration: none;
+	text-transform:uppercase;
+	text-align: right;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	background-image: url('./images/bullet.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px;
+}
+td#mainmenu a.menuTop:hover
+{
+	color: #fdbc00;
+	text-decoration: none;
+	text-align: right;
+	background-image: url('./images/bullet-hover.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px;
+}
+td#mainmenu a.menuMain 
+{
+	text-decoration: none;
+	text-transform:uppercase;
+	text-align: right;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	background-image: url('./images/bullet.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px;
+}
+td#mainmenu a.menuMain:hover
+{
+	color: #fdbc00;
+	text-decoration: none;
+	text-align: right;
+	background-image: url('./images/bullet-hover.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px;
+}
+td#mainmenu a.menuSub {
+	text-decoration: none;
+	text-align: right;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	padding-right:15px; 
+	vertical-align:top;
+}
+td#mainmenu a.menuSub:hover {
+	padding-right:15px; 
+	vertical-align:top;
+	text-decoration: none;
+	color: #fdbc00;
+}
+
+td#usermenu a 
+{
+	text-decoration: none;
+	background-color: #FFFFFF;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	background-image: url('./images/bullet.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px;
+}
+td#usermenu a:hover 
+{
+	color: #fdbc00;
+	text-decoration: none;
+	text-align: right;
+	background-image: url('images/bullet-hover.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px;
+}
+td#usermenu a.menuTop {}
+td#usermenu a.highlight {color: #f88300; background-color: #FFFFFF}
+td#usermenu a:hover.highlight {color: #FFFFFF; background-color: #fdbc00;}
+
+td#centercolumn {padding: 5px; background-color: #FFFFFF;}
+
+td#centercolumn th {background-color:#f88300;}
+td#centerCcolumn {padding: 0px;}
+td#centerCcolumn .blockTitle {font-weight: bold; padding: 4px; border-left: 8px solid #fdbc00; border-bottom: 1px solid #fdbc00; background-color: #F6F7F6; color: #f88300;}
+td#centerCcolumn .blockContent {padding: 4px; margin-bottom: 8px;background-color: #F5F6E8; line-height: 120%;}
+
+td#centerLcolumn {width: 50%; padding-right: 4px;}
+td#centerLcolumn .blockTitle {font-weight: bold; padding: 4px; border-left: 8px solid #fdbc00; border-bottom: 1px solid #fdbc00; background-color: #F6F7F6; color: #f88300;}
+td#centerLcolumn .blockContent {padding: 4px; margin-bottom: 8px; background-color: #F5F6E8; line-height: 120%}
+
+td#centerRcolumn {width: 50%; padding-left: 4px;}
+td#centerRcolumn .blockTitle {font-weight: bold; padding: 4px; border-left: 8px solid #fdbc00; border-bottom: 1px solid #fdbc00; background-color: #F6F7F6; color: #f88300;}
+td#centerRcolumn .blockContent {padding: 4px;background-color: #F5F6E8; margin-bottom: 8px}
+
+div#content {text-align: left;}
+div#content .newbb_level1 { background-color:#ae5c00;}
+div#content .newbb_level2 { background-color:#ae5c00;}
+div#content .newbb_folder { background-color:#ae5c00;}
+div#content .newbb_submenu { background-color:#ae5c00; padding-right: 5px; padding-top:4px;}
+.bg3 a:link, .bg3 a: visited {color: #FFFFFF; text-decoration:none;}
+.bg3 a:hover {color: #ffe1bf; text-decoration:none;}
+td#rightcolumn 
+{
+	width: 160px; 
+	background-color: #FFFFFF;
+	padding-right:5px; 
+	color: #f88300;
+}
+td#rightcolumn th {}
+td#rightcolumn .blockTitle 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	color: #FFFFFF; 
+	background-image:url('./images/title_bg.gif'); 
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+}
+td#rightcolumn .blockContent 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	color: #f88300;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border:1px solid #fdd6ab;
+}
+
+/*****Use for newbb module************/
+.outer {border: 1px solid #fdbc00; background-color: #FFFFFF;}
+.head {background-color: #ffc380; color: #FFFFFF; padding: 5px; font-weight: bold} 
+
+.even {background-color: #ffffff; padding: 2px;}
+.odd {background-color: #ffffff; padding: 5px;}
+
+.foot {background-color: #ffc380; padding: 5px; font-weight: bold; color:#FFFFFF;} 
+tr.even td {background-color: #FFFFFF; padding: 4px;}
+tr.odd td {background-color: #FFFFFF; padding: 4px} 
+ 
+/*************Used when display errors**************/
+div.errorMsg {background-color: #D6E7C1; text-align: center; border-top: 1px solid #DDDDE0; border-left: 1px solid #DDDDE0; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg {background-color: #D6E7C1; color: #386403; text-align: center; border-top: 1px solid #DDDDE0; border-left: 1px solid #DDDDE0; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg {background-color : #D6E7C1; color: #386403; text-align: center; border-top: 1px solid #C0C0C0; border-left: 1px solid #C0C0C0; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px}
+
+div.xoopsCode {font-size: 90%; background-color: #FFFFFF; border: 1px dashed #944949; padding: 4px;}
+div.xoopsQuote {font-size: 90%; background-color: #FFFFFF; border: 1px dashed #944949; padding: 4px;}
+div.xoopsCode pre {margin: 0px;}
+div.xoopsQuote blockquote {margin: 0px;}
+
+/*************Use for newbb, complement modules**********************/
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #f88300; font-weight: bold; border: 1px solid #fdd6ab; background-color: #FFFFFF; margin: 2px; padding: 2px}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; font-weight: bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight: bold;}
+.comUserRankImg {border: 0px none;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/***********MEI DEFINES******************/
+#maintable {width: 830px;}
+
+#footer
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	color:#FFFFFF;
+	background-color:#f99526;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#footer a:link
+{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+#footer a:visited
+{
+	color:#FFFFFF;
+	text-decoration: none;
+}
+#footer a:hover
+{
+	color:#fdbc00;
+	text-decoration: none;
+}
+
+/***** for Xoops 2.0.14+ compatibility *****/
+#mainmenu a, #usermenu a {display: block;}

@@ -1,0 +1,236 @@
+body { color: #272727;background-color : #2EAAD4;background-image: url(imgs/bgw.gif);background-repeat: repeat; font-size: 12px; font-family: /*"lucida sans unicode",*/Verdana, Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
+ 
+table {width: 100%;text-align: left;}
+table td {padding: 0; border-width: 0; vertical-align: top;font-size: 12px;font-family: /*"lucida sans unicode",*/Verdana, Arial, Helvetica, sans-serif;}
+table.maintable {width: 90%;background-color: #D8DDF0;border-left: 8px solid #FFF;border-right: 8px solid #FFF;margin-right: auto;margin-left: auto;}
+table.footertable {width: 90%;margin-right: auto;margin-left: auto;}
+table.maintable {height:600px;}
+table.toptable {width: 90%;border-top: 8px solid #FFF;border-left: 8px solid #FFF;border-right: 8px solid #FFF;;background-color: #D8DDF0;margin-right: auto;margin-left: auto;}
+div {font-size: 12px;}
+
+div.wrapper { text-align: left; }
+
+a {color:  #3147EB;font-size: 90%; text-decoration: none;font-weight: bold; background-color: transparent;}
+a:hover {color: #272727;text-decoration: underline;}
+
+h1 {font-size: 2.3em; font-weight: bold;}
+h2 {font-size: 1.9em; font-weight: bold;}
+h3 {font-size: 1.6em; font-weight: bold;}
+h4 {font-size: 1.3em; font-weight: bold;}
+h5 {font-size: 1.0em; font-weight: bold;}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #9ABEDB}
+
+#Stitle {text-align: left; position: relative; top: 1px; left: 3px;}
+#Sslogan {text-align: left; position: relative; bottom: 5px; right: 5px;}
+
+ input.formButton {}
+.item {border: 1px solid #cccccc;}
+.itemHead {padding: 3px; background-image: url(imgs/bgl.png);background-repeat: repeat-x; color: #FFFFFF;}
+.itemInfo {text-align: right; padding: 3px; background-color: #9ABEDB}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-image: url(imgs/nav-bar-bg.jpg);background-repeat: repeat-x; height: 25px;}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+td#leftcolumn {width: 220px; font-size:11px;padding-left: 5px;}
+td#leftcolumn th {background-image: url(imgs/bgl.png);background-repeat: repeat-x; color: #FFFFFF; vertical-align: middle;}
+td#leftcolumn div.blockTitle {padding-top: 8px; color: #FFFFFF; font-weight: bold;text-align: center;background-image: url(imgs/bglb.png);height:30px;vertical-align: middle;background-position: center; background-repeat: no-repeat;font-size: 110%}
+td#leftcolumn div.blockContent {padding: 3px;margin-top: -10px; line-height: 120%; color: #000000;}
+td#leftcolumn a {color: #043887;}
+td#leftcolumn a:hover {color: #272727;}
+
+td#rightcolumn {width: 220px;font-size:11px;padding-top: 12px;padding-right: 5px;}
+td#rightcolumn th {background-image: url(imgs/bgl.png);background-repeat: repeat-x; color: #FFFFFF; vertical-align: middle;}
+td#rightcolumn div.blockTitle {color: #FFFFFF; font-weight: bold;text-align: center;vertical-align: middle;font-size: 110%}
+td#rightcolumn div.blockContent {padding: 3px; line-height: 120%;color: #000000;}
+
+#centercolumn {font-size: 12px;padding-left: 5px;padding-right: 5px;}
+#centercolumn th {background-image: url(imgs/bgl.png);background-repeat: repeat-x; color: #FFFFFF; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0px 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {padding: 0px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;font-size: 120%}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding: 3px; margin-right: 0px;  margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+	width: 50%; padding: 0px 3px 1px 3px;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+	padding: 0px; color: #FFFFFF; font-weight: bold; margin-top: 0px;font-size: 120%
+}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+	padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 120%;
+}
+
+div#content {text-align: left; padding: 8px;}
+
+
+td#footerbar {text-align:center;background-image: url(imgs/nav-bar-bg.jpg);background-repeat: repeat-x; width: 100%;color: #FFFFFF;vertical-align: middle;}
+td#footerbar a {color: #FFFFFF}
+td#headbg {text-align:center;background-image: url(imgs/heads_02.jpg);background-repeat: repeat-x; width: 100%;color: #FFFFFF;vertical-align: middle;}
+
+td#mainmenu a {background-color: transparent; display: block; margin: 0; padding: 4px;}
+td#mainmenu a:hover {background-color: transparent;}
+td#mainmenu a.menuTop {padding-left: 3px;}
+td#mainmenu a.menuMain {padding-left: 3px;}
+td#mainmenu a.menuSub {padding-left: 9px;}
+
+td#usermenu a {background-color: transparent; display: block; margin: 0; padding: 4px;}
+td#usermenu a:hover {background-color: transparent;}
+td#usermenu a.menuTop {}
+td#usermenu a.highlight {background-color: transparent;}
+
+
+
+.outer {}
+.head {background-color: #9ABEDB;background-image: url(imgs/blocks_06a.png);background-repeat: repeat-y;
+	background-position: left;width: 10px; padding: 5px; font-weight: bold;}
+.even {background-color: #dee3e7; padding: 5px;border-bottom: 1px solid #1494C7;border-right: 1px solid #1494C7;border-left: 1px solid #1494C7;}
+.odd {background-color: #E9E9E9; padding: 5px;border-bottom: 1px solid #1494C7;border-right: 1px solid #1494C7;border-left: 1px solid #1494C7;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #dee3e7; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.blocks {margin-bottom: 5px;}
+.cornerTLC {background-image: url(imgs/blocks_01.png);height: 39px;width: 32px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerTC {background-image: url(imgs/blocks_03.png);background-repeat: repeat-x;}
+.cornerTR {background-image: url(imgs/blocks_05.png);background-repeat: no-repeat;
+	background-position: right;height: 39px;width: 32px;}
+.cornerTLB {background-image: url(imgs/left_01.png);height: 15px;width: 32px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerTCB {background-image: url(imgs/left_03.png);background-repeat: repeat-x;}
+.cornerTRB {background-image: url(imgs/left_05.png);background-repeat: no-repeat;
+	background-position: right;height: 15px;width: 32px;}
+.cornerBL {background-image: url(imgs/blocks_13.png);height: 16px;width: 32px;
+	background-repeat: no-repeat;background-position: left;}
+.cornerBC {background-image: url(imgs/blocks_14.png);background-repeat: repeat-x;}
+.cornerBR {background-image: url(imgs/blocks_15.png);height: 16px;width: 32px;
+	background-repeat: no-repeat;background-position: right;}
+.cornerCC {background-image: url(imgs/blocks_08.png);background-repeat: repeat;
+	background-position: top;}
+.cornerCL {background-image: url(imgs/blocks_06a.png);background-repeat: repeat-y;
+	background-position: left;width: 10px;vertical-align: top;}
+.cornerCR {background-image: url(imgs/blocks_10a.png);background-repeat: repeat-y;
+	background-position: right;width: 10px;vertical-align: top;}
+
+/* forms elements */
+input { border: 1px solid #CCCCCC;font-size: 11px; font-family: verdana, arial, helvetica, sans-serif; color: #333333;  background-color: #ffffff;padding-left:3px;background-color: #f7f7f7;}
+textarea {background-color: #f7f7f7;color: #333333; border: #CCCCCC 1px solid; width: 430px; font-size: 11px; font-family: verdana, arial, helvetica, sans-serif;}
+select {border: 1px solid #CCCCCC; font-size: 11px; font-family: verdana, arial, helvetica, sans-serif;}
+.formButton {background-color: #3147EB;color: #FFFFFF;font-weight: bold;text-align:center;}
+input:focus, textarea:focus{background-color: #ffffff;border: 1px solid #9f9f9f;}
+
+td#add {width: 100px;padding-right: 60px;padding-top: 330px;}
+table.alltab{width: 100%;margin-left: auto;margin-right: auto}
+
+/* ######### Style for Navigation Bar ######### */
+
+
+.chromestyle{
+width: 100%;
+font-weight: bold;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromestyle ul{
+border: 1px solid #BBB;
+width: 100%;
+background: url(imgs/nav-bar-bg.jpg) center center repeat-x; /*THEME CHANGE HERE*/
+padding: 4px 0;
+margin: 0;
+text-align: center; /*set value to "left", "center", or "right"*/
+}
+
+.chromestyle ul li{
+display: inline;
+}
+
+.chromestyle ul li a{
+color: #FFF;
+padding: 4px 7px;
+margin: 0;
+text-decoration: none;
+border-right: 1px solid #DADADA;
+}
+
+.chromestyle ul li a:hover{
+background: url(imgs/chromebg-over.gif) center center repeat-x; /*THEME CHANGE HERE*/
+color: #000000;
+}
+
+.chromestyle ul li a[rel]:after{ /*HTML to indicate drop down link*/
+content: " v";
+/*content: " " url(imgs/downimage.gif); /*uncomment this line to use an image instead*/
+}
+
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+position:absolute;
+top: 0;
+border: 1px solid #BBB; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+background-color: white;
+width: 200px;
+visibility: hidden;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4); /*Add Shadow in IE. Remove if desired*/
+}
+
+
+.dropmenudiv a{
+width: auto;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid #BBB; /*THEME CHANGE HERE*/
+padding: 2px 0;
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+background-color: #F0F0F0;
+}

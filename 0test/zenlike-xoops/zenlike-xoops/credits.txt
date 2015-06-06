@@ -1,0 +1,4 @@
+- Free templates Zenkike from Nodethirtythree.com
+- Ported to Xoops by Xoops4Noobs.fr. 
+- Theme based on Mor.pho.GEN.e.sis version 2.1, by kris (http://www.xoofoo.org and http://www.frxoops.org)
+Initial work Snow77 (xoops-design.com), Skalpa, Leostotch + Dugris for help 

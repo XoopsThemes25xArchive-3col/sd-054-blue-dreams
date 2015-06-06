@@ -1,0 +1,6 @@
+blue #3676b0
+green #44aa37
+red #cc4129
+kaki #a7b560
+orange #fa8a0a
+brown #de9b59

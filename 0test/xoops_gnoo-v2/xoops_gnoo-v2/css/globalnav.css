@@ -1,0 +1,28 @@
+#xo-globalnav{
+	font-size: 11px;
+	width: 700px;
+	height: 22px;
+	font-weight: bold;
+}
+#xo-globalnav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#xo-globalnav li{
+	background: none;
+}
+
+#xo-globalnav .nav1 a:link, #xo-globalnav .nav1 a:visited, #xo-globalnav .nav2 a:link, #xo-globalnav .nav2 a:visited, #xo-globalnav .nav3 a:link, #xo-globalnav .nav3 a:visited, #xo-globalnav .nav4 a:link, #xo-globalnav .nav4 a:visited{
+	color: #FFF;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	background: url(img/globalnav_hover.gif) top repeat-y;
+	padding: 0;
+}
+
+#xo-globalnav .nav1 a:hover, #xo-globalnav .nav1 a:active, #xo-globalnav .nav2 a:hover, #xo-globalnav .nav2 a:active, #xo-globalnav .nav3 a:hover, #xo-globalnav .nav3 a:active, #xo-globalnav .nav4 a:hover, #xo-globalnav .nav4 a:active{
+	background: url(img/globalnav.gif) top repeat-y;
+	margin: 0px 0 0 0;
+}

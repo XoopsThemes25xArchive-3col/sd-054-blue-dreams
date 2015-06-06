@@ -1,0 +1,124 @@
+/* based on morphogenesis 1.1.2 */
+
+/*======= Style pour les formulaires, boutons, zones de texte, ... ========*/
+
+.xo-block form {
+	margin:						0;
+	padding:						0;
+}
+#xo-content form {
+	margin:						0;
+	background:					transparent;
+}
+
+.xo-block .formButtons {
+	text-align:					center;
+	padding:						.5em;
+}
+
+label {
+	display:						block;
+	padding:						0;
+	background:					transparent;
+}
+.xo-formfield {
+	margin-bottom:				.2em;
+	background:					transparent;
+}
+.xo-formbuttons, .formButton, button {
+	color: 						#000;
+	background-color: 		#66ccff;
+	font-size:					0.9em;
+	border: 						1px solid #555;
+	padding: 					2px;
+}
+.xo-formbuttons:hover, .formButton:hover, button:hover {
+	cursor:						pointer;
+	border: 						1px solid #505050;
+	background: 				#000;
+	color: 						#ccc;
+}
+#xo-content .xo-formfield.required label:after {
+	content:						'*';
+	color:						#ff0000;
+	background-color: 		#fff;
+}
+select {
+	background:					#fff;
+	color:						#333;
+	font-size: 					.9em;
+}
+select[name=timezone_offset] {
+	color:						#333;
+	font-size:					.9em;
+	background-color:			#fff;
+}
+input[type=submit], input[type=reset], input[type=button] {
+	color: 						#000;
+	background-color: 		#66ccff;
+	font-size:					.9em;
+	border: 						1px solid #555;
+	padding:						2px;
+}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
+	cursor:						pointer;
+	border: 						1px solid #66ccff;
+	background-color:			#000;
+	color: 						#ccc;
+}
+input[type=text], input[type=password] {
+	color:							#60A3D7;
+	background-color:				#121212;
+	text-align:						center;
+	border: 							0;
+	border-bottom: 				1px dashed #66ccff;
+	margin-bottom: 				10px;
+} 
+input[type=text]:focus, input[type=password]:focus {
+	color:							#fff;
+	background-color: 			transparent;
+	border-bottom: 				1px dotted #fff;
+} 
+
+
+input[type=checkbox], textarea {
+	border:							1px solid #999;
+	margin:							2px 0;
+	padding-left:					.2em;
+	background-color:				#fff;
+	color:							#333;
+}
+input[type=text], input[type=password] {}
+/*input[type=text]:focus, input[type=password]:focus,*/ input[type=checkbox]:hover, textarea:focus {
+	border-color:					#666F7D;
+	outline:							1px solid #666F7D;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {}
+
+textarea { width: 				95%;}
+label {
+	font-weight: 					bold;
+	font-size: 						.9em;
+	font-style: 					italic;
+	padding: 						5px 0 5px 0;
+}
+fieldset {
+	padding: 						1em;
+	line-height: 					1.8em;
+}
+fieldset a {
+	font-weight: 					bold;
+	color: 							#ff0000;
+	background-color: 			inherit;
+	text-transform: 				uppercase;
+}
+fieldset a:hover {
+	text-decoration: 				underline;
+}
+legend {
+	color: 							#1E87C5;
+	background-color: 			inherit;
+	font-size: 						1.1em;
+	font-weight: 					bold;
+}
+

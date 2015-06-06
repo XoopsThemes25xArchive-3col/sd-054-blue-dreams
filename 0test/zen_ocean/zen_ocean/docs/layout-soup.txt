@@ -1,0 +1,36 @@
+/* Ici normalement, vous n'avez qu'à modifier les dimensions
+et le visuel du squelette à proprement parler (bordure des colonnes,
+fond des colonnes, marges principales, etc ...)*/
+
+/*============= Règles principale du squelette ============*/
+#xo-canvas-columns 
+#xo-canvas-leftcolumn 
+#xo-page 
+* html #xo-page 
+
+#xo-canvas-rightcolumn 
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn 
+
+/*========== Règles pour les configurations spécifiques des colonnes ===========*/
+#xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns
+#xo-canvas.rightcolumn-layout #xo-page, #xo-canvas.threecolumns-layout #xo-page 
+#xo-canvas-bottom, #xo-canvas-footer 
+
+/*=========== Blocs centraux =============*/
+#xo-page-topblocks 
+#xo-page-bottomblocks 
+
+#xo-page .xo-blockszone .xo-block 
+#xo-page-topleftblocks, #xo-page-bottomleftblocks 
+#xo-page-toprightblocks, #xo-page-bottomrightblocks 
+#xo-page-topcenterblocks, #xo-page-bottomcenterblocks 
+#xo-page .xo-lcrpageblocks .xo-blockszone, #xo-page .xo-lcrpageblocks .xo-blockszone 
+.xo-lcrpageblocks #xo-page-topleftblocks, .xo-lcrpageblocks #xo-page-topcenterblocks, .xo-lcrpageblocks #xo-page-bottomleftblocks, .xo-lcrpageblocks #xo-page-bottomcenterblocks 
+#xo-page .xo-blockszone .xo-blockcontent 
+* html #xo-page .xo-blockszone .xo-blockcontent 
+
+#xo-page-topblocks .xo-block, #xo-page-bottomblocks .xo-block 
+#xo-page-topblocks *>.xo-block, #xo-page-bottomblocks *>.xo-block 
+#xo-page .xo-blockszone > .xo-block 
+#xo-page .xo-blockszone .xo-block:before 
+#xo-page .xo-blockszone .xo-block:after 

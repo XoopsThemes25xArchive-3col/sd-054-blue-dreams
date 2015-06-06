@@ -1,0 +1,6 @@
+Changelog SimpleRed Theme 1.0
+Saturday 31, 2009 
+=============
+1 Theme ported to ImpressCMS/Xoops (original template by solucija.com)
+
+

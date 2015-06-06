@@ -1,0 +1,5 @@
+#wdc_navbar {float:left; margin-top:2px; line-height:15px; height:15px; width:850px; vertical-align:middle; text-align:center;}
+#wdc_navbar a {float:left; padding-top:10px; padding-bottom:9px; line-height:15px; height:15px; padding-left:15px; padding-right:15px; text-align:center; color:#000000;}
+#wdc_navbar a:hover {float:left; line-height:15px; height:15px; color:#ffffff; background-color:#bdde59;}
+
+#wdc_content {float:left; width:866px; vertical-align:top; height:auto; background: url(images/bg/WDC_006_content_bg.gif) repeat-y;}

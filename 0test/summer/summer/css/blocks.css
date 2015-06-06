@@ -1,0 +1,110 @@
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn { 
+	background-color:transparent ;
+	width : 170px;
+	margin: 0;
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	padding-top:2px;
+    border-right: 1px solid  #B2DFEE;
+}
+
+#xo-canvas-leftcolumn h3.xo-blocktitle { 
+    background:				url("../img/rii.jpg") no-repeat left;
+    font-size: 12px;
+    margin-left:  6px ;
+	padding: 5px;  
+	text-align: center;
+	font-weight: bold;  
+	height:25px
+	
+    
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent { 
+	padding: 3px;
+	padding: 0 12px 8px 0;
+	padding-left: 8px;
+}
+
+
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+	padding: 10px;
+	width : 170px;
+	padding-top:1px;
+	padding-left: 1px;
+	margin-right:2px;
+	border-left: 1px solid  #B2DFEE;
+	
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {background:			#F0F8FF		url("../img/le.jpg") no-repeat;
+	font-size: 12px;
+    margin-left:  6px ;
+	padding: 5px;  
+	text-align: center;
+	font-weight: bold;  
+	height:25px
+	
+	
+
+	
+}
+#xo-canvas-rightcolumn .xo-blockcontent { 
+	color: #666666;
+	padding-left: 8px;
+	padding-bottom: 15px;
+	padding-left:2px;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {
+  margin: 1px;
+ 
+
+ 
+ 
+}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin: 5px;
+  padding-left: 20px;
+  color :#104E8B;
+  font-weight: bold;
+  background: 			#B2DFEE	url("../img/h2.png") no-repeat;
+ 
+  
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  text-align: justify;
+  
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;  border-bottom: 1px solid  #B2DFEE;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle {
+  margin: 5px;
+  padding-left: 10px;
+  color: #104E8B;
+  font-weight: bold;
+  background: 			#B2DFEE	url("../img/h2.png") no-repeat;
+  padding-left: 20px;
+   
+  
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom: 2px;
+  
+  line-height: 1.3em;
+  text-align: justify;  
+}
+
+#xo-topleftblocks{border-right: 1px solid  #B2DFEE;  }
+ #xo-bottomrightblocks {border-left: 1px solid  #B2DFEE;}
+
+

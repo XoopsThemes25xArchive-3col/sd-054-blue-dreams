@@ -1,0 +1,55 @@
+<script  type="text/javascript">
+function hideAll()
+{
+document.getElementById('notifform').style.display = 'none';
+}
+function showForm(obj)
+{
+obj.style.display = 'block';
+}
+</script>
+
+<{if $xoops_notification.show}>
+<br />
+<div id="system-select_notifications">
+<table class="outer">
+	<tr>
+    	<th>&nbsp;<a href="javascript:;" onclick="hideAll();showForm(document.getElementById('notifform'));" title=""><img src="<{xoImgUrl modules/system/images/plus.png}>" alt="<{$smarty.const.THEME_SHOW}>" /></a>&nbsp;&nbsp;<a href="javascript:;" onclick="hideAll();" title=""><img src="<{xoImgUrl modules/system/images/moins.png}>" alt="<{$smarty.const.THEME_HIDE}>" /></a>
+&nbsp;&nbsp;<{$lang_notificationoptions}>
+		</th>
+	</tr>
+</table>
+
+<form id="notifform" name="notification_select" action="<{$xoops_notification.target_page}>" method="post">
+<input type="hidden" name="not_redirect" value="<{$xoops_notification.redirect_script}>" />
+<table class="outer">
+  <tr>
+    <td class="head"><{$lang_category}></td>
+    <td class="head"><input name="allbox" id="allbox" onclick="xoopsCheckAll('notification_select','allbox');" type="checkbox" class="checkbox" value="<{$lang_checkall}>" /></td>
+    <td class="head"><{$lang_events}></td>
+  </tr>
+  <{foreach name=outer item=category from=$xoops_notification.categories}>
+  <{foreach name=inner item=event from=$category.events}>
+  <tr>
+    <{if $smarty.foreach.inner.first}>
+    <td class="head" rowspan="<{$smarty.foreach.inner.total}>"><{$category.title}></td>
+    <{/if}>
+    <td class="head">
+    <{counter assign=index}>
+    <input type="hidden" name="not_list[<{$index}>][params]" value="<{$category.name}>,<{$category.itemid}>,<{$event.name}>" />
+    <input type="checkbox" class="checkbox" id="not_list[]" name="not_list[<{$index}>][status]" value="1" <{if $event.subscribed}>checked="checked"<{/if}> />
+    </td>
+    <td class="head"><{$event.caption}></td>
+  </tr>
+  <{/foreach}>
+  <{/foreach}>
+  <tr>
+    <td class="head" colspan="3" align="center"><input type="submit" name="not_submit" value="<{$lang_updatenow}>"/></td>
+  </tr>
+</table>
+</form>
+<div class="itemInfo">
+<{$lang_notificationmethodis}>:&nbsp;<{$user_method}>&nbsp;&nbsp;[<a href="<{$editprofile_url}>"><{$lang_change}></a>]
+</div>
+<{/if}>
+</div>

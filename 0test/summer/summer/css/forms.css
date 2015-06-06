@@ -1,0 +1,104 @@
+/* --------- Forms --------- */
+.xo-block form {
+        margin: 0;
+        padding: 0 0 0 8px;
+}
+#xo-content form {
+        margin: 0;
+        color: inherit;
+        background: transparent;
+        padding: 0;
+}
+.xo-formButtons, .xo-formButton, button {
+        padding: .25em;
+        text-align: center;
+}
+label {
+        padding: 0;
+        color: inherit;
+        background: transparent;
+}
+.xo-formfield {
+        margin-bottom: .2em;
+        color: inherit;
+        background: transparent;
+}
+#xo-content .xo-formfield.required label:after {
+        content: '*';
+        color: #ff0000;
+        background-color: #fff;
+}
+select {
+        color: #333;
+        background-color: #fff;
+        font-size: .9em;
+        border: 2px inset #f1f3f8 !important;
+	max-width: 50%;
+}
+select[name=timezone_offset] {
+        font-size: .9em;
+}
+button,input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {
+        margin: 3px 0 3px 0;
+        background: #44bbee;
+        color: #fafafa;
+        font-size: .9em;
+        font-weight: bold;
+        border: 1px solid #4c9ceb;
+        cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover  {
+        background: #4c9ceb;
+        color: #fafafa;
+	    border: 1px solid #44bbee;
+        cursor: pointer;
+}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {
+        border: 1px solid #ddd;
+        margin: 2px 5px 2px 0;
+        padding-left: .2em;
+        color: inherit;
+        background-color: #fff;
+		
+		
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover {
+        color: #333;
+        background-color: #E9E9E9;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:hover, input[type=file]:focus/*, textarea:hover*/ {
+        background-color: #f1f2f3;
+        color: #333;
+        border-color: #44bbee;
+        outline: 1px solid #44bbee;
+}
+input[type=radio] {
+    margin: 0 5px 0 5px;
+}
+textarea {
+    width: 90%;
+    
+}
+label {font-weight: bold;}
+fieldset {
+        padding: 1em;
+        line-height: 1.8em;
+}
+fieldset a {
+        color: #ff0000;
+        background-color: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+fieldset a:hover {
+        text-decoration: underline;
+}
+legend {
+        font-size: 1.1em;
+        font-weight: bold;
+}
+
+
+
+

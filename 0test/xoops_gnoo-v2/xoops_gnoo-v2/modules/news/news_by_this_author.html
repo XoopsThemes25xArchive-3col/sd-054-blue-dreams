@@ -1,0 +1,45 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<table>
+	<tr align="center">
+    	<td colspan="2"><img src='<{$user_avatarurl}>' alt='<{$author_name}>' title='<{$author_name}>' /></td>
+    	<td colspan="2" class="head" style="vertical-align:middle"><{$lang_news_by_this_author}> :<br /><{$author_name_with_link}></td>
+	</tr>
+</table>
+<{foreach item=topic from=$topics}>
+<table style="padding-bottom: 2em;">	
+  <tr>
+    <{if $news_rating}>
+      <th colspan='4'>
+    <{else}>
+      <th colspan='3'>
+    <{/if}>
+      <{$topic.topic_link}>
+      </th>
+  </tr>
+  <tr class="left">
+    	<td class="head"><{$lang_date}></td>
+    	<td class="head"><{$lang_title}></td>
+    	<td class="head"><{$lang_hits}></td>
+    	<{if $news_rating}>
+      		<td class="head"><{$lang_rating}></td>
+    	<{/if}>
+  </tr>
+  <{foreach item=article from=$topic.news}>
+  <tr class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+		<td><{$article.published}></td>
+    	<td><{$article.article_link}></td>
+    	<td><{$article.hits}></td>
+    <{if $news_rating}>
+      	<td><{$article.rating}></td>
+    <{/if}>
+  </tr>
+  <{/foreach}>
+  <tr class="left">
+		<td colspan='2' class="even"><{$topic.topic_count_articles}></td>
+		<td class="even"><{$topic.topic_count_reads}></td>
+        <{if $news_rating}><td class="even">&nbsp;</td><{/if}>
+	</tr>
+</table>
+<{/foreach}>
+<!-- if you don't use morphogenesis gabarit : </div> -->

@@ -1,0 +1,256 @@
+/* Mor.pho.GEN.e.sis version 1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 1.2) - 28 janvier 2009 */
+/*Thème :  Xoops City Design by SabOUm  (http://www.saboum.com) */
+@import url(blocks.css);
+@import url(content.css);
+@import url(navigation.css);
+@import url(forms.css);
+
+html, body {
+    margin : 0 auto;
+    height:100%;
+	background:					url(img/bgcity.png);
+	background-color: 			#000;
+	background-repeat: 			repeat-x ;
+	background-position: 		top center;
+	padding:					0px;
+	font-size:						10pt;
+	font-family:					"Lucida Grande", Verdana, sans-serif;
+	color:							#000;
+	border: 0 !important;
+}
+table { width: 					100%;}
+table td {
+	padding: 						0;
+	border-width: 					0;
+	vertical-align: 				top;
+}
+#xo-canvas {
+    margin : 0 auto;
+    width:960px;
+	color:							#FFF;
+	background-color: 			transparent;
+}
+body.theme-dialog #xo-canvas {
+	margin:							0 6px;
+}
+/* ---------- Top header --------- */
+#xo-top {}
+/* ---------- Bannières ---------- */
+#xo-banner {
+	clear:							both;
+/* Use relative pos to ensure the banner ad img/flash is relative to the header */
+	position:						relative; 
+	z-index:							100;
+	width:							960px;
+	height:							250px;	
+	background:						url(img/banniere.png)  no-repeat;
+    	background-position: 		bottom center;
+}
+#xo-banner.commercial {
+	height:							250px;
+}
+body.theme-dialog #xo-banner {
+	padding-top:					6px;
+	padding-left:					10px;
+	height:							48px;
+}
+
+/* Keep the ad img centered by using auto-margins and centeredcontainer/leftalignedchild on MSIE */
+#xo-banner-ad {
+	position:						absolute;
+	top:								50px;
+	right:							25px;
+}
+#xo-banner-ad object, #xo-banner-ad img {
+	display:							block;
+}
+
+/*---------------------- Nom du site dans le header ----------------------------*/
+#xo-site-title {
+	position: 						relative;
+	top: 								10px;
+	padding: 						10px 0 0 20px;
+	font-family:	 				"Lucida Grande","Trebuchet MS", Verdana, sans-serif;
+	font-size:						2.2em;
+	font-weight:					bold;
+	color:							#FFF;
+	background-color:				transparent;
+}
+a#xo-site-title {
+	color:							#FFF;
+	background-color:				transparent;
+}
+a:hover#xo-site-title {
+	color: 							#FFF;
+	background-color:				transparent;
+}
+#xo-site-title.commercial {
+	padding: 						10px 0 0 0px;
+	margin: 							0 10px;
+	color:							#FFF;
+	background-color:				transparent;
+ }
+ #xo-site-title .commercial a:hover {
+	color:							#EAAD7B;
+	background-color: 			inherit;
+}
+/*----------------------- titre du slogan du site dans le header ------------------------*/
+#xo-site-slogan {
+	position: 						relative;
+	top: 								10px;
+	color: 							#FFF;
+	background-color:				transparent;
+	font-style: 					italic;
+	padding-left: 					70px;
+}
+#xo-site-slogan.commercial {}
+
+/*------------------------ Affichage du logo ----------------------------*/
+
+#xo-main-logo.commercial {}
+/*-------- Affichage des champs de saisie dans le header-----------*/
+#xo-banner form {
+	margin:							0;
+	display:							inline;
+	color:							#FFF;
+	background-color:				transparent;
+}
+#xo-banner input {
+	color:							#FFF;
+	background-color:				transparent;
+	width:							8em;
+	margin:							0 0 0 2px;
+}
+#xo-banner button:hover {
+	border: 0 !important;
+}
+
+/*============== Styles pour l'include userbar.html =================*/
+#xo-userbar {
+	position:						absolute;
+	bottom:							1px;
+	right:							1em;
+	text-align:						right;
+	color:							#FFF;
+	background-color: 			transparent;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0 -3px;
+	border:							0 none;
+	padding:							0;
+	color:							#FFF;
+	background:						transparent;
+}
+#xo-userbar button img {
+	width: 							22px;
+	height: 							22px;
+ }
+#xo-userbar img {
+	width: 							22px;
+	height: 							22px;
+}
+#xo-userbar input {
+	color:							#FFF;
+	background-color: 			transparent;
+}
+#xo-userbar input:hover {
+	color:							#FFF;
+	background-color: 			#648EFF;
+}
+#xo-userbar a {
+	color: 							#FFF;
+	background-color: 			transparent;
+	text-decoration:				none;
+}
+#xo-userbar a:hover {
+	color: 							#FFF;
+	background-color: 			#FF0000;
+}
+#xo-uname {
+	color:							#FFF;
+	background-color: 			transparent;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+
+/*=============== Affichage Pied de page - Footer  ====================*/
+#xo-footer {
+	background:						url(img/footer-bg.png)  repeat-x;
+	margin:							0;
+	padding:							0;
+	height: 						250px;
+	color:							#FFF;   	
+	background-color: 			transparent;
+	text-align:						center;
+	font-size:						.8em;
+}
+body.theme-dialog #xo-footer { padding: .2em .5em; font-size:	.8em;}
+#xo-footer a {
+	color: 							#FFF;
+	background-color: 			transparent;
+	text-decoration: 				none;
+}
+#xo-footer a:hover {
+	color: 							#FF0000;
+	background-color: 			transparent;
+	text-decoration: 				underline;
+}
+#xo-footer .copyright {
+	position: 						relative;
+	top:								50px;
+	float: 							left;
+	font-size: 						0.9em;
+	line-height: 					22px;
+	font-weight: 					normal;
+	text-decoration: 				none;
+	background-color:				transparent;
+}
+#xo-footer .design {
+	position: 						relative;
+	top:								50px;
+	float: 							right;
+	right : 							15px;
+	font-size: 						0.9em;
+	line-height: 					22px;
+	font-weight: 					normal;
+	text-decoration: 				none;
+	background-color:				transparent;
+}
+#xo-footer .rss {
+	position: 						relative;
+	display:							block;
+	float: 							right;
+	top:								50px;
+	right: 							4px;
+	background-color: 			transparent;
+}
+#xo-footer .rss a:hover {	text-decoration: none;}
+/*================= Zone de contenu ===================*/
+#xo-canvas-content {
+	padding:							0px;
+	color:							#FFF;
+	background:						url(img/canvas-content.png) no-repeat ;
+	background:						url(img/page.png) no-repeat ;
+	background-color:				transparent;
+	border: 0;
+}
+#xo-page {
+	color:							#FFF;
+	background-color:				transparent;
+	border-color:					#b6b7b8;
+}
+#xo-canvas-rightcolumn {padding: .5em;	color:#FFF;	background-color: transparent;}
+#xo-content {
+	clear:							both;
+	padding:							.5em;
+	margin:							0;
+	color:							#FFF;
+	background-color:				transparent;
+}
+
+#xo-logger-output {font-size:	.8em;}

@@ -1,0 +1,17 @@
+<{foreach item=user from=$block.users}>
+<table>
+  <tr class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+    <td>
+				<{if $user.avatar != ""}>
+        <img src="<{$user.avatar}>" alt="" width="50" height="50" />
+        <{else}>
+        <img src="<{xoImgUrl modules/system/images/blank.png}>" alt="" width="50" height="50" />
+        <{/if}>
+    </td>
+    <td><br />
+        <a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>" title="<{$user.name}>"><{$user.name}></a>
+        <p class="small">n° <{$user.rank}> (<{$user.posts}>)</p>
+    </td>
+  </tr>
+</table>
+<{/foreach}>

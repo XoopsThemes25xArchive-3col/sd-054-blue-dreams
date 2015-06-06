@@ -1,0 +1,179 @@
+/*
+Zetagenesis 2 BlueLagoon
+Created by burning, maintained by Xoops france <http://www.frxoops.org>
+XOOPS 2.0.1x and 2.3.x, 1/2 or 3 columns, full screen
+
+$Id: modules.css 382 2009-02-13 11:05:15Z dugris $
+*/
+
+.moduleHead {
+    margin-bottom:          20px
+}
+.moduleTitle {
+    color:                  #0195bb;
+    font-size:              1.2em;
+    font-weight:            bold;
+    text-align:             center;
+}
+.moduleDescription {
+    display:                block;
+    color:                  #0195bb;
+    margin:                 10px 0;
+    padding:                5px;
+    font-weight:            bold;
+    text-align:             center;
+    border-top:             1px solid #0195bb;
+    border-bottom:          1px solid #0195bb;
+}
+
+.item {
+    clear:                  both;
+    margin-bottom:          1.5em;
+    border:                 1px solid #b5e8fc;
+    width:                  100% !important;
+    padding:                .25em .5em;
+}
+.item:hover {}
+.item img {
+    margin:                 0 5px;
+    border:                 1px solid transparent !important;
+}
+.item img:hover {}
+.itemHead {
+    background-color:       #b5e8fc;
+    padding:                .25em .5em;
+}
+.itemHead a {
+    background-color:       inherit;
+    color:                  #000;
+    font-weight:            bold;
+}
+.itemHead img {
+    width:                  24px;
+    height:                 24px;
+    vertical-align:         middle;
+}
+.itemTitle {
+    background-color:       inherit;
+}
+.itemTitle a {
+    background-color:       inherit;
+    color:                  #000;
+    text-decoration:        none;
+}
+.itemTitle a:hover {
+    background-color:       inherit;
+    text-decoration:        underline;
+}
+
+.itemBody {
+    clear:                  both;
+    padding-top:            1em;
+    padding-bottom:         1em;
+    background-color:       inherit;
+    padding:                0px;
+    text-align:             justify;
+}
+.itemBody img {
+    margin:                 5px;
+}
+.itemBody a{
+    background-color:       inherit;
+    font-weight:            bold;
+}
+.itemBody a:hover {
+    background-color:       transparent;
+    text-decoration:        underline;
+}
+.itemText {
+    margin-top:             1px;
+    margin-bottom:          1px;
+    background-color:       inherit;
+    color:                  inherit;
+    text-align:             justify;
+}
+.itemText:first-letter {}
+.itemText a {
+    color:                  inherit;
+    background-color:       inherit;
+    text-decoration:        underline;
+}
+.itemText a:hover {
+    color:                  inherit;
+    background-color:       inherit;
+    text-decoration:        underline;
+}
+
+.itemInfo {
+    background-color:       inherit;
+    padding:                3px;
+    font-style:             italic;
+    text-align:             right;
+}
+.itemInfo a {}
+.itemInfo a:hover{}
+
+.itemPoster, .itemPostDate, .itemStats {
+    background-color:       inherit;
+    color:                  #000;
+    font-size:              .9em;
+}
+.itemPoster a{
+    font-weight:            bold;
+}
+.itemPoster a:hover {
+    background-color:       inherit;
+    text-decoration:        underline;
+}
+.itemFoot {
+    background-color:       inherit;
+    padding:                3px;
+    text-align:             right;
+}
+.itemFoot a {}
+.itemFoot img {}
+.itemFoot img:hover {}
+
+.itemAdminLink {
+    background-color:       inherit;
+    font-size:              .9em;
+    text-align:             right;
+}
+.itemPermaLink {
+    background-color:       inherit;
+    font-size:              .9em;
+}
+
+.itemTags {
+    margin:                 3px 0;
+    text-align:             left;
+}
+.itemTags img {
+    width:                  9px !important;
+    height:                 9px !important;
+    margin:                 0 5px;
+}
+
+.itemOrder {
+    width:                  70%;
+    margin:                 5px auto;
+    border:                 1px solid #b5e8fc;
+    text-align:             center;
+}
+
+.itemOrder img {
+    width!                  14px;
+    height:                 14px;
+    vertical-align:         middle;
+}
+
+.breadcrumb {
+}
+.breadcrumb:after {
+    margin:                 0 2px;
+    padding-bottom:         2px;
+    font-size:              .7em;
+    font-weight:            bold;
+    content:                '||';
+    vertical-align:         middle;
+}

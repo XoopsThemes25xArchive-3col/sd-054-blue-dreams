@@ -1,0 +1,67 @@
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: globalnav.html 221 2009-02-21 19:12:38Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if $cms == "xoops"}>
+ <{php}>include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php'; $modules = b_system_main_show(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{elseif $cms == "exm"}>
+ <{php}>include_once XOOPS_ROOT_PATH.'/modules/system/blocks/block_mainmenu.php'; $modules = system_bk_mainmenu(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{elseif $cms == "icms"}>
+ <{php}>include_once ICMS_ROOT_PATH.'/modules/system/blocks/system_blocks.php'; $modules = b_system_main_show(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{else}>
+ <{assign var=ixt_lang_home value="Home"}>
+<{/if}>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+ sfHover = function() {var sfEls = document.getElementById("ixt-nav").getElementsByTagName("LI"); for (var i=0; i<sfEls.length; i++) {sfEls[i].onmouseover=function() {this.className+=" sfhover";}; sfEls[i].onmouseout=function() {this.className=this.className.replace(new RegExp(" sfhover\\b"), "");};}}; if (window.attachEvent) window.attachEvent("onload", sfHover);
+//--><!]]>
+</script>
+<div id="ixt-top_menu_wrap">
+ <div class="ixt-top_menu">
+  <div id="ixt-ddmenuwrap">
+   <div id="ixt-ddmenu"> 
+    <div id="ixt-nav">
+     <ul>
+      <li><a href="<{$ixt_url}>/index.php" title="<{$ixt_lang_home}>"><{$ixt_lang_home}></a>
+      <li><a href="#" title="menu2">menu2</a>
+       <ul>
+        <li><a href="#" title="submenu2.1">submenu2.1</a></li>
+        <li><a href="#" title="submenu2.2">submenu2.2</a></li>
+       </ul>
+      </li>
+      <li><a href="#" title="menu3">menu3</a>
+      <li><a href="#" title="menu4">menu4</a>
+      <li><a href="#" title="menu5">menu5</a>
+       <ul>
+        <li><a href="#" title="submenu5.1">submenu5.1</a></li>
+        <li><a href="#" title="submenu5.2">submenu5.2</a></li>
+        <li><a href="#" title="submenu5.3">submenu5.3</a></li>
+        <li><a href="#" title="submenu5.4">submenu5.4</a></li>
+        <li><a href="#" title="submenu5.5">submenu5.5</a></li>
+       </ul>
+      </li>
+      <li><a href="#" title="menu6">menu6</a>
+       <ul>
+        <li><a href="#" title="submenu6.1">submenu6.1</a></li>
+        <li><a href="#" title="submenu6.2">submenu6.2</a></li>
+        <li><a href="#" title="submenu6.3">submenu6.3</a></li>
+        <li><a href="#" title="submenu6.4">submenu6.4</a></li>
+       </ul>
+      </li>
+      <li><a href="#" title="menu7">menu7</a></li>
+      <li><a href="#" title="menu8">menu8</a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

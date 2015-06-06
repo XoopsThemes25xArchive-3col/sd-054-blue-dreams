@@ -1,0 +1,130 @@
+.xo-block form {
+  margin: 0;
+  padding: 0;
+}
+
+#xo-content form {
+  margin: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+.xo-formfield {
+  margin-bottom: .2em;
+  background-color: transparent;
+  color: inherit;
+}
+
+.xo-block .formButtons {
+  padding: .5em;
+  text-align: center;
+}
+
+.xo-formbuttons, .formButton, button {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color:       #848383 !important;
+  color: #ccc;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  font-variant: small-caps;
+  border: 1px solid #ccc;
+}
+
+.xo-formbuttons:hover, .formButton:hover, button:hover {
+  background-color: #dcdcdc;
+  color: #505050;
+  border:                         1px solid #505050 !important;
+  cursor: pointer;
+}
+
+#xo-content .xo-formfield .required label:after {
+  background-color: #fff;
+  color: #ff0000;
+  content: '*';
+}
+
+select {
+  background-color: #fff;
+  color: #333;
+  font-size: .9em;
+  border: 2px inset #f1f3f8;
+}
+
+select [ name = timezone_offset ] {
+  background-color: #fff;
+  color: #333;
+  font-size: .9em;
+}
+
+input [ type = submit ], input [ type = reset ], input [ type = button ], #xo-searchbar input [ type = button ] {
+  background-color:       #848383 !important;
+  color:                      #dcdcdc !important;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  font-variant: small-caps;
+  border: 1px solid #ccc;
+}
+
+input [ type = submit ]:hover, input [ type = reset ]:hover, input [ type = button ]:hover, #xo-searchbar input [ type = button ]:hover {
+  background-color:           #dcdcdc !important;
+  color:                      #848383 !important;
+  border: 1px solid #505050;
+  cursor: pointer;
+}
+
+input [ type = text ], input [ type = password ], input [ type = checkbox ], textarea, #xo-searchbar input [ type = text ] {
+  margin: 2px 0;
+  padding-left: .2em;
+  background-color: #c6c7c9;
+  color: #333;
+  border: 1px solid #999;
+}
+
+input [ type = text ]:hover, input [ type = password ]:hover, #xo-searchbar input [ type = text ]:hover {
+  background-color: #E2E2E2;
+  color: #333;
+}
+
+input [ type = text ]:focus, input [ type = password ]:focus, input [ type = checkbox ]:hover, textarea:focus {
+  border-color: #848383;
+  outline: 1px solid #848383;
+}
+
+#xo-page textarea {}
+
+#xo-page fieldset {
+  padding: 1em;
+  line-height: 1.8em;
+}
+
+#xo-page fieldset a {
+  background-color: inherit;
+  color: #ff0000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#xo-page fieldset a:hover {
+  text-decoration: underline;
+}
+
+legend {
+  font-size:                  1.1em !important;
+  font-weight: bold;
+  margin-bottom: .5em;
+  border-bottom: 1px dotted #666;
+}
+
+#xo-page label {
+  background-color: transparent;
+  padding: 0;
+  color: #848383;
+  font-weight: bold;
+}
+
+textarea {
+  width: 80%;
+  max-height: 100px;
+  overflow: auto;
+}

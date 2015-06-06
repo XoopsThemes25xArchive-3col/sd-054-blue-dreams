@@ -1,0 +1,109 @@
+<div id="xo-globalnav">
+	<ul>
+		<li class="x2-label"><!-- <{$smarty.const.THEME_NAVTITLE}> -->&nbsp;</li>
+
+<!-- menu en mode anonyme -->
+
+		<li><a href="<{xoAppUrl}>" accesskey="a"  title="<{$smarty.const.THEME_HOME_DESC}>"><{$smarty.const.THEME_HOME}></a></li>
+		
+    
+    <{if !$xoops_isuser}>
+
+
+   		<li><a href="<{xoAppUrl modules/gestion_texte/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE1_DESC}>"><{$smarty.const.THEME_MODULE1}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/news/}>" title="<{$smarty.const.THEME_MODULE1_SUB1_DESC}>"><{$smarty.const.THEME_MODULE1_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/smartfaq}>" title="<{$smarty.const.THEME_MODULE1_SUB2_DESC}>"><{$smarty.const.THEME_MODULE1_SUB2}></a></li> 
+                  <li><a href="<{xoAppUrl modules/catads/}>" title="<{$smarty.const.THEME_MODULE1_SUB3_DESC}>"><{$smarty.const.THEME_MODULE1_SUB3}></a></li>
+				</ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+		  <li><a href="<{xoAppUrl modules/gestion_media/}>" accesskey="" title="<{$smarty.const.THEME_MODULE2_DESC}>"><{$smarty.const.THEME_MODULE2}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mydownloads/}>" title="<{$smarty.const.THEME_MODULE2_SUB1_DESC}>"><{$smarty.const.THEME_MODULE2_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/x_movie/}>" title="<{$smarty.const.THEME_MODULE2_SUB2_DESC}>"><{$smarty.const.THEME_MODULE2_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/extgallery/}>" title="<{$smarty.const.THEME_MODULE2_SUB3_DESC}>"><{$smarty.const.THEME_MODULE2_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/}>" title="<{$smarty.const.THEME_MODULE2_SUB4_DESC}>"><{$smarty.const.THEME_MODULE2_SUB4}></a></li>                                 
+			     </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                
+		  <li><a href="<{xoAppUrl modules/gestion_liens/}>" accesskey="" title="<{$smarty.const.THEME_MODULE3_DESC}>"><{$smarty.const.THEME_MODULE3}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mylinks/}>" title="<{$smarty.const.THEME_MODULE3_SUB1_DESC}>"><{$smarty.const.THEME_MODULE3_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/xhld0/}>" title="<{$smarty.const.THEME_MODULE3_SUB2_DESC}>"><{$smarty.const.THEME_MODULE3_SUB2}></a></li>
+                </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                
+		  <li><a href="<{xoAppUrl modules/gestion_communautes/}>" accesskey="" title="<{$smarty.const.THEME_MODULE4_DESC}>"><{$smarty.const.THEME_MODULE4}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/newbbex/}>" title="<{$smarty.const.THEME_MODULE4_SUB1_DESC}>"><{$smarty.const.THEME_MODULE4_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/newbb/}>" title="<{$smarty.const.THEME_MODULE4_SUB2_DESC}>"><{$smarty.const.THEME_MODULE4_SUB2}></a></li>
+                </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+		  <li><a href="<{xoAppUrl modules/gestion_divers/}>" accesskey="" title="<{$smarty.const.THEME_MODULE5_DESC}>"><{$smarty.const.THEME_MODULE5}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/sitemap/}>" title="<{$smarty.const.THEME_MODULE5_SUB1_DESC}>"><{$smarty.const.THEME_MODULE5_SUB1}></a></li>
+                </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                
+		<{else}>
+
+   		<li><a href="<{xoAppUrl modules/gestion_texte/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE1_DESC}>"><{$smarty.const.THEME_MODULE1}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/news/}>" title="<{$smarty.const.THEME_MODULE1_SUB1_DESC}>"><{$smarty.const.THEME_MODULE1_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/smartfaq}>" title="<{$smarty.const.THEME_MODULE1_SUB2_DESC}>"><{$smarty.const.THEME_MODULE1_SUB2}></a></li> 
+                  <li><a href="<{xoAppUrl modules/catads/}>" title="<{$smarty.const.THEME_MODULE1_SUB3_DESC}>"><{$smarty.const.THEME_MODULE1_SUB3}></a></li>
+				</ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+		  <li><a href="<{xoAppUrl modules/gestion_media/}>" accesskey="" title="<{$smarty.const.THEME_MODULE2_DESC}>"><{$smarty.const.THEME_MODULE2}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mydownloads/}>" title="<{$smarty.const.THEME_MODULE2_SUB1_DESC}>"><{$smarty.const.THEME_MODULE2_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/x_movie/}>" title="<{$smarty.const.THEME_MODULE2_SUB2_DESC}>"><{$smarty.const.THEME_MODULE2_SUB2}></a></li>
+                  <li><a href="<{xoAppUrl modules/extgallery/}>" title="<{$smarty.const.THEME_MODULE2_SUB3_DESC}>"><{$smarty.const.THEME_MODULE2_SUB3}></a></li>
+                  <li><a href="<{xoAppUrl modules/myalbum/}>" title="<{$smarty.const.THEME_MODULE2_SUB4_DESC}>"><{$smarty.const.THEME_MODULE2_SUB4}></a></li>                                 
+			     </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                
+		  <li><a href="<{xoAppUrl modules/gestion_liens/}>" accesskey="" title="<{$smarty.const.THEME_MODULE3_DESC}>"><{$smarty.const.THEME_MODULE3}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/mylinks/}>" title="<{$smarty.const.THEME_MODULE3_SUB1_DESC}>"><{$smarty.const.THEME_MODULE3_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/xhld0/}>" title="<{$smarty.const.THEME_MODULE3_SUB2_DESC}>"><{$smarty.const.THEME_MODULE3_SUB2}></a></li>
+                </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                
+		  <li><a href="<{xoAppUrl modules/gestion_communautes/}>" accesskey="" title="<{$smarty.const.THEME_MODULE4_DESC}>"><{$smarty.const.THEME_MODULE4}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/newbbex/}>" title="<{$smarty.const.THEME_MODULE4_SUB1_DESC}>"><{$smarty.const.THEME_MODULE4_SUB1}></a></li>
+                  <li><a href="<{xoAppUrl modules/newbb/}>" title="<{$smarty.const.THEME_MODULE4_SUB2_DESC}>"><{$smarty.const.THEME_MODULE4_SUB2}></a></li>
+                </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+		  <li><a href="<{xoAppUrl modules/gestion_divers/}>" accesskey="" title="<{$smarty.const.THEME_MODULE5_DESC}>"><{$smarty.const.THEME_MODULE5}></a><!--<![endif]-->
+                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul>
+                  <li><a href="<{xoAppUrl modules/sitemap/}>" title="<{$smarty.const.THEME_MODULE5_SUB1_DESC}>"><{$smarty.const.THEME_MODULE5_SUB1}></a></li>
+                </ul></li>
+                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                		
+		<{/if}>
+
+
+		<{if $xoops_isadmin}>
+
+		<!-- lien supplémentaire si je suis administrateur -->
+		
+		<{/if}>
+		<li><a href="<{xoAppUrl modules/liaise/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><{$smarty.const.THEME_CONTACT}></a></li>
+</ul>
+</div>

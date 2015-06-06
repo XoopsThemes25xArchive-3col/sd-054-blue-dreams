@@ -1,0 +1,83 @@
+<{if $action != "search" && $action != "showallbyuser"}>
+	<div class="item">
+		<div class="itemHead">
+		<b><{$smarty.const._SR_SEARCHRESULTS}></b>
+		</div>
+
+      <{if $searchfrom == "user"}>
+			<{$smarty.const._SR_NICKNAME}>&nbsp;:&nbsp;<{$user_link}>
+      <{else}>
+			<div class="itemBody">
+   		   <!-- search type -->
+				<{$smarty.const._SR_TYPE}>&nbsp;:
+				<b>
+				<{if $searchmethod == 'ALL'}>
+					<{$smarty.const._SR_ANY}>
+				<{elseif $searchmethod == 'OR'}>
+					<{$smarty.const._SR_ANY}>
+				<{else}>
+					<{$smarty.const._SR_EXACT}>
+				<{/if}>
+				</b>
+			</div>
+
+			<div class="itemBody">
+   		   <!-- queries -->
+				<{$smarty.const._SR_KEYWORDS}>&nbsp;:
+				<{foreach item=query from=$queries}><b><{$query}>&nbsp;</b><{/foreach}>
+			</div>
+
+			<!-- ignored queries -->
+			<{if count($ignored_queries) != 0}>
+      		<div class="itemBody odd">
+					<{$ignored_txt}>
+					<{foreach item=query from=$ignored_queries}><b><{$query}>&nbsp;</b><{/foreach}>
+				</div>
+			<{/if}>
+		<{/if}>
+
+		<{if $searchmessage}>
+			<div class="itemBody center odd">
+				<{$searchmessage}>
+			</div>
+		<{/if}>
+	</div>
+
+	<{if $pagenav}>
+		<{$pagenav}>
+	<{/if}>
+<{/if}>
+
+<{if count($search) > 0}>
+	<{foreach item=module from=$search}>
+		<div class="item">
+			<div class="itemHead">
+				<div class="itemTitle">
+				<a href='<{$xoops_url}>/modules/<{$module.dirname}>' title='<{$module.name}>'><img src='<{$module.image}>' alt='<{$module.name}>' />&nbsp;<{$module.name}></a>
+				</div>
+			</div>
+
+			<div>
+				<{include file="db:system_searchitem.html"}>
+			</div>
+
+			<{if $module.showall}>
+				<div class="itemFoot">
+					<span class="itemPermaLink">
+               <{$module.count}>
+					&nbsp;|&nbsp;
+					<a href="<{$module.showall}>"><{$smarty.const._SR_SHOWALLR}></a>
+					</span>
+				</div>
+			<{/if}>
+		</div>
+	<{/foreach}>
+
+	<{if $pagenav}>
+		<{$pagenav}>
+	<{/if}>
+
+<{/if}>
+
+<!-- display search form -->
+<{$search_form}>

@@ -1,0 +1,39 @@
+<form action="<{xoAppUrl /user.php op=login}>" method="post">
+<table class="outer">
+    <tr>
+		<th colspan="2"><{$lang_login}></th>
+	</tr>
+    <tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+    <tr>
+    	<td class="right" width="100"><{$lang_username}></td>
+    	<td><input type="text" name="uname" size="26" maxlength="25" value="<{$usercookie}>" title="<{$smarty.const.THEME_DESC_PSEUDO}>"/></td> 
+	</tr>
+	<tr>
+    	<td class="right" width="100"><{$lang_password}></td>
+		<td><input type="password" name="pass" size="21" maxlength="32" title="<{$smarty.const.THEME_DESC_PASSWORD}>"/><input type="hidden" name="op" value="login" /><input type="hidden" name="xoops_redirect" value="<{$redirect_page}>" /><input class="formButton" type="submit" value="<{$lang_login}>" title="<{$lang_login}>"/></td>
+	</tr>
+	<tr>
+    	<td colspan="2" class="right"><{$lang_notregister}></td>
+    </tr>
+</table>
+</form>
+<br />
+<form action="<{xoAppUrl /lostpass.php op=mailpasswd}>" method="post" title="<{$lang_lostpassword}>">
+<table class="outer">
+    <tr>
+		<th colspan="2"><{$lang_lostpassword}></th>
+	</tr>
+    <tr>
+		<td colspan="2" style="padding: 5px;"><{$lang_noproblem}></td>
+	</tr>
+    <tr>
+		<td class="right" width="100"><{$lang_youremail}></td>
+        <td><input type="text" name="email" size="26" maxlength="60" title="<{$smarty.const.THEME_WRITE_EMAIL}>"/>&nbsp;&nbsp;<input type="hidden" name="op" value="mailpasswd" /><input type="hidden" name="t" value="<{$mailpasswd_token}>" /><input class="formButton" type="submit" value="<{$lang_sendpassword}>" title="<{$lang_sendpassword}>"/></td>
+    </tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+</table>
+</form>

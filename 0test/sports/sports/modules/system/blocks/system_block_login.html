@@ -1,0 +1,19 @@
+<div style="text-align: center;">
+<form style="margin-top: 0px;" action="<{xoAppUrl /user.php op=login}>" method="post">
+<{$smarty.const._LOGIN}><br />
+<input style="background: url(<{xoImgUrl img/user.gif}>) no-repeat left; padding-left: 20px;" type="text" name="uname" size="12" maxlength="25" />
+<br />
+<{$block.lang_password}><br />
+<input style="background: url(<{xoImgUrl img/key.gif}>) no-repeat left; padding-left: 20px;" type="password" name="pass" size="12" maxlength="32" />
+<br />
+<!-- <input type="checkbox" name="rememberme" value="On" class ="formButton" /><{$block.lang_rememberme}><br /> //-->
+<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+<input type="hidden" name="op" value="login" />
+<input type="submit" value="<{$smarty.const._LOGIN}>" />
+<br />
+<{$block.sslloginlink}>
+</form>
+<br />
+<a href="<{xoAppUrl /user.php#lost}>"><{$block.lang_lostpass}></a>
+<a href="<{xoAppUrl /register.php}>"><img src="<{xoImgUrl img/register.png}>" alt="Register" /></a>
+</div>

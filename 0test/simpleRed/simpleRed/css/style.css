@@ -1,0 +1,153 @@
+/* --------- Stylesheets incorporation --------- */
+@import url("content.css");
+@import url("extraclass.css");
+@import url("forms.css");
+@import url("templates.css");
+@import url("blocks.css");
+
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {	
+  margin-top : 1px;
+	background-color : #fff;
+	padding : 0;
+	color : #444;	
+	font-family : "Trebuchet MS", Verdana, sans-serif;
+	font-size : .9em;
+}
+#xo-canvas {
+  width : 940px;
+  margin : 0 auto;  
+}
+#xo-canvas-content {}
+#xo-page {padding-top : 5px;}
+
+/* --------- Header --------- */
+#xo-header {height : 106px; border-top: 5px solid #eee;}
+/* --- Logo --- */
+#xo-header h1 {
+  padding : 30px 0 0 4px;
+  font-size : 2em;
+}
+/* --- Slogan --- */
+#xo-header p {
+  padding : 0 0 15px 4px;
+  color : #808080;
+}
+/* --- Top Menu --- */
+#xo-header .top {
+  float : right;
+  padding : 20px 0;
+  text-align : right;
+  font-size : .9em;
+}
+#xo-header .top a {  
+  margin : 0 0 0 13px;
+  background : #fff url("../icons/toparrow.png") no-repeat center left;
+  padding : 0 0 0 12px;
+  color : #808080;
+}
+/* --- Search Form --- */
+#xo-header .searchfield {
+  width : 175px;
+  padding : 6px;
+  font-size : .9em;
+  border : 2px solid #ccc;
+}
+#xo-header button {
+  background-color : #E60000;
+  padding : 6px;
+  color : #fff;
+  font-size : .9em;
+  font-weight : bold;
+  border : none;
+}
+
+/* --------- Navigation menu --------- */
+ul#xo-globalnav {   
+  height : 35px;  
+  margin : 0 0 18px;
+  background : #fff url("../img/menubg.gif") repeat-x;
+  padding : 7px 0 0 0;
+}
+ul#xo-globalnav li {
+  display : inline;
+  padding : 0 12px 0 12px;
+  text-transform : uppercase;
+  font-size : 1em;
+}
+ul#xo-globalnav a {color : #808080;}
+ul#xo-globalnav a:hover {color : #444;}
+ul#xo-globalnav a:active,
+ul#xo-globalnav a:focus, ul#xo-globalnav a.xo-current  {color : #444}
+
+/* --------- Breadcrumb --------- */
+#xo-breadcrumb {
+  padding : 1px;
+  color : #808080;
+  font-size : .85em;
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {
+  height : 35px;
+  line-height : 35px;
+  margin : 10px 0 15px;
+  background-color : #eee;
+  padding : 0 10px 0 10px;
+  color : #808080;
+  font-size : .9em;  
+}
+#xo-footer p.copyright {
+  float : left;
+  text-align : left;
+}
+#xo-footer p.author {
+  float : right;
+  text-align : right;
+}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin : 0; 
+  background : url("../icons/arrow.gif") no-repeat left;
+  padding : 4px;
+  color : #808080;
+}
+#mainmenu a:hover {background-color : #fff;}
+#mainmenu a.menuTop {padding-left : 10px;}
+#mainmenu a.menuMain {padding-left : 10px;}
+#mainmenu a.menuSub {  
+  background : none;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+}
+#mainmenu a.menuSub:hover {}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .9em;}
+#usermenu a {
+  display : block;
+  margin : 0; 
+  background : url("../icons/arrow.gif") no-repeat left;
+  padding : 2px 2px 2px 10px;
+  color : #808080;
+}
+#usermenu a:hover {background-color : #fff;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color : #fcc;}

@@ -1,0 +1,258 @@
+#news .title-accueil {
+font-size: 1.1em;
+border-bottom: 1px solid #728aa3;
+padding-top: 2em;
+color: #728aa3;
+font-family:"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+font-weight: 600;
+}
+
+#xo-searchbar {
+  display: inline;
+  float: right;
+  margin-top: 2em;
+  margin-right: 1em;
+  width: auto;
+}
+
+#xo-userbar_siteclosed {
+  display: block;
+  float: right;
+  background-color: inherit;
+  padding-top: 2px;
+  padding-right: 1em;
+  color: #848383;
+}
+
+#xo-userbar_siteclosed form {
+  display: inline;
+  padding: 0;
+}
+
+#xo-userbar_siteclosed button {
+  margin: 0 -3px;
+  background-color: transparent;
+  background-image: none;
+  color: inherit;
+  padding: 0;
+  border: none;
+}
+
+#xo-userbar_siteclosed button img {
+  width: 22px;
+  height: 22px;
+}
+
+#xo-userbar_siteclosed button:hover {
+  border:                             0 !important;
+}
+
+#xo-userbar_siteclosed input {
+  width: 80px;
+  background-color: #c6c7c9;
+  color: #333;
+}
+
+#xo-userbar_siteclosed input:hover {
+  background-color: #DBDCDC;
+  color: #333;
+}
+
+#xo-breadcrumb {
+  background-color: transparent;
+  padding: 0 2em 0 2em;
+  font-size: .8em;
+  display: block;
+  float: right;
+}
+
+#xo-siteclose {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #e2e2e2;
+  padding: 30px;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #848383;
+}
+
+#xo-redirect {
+  width: 780px;
+  margin: 50px auto;
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#xo-redirect .notreload {
+  height: 28px;
+  background-color: inherit;
+  padding-top: 2px;
+  color: #fff;
+}
+
+#xo-redirect .notreload a {
+  background-color: inherit;
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#xo-redirect .message {
+  min-height: 60px;
+  background-color: #f3f3f3;
+  padding: 1em;
+  color: #333;
+  font-size: 1.2em;
+  text-align: center;
+  border: solid 1px #848383;
+}
+
+#xo-redirect .message img{
+  padding: 1em;
+}
+
+.floatleft {
+  float: left;
+  margin-top: 1em;
+  margin-right: 1em;
+  padding-left: 4px;
+  border: 0;
+}
+
+.floatright {
+  float: right;
+  margin: 0 0 10px 10px;
+  padding: 2px;
+  border: 0;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.top {
+  vertical-align: top;
+}
+
+.bottom {
+  vertical-align: bottom;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.width95 {
+  width: 95%;
+}
+
+.width75 {
+  width: 75%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.width33 {
+  width: 33%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width20 {
+  width: 20%;
+}
+
+.small {
+  font-size: .92em;
+}
+
+.normal {
+  font-size: 1em;
+}
+
+.big {
+  font-size: 1.17em;
+}
+
+.maxi {
+  font-size: 1.5em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+a.printable, a.pdf, a.friend {
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  text-indent: -1000em;
+}
+
+a.printable {
+  background-image: url(../icons/action/printable.png);
+}
+
+a.pdf {
+  background-image: url(../icons/action/pdf.png);
+}
+
+a.friend {
+  background-image: url(../icons/action/friend.png);
+}
+
+body.mceContentBody {
+  background-color: #fff;
+  background-image: none;
+  color: #333;
+}
+
+.signature {
+  font-style: italic;
+  font-size: .9em;
+}
+
+span.notification_title {
+  font-size: .9em;
+  font-weight: bold;
+}

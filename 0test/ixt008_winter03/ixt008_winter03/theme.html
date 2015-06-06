@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: theme.html 365 2009-02-28 19:45:08Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{assign var=theme_name value=$xoTheme->folderName}><{assign var=theme_tpl value=$xoTheme->folderName|cat:'/tpl'}>
+<{includeq file="$theme_tpl/versions.html"}>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<{$ixt_langcode}>" xml:lang="<{$ixt_langcode}>">
+<head>
+<{includeq file="$theme_tpl/metas.html"}>
+<{includeq file="$theme_tpl/scripts.html"}>	
+<{assign var=theme_top_order value=clr}><{assign var=theme_bottom_order value=clr}><{assign var=hide_content value=0}>
+</head>
+<body id="<{$ixt_dirname}>" class="<{$ixt_langcode}>">
+ <{assign var=columns_layout value="ixt-layout"}>
+ <div align="right" id="ixt-headerlogoup">
+  <a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+<!--
+  <a href="http://ixthemes.sourceforge.net/" title="IXThemes"><img src="<{xoAppUrl /images/logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+  <{if $cms == "icms"}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoImgUrl img/icms_logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+  <{elseif $cms == "xoops"}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoImgUrl img/xoops_logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+  <{elseif $cms == "exm"}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoImgUrl img/exm_logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+  <{else}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+  <{/if}>
+-->
+ </div>
+ <div id="wrap">
+  <div id="ixt-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+   <div id="hd"><{includeq file="$theme_tpl/header.html"}></div>
+   <div id="ixt-menu"><{includeq file="$theme_tpl/menu.html"}></div>
+   <{includeq file="$theme_tpl/content.html"}>	
+  </div>
+ </div>
+ <div id="ft"><{includeq file="$theme_tpl/footer.html"}></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<{foreach item=result from=$module.result}>
+	<div class="<{cycle values="odd,even"}>">
+		<div>
+			<a href='<{$result.link}>' /><{$result.title}></a>
+			<{if $result.percent}>
+				<span class="itemStats">(<{$result.percent}>%)</span>
+			<{/if}>
+		</div>
+		<{if $result.text}>
+			<div>
+			<{$result.text}>
+			</div>
+		<{/if}>
+		<div class="searchFoot">
+			<span class="itemPoster">
+			<{$result.poster}>
+			</span>
+			<span class="itemPostDate">
+			(<{$result.time}>)
+			</span>
+		</div>
+	</div>
+<{/foreach}>

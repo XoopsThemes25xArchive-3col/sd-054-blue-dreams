@@ -1,0 +1,379 @@
+/* based on morphogenesis 1.1.2 */
+/* ==== liens (désactivés) ci-dessous vers des feuilles de styles spécifiques
+dans le cas de surcharge "générale" et pour les versions de xoops à partir de la 2.3 =====*/
+/*@import url(content-data.css);
+@import url(content-datalists.css);*/
+/*==================== fin des liens =================*/
+
+
+/* Titre sous titre liste... */
+h1 {font-size: 					1.6em;}
+h2 {font-size: 					1.4em;}
+h3 {font-size: 					1.2em;}
+h4 {font-size: 					1em;}
+h5 {font-size: 					.9em;}
+h6 {font-size: 					.8em;}
+
+h1 {
+	clear:							both;
+	margin-top:						0.25em;
+	margin-bottom:					0.5em;
+	border-bottom:					1px solid #ccc;
+	padding-left:					0.25em;
+	font-weight:					bold;
+	color:							#60A3D7;
+	background-color: 			inherit;
+}
+h1 a {
+	font-weight:					normal;
+	color:							#60A3D7;
+	background-color: 			inherit;
+}
+h1 a:hover {
+	font-weight:					normal;
+	color:							#3399FF;
+	background-color: 			inherit;
+}
+h2 {
+	font-weight:					normal;
+	color:							#eee;
+	padding:							3px 5px 4px 5px;
+	background-color:				#070707;
+	border-bottom:					1px dotted #333;
+}
+h4 {
+	padding-bottom: 				5px;
+}
+a[rel~=alternate] { float:		right;}
+a {
+	background-color: 			inherit;
+	text-decoration:				none;
+	color:							#60A3D7;
+}
+a:hover {
+	background-color: 			inherit;
+	text-decoration:				none;
+	color:							#3399FF;
+}
+p {
+	margin-bottom:					1.4em;
+	line-height:					1.7em;
+	}
+img {	border:						0;}
+hr{
+	display: 						none;
+	color:							#3399FF;
+	border-style: 					dashed;
+	background-color: 			inherit;
+}
+/*------- styles pour mettre des blocs "flottants" par exemple des images --------*/
+.floatleft {
+	float: 							left;
+	border: 							0;
+	padding-left: 					4px;
+	margin-top: 					1em;
+	margin-right : 				1em;
+}
+.floatright {
+	float: 							right;
+	margin: 							0 0 10px 10px;
+	border: 							0;
+	padding: 						2px;
+}
+/*---------- classes d'alignement -----------*/
+.center { text-align: 			center;}
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align:			justify; }
+
+/*--------- classes d'affichage -------------*/
+.clear { clear: 					both; }
+.block { display: 				block; }
+.hide  { display: 				none; }
+/*---------- acronymes, abbréviation ------------*/
+acronym, abbr {
+	border-bottom: 				#66ffcc 1px dashed;
+	cursor: 							help;
+}
+acronym:hover, abbr:hover { border-bottom-color: #3399FF;}
+
+/*------------------- listes ----------------*/
+#xo-canvas-content ul {
+	margin: 							2px;
+	padding: 						2px;
+	list-style: 					decimal inside;
+	text-align: 					left;
+}
+#xo-canvas-content li {
+	margin-left: 					2px;
+	list-style: 					disc inside;
+	color: 							#60A3D7;
+	line-height: 					1.4em;
+	font-style: 					italic;
+	background-color: 			inherit;
+}
+
+/* ========== styles utilisés dans les "articles" de contenu (exemple : news) ============*/
+.item {
+	margin-bottom: 				20px;
+}
+.item img {
+	padding: 						0 4px 0 4px;
+}
+.itemHead {
+	color: 							#13EE13;
+	padding: 						3px;
+	background-color: 			inherit;
+	font-size:						1.3em;
+}
+.itemInfo {
+	text-align: 					right;
+	padding: 						3px;
+	color: 							#60A3D7;
+	font-size: 						0.9em;
+	font-style: 					italic;
+	background-color: 			inherit;
+}
+.itemTitle a {
+	font-weight: 					bold;
+}
+.itemTitle a:hover {}
+.itemPoster, .itemPostDate, .itemStats {	}
+.itemPoster a:hover {}
+.itemBody {
+	padding: 						5px;
+}
+.itemText {
+	margin-top: 					1px;
+	margin-bottom: 				1px;
+	text-align:						justify;
+}
+.itemText a , .itemInfo a, .itemFoot a {}
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover {}
+.itemBody a{}
+.itemBody a:hover {}
+.itemText:first-letter {}
+.itemFoot {
+	color:							#60A3D7;
+	text-align: 					right;
+	padding: 						3px;
+	margin-right: 					20px;
+	margin-left: 					20px;
+	background-color: 			inherit;
+}
+.itemAdminLink {
+	color:							#60A3D7;
+	font-size: 						0.9em;
+	background-color: 			inherit;
+}
+.itemPermaLink {
+	color:							#60A3D7;
+	background-color: 			inherit;
+}
+
+
+/*=============== styles pour les tableaux =================*/
+.outer {}
+.outer th {font-size:0.9em;}
+.head {
+	padding: 						5px;
+	font-weight: 					bold;
+	color: #60A3D7;
+}
+.head a {}
+.head a:hover {}
+.even {
+	padding: 						5px;
+	color: #3399FF;
+}
+.odd {
+	padding: 						5px;
+	color: #3399FF;
+}
+tr.even td {
+	padding: 						5px;
+}
+tr.odd td {
+	padding: 						5px;
+}
+.foot {
+	padding: 						2px;
+	font-weight: 					bold;
+	text-align:						center;
+}
+th {
+	color: 							#60A3D7;
+	background-color:				#121212;
+	padding: 						2px;
+	vertical-align: 				middle;
+}
+th a {}
+
+/*=========== Styles pour les pages de redirections ==============*/
+div.errorMsg {
+	background-color: 			#FFCCCC;
+	color:							#333;
+	text-align: 					center;
+	border-top: 					1px solid #DDDDFF;
+	border-left: 					1px solid #DDDDFF;
+	border-right: 					1px solid #AAAAAA;
+	border-bottom: 				1px solid #AAAAAA;
+	font-weight: 					bold;
+	padding: 						10px;
+}
+div.confirmMsg {
+	background-color: 			#DDFFDF;
+	color: 							#136C99;
+	text-align: 					center;
+	border-top: 					1px solid #DDDDFF;
+	border-left: 					1px solid #DDDDFF;
+	border-right: 					1px solid #AAAAAA;
+	border-bottom: 				1px solid #AAAAAA;
+	font-weight: 					bold;
+	padding: 						10px;
+}
+div.resultMsg {
+	background-color : 			#CCC;
+	color: 							#333;
+	text-align: 					center;
+	border-top: 					1px solid silver;
+	border-left: 					1px solid silver;
+	font-weight: 					bold;
+	border-right: 					1px solid #666666;
+	border-bottom: 				1px solid #666666;
+	padding: 						10px;
+}
+div.xoopsCode {}
+div.xoopsQuote {}
+
+/*=========== Styles utilisés pour les commentaires (et newbb/cbb également) ===========*/
+.comTitle {
+	color:							#60A3D7;
+	font-weight: 					bold;
+	margin-bottom: 				2px;
+	background-color: 			inherit;
+}
+.comText {
+	padding: 						2px;
+}
+.comUserStat {
+	font-size: 						0.9em;
+	color: 							#66ccff;
+	font-weight:					bold;
+	background-color: 			transparent;
+	margin: 							2px;
+	padding: 						2px;
+}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {
+	margin-left: 					2px;
+	margin-top: 					10px;
+	color: 							#66ccff;
+	font-weight:					bold;
+	font-size: 						0.8em;
+	background-color: 			transparent;
+}
+.comUserRank {margin: 			2px;}
+.comUserRankText {font-size: .8em; font-weight:bold;}
+.comUserRankImg {border: 		0;}
+.comUserName {}
+.comUserImg {margin: 			2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+.signature {
+	font-size: 						.9em;
+	font-style: 					italic;
+}
+/*================ Style pour les Citations ================*/
+blockquote {
+	margin-left:					0.5em;
+	border-width:					1px 1px 1px 4px;
+	border-style: 					solid;
+	border-color: 					#33CCFF;
+	background-color:				transparent;
+	padding:							0.5em;
+	font-style: 					italic;
+}
+
+/*================== Style pour les Codes =================*/
+.xoopsCode {
+	font-family:					monospace;
+	border:							1px dashed #d0d0d0;
+	background-color: 			transparent;
+	padding:							.5em;
+	width:							95%;
+	max-height: 					400px;
+	overflow: 						auto;
+	display:							block;
+}
+
+/*========== styles utilisés dans les versions Xoops à partir de la 2.3 ==============*/
+.x2-note {
+	color:							#666;
+	margin:							1em .5em;
+	padding:							.5em;
+	background-color:				#F4FAFF;
+	border:							1px solid #E4EAEF;
+}
+#xo-content  .x2-contentinfo {
+	color:							#666;
+	margin:							1em .5em;
+	border:							1px solid #e0e0e0;
+	padding:							.5em;
+	background-color:				#f8f8f8;
+}
+#xo-content .x2-secondary {
+	color:							#666;
+	margin:							1em .5em;
+	padding:							.5em;
+	background-color: 			inherit;
+}
+.x2-seealso {
+	color:							#666;
+	margin:							1em .5em;
+	padding:							.5em 1em;
+	background-color:				#fffcf6;
+	border:							1px solid #efeae4;
+}
+.x2-seealso ul, .x2-note ul {
+	color:							#666;
+	margin:							0;
+	padding-left:					1em;
+	background-color: 			inherit;
+}
+
+.x2-seealso a {
+	color:							#EAAD7B;
+	background-color: 			inherit;
+}
+.x2-seealso a:hover {
+	color:							#666;
+	background-color: 			inherit;
+}
+
+body.site_closed form {
+	padding: 1em 35%;
+	background-image: url(img/background.jpg);
+	color: #60A3D7;
+}
+
+#system-select_notifications { clear: both;}
+
+/* Dropdown menu for Forum */
+div.dropdown a, div.dropdown .menubar a{
+	color:						#fff;
+	background-color: 		inherit;
+}
+div.dropdown .menu, div.dropdown .menubar, div.dropdown .item, div.dropdown .separator{
+	background-color: 		#121212;
+	color:						#fff;
+	font-size:					.8em;
+}
+div.dropdown .separator{
+	border: 						1px inset #e0e0e0;
+}
+div.dropdown .menu a:hover, div.dropdown .userbar a:hover{}
+select .menu {
+	font-size: 					.8em;
+}

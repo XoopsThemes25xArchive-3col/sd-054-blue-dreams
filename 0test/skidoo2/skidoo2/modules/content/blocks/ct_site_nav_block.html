@@ -1,0 +1,12 @@
+
+    <ul class="mainmenu">
+	<li><a class="menuTop" href="<{$xoops_url}>/">Home</a></li>
+      <!-- start module menu loop -->
+      <{foreach item=menuitem from=$block}>
+      <li><a class="menuMain" href="<{$menuitem.url}>"><{$menuitem.text}></a></li>
+        <{foreach item=sublink from=$menuitem.sublinks}>
+          <li><a class="menuSub" href="<{$sublink.url}>"><{$sublink.text}></a></li>
+        <{/foreach}>
+      <{/foreach}>
+      <!-- end module menu loop -->
+    </ul>

@@ -1,0 +1,662 @@
+ body {
+    color : black;
+    font-family : Verdana, Arial, Sans-serif;
+    background-color : #ffffff;
+    margin : 0;
+    font-size : 9pt;
+}
+div#page {
+    border : 0;
+    margin : 0 auto;
+    padding : 0;
+    width : 100%;
+}
+#header_top {
+    background-image : url('images/header_top_bg.gif');
+    background-repeat : repeat-x;
+    float : left;
+    margin : 0;
+    width : 100%;
+}
+#header_top_left {
+    background-image : url('images/header_top.gif');
+    background-repeat : no-repeat;
+    float : left;
+    margin : 0;
+    width : 770px;
+    height : 87px;
+}
+#header_top_right {
+    background-image : url('images/header_top_bg.gif');
+    background-repeat : repeat-x;
+    margin : 0;
+    width : 100%;
+    height : 87px;
+}
+#header_middle {
+    background-image : url('images/navi_bg_norm.gif');
+    background-repeat : repeat-x;
+    margin : 0;
+    float : left;
+    height : 44px;
+    width : 100%;
+}
+#header_middle_left {
+    background-image : url('images/header_bottom.gif');
+    background-repeat : no-repeat;
+    float : left;
+    margin : 0;
+    width : 211px;
+    height : 44px;
+}
+#header_bottom {
+    height : 25px;
+    float:left;
+    width : 100%;
+    background-color : #d9d9d9;
+}
+#header_bottom_left {
+    background : transparent;
+    float : left;
+}
+#header_bottom_right {
+    vertical-align : middle;
+    background : transparent;
+    line-height : 25px;
+    float : right;
+}
+#buttons
+{
+	margin-top : 10px;
+}
+#banner
+{
+	margin-top : 10px;
+
+}
+th {
+    background-color : #ded9bc;
+    color : #404040;
+    padding : 2px;
+    vertical-align : middle;
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+}
+a {
+    font-size : 9pt;
+    color : #008aff;
+    background : transparent;
+    text-decoration : none;
+    font-weight : bold;
+    background-color : transparent;
+}
+a:hover {
+    color : #000000;
+}
+A.a_top_menu {
+    font-size : 9pt;
+    font-weight : bold;
+    color : #000000;
+    background : transparent;
+    text-decoration : none;
+}
+A.a_top_menu:link {
+    font-size : 9pt;
+    font-weight : bold;
+    color : #000000;
+    background : transparent;
+    text-decoration : none;
+}
+A.a_top_menu:visited {
+    font-size : 9pt;
+    font-weight : bold;
+    color : #000000;
+    background : transparent;
+    text-decoration : none;
+}
+A.a_top_menu:hover {
+    font-size : 9pt;
+    font-weight : bold;
+    color : #ff9000;
+    background : transparent;
+    text-decoration : none;
+}
+A.a_top_menu:active {
+    font-size : 9pt;
+    font-weight : bold;
+    color : #ff0000;
+    background : transparent;
+    text-decoration : none;
+}
+h1 {
+    margin : 0;
+    font-size : 25pt;
+    margin-left : 120px;
+    padding-top : 25px;
+    color : #ffffff;
+    background : transparent;
+}
+h1 a {
+    font-size : 25pt;
+    color : #ffffff;
+    background : transparent;
+}
+h1 a:hover {
+    font-size : 25pt;
+    color : #000000;
+    background : transparent;
+}
+h2, h3 {
+    margin : 0;
+    font-size : 16pt;
+    padding : 10px;
+    padding-top : 15px;
+    padding-left : 0;
+}
+h2 {
+    color : #999;
+    background : transparent;
+}
+h3 {
+    color : #fc0;
+    background : transparent;
+}
+A.a_top_menu {
+    vertical-align : middle;
+}
+A.a_top_menu:link {
+    vertical-align : middle;
+}
+ul {
+    margin : 2px;
+    padding : 2px;
+    list-style : decimal inside;
+    text-align : left;
+    font-size : 9pt;
+}
+li {
+    margin-left : 2px;
+    list-style : square inside;
+    color : #2f5376;
+    background : transparent;
+    font-size : 9pt;
+}
+#navbar {
+    font-size : 9pt;
+    padding-top : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    cursor : default;
+}
+#NavMenu {
+    font-family : Verdana, Tahoma, Georgia, sans-serif;
+    font-size : 9pt;
+}
+#NavMenu .button, #NavMenu a:link .button {
+    background-image : url('images/navi_bg_norm.gif');
+    background : transparent;
+    display : block;
+    cursor : default;
+    float : left;
+    line-height : 44px;
+    width : 89px;
+    text-align : center;
+    color : #000000;
+    font-weight : bold;
+    font-size : 9pt;
+    text-decoration : none;
+    border-right : 2px solid #ffffff;
+}
+#NavMenu .button:hover, #NavMenu a:hover .button {
+    background-image : url('images/navi_bg_over.gif');
+    display : block;
+    float : left;
+    line-height : 44px;
+    width : 89px;
+    cursor : default;
+}
+#spacer {
+    color : #ffffff;
+    background : transparent;
+    font-size : 1px;
+}
+#leftblock {
+    margin-top : 10px;
+    float : left;
+    width : 19%;
+    font-size : 9pt;
+}
+#centerblock {
+    font-size : 9pt;
+    margin-top : 10px;
+    float : left;
+    padding-left : 8px;
+    padding-right : 2px;
+    width : 62%;
+    height : auto;
+}
+#centerblock85 {
+    font-size : 9pt;
+    margin-top : 10px;
+    float : left;
+    padding-left : 6px;
+    padding-right : 5px;
+    width : 79%;
+    height : auto;
+}
+#centerblock99 {
+    font-size : 9pt;
+    margin-top : 10px;
+    float : left;
+    padding-left : 6px;
+    padding-right : 5px;
+    width : 99%;
+    height : auto;
+}
+.centerlblock {
+    font-size : 9pt;
+    margin-top : 10px;
+    padding-right : 3px;
+    float : left;
+    width : 49%;
+}
+.centerrblock {
+    font-size : 9pt;
+    margin-top : 10px;
+    padding-left : 3px;
+    float : left;
+    width : 49%;
+}
+#rightblock {
+    font-size : 9pt;
+    margin-top : 10px;
+    width : 17%;
+    height : auto;
+    float : right;
+    overflow : auto;
+}
+.blocktitle {
+    font-size : 9pt;
+    background : transparent;
+    background-image : url('images/title_bg.gif');
+    background-position : left;
+    background-repeat : no-repeat;
+    padding-left : 25px;
+    line-height : 25px;
+    background-color : #008aff;
+    color : #ffffff;
+    font-weight : bold;
+}
+.blockcontent {
+    font-size : 9pt;
+    width : 100%;
+    color : #000000;
+    background : transparent;
+    padding-top : 10px;
+}
+#maincontent {
+    font-size : 9pt;
+    float : left;
+    width : 100%;
+}
+#content {
+    font-size : 9pt;
+    float : left;
+    width : 100%;
+}
+#footer {
+    font-size : 9pt;
+    background-image : url('images/footer_bg.gif');
+    background-repeat : repeat-x;
+    line-height : 25px;
+    text-align : center;
+    float : left;
+    width : 100%;
+}
+td#mainmenu a {
+    color : #3c351e;
+    font-size : 9pt;
+    display : block;
+    background : transparent;
+    background-image : url('images/arrow-8.gif');
+    background-repeat : no-repeat;
+    padding : 2px;
+    font-weight : normal;
+}
+td#mainmenu a:hover {
+    color : #ff9000;
+    background : transparent;
+    text-decoration : underline;
+}
+td#mainmenu a.menuTop {
+    background-color : transparent;
+    padding-left : 15px;
+}
+td#mainmenu a.menuMain {
+    background-color : transparent;
+    padding-left : 15px;
+}
+td#mainmenu a.menuSub {
+    padding-left : 25px;
+    color : #9f0000;
+    background : transparent;
+    font-weight : normal;
+}
+td#usermenu a {
+    display : block;
+    margin : 0;
+    color : #3c351e;
+    background : transparent;
+    font-weight : normal;
+    font-size : 9pt;
+    padding-left : 5px;
+    margin-left : 3px;
+    padding-bottom : 2px;
+}
+td#usermenu a:hover {
+    display : block;
+    margin : 0;
+    color : #ff9000;
+    background : transparent;
+    font-weight : normal;
+    font-size : 9pt;
+    padding-left : 5px;
+    margin-left : 3px;
+    padding-bottom : 2px;
+}
+b {
+    font-size : 9pt;
+    font-weight : bold;
+}
+.item {
+    border : 1px solid #d9d9d9;
+    font-size : 9pt;
+}
+.itemHead a {
+    font-size : 9pt;
+    color : #ffffff;
+    background : transparent;
+}
+.itemHead a:hover {
+    color : #ffffff;
+    background : transparent;
+}
+input {
+    border : 1px solid #858383;
+    font-size : 9pt;
+    background-color : #e3e3e3;
+}
+input:hover {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    background-color : #ffffff;
+}
+input:focus {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    background-color : #ffffff;
+}
+textarea {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    width : 400px;
+    background-color : #e3e3e3;
+}
+textarea:hover {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    width : 400px;
+    background-color : #ffffff;
+}
+textarea:focus {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    width : 400px;
+    background-color : #ffffff;
+}
+input.formTextBox {
+    font-size : 9pt;
+    border : 1px solid #8699b5;
+    background : #e3e3e3;
+}
+select {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    background-color : #e3e3e3;
+}
+select:hover {
+    font-size : 9pt;
+    border : 1px solid #858383;
+    background-color : #ffffff;
+}
+.itemHead {
+    color : #ffffff;
+    float : left;
+    background-color : #b4b4b4;
+    width : 100%;
+    height : 15px;
+    padding-top : 4px;
+    font-size : 9pt;
+}
+.itemHead a {
+    color : #000000;
+    background : transparent;
+    font-weight : bold;
+    font-size : 9pt;
+}
+.itemHead a:hover 
+{
+    color : #ffffff;
+    background : transparent;
+    font-weight : bold;
+}
+.itemInf
+{
+    text-align : right;
+    padding : 3px;
+    background-color : #ede9e9;
+    font-size : 9pt;
+}
+.itemPoster {
+    font-size : 85%;
+    font-style : italic;
+}
+.itemPostDate {
+    font-size : 85%;
+    font-style : italic;
+}
+.itemStats {
+    font-size : 85%;
+    font-style : italic;
+}
+.itemBody {
+    padding-left : 0;
+    font-size : 9pt;
+}
+.itemText {
+    padding : 5px;
+    margin-top : 0;
+    margin-bottom : 0;
+    line-height : 1.5em;
+    text-align : justify;
+    font-size : 9pt;
+}
+.itemText:first-letter {
+    font-size : 155%;
+    font-weight : bold;
+}
+.itemFoot {
+    text-align : right;
+    padding : 3px;
+    background-color : #ede9e9;
+    font-size : 9pt;
+}
+.itemAdminLink {
+    font-size : 9pt;
+}
+.itemPermaLink {
+    font-size : 9pt;
+}
+.itemTitle a {
+    font-size : 98%;
+    font-weight : bold;
+}
+.outer {
+    border : 1px solid silver;
+}
+.head {
+    background : #b4b4b4;
+    padding : 5px;
+    color : #000000;
+    background : transparent;
+    font-weight : bold;
+    font-size : 9pt;
+}
+.head a {
+    color : #000000;
+    background : transparent;
+    font-weight : bold;
+    font-size : 9pt;
+}
+.head a:hover {
+    color : #ffffff;
+    background : transparent;
+    font-weight : bold;
+}
+.even {
+    background-color : #e0dede;
+    padding : 5px;
+    font-size : 9pt;
+}
+.odd {
+    background-color : #ede9e9;
+    padding : 5px;
+    font-size : 9pt;
+}
+.foot {
+    background-color : #ede9e9;
+    padding : 5px;
+    font-weight : bold;
+    font-size : 9pt;
+}
+tr.even td {
+    background-color : #e0dede;
+    padding : 5px;
+    font-size : 9pt;
+}
+tr.odd td {
+    background-color : #ede9e9;
+    padding : 5px;
+    font-size : 9pt;
+}
+div.errorMsg {
+    background-color : #ffcccc;
+    text-align : center;
+    border-top : 1px solid #ddddff;
+    border-left : 1px solid #ddddff;
+    border-right : 1px solid #aaaaaa;
+    border-bottom : 1px solid #aaaaaa;
+    font-weight : bold;
+    padding : 10px;
+    font-size : 9pt;
+}
+div.confirmMsg {
+    background-color : #ddffdf;
+    color : #136c99;
+    text-align : center;
+    border-top : 1px solid #ddddff;
+    border-left : 1px solid #ddddff;
+    border-right : 1px solid #aaaaaa;
+    border-bottom : 1px solid #aaaaaa;
+    font-weight : bold;
+    padding : 10px;
+    font-size : 9pt;
+}
+div.resultMsg {
+    background-color : #cccccc;
+    color : #333333;
+    text-align : center;
+    border-top : 1px solid silver;
+    border-left : 1px solid silver;
+    font-weight : bold;
+    border-right : 1px solid #666666;
+    border-bottom : 1px solid #666666;
+    padding : 10px;
+    font-size : 9pt;
+}
+div.xoopsCode {
+    background : #ffffff;
+    border : 1px inset #000080;
+    font-family : "Courier New", Courier, monospace;
+    margin : 0;
+    font-size : 9pt;
+}
+div.xoopsQuote {
+    background : transparent;
+    border : 1px inset #000080;
+    font-family : "Courier New", Courier, monospace;
+    margin : 0;
+    font-size : 9pt;
+}
+.comTitle {
+    font-weight : bold;
+    margin-bottom : 2px;
+    font-size : 9pt;
+}
+.comText {
+    padding : 2px;
+    font-size : 9pt;
+}
+.comUserStat {
+    font-size : 9pt;
+    color : #808080;
+    font-weight : bold;
+    border : 1px solid silver;
+    background-color : #ffffff;
+    margin : 2px;
+    padding : 2px;
+    font-size : 9pt;
+}
+.comUserStatCaption {
+    font-weight : normal;
+    font-size : 9pt;
+}
+.comUserStatus {
+    margin-left : 2px;
+    margin-top : 10px;
+    color : #808080;
+    background-color: transparent;
+    font-weight : bold;
+    font-size : 9pt;
+}
+.comUserRank {
+    margin : 2px;
+    font-size : 9pt;
+}
+.comUserRankText {
+    font-size : 9pt;
+    font-weight : bold;
+    font-size : 9pt;
+}
+.comUserRankImg {
+    border : 0 none;
+    font-size : 9pt;
+}
+.comUserName {
+    font-size : 9pt;
+}
+.comUserImg {
+    margin : 2px;
+    font-size : 9pt;
+}
+.comDate {
+    font-weight : normal;
+    font-style : italic;
+    font-size : 9pt;
+}
+.comDateCaption {
+    font-weight : bold;
+    font-style : normal;
+    font-size : 9pt;
+}

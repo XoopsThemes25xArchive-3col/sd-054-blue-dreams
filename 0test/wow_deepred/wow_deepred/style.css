@@ -1,0 +1,374 @@
+body {
+	background:#000000;
+	background-image:url();
+	background-attachment:fixed;
+	font:11px Verdana,Arial,Helvetica,sans-serif;
+	margin:0;padding:0;
+	scrollbar-3dlight-color:#006091;
+	scrollbar-arrow-color:#ff8c00;
+	scrollbar-darkshadow-color:#000000;
+	scrollbar-face-color:#002c42;
+	scrollbar-highlight-color: #002c42;
+	scrollbar-shadow-color:#000000;
+	scrollbar-track-color:#002c42;
+}
+
+a {
+	color: #314158;
+	text-decoration:none;
+}
+a:hover {
+	color:#0077b5;
+}
+
+input { 
+	background:#314158;
+	color:#e7e7e7;
+	font:11px Verdana,Arial,Helvetica,sans-serif;
+	padding-bottom:2px;
+	padding-left:2px;
+	border:1px solid;
+	border-color: #000000 #707070 #707070 #000000;
+}
+
+textarea {
+	color:#e7e7e7;
+	background:#314158;
+	font:11px Verdana,Arial,Helvetica,sans-serif;
+	padding-bottom:2px;padding-left:2px;
+	border:1px solid;
+	border-color: #000000 #707070 #707070 #000000;
+}
+
+select {
+	background:#314158;
+	color:#e7e7e7;
+	font:11px Verdana,Arial,Helvetica,sans-seri;
+}
+
+td {
+	font-family: Tahoma, taipei;
+	font-size: 11px;
+}
+
+td.bkg {
+	background-image: url(images/logo.jpg);
+	height: 120px;
+	width: 100%;
+	background-position:left;
+	vertical-align:middle;
+	background-repeat: no-repeat;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+td.bar{
+    background-image: url(images/header_wood_right_repeat_2.jpg);
+	height: 36px;
+	width: 100%;
+	background-position:left;
+	vertical-align:middle;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+td.leftcap {
+  background-image:url(images/header_wood_left_cap_2.jpg);
+  height: 36px;
+  width: 100px;
+  background-position:left;
+  background-repeat:no-repeat;
+}
+
+td.rightcap {
+  background-image:url(images/header_wood_right_cap_2.jpg);
+  height: 36px;
+  width: 100px;
+  background-position:right;
+  background-repeat:no-repeat;
+}
+
+table.table100 {
+	width:100%;
+	padding:0;
+	border:0;
+}
+
+table.table95 {
+	width:95%;
+	padding:0;
+	border:0;
+}
+
+table.menuCell {
+	width:195px !important;
+	padding:0;
+	border-spacing:0;
+	border:1;
+}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+td.leftCell {
+	width:195px !important;
+	padding-right:5px;
+	vertical-align:top;
+}
+
+td.centerCell {
+	width:100%;
+	vertical-align:top;	
+}
+
+td.rightCell {
+	width:195px !important;
+	padding-left:5px;
+	vertical-align:top;
+	
+}
+
+td.leftMenu {
+	width:195px !important;
+	
+}
+
+td.rightMenu {
+	width:195px !important;
+}
+
+td.cellMenuBarTop {
+    background-image: url(images/menutop.gif);
+	height: 41px;
+	width: 195px; 
+	background-position:left;
+	vertical-align: bottom;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+td.cellMenuBarMiddle {
+    background-image: url(images/menumiddle.gif);	
+	width:195px;	
+}
+
+td.cellMenuBarBottom {
+    background-image: url(images/menubottom.gif);	
+	height: 97px;
+	width: 195px;
+	background-position:left;	
+	vertical-align: center;
+	background-repeat: no-repeat;
+	
+}
+
+td.menuBlockTitle {
+	color: #ffffff;
+	font-weight: bold;
+	text-align:left;
+	font-size:11px;	
+	padding-left:30px !important;
+	vertical-align:middle;
+	background-image:url(images/leftcol_bl_title2.gif);
+	background-position:left;
+	height: 34px;
+	width: 140px;	
+	background-repeat: no-repeat;
+}
+
+td.menuBlockContent {
+	color:#ffffff;
+	text-align:left;
+	font-size:11px;
+	padding-left:10px;
+}
+
+td.menuBlockContent a {
+	color:#ffffff;
+} 
+
+td.menuBlockContent a:hover {
+	color:#0077b5;
+}
+
+td.menuBlockContentCenter {
+	color:#314158;
+	text-align:left;
+	font-size:12px;
+}
+
+td.menuBlockContentCenter a:hover {
+	color:#314158;
+	text-decoration:underline;
+}
+
+
+td.menuBlockTitleCenter {
+    background-image:url(images/miscbox2-top.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	width:231px;
+	height:29px;
+	text-align:left;
+	vertical-align:bottom;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:22px;
+	color:#ffffff;
+}
+
+td.menuBlockContentRight {
+	color:#ffffff;
+	text-align:left;
+	font-size:11px;
+	background-color:!transparent;
+	
+}
+
+td.menuBlockContentRight a {
+	color:#ffffff;
+}
+
+td.menuBlockContentRight a:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+td.menuBlockContentRight .even {
+        color:#ffffff;
+}
+
+td.menuBlockContentRight .even td {
+	color:#ffffff;
+	background-color:!transparent;
+}
+
+td.menuBlockContentRight .even a {
+	color:#ffffff;
+}
+
+td.menuBlockContentRight .even a:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+td.menuBlockContentRight .odd{
+		
+}
+
+td.menuBlockContentRight .odd td {
+	color:#ffffff;
+}
+
+td.menuBlockContentRight .odd a {
+	color:#ffffff;
+}
+
+td.menuBlockContentRight .odd a:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+td.centerCellLeftTop {
+	background-image:url(images/tlc.gif);
+	height:12px;
+	width:14xp;
+}
+
+td.centerCellCenterTop {
+	background-image:url(images/tm.gif);
+	height:12px;	
+}
+
+td.centerCellRightTop {
+	background-image:url(images/trc.gif);
+	height:12px;
+	width:13px;
+}
+
+td.centerCellLeft {
+	background-image:url(images/left.gif);	
+	width:13px;
+}
+
+td.centerCellMiddle {
+	background-image:url(images/bg3.jpg);
+	
+	padding-top:10px;
+	padding-left:10px;
+}
+
+td.centerCellRight {
+	background-image:url(images/right.gif);	
+	width:14px;
+}
+
+td.centerCellLeftBottom {
+	background-image:url(images/blc.gif);
+	height:14px;
+	width:12xp;
+}
+
+td.centerCellCenterBottom {
+	background-image:url(images/btm.gif);
+	height:14px;	
+}
+
+td.centerCellRightBottom {
+	background-image:url(images/brc.gif);
+	height:14px;
+	width:14px;
+}
+
+.outer {	
+	width:100%;
+}
+
+.head {
+	background-color: #000000; 
+	font-weight: bold;
+	filter:alpha(opacity=60); 
+	-moz-opacity:0.60; 
+	opacity:0.60; 
+	-khtml-opacity:0.60;
+}
+
+img {
+	border: 0;
+}
+
+ul {
+	margin: 2px;
+	padding: 2px;
+	list-style: decimal inside;
+	text-align: left;
+}
+
+li {
+	margin-left: 2px;
+	list-style: disc inside;
+}
+
+
+div#content {
+    color:#314158;
+	text-align: left; 
+	padding: 8px;
+}
+
+div#content a {
+    color: #314158;
+	text-decoration:none;
+}
+
+div#content a:hover {
+    color: #314158;
+	text-decoration:underline;
+
+}
+
+div#content p {
+    color: #314158;
+}

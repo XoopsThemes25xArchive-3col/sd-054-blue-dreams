@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- theme by http://www.xoopsdesign.com -->
+<{assign var=theme_name value=$xoTheme->folderName}>
+
+	<title><{$xoops_pagetitle}> : <{$xoops_sitename}></title>
+
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl /favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl /icon.png}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Deep blue" href="<{xoImgUrl /style.css}>" />
+	
+	<{$xoops_module_header}>
+	
+<!--[if lt IE 7]>
+	<script type="text/javascript">
+		var IE7_PNG_SUFFIX=".*\/img\/.*.png";
+		var IE7_BOX_MODEL = true;
+	</script>
+	<script src="<{$xoops_imageurl}>ie7/ie7-standard-p.js" type="text/javascript"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<table cellspacing="0">
+  <tr>
+    <td rowspan="2" class="shad_l">&nbsp;</td>
+    <td colspan="2">
+	<table cellspacing="0" id="headerTop">
+        <tr>
+          <td class="slogan"><span class="slogan1">environmental conservation movement,</span><span class="slogan2"> because the future matters</span></td>
+          <td class="userBar">
+				<{if !$xoops_isuser}>
+			<form method="post"  style="margin: 0px; display:inline;"action="<{xoAppUrl /user.php op=login xoops_redirect=$smarty.server.REQUEST_URI}>" >
+				<!--<{$smarty.const._LOGIN}>-->
+				<input name="uname" type="text"  size="16" value="<{$smarty.const._USERNAME}>" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" /> <input name="pass" type="text" size="16" value="<{$smarty.const._PASSWORD}>" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+				<input  class="loginBut" type="submit"   value="login"  alt="login"   />  
+			</form>
+			<a href="<{xoAppUrl /register.php}>" class="register">register</a>   <a href="<{xoAppUrl /user.php#lost}>" class="register">| remember password</a>
+			
+		<{else}>
+			<{xoInboxCount assign=pmcount}>
+			<a href="<{xoAppUrl www/viewpmsg.php}>">
+			<{if $pmcount}>
+				<img src="<{xoImgUrl img/inbox-full.png}>" alt="Inbox (&lt;{$pmcount}&gt;)" title="You have <{$pmcount}> unread messages" />
+			<{else}>
+				<img src="<{xoImgUrl img/inbox.png}>" alt="Inbox" title="Show your inbox content" />
+			<{/if}>			</a>				
+			<a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl img/profile.png}>" alt="My profile" title="View your profile" /></a>
+			<a href="<{xoAppUrl /notifications.php}>"><img src="<{xoImgUrl img/bookmarks.png}>" alt="Notifications" title="View bookmarks" /></a>
+			<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>"><img src="<{xoImgUrl img/configuration.png}>" alt="Admin" title="Display site administration" /></a>
+			<{/if}>
+			<a href="<{xoAppUrl /user.php op=logout}>"><img src="<{xoImgUrl img/logout.png}>" alt="Logout" title="Click to logout" /></a>
+		<{/if}>		  </td>
+        </tr>
+    </table>
+	</td>
+    <td rowspan="2"  class="shad_r">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="#"><img src="<{xoImgUrl img/logo.gif}>" alt="g" width="446" height="109" border="0" /></a></td>
+    <td><!-- you can put another image here --></td>
+  </tr>
+</table>
+<table cellspacing="0" id="Main" align="center">
+    <tr>
+      <td class="shad_l">&nbsp;</td> 
+      <{if $xoops_showlblock}>
+      <td id="leftcolumn">
+        <{foreach item=block from=$xoBlocks.canvas_left}>
+          <{includeq file="$theme_name/blocks-col-l.html"}>
+        <{/foreach}>         </td><{/if}>
+      <td >
+	  <table cellspacing="0" class="center-box-t">
+		  <tr>
+			<td class="center-box-tl"><{$xoops_banner}></td>
+			<td class="center-box-tr">&nbsp;</td>
+		  </tr>
+	  </table>
+	  <table cellspacing="0" id="MainContent"  >
+    <tr>
+      <td class="center-box-l"></td>
+     <td id="centercolumn">
+	 <{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+	 <table cellspacing="0" class="centercol">
+    <tr>
+     <td id="centerCcolumn" colspan="2">
+		<{foreach item=block from=$xoBlocks.page_topcenter}> <{includeq file="$theme_name/blocks-c.html"}><{/foreach}>    </td>
+    </tr>
+    <tr>
+    <td id="centerLcolumn">
+		<{foreach item=block from=$xoBlocks.page_topleft}> <{includeq file="$theme_name/blocks-c.html"}><{/foreach}>     </td>
+     <td id="centerRcolumn">
+		<{foreach item=block from=$xoBlocks.page_topright}> <{includeq file="$theme_name/blocks-c.html"}><{/foreach}>     </td>
+    </tr>
+</table>
+<{/if}>
+  <div id="content"> <{$xoops_contents}> </div>
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+  <table cellspacing="0" class="centercol">
+<{if $xoBlocks.page_bottomcenter}>
+    <tr>
+      <td id="bottomCcolumn" colspan="2"><{foreach from=$xoBlocks.page_bottomcenter item=block}><{includeq file="$theme_name/blocks-c.html"}><{/foreach}></td>
+    </tr>
+<{/if}> <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+    <tr>
+      <td id="bottomLcolumn"><{foreach from=$xoBlocks.page_bottomleft item=block}><{includeq file="$theme_name/blocks-c.html"}><{/foreach}></td>
+      <td id="bottomRcolumn"><{foreach from=$xoBlocks.page_bottomright item=block}><{includeq file="$theme_name/blocks-c.html"}><{/foreach}></td>
+    </tr>
+<{/if}>
+  </table>
+<{/if}> </td>
+      <!--<{if $xoops_showrblock}>-->
+      <td id="rightcolumn">
+        <{foreach item=block from=$xoBlocks.canvas_right}>
+          <{includeq file="$theme_name/blocks-col-r.html"}>
+        <{/foreach}>      </td><!-- <{/if}>-->    
+      <td class="center-box-r">&nbsp;</td>
+     </tr>
+</table>
+<table cellspacing="0" class="center-box-b">
+  <tr>
+    <td class="center-box-bl">&nbsp;</td>
+    <td class="center-box-br">&nbsp;</td>
+    </tr>
+</table>
+	  <div class="footer"><{$xoops_footer}>. Theme by<a href="http://www.xoopsdesign.com"> XOOPSDesign.com</a></div>
+	  </td>
+      <td class="shad_r"></td>
+    </tr>
+</table>
+</body>
+</html>

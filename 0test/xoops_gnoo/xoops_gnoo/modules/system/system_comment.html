@@ -1,0 +1,49 @@
+<!-- start comment post -->
+<tr class="head">
+	<td>&nbsp;<a id="comment<{$comment.id}>"></a> <{$comment.poster.uname}></td>
+	<td class="right"><{$lang_posted}> : <{$comment.date_posted}>&nbsp;&nbsp;<{$lang_updated}> : <{$comment.date_modified}>&nbsp;</td>
+</tr> 
+<tr>
+<{if $comment.poster.id != 0}> 
+	<td class="even">
+		<div class="center">
+            <img src="<{$xoops_upload_url}>/<{$comment.poster.rank_image}>" alt="" /><br />
+            <{$comment.poster.rank_title}><br />           
+            <{$lang_joined}> : <{$comment.poster.regdate}><br />
+            <img src="<{$xoops_upload_url}>/<{$comment.poster.avatar}>" alt="" />    
+          </div>
+          <div>  
+            <{$lang_from}> : <{$comment.poster.from}><br />
+            <{$lang_posts}> : <{$comment.poster.postnum}><br />
+            <{$comment.poster.status}>
+          </div>
+     </td>
+<{else}>
+     <td class="even">&nbsp;</td>
+<{/if}>
+     <td class="even">
+            <div class="comTitle"><{$comment.image}>&nbsp;<{$comment.title}></div>
+            <div class="comText"><{$comment.text}></div>
+     </td>
+</tr>
+<tr align="right" class="even">
+<{if $xoops_iscommentadmin == true}>
+	<td colspan="2">
+    	<a href="<{$editcomment_link}>&amp;com_id=<{$comment.id}>"><img src="<{$xoops_url}>/images/icons/edit.gif" alt="<{$lang_edit}>" /></a>
+        <a href="<{$deletecomment_link}>&amp;com_id=<{$comment.id}>"><img src="<{$xoops_url}>/images/icons/delete.gif" alt="<{$lang_delete}>" /></a>
+        <a href="<{$replycomment_link}>&amp;com_id=<{$comment.id}>"><img src="<{$xoops_url}>/images/icons/reply.gif" alt="<{$lang_reply}>" /></a>
+    </td>
+<{elseif $xoops_isuser == true && $xoops_userid == $comment.poster.id}>
+    <td colspan="2">
+        <a href="<{$editcomment_link}>&amp;com_id=<{$comment.id}>"><img src="<{$xoops_url}>/images/icons/edit.gif" alt="<{$lang_edit}>" /></a>
+        <a href="<{$replycomment_link}>&amp;com_id=<{$comment.id}>"><img src="<{$xoops_url}>/images/icons/reply.gif" alt="<{$lang_reply}>" /></a>
+    </td>
+<{elseif $xoops_isuser == true || $anon_canpost == true}>
+	<td colspan="2">
+		<a href="<{$replycomment_link}>&amp;com_id=<{$comment.id}>"><img src="<{$xoops_url}>/images/icons/reply.gif" alt="<{$lang_reply}>" /></a>
+    </td>
+<{else}>
+    <td class="even" colspan="2">&nbsp;</td>
+<{/if}>
+</tr>
+<!-- end comment post -->

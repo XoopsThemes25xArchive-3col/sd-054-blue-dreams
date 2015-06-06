@@ -1,0 +1,585 @@
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {	
+  margin : 0;    
+  background : #fffff0;
+  padding : 0;
+  line-height : 1.7em;
+  color : #555;
+  font : 10pt helvetica, "Trebuchet MS", arial, sans-serif;  
+}
+#xo-canvas {}
+#xo-canvas-content {}
+#xo-page {padding-top : 5px;}
+
+/* --------- Hypertext links --------- */
+a {
+  background : inherit;
+  color : #006699;
+  text-decoration : none;  
+}
+a:hover {
+  background : inherit;  
+  color : #444;  
+  text-decoration : underline;
+}
+
+/* --------- Titles --------- */
+h1 {
+  font-size : 1.4em;
+  font-weight : bold;
+}
+h2 {font-size : 1.2em;}
+h3 {
+  padding-bottom : 3px;
+  font-size : 1em;  
+}
+h4 {font-size : 1em;}
+h5 {font-size : .9em;}
+h6 {font-size : .8em;}
+
+/* --------- Images --------- */
+img {
+  position : relative;
+  border : 0;  
+}
+
+/* --------- Lists --------- */
+#xo-canvas-content ul {
+  margin : 2px;
+  padding : 2px;
+  list-style : decimal inside;
+  text-align : left;
+}
+#xo-canvas-content li {
+  margin-left : 2px;
+  background-color : inherit;
+  color : #639ACE;
+  line-height : 1.4em;
+  list-style :	disc inside;
+}
+
+/* --------- Forms --------- */
+fieldset {
+	margin : 0 0 1em 0;
+	padding : 1em;
+	border : 1px solid #ddd;
+}
+legend {
+  padding : 0 3px 0 3px;
+  color : #444;
+	font-size : .9em;
+	font-weight : bold;
+}
+label {font-weight : bold;}
+input {
+  margin-right : 3px;
+	font-size : 1em;
+	border : 1px solid #ccc;	
+}
+select {
+  background-color :	#f6f6f6;
+	color : #000;
+	border : 1px solid #ccc;
+	font-size : .9em;
+}
+textarea {
+	width :  85%;
+	height : 110px;
+	margin : 0.5em 0.5em 0.5em 0;	
+	padding : 5px;
+	color : #000;
+	border : 1px solid #ccc;
+	overflow : auto;
+}
+
+/* --------- Others --------- */
+acronym, abbr, dfn {
+  border-bottom : 1px dotted #333;
+  cursor : help;
+}
+q, cite, em, dfn, strong {font-style : italic;}
+strong, dfn {font-weight : bold;}
+del {text-decoration : line-through;}
+address {
+  font-style : normal;
+  letter-spacing : .1em;
+}
+hr {display : none;}
+/* ---------  Show class --------- */
+.clear {
+  clear : both;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearleft{
+  clear : left;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearright{
+  clear : right;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.block {display : block;}
+.hide {display : none;}
+.spacer {padding : 0 0 3px 0;}
+.floatleft {
+	float : left;
+	margin-top : 1em;
+	margin-right : 1em;
+	padding-left : 4px;
+	border : 0;
+}
+.floatright {
+	float : right;
+	margin-bottom : 1em;
+	margin-left : 1em;
+	padding : 2px;
+	border : 0;
+}
+
+/* --------- Font class --------- */
+.extrasmall {font-size : .7em;}
+.small {font-size : .9em;}
+.normal {font-size : 1em;}
+.big {font-size : 1.2em;}
+.maxi {font-size : 1.5em;}
+
+.bold {font-weight : bold;}
+.italic {font-style : italic;}
+.underline {text-decoration : underline;}
+
+/* --------- Header --------- */
+#xo-header {
+  height : 188px;
+  margin-top : 0;  
+  background : #e88d33 url(../img/banner.jpg) no-repeat;
+  padding : 0;
+  color : #555; 
+}
+/* Logo */
+#xo-header h1 {
+  margin : 0;
+  background : inherit;  
+  padding-top : 75px;
+  color : #efecdc; 
+  text-align : center;
+  font-size : 1.8em;   
+}
+/* Slogan */
+#xo-header h2 {
+  color : #efecdc; 
+  text-align : center;
+  font-size : 1em;
+  font-style : italic;  
+}
+/* Navigation menu */
+#xo-globalnav ul {  
+  margin : 0 0 5px 0;
+  background : #885835;
+  padding : 0.7em 0;
+  list-style-type : none;  
+  color : #fff;
+  text-align : center;
+  font-size : .9em; 
+  font-weight : bold;
+}
+#xo-globalnav li {display : inline;}
+#xo-globalnav li a, #topnav a:visited {  
+  background : #885835;
+  padding : 0.6em 1.3em;
+  color : #fff;
+  text-decoration : none;  
+  border-right : 1px solid #fff;
+}
+#xo-globalnav a:link.active, #xo-globalnav a:visited.active, #xo-globalnav a:hover {  
+  background : #f17327;
+  color : #000;
+  text-decoration : none;
+}
+
+/* --------- Breadcrumbs --------- */
+#xo-breadcrumbs {
+  margin : 0 5px 0 5px;
+  padding : 0 3px 6px 5px;
+  font-size : .9em;
+}
+
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 185px;
+  padding-top : 3px;
+  padding-right : 5px;
+  border-right : 1px dashed #dda875;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  margin-top : 0;  
+  background : inherit;
+  padding-top : 0.5em;
+  padding-bottom : 0.5em;
+  padding-left : 20px;
+  color : #885835;
+  text-transform : uppercase;
+  letter-spacing : 3px;
+  font-size : 1em;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {  
+  padding : 3px 6px 3px 6px;
+  line-height : 1.2em;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+  width : 185px;
+  padding-top : 3px;
+  padding-left : 5px;
+  border-left : 1px dashed #dda875;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  margin-top : 0;  
+  background : inherit;
+  padding-top : 0.5em;
+  padding-bottom : 0.5em;
+  padding-left : 20px;
+  color : #885835;
+  text-transform : uppercase;
+  letter-spacing : 3px;
+  font-size : 1em;
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  padding : 3px 6px 3px 6px;
+  line-height : 1.2em;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {margin : 2px 5px 2px 5px;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin-top : 0;  
+  background : inherit;
+  padding-top : 0.5em;
+  padding-bottom : 0.5em;
+  padding-left : 20px;
+  color : #885835;  
+  letter-spacing : 3px;
+  font-size : 1.1em;
+  border-bottom : 1px dashed #dda875;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 2px;
+  line-height : 1.3em;
+  text-align :justify;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle{
+  margin-top : 0;  
+  background : inherit;
+  padding-top : 0.5em;
+  padding-bottom : 0.5em;
+  padding-left : 20px;
+  color : #885835;  
+  letter-spacing : 3px;
+  font-size : 1.1em;
+  border-bottom : 1px dashed #dda875;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 2px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.3em;
+  text-align : justify;  
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {
+  clear : both;
+  height : 40px;
+  margin-top : 10px; 
+  background : #f17327;
+  padding : 0.2em 0 0 0.5em;
+  color : #000;
+  text-align : left;
+  border-top : 5px solid #885835;
+}
+#xo-footer a {
+  background : inherit;
+  color : #fff;
+}
+#xo-footer a:hover {
+  background : inherit;
+  color : #000;
+}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Redirect page (system_redirect.html) --------- */
+#xo-redirect {
+  margin : 10px 80px 10px 80px;
+  background-color : inherit;
+  padding : 8px;
+  line-height : 1.4em;
+  text-align : center;
+  border : 1px dashed #dda875;
+}
+/* --------- Site closed page (system_siteclosed.html) --------- */
+#xo-siteclosed {
+  margin : 20px 200px 10px 200px;
+  padding : 8px;
+  line-height : 1.6em;
+  text-align: center;
+  border : 1px dashed #dda875;
+}
+#xo-siteclosed strong {
+  display : block;
+  font-style : normal;
+}
+#xo-siteclosed label {
+  font-size : .9em;
+  font-weight : normal;
+}
+#xo-siteclosed input {margin : 2px;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin-left : 4px;
+  background : url("../icons/list-off-orange.gif") no-repeat left;   
+  padding : 2px 4px 4px 0;
+}
+#mainmenu a:hover {background : url("../icons/list-on-orange.gif") no-repeat left;}
+#mainmenu a.menuTop {padding-left : 12px;}
+#mainmenu a.menuMain {padding-left : 12px;}
+#mainmenu a.menuSub {  
+  background: none;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+}
+#mainmenu a.menuSub:hover {}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .9em;}
+#usermenu a {
+  display : block;
+  margin-left : 4px;
+  background : url("../icons/list-off-orange.gif") no-repeat left;   
+  padding : 1px 4px 2px 12px;
+}
+#usermenu a:hover {background : url("../icons/list-on-orange.gif") no-repeat left;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color : #fcc;}
+
+/* --------- Tables and cells --------- */
+table {width : 100%;}
+table td {
+  padding : 0;
+  vertical-align : top;
+  border-width : 0;  
+}
+th {
+  background-color : #885835;
+  padding : 2px;
+  color : #fff;  
+  vertical-align : middle;
+}
+th a  {color : #fff;}
+th a:hover {  
+  color : #fff;
+  text-decoration : underline;
+}
+.outer {
+  padding : 2px;
+  border : 1px dashed #dda875;
+}
+.head {
+  background-color : #F17E2D;
+  padding : 5px;
+  color : #fff;
+  font-weight : normal;
+}
+.head a  {color : #fff;}
+.even {
+  background-color : inherit;
+  padding : 5px;
+}
+.odd {
+  background-color : inherit;
+  padding : 5px;
+}
+.foot {
+  padding : 5px;
+  font-weight : bold;
+}
+tr.even td {
+  background-color : inherit;
+  padding : 5px;
+}
+tr.odd td {
+  background-color : inherit;
+  padding : 5px;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+  background-color : #FFCCCC;
+  padding : 10px;
+  text-align : center;
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;
+  font-weight : bold;  
+}
+.confirmMsg {
+  background-color : #DDFFDF;
+  padding : 10px;
+  color : #136C99;  
+  text-align : center;
+  font-weight : bold; 
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;   
+}
+.resultMsg {
+  background-color : #c1c1c1;
+  padding : 10px;
+  color : #333;
+  text-align : center;
+  font-weight : bold;
+  border-top : 1px solid #ccc;
+  border-left : 1px solid #ccc;  
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;  
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+  max-height : 200px;
+  margin : 6px;
+  background-color : #FFFFF0;
+  padding : 6px; 
+  overflow : auto;
+  color : #666;
+  font-family : "Lucida Console", "courier new", monospace;
+  font-size : .9em; 
+  border : 1px dashed #dda875;
+  border-left : 4px solid #F17327; 
+}
+.xoopsQuote {
+  margin : 6px;
+  background-color : #FFFFF0;  
+  padding : 6px;  
+  font-style : italic;
+  border : 1px dashed #dda875;
+  border-left : 4px solid #F17327;
+}
+
+/* --------- Articles --------- */
+.item {margin-bottom : 10px;}
+.itemHead {
+  padding : 8px 5px 0 10px;
+  color : #885835;
+  font-size : 1.1em;
+  font-weight : bold;
+  border-bottom : 1px dashed #dda875;
+}
+.itemInfo {
+  padding : 3px;
+  font-size : .8em;
+  text-align : right; 
+}
+.itemTitle a { 
+  color : #885835;  
+  letter-spacing : 3px;
+  font-size : 1.1em;
+}
+.itemPoster {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemPostDate {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemStats {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemBody {padding-left : 5px;}
+.itemText {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  padding : 0 10px 0 10px;
+  line-height : 1.5em;
+}
+.itemFoot {
+  padding : 3px;
+  text-align : right; 
+}
+.itemAdminLink {font-size : .9em;}
+.itemPermaLink {font-size : .9em;}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+  margin-bottom : 2px;
+  font-weight : bold;  
+}
+.comText {padding : 2px;}
+.comUserStat {
+  margin : 2px; 
+  background-color : #fff;  
+  padding : 3px;  
+  color : #555;
+  font-size : .75em;
+  font-weight : bold;
+  border : 1px dashed #dda875;   
+}
+.comUserStatCaption {font-weight : normal;}
+.comUserStatus {
+  margin-left : 2px;
+  margin-top : 10px;
+  color : #639ACC;
+  font-weight : bold;
+  font-size : .8em;
+}
+.comUserRank {margin : 2px;}
+.comUserRankText {
+  font-size : .8em;
+  font-weight : bold;
+}
+.comUserRankImg {border : 0;}
+.comUserName {}
+.comUserImg {margin : 2px;}
+.comDate {
+  font-weight : normal;
+  font-style : italic;
+  font-size : .8em;
+}  
+.comDateCaption {
+  font-weight : bold;
+  font-style : normal;
+  font-size : .8em;
+}
+.signature {
+  font-size : .8em;
+  font-style : italic;
+}

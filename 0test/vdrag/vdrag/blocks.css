@@ -1,0 +1,165 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work  */
+/* Mor.pho.GEN.e.sis version 1.1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : blocks.css (version 1.1.2) - 25 mars 2007 */
+
+/*========== listes dans les colonnes ==========*/
+.xo-canvas-column ul {
+	list-style-type:				none;
+	padding:							.5em;
+	margin:							0;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0;
+	padding-bottom:				0;
+	padding-left:					1em;
+
+}
+/* ====== format des cellules dans les colonnes ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+	background-color:				#f6f6f6;
+	border:							0 none;
+	color: 							#32529C;
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	border: 							0 !important;
+	padding:							0;
+	margin:							0;
+}
+/*===== Styles Colonne de Gauche =======*/
+#xo-canvas-leftcolumn .xo-block {
+	color:							#fff;
+	padding-top:					5px;
+	padding-bottom: 				10px;
+	margin-bottom:					10px;
+	background-color: 			#2D2D2C;
+	width: 							190px;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+    text-align:					center;
+	padding-bottom:				5px;
+	background-color: 			inherit;
+	color:							#8BD333;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						1.2em;
+	font-weight:					bold;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+	min-height:						60px;
+	padding:							2px 10px 0;
+	background-color: 			inherit;
+	color:							#fff;
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+
+#xo-canvas-leftcolumn .xo-blockcontent a {
+	/*color:							#EB325C;*/
+	text-decoration: 				none;
+	background-color: 			inherit;
+}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+	text-decoration: 				none;
+	background-color: 			inherit;
+}
+#xo-canvas-leftcolumn img {
+	margin: 							3px;
+}
+#xo-canvas-leftcolumn img:hover {border: 1px solid #666;}
+/*======== Styles Colonne de Droite ========*/
+#xo-canvas-rightcolumn {
+	color:							#666;
+}
+#xo-canvas-rightcolumn a {
+   color:#000;
+	margin: 							0;
+	padding: 						1px;
+	font-size: 						0.8em;
+	text-decoration: 				none;
+	background-color: 			inherit;
+}
+#xo-canvas-rightcolumn a:hover {
+     color: #eb325c;
+	text-decoration: 			none;
+	background-color: 			inherit;
+}
+#xo-canvas-rightcolumn .xo-blocktitle {
+    text-align:center;
+	padding-bottom:				5px;
+	background-color: 			inherit;
+	color:							#8BD333;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						1.2em;
+	font-weight:					bold;
+}	
+#xo-canvas-rightcolumn .xo-blockcontent {
+	min-height:						60px;
+		padding:							2px 5px 0;
+	background-color: 			inherit;
+	color:							#000;
+}
+#xo-canvas-rightcolumn img {
+	margin: 					0;
+}
+
+/* ======= Styles du "Contenu Centre" ===========*/
+
+#xo-page .xo-blockszone .xo-block {
+}
+.xo-block ul {
+	margin:							0;
+	padding:							0;
+	list-style-type:				none;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	text-align:left;
+	padding-left: 10px;
+	padding-bottom:				5px;
+	background-color: 			inherit;
+	color:							#000;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						1.5em;
+	font-weight:					bold;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	padding:							.5em;
+	color:							#666;
+	text-align: 					justify;
+	background-color: 			inherit;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	margin: 						3px;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+	background-color: 			#fff !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {
+	color:							#EB325C;
+	text-decoration:				none;
+	background-color:				inherit;
+}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+	color:							#000;
+}
+
+
+
+/* special for draguage */
+
+/* block haut et bas central */
+#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block,#xo-page-bottomleftblocks .xo-block, #xo-page-bottomrightblocks .xo-block {
+	width: 280px;
+}
+
+/*block central */
+#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {
+width: 580px;
+}
+
+/* block droite */
+#xo-canvas-rightcolumn .xo-block {
+	width: 170px;
+}
+
+/* block gauche */
+#xo-canvas-leftcolumn .xo-block {
+	width: 190px;
+}

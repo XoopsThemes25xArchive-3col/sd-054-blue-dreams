@@ -1,0 +1,27 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<{if $displaynav == true}>
+<div class="center">
+    <form name="form1" action="<{$xoops_url}>/modules/news/index.php" method="get">
+    <{$topic_select}> <select name="storynum"><{$storynum_options}></select> <input type="submit" value="<{$lang_go}>" class="formButton" /></form>
+</div>
+<{/if}>
+<{if $topic_description != ''}>
+<br />
+	<div class="itemText"><{$topic_description}></div>
+<{/if}>
+<br />
+<{if $topic_rssfeed_link != ""}>
+<div class="right"><{$topic_rssfeed_link}></div>
+<{/if}>
+<div class="pagenav"><{$pagenav}></div>
+<table>
+<tr>
+	<{section name=i loop=$columns}>
+	<td width="<{$columnwidth}>%"><{foreach item=story from=$columns[i]}><{include file="db:news_item.html" story=$story}><{/foreach}></td>
+	<{/section}>
+</tr>
+</table>
+<div class="pagenav2"><{$pagenav}></div>
+<{include file='db:system_notification_select.html'}>
+<!-- if you don't use morphogenesis gabarit : </div> -->

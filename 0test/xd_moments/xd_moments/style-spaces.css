@@ -1,0 +1,77 @@
+@import url(style.css);
+
+#header .logo {
+	background-image: url(images/spaces/bg_banner.gif);
+	background-color: #093965;
+}
+
+#header_banner-b {
+	background-image: url(images/spaces/spaces-header-img.jpg);
+}
+
+
+a {color: #91B9CC; }
+a:hover {color: #56A0D8;}
+
+
+li {	color: #666666; }
+
+.itemHead { color: #56A0D8;}
+
+#leftcolumn .blockTitle, #rightcolumn .blockTitle {	color: #7CA5A4; }
+
+.centercol {}
+
+.centercol .blockTitle { color: #115C95; }
+
+#centercolumn th {
+	background-color: #217CB4;
+	border-bottom-color: #236698;
+}
+#centercolumn th a { color: #FFFFFF;}
+
+
+#mainmenu a.menuSub {
+	color: #5C97B4;
+}
+
+#usermenu a.highlight {
+	background-color: #3F87BC;
+	color: #FFFFFF;
+}
+
+
+.outer {}
+.head {
+	background-color: #217CB4;
+	border-bottom-color: #236698;
+}
+.head a {
+	color: #ADD3FA;
+}
+.head a:hover {
+	color: #5AB0EF;
+}
+
+.even, tr.even td {
+	background-color: #FFFFFF;
+	border: 1px solid #E8E8E8;
+}
+td.even:hover, tr.even td:hover, .odd:hover, tr.odd td:hover {
+	background-color: #F4FAFF;
+}
+
+.odd, tr.odd td {
+	background-color: #FFFFFF;
+	border: 1px solid #E8E8E8;
+}
+.foot {
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#tabsE a {	background-image: url(images/spaces/tableftE.gif); }
+#tabsE a span { background-image: url(images/spaces/tabrightE.gif); }

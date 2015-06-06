@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+<title><{$xoops_sitename}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<style>
+<!--
+.style6 {color: #CCCCCC}
+.style8 {color: #333333}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" id="Main" align="center">
+    <tr>
+      <td id="header">
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+	 
+      <td id="centercolumn" style="padding-top:40px; padding-bottom:60px; ">
+        <!-- Display center blocks if any -->
+<div style="text-align:center;">
+  <h4><{$message}></h4>
+  <p><{$lang_ifnotreload}></p>
+</div>
+<{if $xoops_logdump != ''}><div><{$xoops_logdump}></div><{/if}>
+
+  <!-- End display center blocks --></td>
+     </tr>
+    <tr>
+      <td class="footer">
+      <p align="center">Copyright &copy; 200<span lang="en-us">8</span>.
+    <span lang="en-us"><a target="_blank" href="http://www.maitsco.com">
+      Maitsco.com</a></span></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#header_top
+{
+background-image : url('images/header_top_bg.gif');
+background-repeat : repeat-x;
+float : left;
+margin: 0px;
+width : 100%;
+}
+#header_top_left 
+{
+background-image : url('images/header_top.gif');
+background-repeat : no-repeat;
+float : left;
+margin: 0px;
+height : 87px;
+}
+#header_middle
+{
+background-image : url('images/navi_bg_norm.gif');
+background-repeat : repeat-x;
+float : left;
+margin: 0px;
+width : 100%;
+}
+#header_middle_left 
+{
+background-image : url('images/header_bottom.gif');
+background-repeat : no-repeat;
+float : left;
+margin: 0px;
+height : 44px
+}

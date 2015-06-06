@@ -1,0 +1,287 @@
+@import url(content.css);
+
+@import url(content-data.css);
+
+@import url(blocks.css);
+
+@import url(forms.css);
+
+@import url(navigation.css);
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: none;
+}
+/* beginning of the applicable styles */
+
+html, body {
+background-color: #333;
+padding: 0;
+margin: 0;
+font-size: 10pt;
+font-family: "georgia", "times new roman", serif;
+color: #333333;
+}
+
+#xo-bgstatic-top {
+background: url(../img/bg2.jpg) repeat-x top;
+z-index: 2;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+#xo-bgstatic {
+background-image: url(../img/bg1.jpg);
+z-index: 1;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+body.site_closed form {
+padding: 1em 35%;
+}
+/* ======= Body box ======= */
+
+#xo-wrapper {
+padding: 35px 80px 35px 80px;
+background-color: transparent;
+z-index: 3;
+}
+
+#xo-canvas {
+border: 7px solid #fff;
+color: #333;
+background-color: #fff;
+z-index: 4;
+clear: both;
+}
+
+body.theme-dialog #xo-canvas {
+margin: 0 6px;
+}
+/*================= Content zone ===================*/
+
+#xo-canvas-content {
+background: url(../img/border1.gif) repeat-x top;
+padding: 15px;
+color: #333;
+}
+
+#xo-page {
+background-color: #fff;
+color: #333;
+}
+
+#xo-content {
+clear: both;
+margin: 0;
+background-color: #fff;
+padding: .5em;
+color: #333;
+}
+
+#xo-logger-output {
+font-size: .8em;
+}
+/* ============== header ================= */
+
+#xo-header {}
+
+#illustration {
+display: block;
+position: relative;
+background: #fff url(../img/hdrpic.jpg) no-repeat top left;
+margin-bottom: 2px;
+height: 109px;
+}
+/* ---------- Banner ---------- */
+
+#xo-banner {
+display: block;
+height: 9.0em;
+position: relative;
+width: 100%;
+background: #2B2B2B url(../img/topbg.gif) repeat-x;
+margin-bottom: 2px;
+}
+
+#banner-elements {
+display: inline;
+float: left;
+}
+
+body.theme-dialog #xo-banner {
+height: 48px;
+padding-top: 6px;
+padding-left: 10px;
+}
+
+#xo-banner-ad {
+position: absolute;
+top: 15px;
+left: 15px;
+}
+
+#xo-banner-ad object, #xo-banner-ad img {
+display: block;
+}
+/*---------------------- site title in the header ----------------------------*/
+
+#xo-site-title {
+font-weight: normal;
+color: #fff;
+font-size: 2.5em;
+position: relative;
+top: 20px;
+background-color: transparent;
+padding: 10px 0 0 20px;
+}
+
+a #xo-site-title {
+background-color: transparent;
+color: #fff;
+text-decoration: none;
+}
+
+a:hover #xo-site-title {
+background-color: transparent;
+color: #fff;
+text-decoration: underline;
+}
+/*----------------------- slogan in the header ------------------------*/
+
+#xo-site-slogan {
+position: relative;
+top: 20px;
+padding-left: 100px;
+color: #aaa;
+}
+/*------------------------ Logo in the header ----------------------------*/
+
+#xo-main-logo {
+position: relative;
+top: 40px;
+background: transparent;
+padding-left: 10px;
+color: #666;
+}
+/*-------- style forms in the header-----------*/
+
+#xo-banner form {
+display: inline;
+margin: 0;
+}
+
+#xo-banner input {
+width: 8em;
+margin: 0 0 0 2px;
+background-color: #E2E2E2;
+color: #333;
+}
+/*=============== Style for the Footer  ====================*/
+
+#xo-footer {
+height: 35px;
+margin: 0;
+background: url(../img/border2.gif) repeat-x top;
+padding: 5px;
+color: #666;
+font-size: .8em;
+line-height: 30px;
+}
+
+body.theme-dialog #xo-footer {
+padding: .2em .5em;
+font-size: .8em;
+}
+
+#xo-footer a {
+background-color: inherit;
+}
+
+#xo-footer a:hover {
+background-color: inherit;
+}
+
+#xo-footer .copyright {
+position: absolute;
+display: inline;
+padding-top: 5px;
+color: inherit;
+font-size: 0.9em;
+font-weight: normal;
+text-align: left;
+text-decoration: none;
+line-height: 30px;
+}
+
+#xo-footer .rss {
+float: right;
+right: 2px;
+background-color: transparent;
+padding-top: 10px;
+color: inherit;
+}
+
+#xo-footer .rss img {
+padding-left: 10px;
+}
+/*========== Main menu block =============*/
+
+#mainmenu a {
+display: block;
+margin: 0;
+padding: 1px;
+font-weight: 500;
+}
+
+#mainmenu a:hover {
+text-decoration:                none !important;
+}
+
+#mainmenu a.menuTop, #mainmenu a.menuMain {
+padding-left: 8px;
+}
+
+#mainmenu a.menuSub {
+background-color: inherit;
+padding-left: 20px;
+font-size: .8em;
+}
+
+#mainmenu a.menuSub:hover {
+background-color: inherit;
+}
+/*============ Usermenu block ============*/
+
+#usermenu a {
+display: block;
+background-color: inherit;
+padding: 2px;
+font-size: 0.8em;
+font-weight: normal;
+line-height: 1em;
+}
+
+#usermenu a:hover {
+background-color: inherit;
+}
+
+#usermenu a.menuTop {}
+
+#usermenu a.highlight {
+background-color: inherit;
+}
+/*=========== for old templates system ============*/
+
+#usermenu a, #mainmenu a {
+display: block;
+}
+
+.xo-canvas-column .menuSub {
+padding-left: 1em;
+}

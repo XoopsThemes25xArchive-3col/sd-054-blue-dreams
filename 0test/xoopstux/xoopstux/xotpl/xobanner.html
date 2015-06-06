@@ -1,0 +1,22 @@
+<!-- with display of the banner desactived  -->
+
+<div id="xo-banner" class="<{$xoops_dirname}>">
+<div id="xo-searchbar">
+<form name="search" method="get" action="<{xoAppUrl /search.php}>">
+<input type="text" id="query" name="query" class="keyword" value="" maxlength="255" tabindex="1" title="<{$smarty.const.THEME_KEYWORDS}>"/>
+<!--<input type="text" id="query" name="query" class="keyword" value="<{$smarty.const.THEME_KEYWORDS}>" onfocus="this.value=(this.value=='<{$smarty.const.THEME_KEYWORDS}>')? '' : this.value ;" maxlength="255" tabindex="1" />-->
+<input type="hidden" name="action" id="action" value="results"/>
+<input type="submit" value="<{$smarty.const.THEME_SEARCH}>" class="button" tabindex="2" title="<{$smarty.const.THEME_DESC_SEARCH}>"/>
+</form>
+</div>
+
+<!-- display of the logo -->
+	<div id="xo-main-logo">
+<!-- display of the title of the site such as defined in the file theme.php of the file language to the root of the site -->
+	<a id="xo-site-title" href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><{$xoops_sitename}></a>
+<!-- display of the slogan of the site such as defined in the file theme.php of the file language to the root of the site -->
+	<p id="xo-site-slogan"><{$xoops_slogan}></p> 
+   </div>
+<div class="tuxlogo"></div>
+</div>
+<{includeq file="$theme_name/globalnav.html"}>

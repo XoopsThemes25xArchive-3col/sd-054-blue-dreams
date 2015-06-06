@@ -1,0 +1,173 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<div id="news">
+<{if $block.displayview==2}>		<{* Classical view *}>
+<{* ************************************** Tabs creation ************************************** *}>
+<ul id="tabNavigation">
+<{foreach item=onetab from=$block.tabs}>
+	<{if $block.current_tab == $onetab.id}>
+	<li class="selectedTab"><a href='#'><{$onetab.title}></a></li>
+	<{else}>
+	<li><a href="<{$block.url}>NewsTab=<{$onetab.id}>"><{$onetab.title}></a></li>
+	<{/if}>
+<{/foreach}>
+	<li class="fixTabsIE"><a href="javascript:void(0);">&nbsp;</a></li>
+</ul>
+	<{* ********************************* Body of the current tab ******************************** *}>
+
+<div>
+
+<{if $block.current_is_spotlight && $block.tabs.id==0}>
+	
+<table>
+  
+  
+  <tr>
+    <td class="itemText">
+      <{if $block.current_is_spotlight}>
+				<{foreach item=onesummary from=$block.smallheader}>
+					<{$onesummary}>
+				<{/foreach}>
+    </td>
+			<{/if}>
+  </tr>  
+  
+  
+  <tr>
+    <td colspan="2" style="padding-top: 2em">	
+      
+      <table style="padding-bottom: 2em">
+        <tr>
+          <td><img src="<{$block.spotlight.topic_image}>" alt="" /></td>
+          <td class="itemText"><{$block.spotlight.topic_description}></td>
+        </tr>
+			</table>
+			
+      <ul>
+        <li>
+          <span class="itemTitle"><{$block.spotlight.title_with_link}></span>
+          <span class="itemPoster"><{$block.spotlight.author}> <{$block.lang_on}> <{$block.spotlight.date}> <{if $block.use_rating}> - <{$block.spotlight.rating}>/10 (<{$block.spotlight.number_votes}>)<{/if}>, <{$block.spotlight.hits}> <{$block.lang_reads}></span><br />
+        </li>
+      </ul>
+        
+    </td>
+  </tr>
+  
+
+  <tr>
+    <td><{$block.spotlight.image}>&nbsp;</td>
+    <td class="itemText" style="padding-bottom: 2em"><{$block.spotlight.text}></td>
+	</tr>  
+		
+
+  
+<{* ********************************* Liste des titres d'articles sans le scoop ******************************** *}>		
+  <{foreach item=onenews from=$block.spotlight.news}>
+  <tr>
+    <td class="itemPoster" colspan="2"><ul><li><{$onenews.date}> - <{$onenews.title_with_link}></li></ul></td>
+  </tr>
+  <{/foreach}>
+  
+  
+</table>
+
+
+
+<{else}>
+    
+    
+    
+<table style="color: #000;">
+  <tr>
+    <td><img src="<{$block.topic_image}>" /></td>
+    <td class="itemText"><{$block.topic_description}></td>
+  </tr>
+</table>
+
+
+<{foreach item=onenews from=$block.news}>
+<div>
+  
+  <ul>
+    <li class="itemTitle"><{$onenews.title}></li>
+  </ul>
+  
+  <span class="itemPoster">
+    &nbsp;&nbsp;<{$onenews.author}> <{$block.lang_on}> <{$onenews.date}> - <{if $block.use_rating}> <{$onenews.rating}>/10 (<{$onenews.number_votes}>)<{/if}>, <{$onenews.hits}> <{$block.lang_reads}>
+  </span>  
+	<span class="itemText">
+  <{$onenews.text}>
+  </span>
+
+
+</div>
+<{/foreach}>
+
+<{/if}>
+</div>
+
+<{else}>
+	
+<{* ********************************** Classical view ******************************* *}>
+<table>
+<{if $block.spotlight}>
+  
+  <tr>
+    <td> 
+
+      <table>
+        
+        <tr>
+          <td class="itemTitle" style="padding-left: 1em;">
+            <a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$block.spotlight.id}>"><{$block.spotlight.title}></a>
+            <span class="itemPoster"><{$block.spotlight.author}>
+						 <{if $block.sort=='counter'}>
+							 (<{$block.spotlight.hits}>)
+						 <{elseif $block.sort=='published'}>
+							 (<{$block.spotlight.date}>)
+						 <{else}>
+							 (<{$block.spotlight.rating}>)
+						 <{/if}>
+            </span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="itemText" style="padding-top: 1em">
+            <{$block.spotlight.image}><{$block.spotlight.text}>
+          </td>
+        </tr>
+        
+      </table>		
+
+    </td>
+	</tr>
+	
+<{/if}>
+
+	<tr>
+		<td>
+			
+      <ul>
+				<{foreach item=news from=$block.stories}>
+					<{if $news.id != $block.spotlight.id}>
+            	<li style="padding-top: 2em"><a class="itemTitle" href="<{$xoops_url}>/modules/news/article.php?storyid=<{$news.id}>" <{$news.infotips}>><{$news.title}></a>
+						  <{if $block.sort=='counter'}>
+							 [<{$news.hits}>]
+						  <{elseif $block.sort=='published'}>
+							 [<{$news.date}>]
+						  <{else}>
+							 [<{$news.rating}>]
+						  <{/if}>
+						<br />
+            <span class="itemText"><{$news.teaser}></span>
+              </li>
+				<{/if}>
+				<{/foreach}>
+			</ul>
+			
+		</td>
+	</tr>
+</table>
+
+<{/if}>
+</div>

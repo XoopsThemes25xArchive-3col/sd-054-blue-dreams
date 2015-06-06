@@ -1,0 +1,94 @@
+/* Mor.pho.GEN.e.sis version 1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 1.2) - 28 janvier 2009 */
+/*Thème :  Xoops City Design by SabOUm  (http://www.saboum.com) */
+
+/* Ici normalement, vous n'avez qu'à modifier les dimensions
+et le visuel du squelette à proprement parler (bordure des colonnes,
+fond des colonnes, marges principales, etc ...)*/
+
+/*============= Règles principale du squelette ============*/
+* {
+	padding:							0;
+	margin:							0;
+	}
+#xo-canvas-columns {
+	width:						100%;
+	border-collapse:			collapse;
+}
+#xo-canvas-leftcolumn { width: 170px;} /* pour modifier la largueur de la colonne de gauche */
+#xo-page {
+	padding-top:				10px;
+	min-height: 				400px;
+}
+* html #xo-page {	height: 	400px; }
+
+#xo-canvas-rightcolumn {width: 170px;}/* pour modifier la largueur de la colonne de droite */
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top;}
+
+
+/*========== Règles pour les configurations spécifiques des colonnes ===========*/
+#xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {}
+#xo-canvas.rightcolumn-layout #xo-page, #xo-canvas.threecolumns-layout #xo-page { border-right-width:	0;}
+#xo-canvas-bottom, #xo-canvas-footer {}
+
+/*=========== Blocs centraux =============*/
+#xo-page-topblocks {
+	padding: 					0 10px;
+}
+#xo-page-bottomblocks {
+	padding:						0 10px 10px;
+}
+
+#xo-page .xo-blockszone .xo-block {
+	margin-bottom:				10px;
+}
+#xo-page-topleftblocks, #xo-page-bottomleftblocks {
+	float:						left;
+	width:						49.5%;
+}
+#xo-page-toprightblocks, #xo-page-bottomrightblocks {
+	float:						right;
+	width:						49.5%;
+}
+#xo-page-topcenterblocks, #xo-page-bottomcenterblocks {
+	clear:						both;
+}
+#xo-page .xo-lcrpageblocks .xo-blockszone, #xo-page .xo-lcrpageblocks .xo-blockszone {
+	float:						left;
+	clear:						none;
+	width:						33%;
+}
+.xo-lcrpageblocks #xo-page-topleftblocks,
+.xo-lcrpageblocks #xo-page-topcenterblocks,
+.xo-lcrpageblocks #xo-page-bottomleftblocks,
+.xo-lcrpageblocks #xo-page-bottomcenterblocks {
+	margin-right:				.5%;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	min-height:					50px;
+}
+* html #xo-page .xo-blockszone .xo-blockcontent { height: 100px; }
+
+#xo-page-topblocks .xo-block,
+#xo-page-bottomblocks .xo-block {
+	padding-top:				2px;
+}
+#xo-page-topblocks *>.xo-block,
+#xo-page-bottomblocks *>.xo-block {
+	padding-top:				0;
+}
+#xo-page .xo-blockszone > .xo-block {
+	padding-left:				4px;
+}
+#xo-page .xo-blockszone .xo-block:before {
+	display:						block;
+	height:						9px;
+	margin-left:				-4px;
+	margin-right:				-1px;
+}
+#xo-page .xo-blockszone .xo-block:after {
+	display:						block;
+	height:						7px;
+	margin-left:				-4px;
+	margin-right:				-1px;
+}

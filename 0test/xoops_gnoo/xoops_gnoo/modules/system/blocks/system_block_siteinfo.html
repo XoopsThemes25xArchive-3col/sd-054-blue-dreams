@@ -1,0 +1,25 @@
+<div class="center"">
+
+<{if $block.showgroups}>
+<table>
+  <{foreach item=group from=$block.groups}>
+			<tr>
+        <td colspan="2"><{$group.name}></td>
+      </tr>
+		  <{foreach from=$group.users item=user}>
+      <tr>
+        <td>
+        <{if $user.avatar != ""}><img src="<{$user.avatar}>" alt="<{$user.name}>" title="<{$user.name}>" width="50" height="50" /><{/if}>
+        </td>
+        <td><br />
+					<a href="<{xoAppUrl /userinfo.php uid=$user.id}>" title="<{$user.name}>"><{$user.name}></a> <{$user.msglink}>
+        </td>
+       </tr>
+       <{/foreach}>
+  <{/foreach}>
+</table>	
+<{/if}>
+
+<img src="<{xoImgUrl img/xoops_sticker.png}>" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>" /><br />
+<p class="smallcenter"><{$block.recommendlink}></p>
+</div>

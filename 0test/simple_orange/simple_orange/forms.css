@@ -1,0 +1,75 @@
+/*======= Style pour les formulaires, boutons, zones de texte, ... ========*/
+
+.xo-block form {
+	margin:						0px;
+	padding:						0px;
+}
+#xo-content form {
+	margin:						10px;
+	padding: 					0;
+	border: 						1px solid #f2f2f2;
+	font-size: 					.9em;
+}
+
+.xo-block .formButtons {
+	text-align:					center;
+	padding:						.5em;
+}
+
+label {
+	display:						block;
+	font-weight:				bold;
+	margin:						5px 0;
+}
+
+.xo-formfield {
+	margin-bottom:				.2em;
+	background-color:			transparent;
+}
+.xo-formbuttons, .formButton {
+	color: 						#fff;
+	background-color: 		#777;
+	font-size:					.9em;
+	border: 						1px solid #ccc;
+}
+input[type=submit], input[type=reset] {
+	color: 						#fff;
+	background-color: 		#777;
+	font-size:					.9em;
+	border: 						1px solid #ccc;
+}
+#xo-content .xo-formfield.required label:after {
+	content:						'*';
+	color:						#ff0000;
+	background-color: 		#fff;
+}
+select {
+	font-size: 					.8em;
+}
+select[name=timezone_offset] {
+	font-size:					.9em;
+}
+
+input[type=text], input[type=password] {
+	border:						1px dotted #999;
+	margin:						2px 0px;
+	padding-left:				.2em;
+	
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	border-color:				#3182C0;
+	outline:						1px solid #3182C0;
+}
+
+textarea {
+	width: 						95%;
+	padding:						4px;
+	font: 						normal 1em Verdana, sans-serif;
+	border:						1px solid #ccc;
+	height:						120px;
+	display:						block;
+	color:						#777;
+	background-color: 		inherit;
+}
+

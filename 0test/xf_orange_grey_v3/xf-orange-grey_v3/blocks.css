@@ -1,0 +1,118 @@
+/*  
+Theme Name: xf_orange_grey_V2 95%
+Theme URI: http://xoopsfactory.com 
+Description: just another clone from a CSS XOPS theme of mine <a href="http://xoopsfactory.com">XOOPS FACTORY</a>.
+Version: 1.0 | 30.12.2005
+Author: Michael Hokamp [aka studioC] 
+Author URI: http://hokamp.info
+*/
+
+
+div.ltitle {
+padding:0px;
+width:170px;
+background : #999;
+color: #fff;
+border-top: 4px solid #fff; 
+border-bottom: 4px solid #fff;
+}
+div.ltitle h3 {
+padding-left: 10px;
+font-size:12px;
+padding-top: 5px;
+padding-bottom: 5px;
+font-weight:normal;
+text-transform:uppercase;
+}
+div.lblockcontent, div.lblockcontent2 {
+padding:10px;
+}
+div.lblockcontent b {
+color: #fff;
+}
+div.lblockcontent a:hover {font-weight:bold;}
+
+div.ltitle2 {
+padding:0px;
+width:176px;
+background : #fc0;
+color: #333;
+border: 4px solid #fff; 
+border-right: 0px solid #ccc;
+}
+div.ltitle2 h3 {
+padding-left: 10px;
+font-size:12px;
+padding-top: 5px;
+padding-bottom: 5px;
+font-weight:normal;
+text-transform:uppercase;
+}
+.centerblocktitle h3{
+color:#333;
+font-size:14px;
+padding-top:15px;
+}
+.centerblockcontent {
+background: url(images/centerlogobg.gif) top right no-repeat;
+}
+div.ccenterblockcontent {
+padding-bottom: 15px;
+}
+#modulcontent a:hover {
+color: #000;
+background: transparent;
+}
+#mainmenu a {
+display:block;
+color: #333;
+}
+#mainmenu a:hover {
+display:block;
+color: #000;
+background: transparent;
+}
+.mainmenu {
+color: #000;
+}
+:hover.mainmenu  {
+color: #000;
+font-weight: bold;
+background: transparent;
+}
+.menuSub {
+background: url(images/submenu.gif) no-repeat left center;
+padding-left:15px;
+color: #fff;
+}
+#usermenu a {
+display:block;
+color: #333;
+}
+#usermenu a:hover {
+display:block;
+color: #000;
+background: transparent;
+}
+.outer th {
+padding:4px;
+background-color: #666; 
+color: #fff; 
+}
+.outer th a{
+font-size: 13px;
+padding:4px;
+padding-left:2px;
+background-color: #666; 
+color: #fff; 
+}
+.outer {border: 0px solid silver;width:100%;}
+.head {background-color: #4B91D7; padding: 4px;font-weight: normal; color:#111;}
+.even {background-color: #f1f1f1; padding: 2px;}
+.odd {background-color: #f6f6f6; padding: 2px;}
+.foot {background-color: #f6f6f6; padding: 2px; font-weight: bold;}
+tr.even td {background-color: #f1f1f1; padding: 2px;}
+tr.odd td {background-color: #f6f6f6; padding: 2px;}
+
+
+/* This CSS is part of the xf_orange_grey_V2 XOOPS theme from michael [aka studioC] <a href="http://xoopsfactory.com">XOOPS FACTORY</a> */

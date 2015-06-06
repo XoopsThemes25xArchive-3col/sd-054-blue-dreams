@@ -1,0 +1,38 @@
+<center><div id="xo-globalnav0" class="x2-nl x2-navigation"><ul>
+		<!-- menu en mode anonyme -->
+
+		<{if !$xoops_isuser}>
+
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		
+		<li><a href="<{xoAppUrl modules/}>" accesskey="" title="Module 1">Module 1</a>
+	
+		<li><a href="<{xoAppUrl modules/}>" accesskey="" title="Module 2">Module 2</a>
+
+		<li><a href="<{xoAppUrl modules/}>" accesskey="" title="Module 3">Module 3</a>
+
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+S
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		
+		<li><a href="<{xoAppUrl modules/}>" accesskey="" title="Module 1">Module 1</a>
+	
+		<li><a href="<{xoAppUrl modules/}>" accesskey="" title="Module 2">Module 2</a>
+
+		<li><a href="<{xoAppUrl modules/}>" accesskey="" title="Module 3">Module 3</a>
+
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+
+		<{if $xoops_isadmin}>
+		<!-- lien supplémentaire si je suis administrateur -->
+
+
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<{/if}>
+		<{/if}>
+
+	</ul></div></center>

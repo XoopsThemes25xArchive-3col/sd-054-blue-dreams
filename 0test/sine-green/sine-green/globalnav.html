@@ -1,0 +1,31 @@
+<ul id="xo-globalnav" class="x2-nl x2-navigation">
+		<!-- menu en mode anonyme -->		
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		<li>|</li>
+		<{if !$xoops_isuser}>
+		<li><a href="<{xoAppUrl modules/smartfaq/}>" accesskey="q" title="Questions & réponses"> FAQ</a></li>
+		<li>|</li>
+		<li><a href="<{xoAppUrl modules/sitemap/}>" accesskey="p" title="Plan du site">Plan Du Site</a></li>
+		<li>|</li>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+		<li><a href="<{xoAppUrl modules/news/}>" accesskey="n"  title="Articles">Articles</a></li>
+		<li>|</li>
+		<li><a href="<{xoAppUrl modules/xhnewbb/}>" accesskey="f"  title="Forum">Forum</a></li>
+		<li>|</li>
+		<li><a href="<{xoAppUrl modules/smartfaq/}>" accesskey="q" title="Questions & réponses">FAQ</a></li>
+		<li>|</li>
+		<li><a href="<{xoAppUrl modules/sitemap/}>" accesskey="p" title="Plan du site">Plan Du Site</a></li>
+		<li>|</li>
+		<li><a href="<{xoAppUrl modules/mylinks/}>" accesskey="l" title="Nos liens">Liens</a></li>
+		<li>|</li>
+		
+		<{if $xoops_isadmin}>
+		<!-- lien supplémentaire si je suis administrateur -->
+		<li><a href="<{xoAppUrl /admin.php}>" accesskey="x" title="Aller à l'administration">Administration</a></li>
+		<{/if}><li>|</li>
+		<{/if}>
+		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="Contact">Contact</a></li>
+		
+</ul>

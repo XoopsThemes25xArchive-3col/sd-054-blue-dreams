@@ -1,0 +1,11 @@
+  <div id="xo-breadcrumbs">
+		<div class="text">Vous êtes ici » <a href="<{$xoops_url}>/">Page d'accueil</a>
+		<{foreach from=$xoops_breadcrumbs item="item"}>
+			&nbsp;»&nbsp;
+			<{if $item.url}>
+				<a href="<{$item.url}>"><{$item.name}></a>
+			<{else}>
+				<{$item.name}>
+			<{/if}>
+		<{/foreach}></div>
+</div>

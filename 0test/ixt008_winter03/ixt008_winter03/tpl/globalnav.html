@@ -1,0 +1,53 @@
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: globalnav.html 329 2009-02-28 18:49:13Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if $cms == "xoops"}>
+ <{php}>include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php'; $modules = b_system_main_show(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{elseif $cms == "exm"}>
+ <{php}>include_once XOOPS_ROOT_PATH.'/modules/system/blocks/block_mainmenu.php'; $modules = system_bk_mainmenu(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{elseif $cms == "icms"}>
+ <{php}>include_once ICMS_ROOT_PATH.'/modules/system/blocks/system_blocks.php'; $modules = b_system_main_show(); $this->assign('block',$modules);<{/php}>
+ <{assign var=ixt_lang_home value=$block.lang_home}>
+<{else}>
+ <{assign var=ixt_lang_home value="Home"}>
+<{/if}>
+<{if $cms == "icms"}>
+ <div id="ixt-globalnav">
+  <ul>
+  <li><a href="<{$ixt_url}>/index.php" title="<{$ixt_lang_home}>"><{$ixt_lang_home}></a></li>
+  <li><a href="http://community.impresscms.org/" title="<{$smarty.const.THEME_Community_DESC}>"><{$smarty.const._IMPRESSCMS_COMMUNITY}></a></li>
+  <li><a href="http://addons.impresscms.org/" title="<{$smarty.const.THEME_Addons_DESC}>"><{$smarty.const._IMPRESSCMS_ADDONS}></a></li>
+  <li><a href="http://wiki.impresscms.org/" title="<{$smarty.const.THEME_Wiki_DESC}>"><{$smarty.const._IMPRESSCMS_WIKI}></a></li>
+  <li><a href="http://blog.impresscms.org/" title="<{$smarty.const.THEME_Blogs_DESC}>"><{$smarty.const._IMPRESSCMS_BLOG}></a></li>
+  </ul>
+ </div>
+<{elseif $cms == "xoops"}>
+ <div id="ixt-globalnav">
+  <ul>
+  <li><a href="<{$ixt_url}>/index.php" title="<{$ixt_lang_home}>"><{$ixt_lang_home}></a></li>
+  <li><a href="http://www.xoops.org/modules/mylinks/viewcat.php?cid=3" title="Community">Community</a></li>
+  <li><a href="http://www.xoops.org/modules/mylinks/viewcat.php?op=&cid=5" title="Addons">Addons</a></li>
+  <li><a href="http://www.xoops.org/modules/mediawiki/" title="Wiki">Wiki</a></li>
+  <li><a href="http://www.xoops.org/modules/newbb/" title="Forums">Forums</a></li>
+  </ul>
+ </div>
+<{else}>
+ <div id="ixt-globalnav">
+  <ul>
+  <li><a href="<{$ixt_url}>/index.php" title="<{$ixt_lang_home}>"><{$ixt_lang_home}></a></li>
+  <li><a href="#" title="Custom Menu 1">Menu1</a></li>
+  <li><a href="#" title="Custom Menu 2">Menu2</a></li>
+  <li><a href="#" title="Custom Menu 3">Menu3</a></li>
+  <li><a href="#" title="Custom Menu 4">Menu4</a></li>
+  </ul>
+ </div>
+<{/if}>

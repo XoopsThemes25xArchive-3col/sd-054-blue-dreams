@@ -1,0 +1,14 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<table>
+<tr>
+    <th colspan="2"><{$smarty.const._AM_NEWS_TOPICS_DIRECTORY}></th>
+</tr>
+<{foreach item=topic from=$topics}>
+<tr>
+    <td class="center" style="padding: 2em 0 2em 0;"><img src="<{$xoops_url}>/modules/news/images/topics/<{$topic.topic_imgurl}>" /></td>
+    <td class="itemTitle" style="padding: 2em 0 2em 0;"><{$topic.prefix}><a href="<{$xoops_url}>/modules/news/index.php?storytopic=<{$topic.id}>"><{$topic.title}></a> (<{$topic.news_count}>)</td>
+</tr>
+<{/foreach}>
+</table>
+<!-- if you don't use morphogenesis gabarit : </div> -->

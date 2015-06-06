@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="index,follow,all" />
+<meta name="keywords" content="<{$xoops_pagetitle}>, <{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_pagetitle}>, <{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="alex@mielus.ro">
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<meta name="revisit-after" content="30 days">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<title><{$xoops_pagetitle}> - <{$xoops_sitename}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+startList = function() {
+if (document.all&&document.getElementById) {
+navRoot = document.getElementById("nav");
+for (i=0; i<navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+</script>
+
+</head>
+<body>
+<table width="800" align="center" cellspacing="0" cellpadding="0" id="savedem">
+	<tr>
+		<td>
+
+
+  <table width="800" align="center" cellspacing="0" cellpadding="0" class="header_table">
+    <tr>
+      <td id="logo"><a href="&lt;{$xoops_url}&gt;" title="Resurrect now?"><img src="<{$xoops_imageurl}>images/logo.jpg"  alt="Blue Halo Guild"/></a></td>
+    </tr>
+  </table>
+  
+
+  <table align="center" cellspacing="0" class="body_table">
+    <tr>
+      <td id="leftcolumn">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="WoW/theme_blockleft.html"}>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+
+      </td>
+
+      <td id="centercolumn"><div align="right"><{if
+                        $xoops_isuser}> <span class="right" align="top"> <a href="<{$xoops_url}>/user.php" title="Your profile"><img src="<{$xoops_imageurl}>images/account.gif" alt="Your Profile" border="0" /></a> <{php}>
+          GLOBAL $xoopsUser;
+          $pm_handler =& xoops_gethandler('privmessage');
+          $uid = $xoopsUser->getVar('uid');
+          $criteria = new CriteriaCompo(new Criteria('read_msg', 0));
+          $criteria->add(new Criteria('to_userid', $uid));
+          $msgcount = $pm_handler->getCount($criteria);
+          $GLOBALS['xoopsTpl']->assign('msgcount', $msgcount);
+<{/php}>
+          
+<{if $msgcount > 0}><a class="highlight" href="<{$xoops_url}>/viewpmsg.php" title="View private messages">(<span style="color:#ff0000; font-weight: bold;"><{$msgcount}></span>)</a> 
+          <a href="<{$xoops_url}>/viewpmsg.php"><img src="<{$xoops_imageurl}>images/pm.gif" alt="View private messages"  border="0" /></a> <{else}> 
+          <a href="<{$xoops_url}>/viewpmsg.php"><img src="<{$xoops_imageurl}>images/pm.gif" alt="Private messages"  border="0" /></a> <{/if}><a href="<{$xoops_url}>/user.php?op=logout" title="Logout"> </a><a href="<{$xoops_url}>/user.php?op=logout" title="Logout"><img src="<{$xoops_imageurl}>images/logout.gif" alt="uitloggen"  border="0" /></a><{if
+                $xoops_isadmin}> <a href="<{$xoops_url}>/admin.php"><img src="<{$xoops_imageurl}>images/admin.gif" alt=""  border="0" /></a><{/if}><{else}><img src="<{$xoops_imageurl}>images/spacer.gif" alt=""  border="0" /></span></div>      
+                    <form action="<{$xoops_url}>/user.php" method="post">
+          <div class="login" align="right">nick:&nbsp;&nbsp;<input class="search" type="text" name="uname" size="12" value="<{$block.unamevalue}>" />&nbsp;&nbsp;password:&nbsp;&nbsp;<input class="search" type="password" name="pass" size="12" />&nbsp;&nbsp;
+            <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+            <input type="hidden" name="op" value="login" />
+            <input class="submit" name="submit" type="submit" value="login" />
+            <span class="left" align="bottom">&nbsp;&nbsp;<a href="<{$xoops_url}>/register.php">Do you want to register?</a><img src="<{$xoops_imageurl}>images/spacer.gif" alt="" width="20"  border="0" /></span><{/if}>
+          </div>
+    </form>
+		<!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+
+        <table cellspacing="0">
+          <tr>
+            <td id="centerCcolumn" colspan="2">
+
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{include file="WoW/theme_blockcenter_c.html"}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->
+
+            </td>
+          </tr>
+          <tr>
+            <td id="centerLcolumn">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="WoW/theme_blockcenter_l.html"}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td id="centerRcolumn">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="WoW/theme_blockcenter_r.html"}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+        </table>
+
+        <{/if}>
+        <!-- End display center blocks -->
+
+        <div id="content">
+          <{$xoops_contents}>
+		  <div align="center"><br /><br /><{$xoops_banner}><br /><br />
+       </div>
+        </div>
+      </td>
+
+      <{if $xoops_showrblock == 1}>
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="WoW/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td><{/if}>
+
+    </tr>
+</table>
+  <table align="center" cellspacing="0" class="footertable">
+	<tr>
+		<td>
+		<BR><BR>
+			<p align="center">
+			<font size="2" face="Verdana">
+			<a href="http://www.xoops.org" target="_blank" title="The XOOPS Project"><img src="<{$xoops_imageurl}>images/xoops.jpg" alt="The XOOPS Project" border="0" /></a>&nbsp;&nbsp;<a href="http://george.mielus.ro" target="_blank" title="Graphics portfolio for freelancer_ro at RentACoder.com"><img src="<{$xoops_imageurl}>images/mielus.gif" border="0" alt="Graphics portfolio for freelancer_ro at RentACoder.com" /></a>&nbsp;&nbsp;<a href="http://romanian-67248866291.spampoison.com" target="_blank"><img src="http://pics3.inxhost.com/images/sticker.gif" border="0" width="80" height="15"/></a>&nbsp;&nbsp;<A HREF="http://www.mypagerank.net/" target="_blank"><IMG SRC="http://www.mypagerank.net/srank.php?site=wow.mielus.ro" BORDER="0" ALT="This is my Google PageRank - SmE Rank free service Powered by Scriptme"></A>
+			</font><BR><BR>
+			All base artwork is copyright &copy;2004 <a href="http://www.blizzard.com" target="_blank">Blizzard Entertainment</a>. All rights reserved.<br />All other images and website are copyright &copy;2005-2006 <a href="http://www.mielus.ro/" target="_blank" title="TOTUL pentru telefonul TAU!">RINGTOLOGO</a>. All rights reserved.<br />Powered by <a href="http://www.xoops.org" target="_blank" title="<{$xoops_version}>"><{$xoops_version}></a><br /><br /><br /><br />
+			</p>
+		</td>
+	</tr>
+</table>
+
+		</td>
+	</tr>
+</table>
+</body>
+</html>

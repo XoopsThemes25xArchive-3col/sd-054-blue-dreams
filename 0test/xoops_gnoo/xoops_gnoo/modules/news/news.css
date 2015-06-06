@@ -1,0 +1,75 @@
+/* === Ajout Hack Stop la pub === */
+.modPub {
+color:#333;
+font-weight:700;
+margin:0 0 2.5em;
+}
+/* === Styles pour le bloc Recent-Top News avec onglets (tabskin==6 //plain) === */
+#tabNavigation {
+border:none;
+margin:0;
+}
+ul#tabNavigation li {
+display:inline;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+ul#tabNavigation {}
+ul#tabNavigation a,ul#tabNavigation a:link,ul#tabNavigation a:visited {
+background-color:#5fb3f9!important;
+border-top:solid 1px #fafafa;
+border-right:solid 1px #fafafa;
+border-bottom:solid 1px #fafafa;
+border-left:solid 1px #fafafa;
+color:#fff!important;
+font-weight:700;
+float:none;
+text-decoration:none!important;
+margin:0 0 0 5px;
+padding:2px 6px 3px;
+}
+ul#tabNavigation a:hover,ul#tabNavigation a:focus {
+background-color:#333333!important;
+color:#fff!important;
+text-decoration:none!important;
+border-top:solid 1px #e7e7e7;
+border-right:solid 1px #e7e7e7;
+border-bottom:solid 1px #e7e7e7;
+border-left:solid 1px #e7e7e7;
+}
+ul#tabNavigation a:active {
+background-color:#4d5e6f!important;
+color:#fff!important;
+text-decoration:none!important;
+padding:2px 6px 3px;
+border-top:solid 1px #333333;
+border-right:solid 1px #333333;
+border-bottom:solid 1px #333333;
+border-left:solid 1px #333333;
+}
+ul#tabNavigation li.selectedTab {}
+ul#tabNavigation li.selectedTab a,ul#tabNavigation li.selectedTab a:link,ul#tabNavigation li.selectedTab a:visited {
+border-top:solid 1px #333333;
+border-right:solid 1px #333333;
+border-bottom:solid 1px #333333;
+border-left:solid 1px #333333;
+margin:0 0 0 5px;
+padding:2px 6px 3px;
+color:#333!important;
+cursor:text;
+text-decoration:none!important;
+background-color:#fcfcfc !important;
+}
+ul#tabNavigation li.fixTabsIE {
+display:none;
+visibility:hidden;
+}
+/* === style pour le bloc Random === */
+#paddingblock-random td {
+display:block;
+text-align:justify;
+padding: 2em 1em 0 1em;
+line-height: 20px;
+color: #000;
+}

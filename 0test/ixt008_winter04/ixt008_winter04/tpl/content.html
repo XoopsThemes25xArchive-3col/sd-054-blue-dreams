@@ -1,0 +1,67 @@
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: content.html 259 2009-02-24 11:21:50Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div id="ixt-content_wrap">
+ <div id="ixt-cont">
+  <div id="ixt-mainbody_wrap">
+   <div id="ixt-mainbody">
+    <div id="ixt-canvas-content">
+     <div id="ixt-canvas-columns">
+      <!-- merge left and right column -->
+      <div id="ixt-canvas-columns2">
+       <div id="ixt-canvas-columns2-st"></div>
+       <!-- left column -->
+       <{if $ixt_rtl}>
+        <{if $ixt_canvas_right}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_right zoneClass='ixt-canvas-column' zoneId='ixt-canvas-rightcolumn'}><{/if}>
+       <{else}>
+        <{if $ixt_canvas_left}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_left zoneClass='ixt-canvas-column' zoneId='ixt-canvas-leftcolumn'}><{/if}>
+       <{/if}>
+       <!-- right column -->
+       <{if $ixt_rtl}>
+        <{if $ixt_canvas_left}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_left zoneClass='ixt-canvas-column' zoneId='ixt-canvas-leftcolumn'}><{/if}>
+       <{else}>
+        <{if $ixt_canvas_right}><{includeq file="$theme_tpl/blockszone.html" blocks=$ixt_canvas_right zoneClass='ixt-canvas-column' zoneId='ixt-canvas-rightcolumn'}><{/if}>
+       <{/if}> 
+      </div>
+      <!-- center column / page -->
+      <div class="ixt-page-container">
+       <div id="ixt-page">
+        <!-- top blocks -->
+        <{if $ixt_page_topleft or $ixt_page_topcenter or $ixt_page_topright}>
+         <div class="ixt-blockszone ixt-<{$theme_top_order}>pageblocks" id="ixt-page-topblocks"> 
+          <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
+          <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
+          <{includeq file="$theme_tpl/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}> 
+         </div>
+        <{/if}>
+        <!-- module content -->
+        <{if $ixt_contents}>
+         <div id="ixt-content">
+          <div class="ixt-block">
+           <{$ixt_contents}>
+          </div>
+         </div>
+        <{/if}>
+        <!-- bottom blocks -->
+        <{if $ixt_page_bottomleft or $ixt_page_bottomcenter or $ixt_page_bottomright}>
+         <div class="ixt-blockszone ixt-<{$theme_bottom_order}>pageblocks" id="ixt-page-bottomblocks"> 
+          <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
+          <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
+          <{includeq file="$theme_tpl/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}> 
+         </div>
+        <{/if}> 
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>

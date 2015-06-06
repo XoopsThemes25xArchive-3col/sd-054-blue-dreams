@@ -1,0 +1,34 @@
+<div id="xo-globalnav" class="x2-nl x2-navigation"><ul>
+		<!-- menu en mode anonyme -->
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		<{if !$xoops_isuser}>
+
+		<li><a href="<{xoAppUrl modules/news}>" accesskey="" title="News">News</a>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+         <li><a href="<{xoAppUrl modules/myalbum}>" accesskey="" title="Photo">Photo</a>
+
+          <li><a href="<{xoAppUrl modules/Wfdownloads}>" title="Downloads">Downloads</a>
+	
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+
+
+		<li><a href="<{xoAppUrl modules/news}>" accesskey="" title="News">News</a>
+	
+        <li><a href="<{xoAppUrl modules/myalbum}>" accesskey="" title="Photo">Photo</a>
+
+         <li><a href="<{xoAppUrl modules/Wfdownloads}>" title="Downloads">Downloads</a>
+		
+
+
+		<{if $xoops_isadmin}>
+		<!-- lien supplémentaire si je suis administrateur -->
+
+
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<{/if}>
+		<{/if}>
+
+
+	</ul></div>

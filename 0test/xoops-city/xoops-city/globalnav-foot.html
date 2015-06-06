@@ -1,0 +1,47 @@
+<div id="xo-globalnav-foot" class="x2-nl x2-navigation"><ul>
+		<!-- menu en mode anonyme -->
+
+		<{if !$xoops_isuser}>
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		
+		<li><a href="<{xoAppUrl modules/sitemap}>" accesskey="" title="Plan du site">Plan du site</a>
+	
+		<li><a href="<{xoAppUrl modules/smartpartner}>" accesskey="" title="Partenaire">Partenaire</a>
+
+        <li><a href="<{xoAppUrl modules/contact}>" title="Contact">Contact</a>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+<li>
+ <a href="http://jigsaw.w3.org/css-validator/">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS Valide !" />
+</a>
+
+</li>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		
+		<li><a href="<{xoAppUrl modules/sitemap}>" accesskey="" title="Plan du site">Plan du site</a>
+	
+		<li><a href="<{xoAppUrl modules/smartpartner}>" accesskey="" title="Partenaire">Partenaire</a>
+
+        <li><a href="<{xoAppUrl modules/contact}>" title="Contact">Contact</a> 
+<li>
+ <a href="http://jigsaw.w3.org/css-validator/">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS Valide !" />
+</a>
+
+</li>
+		<{if $xoops_isadmin}>
+		<!-- lien supplémentaire si je suis administrateur -->
+
+
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		<{/if}>
+		<{/if}>
+	</ul></div>

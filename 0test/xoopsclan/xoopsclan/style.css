@@ -1,0 +1,670 @@
+/*
+
+*/ 	WireFrameOpacity theme is licensed under the Creative Commons 
+	Share & Share alike License. 2007, Mark F. Rabideau 
+
+	This theme owes its very existence to a number of generous Xoopsers including:
+	technigrafa, Xoopsdesign and StudioC. Without their help and earlier themes, 
+	I would never have been able to build this theme.
+	
+	Any use of this theme must retain this license.  Any improvements to the theme
+	need to be made available to the XOOPS Community- at http://xoops.org
+
+/* begin with generic selectors so that they can be overridden if needed
+ * by classes deeper in the stylesheet
+ */
+.clear
+{
+	clear: both;
+	padding-bottom: 1px;	/* for Gecko-based browsers */
+	margin-bottom: -1px;	/* for Gecko-based browsers */
+}
+
+/* Standard Components */
+body {
+margin: 0 0;	/* margin instead of padding for the gutterspace around 
+	 			   the layout because IE breaks the layout when 
+	 			   horizontal padding is applied to the body element.
+	 			   % over pixels for that horizontal gutterspace so that
+	 			   it automatically goes below 20px on low-res browsers
+	 			   to create more space for the content. */
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 9pt; 
+color: #454F51; 
+margin: 0px; 
+padding: 0px; 
+min-width:1000px;
+background:#261F26 url(images/background.jpg) left top no-repeat;
+}
+
+#pageWrapper
+{
+	border: solid 1px #fff;
+	border-width: 0 1px;
+	min-width: 55em;	/*IE doesn't understand this property. EMs are used
+				   so that as the font size increases, the proportional
+				   limitations (min-width) increase with it, rather
+				   than creating a middle column that can only fit
+				   3 or 4 characters in it. */
+	width: auto;
+}
+* html #pageWrapper
+{
+	/* \*/
+		word-wrap: break-word;
+	/* invalid CSS but keeps IE from breaking horribly under narrow viewports */
+}
+
+table {
+width: 100%;
+}
+
+table td {
+padding: 3px; 
+border-width: 0; 
+vertical-align: top; 
+margin-left: 10px;
+}
+
+a {
+color: #66CCCC; 
+text-decoration: none; 
+font-weight: bold; 
+}
+
+a:visited {
+}
+
+a:active {
+}
+
+a:hover {
+color: #999999; 
+text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-variant: small-caps;
+margin: 0px; 
+padding: 4px 0px 0px;
+color: #66CCCC;
+}
+
+h1 {
+font-size: 130%;
+}
+
+h2 {
+font-size: 120%;
+}
+
+h3 {
+font-size: 110%;
+}
+
+h4 {
+font-size: 100%;
+}
+
+h5 {
+font-size: 90%;
+}
+
+h6 {
+font-size: 80%;
+}
+
+ul { 
+margin: 2px; 
+padding: 2px; 
+list-style: decimal inside; 
+text-align: left;
+}
+
+li { 
+margin-left: 2px; 
+list-style: square inside; 
+color: #4F5971; 
+padding:3px;
+}
+
+input.formButton {
+}
+
+input {
+background-color: #F5F5DC; 
+font-size: 90%; 
+border: 1px solid #5E6475; 
+margin-bottom: 4px;
+}
+
+input:hover {
+}
+
+input:focus, textarea:focus{
+background-color: #ffffff;
+border: 1px solid #92B0D8;
+}
+
+select {
+font-size: 90%;	
+margin-bottom: 4px;
+}
+
+/* Start Page Header */
+#header {
+height: 225px;
+padding-bottom:0px;
+background:transparent;
+}
+
+#logo {
+position:absolute;
+right:0px;
+top:30px;
+text-align: left;
+margin: 5px; 
+background: transparent;
+}
+
+#toplinks {
+background: transparent url(images/edge.png);
+background-repeat: repeat-x;
+background-position: top;
+position:absolute;
+right:5px;
+top:2px;
+text-align: left;
+padding: 10px;
+}
+
+#toplinks a:hover {
+}
+
+#bodyborder {
+background-image: url(images/edge.png);
+background-repeat: repeat-x;
+background-position: top;
+color: black;
+width:100%;
+margin:0px;
+padding-top:3px;
+height:30px;
+text-align: center;
+opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70)
+}
+
+/* End Page Header */
+
+/* Start News  */
+.item {
+border: 1px solid #cccccc; 
+margin-bottom: 20px;
+background-color: white;
+}
+
+.itemHead {
+padding: 3px; 
+color: #666666; 
+background-color:#DBDDFF;
+}
+
+.itemInfo {
+text-align: right; 
+padding: 3px; 
+background-color: #efefef;
+}
+
+.itemTitle a {
+font-weight: bold; 
+color: #666666; 
+text-decoration: none;
+background-color: #efefef;
+}
+
+.itemTitle a:hover {
+color: #454F51;	
+text-decoration: underline;
+}
+
+.itemPoster, .itemPostDate, .itemStats {
+font-size: 90%; 
+}
+
+.itemBody {
+padding: 5px;
+}
+
+.itemText {
+margin-top: 1px; 
+margin-bottom: 1px; 
+}
+
+.itemText:first-letter {
+}
+
+.itemFoot {
+text-align: right; 
+padding: 3px; 
+background-color: aqua;
+}
+
+.itemAdminLink, .itemPermaLink  {
+font-size: 90%;
+}
+
+/* End News  */
+
+/* Table Header Layout  */
+th {
+color: #666666;
+background-color:#DBDDFF;
+font-variant:small-caps;
+padding : 2px; 
+vertical-align : middle; 
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+tbody {
+}
+/* End Table Header */
+
+/* Start Table Rows */
+.outer {
+border: 1px solid #669999;
+}
+
+.head {
+background-color: #FAF7F0; 
+padding: 5px; 
+font-weight: bold; 
+border: 1px solid #DDDDDD;
+}
+
+.even, tr.even td {
+background-color: #F9F9F9; 
+padding: 5px;	
+border: 1px solid #DDDDDD;
+}
+
+.odd, tr.odd td {
+background-color: #FAF7F0; 
+padding: 5px; 
+border: 1px solid #DDDDDD;
+}
+
+.foot {
+background-color: #DDE6F5; 
+padding: 5px; 
+font-weight: bold;
+}
+/* End Table Rows */
+
+
+/* Start Left Column Styles */
+#leftcolumn {
+position: absolute; 
+width: 175px;
+left: 5px; 
+top: 0px;
+border: 2px inset #999999;
+background: transparent url(images/leftcolumn.jpg) repeat-y right;
+opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70)
+}
+
+#leftcolumn th {
+color: White; 
+background-color:#fff;
+vertical-align: middle;
+margin-right: 5px;
+
+}
+
+#leftcolumn .blockTitle {
+padding: 3px; 
+margin-left: 5px;
+font-weight: bold;
+}
+
+#leftcolumn .blockContent {
+padding: 1px; 
+margin: 5px 5px 10px 2px;
+border: 1px outset #EBE9ED;
+background-color: transparent;
+}
+/* End Left Column Styles */
+
+/* Shared Column Styles */
+
+#header hr, #footer hr {
+display: none;
+}
+
+#header, #container {
+margin-left:25px;
+margin-right:25px;
+}
+/* End Shared Column Styles */
+
+/* Start Center Column Styles*/
+#centercolumn { 
+padding: 0px; 
+margin: 5px;
+}
+
+.pageThreeColumns #centercolumn, .pageLeftColumn  #centercolumn {
+margin-left: 195px; 
+}
+
+.pageThreeColumns #centercolumn, .pageRightColumn #centercolumn {
+margin-right: 195px; 
+}
+         
+fieldset {
+margin: 0px 10px 10px 0px;
+background-color:#F2F2F2;
+min-width: 500px;
+}
+
+#centercolumn th {
+background-color:transparent;
+vertical-align: middle;
+margin-top:4px;
+}
+
+#centerCcolumn, #bottomCcolumn {
+}
+
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {
+padding: 5px; 
+background: white url(images/menu.png) repeat;
+font-weight: bold; 
+margin-top: 0px;
+border: 1px #A9A9A9;
+}
+
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent{
+background-color: #f9f9f9;	
+border: 1px solid #D4D4D4; 
+padding: 10px; 
+margin: 5px 2px 10px 2px;
+}
+
+#centerLcolumn, #bottomLcolumn {
+width: 48%;	
+float: left;
+margin-right:10px;
+}
+
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle{
+padding: 3px; 
+background: transparent url(images/menu.png) repeat-y;
+font-weight: bold; 
+margin: 0px;
+border: 1px solid #a9a9a9;
+}
+
+#centerLcolumn .blockContent, #bottomLcolumn .blockContent{
+background-color: #F7F7F7;	
+border: 1px solid #D4D4D4; 
+padding: 10px; 
+margin: 5px 2px 10px 2px;
+}
+
+#centerRcolumn, #bottomRcolumn {
+width: 48%;	
+float: right;
+}
+
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle{
+padding: 3px; 
+background: transparent url(images/menu.png) repeat-y;
+font-weight: bold; 
+margin-top: 0px;
+border: 1px solid #a9a9a9;
+}
+
+#centerRcolumn .blockContent, #bottomRcolumn .blockContent{
+background-color: #f7f7f7;	
+border: 1px solid #D4D4D4; 
+padding: 10px; 
+margin: 5px 2px 10px 2px;
+}
+
+.content {
+text-align: left;	
+clear: both; 
+padding: 10px;	 
+background: white;
+opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70)
+}
+/* End Center Column Styles */
+
+/* Start Right Column Styles */
+#rightcolumn {
+position: absolute; 
+width: 175px;
+border: 2px groove #999999;
+top: 0px; 
+right: 5px;
+background: transparent url(images/rightcolumn.jpg) repeat-y left;
+opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity=70)
+}
+
+#rightcolumn th {
+color: #FFFFFF; 
+vertical-align: middle;
+}
+
+#rightcolumn .blockTitle {
+padding: 3px; 
+margin-right: 5px;
+font-weight: bold;
+}
+
+#rightcolumn .blockContent {
+padding: 1px; 
+margin: 5px 5px 10px 2px;
+border: 1px outset #EBE9ED;
+background-color: transparent;
+}
+/* End Right Column Styles*/
+
+/* Start Main Menu Styles */
+#mainmenu li {
+list-style:none;
+}
+
+#mainmenu a {
+background-color: transparent; 
+display: block; 
+padding: 4px;
+color:#cccccc;
+margin: 0px;
+}
+
+#mainmenu a:hover {
+background-color: #DCDCDC;
+color: #666666;
+}
+
+#mainmenu a.menuTop {
+padding-left: 3px; 
+}
+
+#mainmenu a.menuMain {
+padding-left: 3px; 
+}
+
+#mainmenu a.menuSub {
+padding-left: 9px; 
+}
+/* End Main Menu Styles*/
+
+/* Start User Menu Styles*/
+#usermenu a {
+background-color: transparent; 
+display: block; 
+margin: 0px; 
+padding: 4px;
+color:#CCCCCC;
+}
+
+#usermenu a:hover {
+background-color: #DCDCDC;
+color: #666666;
+}
+
+#usermenu a.menuTop {
+}
+
+#usermenu a.highlight {
+background-color: #3F6B98; 
+}
+/* End User Menu Styles*/
+
+/* Start XOOPS Common Styles */
+div.errorMsg { 
+background-color: #FFCCCC; 
+text-align: center; 
+border-top: 1px solid #DDDDFF; 
+border-left: 1px solid #DDDDFF; 
+border-right: 1px solid #AAAAAA; 
+border-bottom: 1px solid #AAAAAA; 
+font-weight: bold; 
+padding: 10px;
+}
+
+div.confirmMsg { 
+background-color: #DDFFDF; 
+color: #136C99; 
+text-align: center; 
+border-top: 1px solid #DDDDFF; 
+border-left: 1px solid #DDDDFF; 
+border-right: 1px solid #AAAAAA; 
+border-bottom: 1px solid #AAAAAA; 
+font-weight: bold; 
+padding: 10px;
+}
+
+div.resultMsg { 
+background-color : #CCCCCC; 
+color: #333333; 
+text-align: center; 
+border-top: 1px solid #669999; 
+border-left: 1px solid #669999; 
+font-weight: bold; 
+border-right: 1px solid #e1e1e1; 
+border-bottom: 1px solid #e1e1e1; 
+padding: 10px;
+}
+
+div.xoopsCode, div.xoopsQuote  { 
+background: #FFFFFF; 
+border: 1px inset #000080; 
+font-family: "Courier New",Courier,monospace; 
+padding: 0px 6px 6px 6px;
+}
+
+.comTitle {
+font-weight: bold; 
+margin-bottom: 2px;
+}
+
+.comText {
+padding: 2px;
+}
+
+.comUserStat {
+font-size: 10px; 
+color: #2F5376; 
+font-weight:bold; 
+border: 1px solid #669999; 
+background-color: #ffffff; 
+margin: 2px; 
+padding: 2px;
+}
+
+.comUserStatCaption {
+font-weight: normal;
+}
+
+.comUserStatus {
+margin-left: 2px; 
+margin-top: 10px; 
+color: #2F5376; 
+font-weight:bold; 
+font-size: 10px;
+}
+
+.comUserRank {
+margin: 2px;
+}
+
+.comUserRankText {
+font-size: 10px;
+font-weight:bold;
+}
+
+.comUserRankImg {
+border: 0;
+}
+
+.comUserName {
+}
+
+.comUserImg {
+margin: 2px;
+}
+
+.comDate {
+font-weight: normal; 
+font-style: italic; 
+font-size: smaller;
+}
+
+.comDateCaption {
+font-weight: bold; 
+font-style: normal;
+}
+
+/* End XOOPS Common Styles */
+
+/* Start Footer Styles */
+#footer {
+left: 0px; 
+text-align: center;
+margin-left:190px;
+margin-right:190px;
+border-top: 1px outset #EBE9ED;
+background-color: transparent;
+padding: 0px;
+margin-top:5px;
+}
+
+#footer a:hover {
+}
+
+/* End Footer Styles */
+
+/* START WIREFRAME FIXES */
+
+/* hide from Mac IE5 \*/
+* html #container { height:1%;}
+/* END hide from Mac IE5 */
+
+#container {
+position: relative;
+background: transparent;
+}
+
+/* END WIREFRAME FIXES */

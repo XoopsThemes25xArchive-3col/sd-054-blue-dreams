@@ -1,0 +1,42 @@
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+ <!--[if IE]>
+<div style="width:627px;height:50px;margin-right: auto;margin-left: auto;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<{$xoops_imageurl}>visual/ccblock_01.png',sizingMethod='scale');background-repeat: no-repeat;">	
+				<span class="nitemTitle">
+					<a href="<{$xoops_url}>/modules/news/index.php?storytopic=<{$story.topicid}>"><{$story.topic_title}></a> : <{$story.news_title}>
+				</span>
+</div>
+				<div>
+  <div style="width:627px;margin-right: auto;margin-left: auto;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<{$xoops_imageurl}>visual/ccblock_02.png',sizingMethod='scale');">	
+<div class="blockcContentn">
+<span class="nitemInfo"><{if $story.files_attached}><{$story.attached_link}>&nbsp;<{/if}><{if $story.poster != ''}><span class="nitemPoster"><{$lang_postedby}> <{$story.poster}></span><{/if}> <span class="nitemPostDate"><{$lang_on}> <{$story.posttime}></span> (<span class="nitemStats"><{$story.hits}> <{$lang_reads}></span>) <{$news_by_the_same_author_link}></span>
+<span class="nimage"><{$story.imglink}><p class="nitemText"><{$story.text}></p></span></div>
+    <br />
+</div>
+   <div style="width:627px;height:28px;margin-right: auto;margin-left: auto;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<{$xoops_imageurl}>visual/ccblock_03.png',sizingMethod='scale');">	
+<span class="nitemFoot"><span class="nitemAdminLink"><{$story.adminlink}></span><{if $rates}><b><{$lang_ratingc}></b> <{$story.rating}> (<{$story.votes}>) - <a href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>" rel="nofollow"><{$lang_ratethisnews}></a> - <{/if}><span class="nitemPermaLink"><{$story.morelink}></span></span>
+</div>
+   <br />
+<![endif]-->
+<!--[if IE]><![if !IE]><![endif]-->
+<div style="width:627px;height:50px;margin-right: auto;margin-left: auto;background-image: url(<{$xoops_imageurl}>visual/ccblock_01.png);background-repeat: no-repeat;">	
+				<span class="nitemTitle">
+					<a href="<{$xoops_url}>/modules/news/index.php?storytopic=<{$story.topicid}>"><{$story.topic_title}></a> : <{$story.news_title}>
+				</span>
+</div>
+				<div>
+  <div style="width:627px;margin-right: auto;margin-left: auto;background-image: url(<{$xoops_imageurl}>visual/ccblock_02.png);">	
+<div class="blockcContentn">
+			<span class="nitemInfo"><{if $story.files_attached}><{$story.attached_link}>&nbsp;<{/if}><{if $story.poster != ''}><span class="nitemPoster"><{$lang_postedby}> <{$story.poster}></span><{/if}> <span class="nitemPostDate"><{$lang_on}> <{$story.posttime}></span> (<span class="nitemStats"><{$story.hits}> <{$lang_reads}></span>) <{$news_by_the_same_author_link}></span>
+<span class="nimage"><{$story.imglink}><p class="nitemText"><{$story.text}></p></span></div>
+    <br />
+</div>
+   <div style="width:627px;height:28px;margin-right: auto;margin-left: auto;background-image: url(<{$xoops_imageurl}>visual/ccblock_03.png);">	
+<span class="nitemFoot"><span class="nitemAdminLink"><{$story.adminlink}></span><{if $rates}><b><{$lang_ratingc}></b> <{$story.rating}> (<{$story.votes}>) - <a href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>" rel="nofollow"><{$lang_ratethisnews}></a> - <{/if}><span class="nitemPermaLink"><{$story.morelink}></span></span>
+</div>
+   <br />
+<!--[if IE]><![endif]><![endif]-->
+			</td>
+		</tr>
+</table>

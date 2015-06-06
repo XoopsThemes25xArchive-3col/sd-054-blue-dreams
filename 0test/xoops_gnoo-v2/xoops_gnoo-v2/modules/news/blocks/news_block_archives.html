@@ -1,0 +1,9 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<ul>
+<{foreach item=onedate from=$block.archives}>
+<li class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+<a href="<{$xoops_url}>/modules/news/archive.php?year=<{$onedate.year}>&amp;month=<{$onedate.month}>"><{$onedate.formated_month}> <{$onedate.year}></a></li>
+<{/foreach}>
+</ul>
+<!-- if you don't use morphogenesis gabarit : </div> -->

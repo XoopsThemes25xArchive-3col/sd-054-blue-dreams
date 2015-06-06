@@ -1,0 +1,23 @@
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: header.html 328 2009-02-28 18:48:40Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<div id="ixt-header_full">
+ <div align="right" id="ixt-header_rbkg">
+  <div id="ixt-header" class="<{$ixt_dirname}>">
+   <{includeq file="$theme_tpl/globalnav.html"}>
+   <{if $ixt_banner and $ixt_banner != '&nbsp;'}>
+    <{includeq file="$theme_tpl/banner_commercial.html"}>
+   <{else}>
+    <{includeq file="$theme_tpl/banner.html"}>
+   <{/if}>
+  </div>
+  <div align="left" id="ixt-header_lbkg"></div>
+ </div>
+</div>

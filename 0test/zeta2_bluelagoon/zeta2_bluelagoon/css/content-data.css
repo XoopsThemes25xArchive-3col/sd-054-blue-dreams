@@ -1,0 +1,40 @@
+/*
+Zetagenesis 2 BlueLagoon
+Created by burning, maintained by Xoops france <http://www.frxoops.org>
+XOOPS 2.0.1x and 2.3.x, 1/2 or 3 columns, full screen
+
+$Id: content-data.css 367 2009-02-13 02:36:26Z dugris $
+*/
+
+/*======== styles pour mettre des blocs "flottants" par exemple des images ======== */
+.floatleft {
+    font-size:              1.6em;
+    float:                  left;
+    margin:                 0;
+    padding:                0;
+    border:                 0;
+}
+.floatright {
+    float:                  right;
+    margin:                 0;
+    padding:                0;
+    border:                 0;
+}
+/*========  classes d'alignement ======== */
+.left   { text-align:       left; }
+.right  { text-align:       right; }
+.center { text-align:       center; }
+.justify { text-align:      justify; }
+.middle { vertical-align:   middle; }
+.top { vertical-align:      top; }
+.bottom { vertical-align:   bottom; }
+/*========  classes de largeur ======== */
+.width100 { width:          100%; }
+.width75 { width:           75%; }
+.width50 { width:           50%; }
+.width33 { width:           33%; }
+.width25 { width:           25%; }
+/*========  classes d'affichage ======== */
+.clear { clear:             both; }
+.block { display:           block; }
+.hide  { display:           none; }

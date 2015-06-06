@@ -1,0 +1,390 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  *//* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) *//* file name : content-data.css - 12 01 2008 *//*============== Style for userbar.html =================*/
+#xo-userbar {
+display: block;
+float: right;
+background-color: transparent;
+padding-top: 70px;
+padding-right: 1em;
+color: #666;
+font-size: 8pt;
+}
+
+#xo-userbar form {
+display: inline;
+padding: 0;
+}
+
+#xo-userbar button {
+margin: 0 -3px;
+background-color: transparent;
+background-image: none;
+padding: 0;
+border: none;
+color: inherit;
+}
+
+#xo-userbar button img {
+width: 22px;
+height: 22px;
+}
+
+#xo-userbar button:hover {
+border: 0 !important;
+}
+
+#xo-userbar img {
+width: 18px;
+height: 18px;
+padding-left: 5px;
+padding-top: 5px;
+}
+
+#xo-userbar input {
+width: 40px;
+background-color: #fff;
+color: #333;
+}
+
+#xo-userbar input:hover {
+width: 100px;
+background-color: #f2f2e5;
+color: #333;
+}
+
+#xo-userbar input:focus {
+width: 100px;
+background-color: #f2f2e5;
+color: #333;
+}
+
+#xo-userbar a {
+background-color: inherit;
+}
+
+#xo-userbar a:hover {
+background-color: inherit;
+}
+
+a #xo-uname {
+background-color: inherit;
+color: #767b00;
+font-weight: bold;
+text-decoration: none;
+}
+/*========== Style for searchbar.html ==============*/
+
+#xo-searchbar {
+display: inline;
+float: right;
+margin-top: 80px;
+margin-right: 1em;
+}
+
+#xo-searchbar .button {
+font-family: Geneva, Arial, Helvetica, sans-serif;
+font-variant: small-caps;
+background: #939B00 url(../img/buttonbg.gif) repeat-x;
+border-top: 1px solid #999d33;
+border-right: 1px solid #5F6800;
+border-bottom: 1px solid #5F6800;
+border-left: 1px solid #999d33;
+font-weight: bold;
+padding: 0.25em;
+font-size: 0.8em;
+color: #fff;
+vertical-align: middle;
+margin: 0;
+}
+
+#xo-searchbar .button:hover {
+border: solid 1px #495000;
+}
+
+#xo-searchbar input[type=text]{
+background-color: #fff;
+color: #333;
+margin-right: 0.5em;
+vertical-align: middle;
+border-right: 0px;
+border-bottom: solid 1px #777777;
+border-left: 0px;
+padding: 0.15em;
+width: 10.0em;
+}
+
+#xo-searchbar input[type=text]:hover {
+background-color: #E2E2E2;
+color: #333;
+}
+/*=============  Style for language.html ============= */
+
+#xo-language {}
+
+#xo-language img{}
+/*============= Style for accessibilitybar.html ================*/
+
+#xo-accessibilitybar {}
+
+#xo-accessibilitybar a {}
+
+#xo-accessibilitybar img {}
+/*============== Styles for userbar_siteclosed.html =================*/
+
+#xo-userbar_siteclosed {
+padding-top: 70px;
+padding-right: 1em;
+display: block;
+float: right;
+background-color: transparent;
+color: #666;
+}
+
+#xo-userbar_siteclosed form {
+display: inline;
+padding: 0;
+background-color: transparent;
+}
+
+#xo-userbar_siteclosed button {
+margin: 0 -3px;
+background-color: transparent;
+background-image: none;
+color: inherit;
+padding: 0;
+border: none;
+}
+
+#xo-userbar_siteclosed button img {
+width: 22px;
+height: 22px;
+}
+
+#xo-userbar_siteclosed button:hover {
+border:  0 !important;
+}
+
+#xo-userbar_siteclosed input {
+width: 40px;
+background-color: #fff;
+color: #333;
+}
+
+#xo-userbar_siteclosed input:hover {
+background-color: #f2f2e5;
+color: #333;
+}
+
+#xo-userbar_siteclosed input:focus {
+width: 100px;
+background-color: #f2f2e5;
+color: #333;
+}
+
+/*============= Style for breadcrumb.html ================*/
+
+#xo-breadcrumb {
+background-color: inherit;
+padding: 0 0 5px 10px;
+color: #666;
+font-size: 7pt;
+}
+/*============== Styles for system_siteclosed.html =================*/
+
+#xo-siteclose {
+width: 400px;
+margin: 50px auto;
+background-color: #fff;
+padding: 80px;
+color: #000;
+font-size: 1.2em;
+font-weight: bold;
+text-align: center;
+}
+/*============== Styles for system_redirect.html =================*/
+
+#xo-redirect {
+width: 780px;
+margin: 50px auto;
+padding: 1em;
+font-weight: bold;
+text-align: center;
+}
+
+#xo-redirect .notreload {
+height: 28px;
+background-color: inherit;
+padding-top: 2px;
+color: #fff;
+}
+
+#xo-redirect .notreload a {
+background-color: inherit;
+color: #ff0000;
+font-weight: bold;
+text-decoration: none;
+}
+
+#xo-redirect .message {
+min-height: 60px;
+background-color: #f3f3f3;
+padding: 1em;
+color: #333;
+font-size: 1.2em;
+text-align: center;
+border: solid 1px #666;
+}
+
+#xo-redirect .message img{
+padding: 1em;
+}
+/*======== others float class ======== */
+
+.floatleft {
+float: left;
+margin-top: 1em;
+margin-right: 1em;
+padding-left: 4px;
+border: 0;
+}
+
+.floatright {
+float: right;
+margin: 0 0 10px 10px;
+padding: 2px;
+border: 0;
+}
+/*========  others alignment class ======== */
+
+.left {
+text-align: left;
+}
+
+.right {
+text-align: right;
+}
+
+.center {
+text-align: center;
+}
+
+.justify {
+text-align: justify;
+}
+
+.middle {
+vertical-align: middle;
+}
+
+.top {
+vertical-align: top;
+}
+
+.bottom {
+vertical-align: bottom;
+}
+/*========  others width class ======== */
+
+.width100 {
+width: 100%;
+}
+
+.width95 {
+width: 95%;
+}
+
+.width75 {
+width: 75%;
+}
+
+.width50 {
+width: 50%;
+}
+
+.width33 {
+width: 33%;
+}
+
+.width25 {
+width: 25%;
+}
+
+.width20 {
+width: 20%;
+}
+/* ========= others font class ========== */
+
+.small {
+font-size: .92em;
+}
+
+.normal {
+font-size: 1em;
+}
+
+.big {
+font-size: 1.17em;
+}
+
+.maxi {
+font-size: 1.5em;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.italic {
+font-style: italic;
+}
+/*========  others display class ======== */
+
+.clear {
+clear: both;
+}
+
+.block {
+display: block;
+}
+
+.hide {
+display: none;
+}
+/* ======== others hypertext links ================ */
+
+a.printable, a.pdf, a.friend {
+width: 22px;
+height: 22px;
+background-repeat: no-repeat;
+background-position: left top;
+text-indent: -1000em;
+}
+
+a.printable {
+background-image: url(../icons/action/printable.png);
+}
+
+a.pdf {
+background-image: url(../icons/action/pdf.png);
+}
+
+a.friend {
+background-image: url(../icons/action/friend.png);
+}
+/*======== body for tinyeditor/inbetwen module ======== */
+
+body.mceContentBody {
+background-color: #fff;
+background-image: none;
+color: #333;
+}
+
+.signature {
+font-style: italic;
+font-size: .9em;
+}
+/* ============ Style for notification form ============ */
+
+span.notification_title {
+font-size: .9em;
+font-weight: bold;
+}

@@ -1,0 +1,89 @@
+
+/* Start Main Menu */
+#mainmenu {	font-size: .8em; padding-left:3px; padding-right:3px; padding-bottom:3px;}
+#mainmenu a {
+	display:block;
+	line-height:20px;
+	background:#f5f5f5 url(images/menu_link_bg.gif) left no-repeat;
+	padding:2px 20px;
+	border-top:1px solid #dddddd;
+	text-decoration:none;
+	color:#4f8c31;
+	font-size:12px;}
+#mainmenu a:hover { background:#eeeeee url(images/menu_link_bg.gif) left no-repeat;
+	color:#666666;}
+#mainmenu a.menuTop {padding-left: 18px; border-top: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc;}
+#mainmenu a.menuMain {padding-left: 18px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc;}
+#mainmenu a.menuSub {padding-left: 22px; background: #f5f5f5 url(images/menu_curren_link_bg.gif) left no-repeat; color: #4f8c31; border-right: 1px solid #CCC; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; font-size:12px;}
+#mainmenu a.menuSub:hover {background:#eeeeee url(images/menu_curren_link_bg.gif) left no-repeat;}
+/* End Main Menu */
+
+/* Start User Menu */
+#usermenu {	font-size: .8em; padding-left:3px; padding-right:3px; padding-bottom:3px;}
+#usermenu a {display:block;
+	line-height:20px;
+	background:#f5f5f5 url(images/menu_link_bg.gif) left no-repeat;
+	padding:2px 20px;
+	border-top:1px solid #dddddd;
+	text-decoration:none;
+	color:#4f8c31;
+	font-size:12px;
+	border-right: 1px solid #ccc; border-left: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#usermenu a:hover {background:#eeeeee url(images/menu_link_bg.gif) left no-repeat;
+	color:#666666;}
+#usermenu a.menuTop {border-top: 1px solid #ccc;}
+#usermenu a.highlight {background-color: #fcc; color: #ff0000;}
+/* End User Menu */
+
+/* tables and cells */
+table {	width: 100%;}
+table td {padding: 0; border-width: 0;	vertical-align: top;}
+th {background-color: #E8E8E8; color: #4f8c31; padding : 2px; vertical-align : middle;}
+.outer {border: 1px solid #ccc;}
+.head {background-color: #C5D8E2; color:inherit; padding: 5px; font-weight: bold;}
+.even {background-color: #E2EBF1; color:inherit; padding: 5px;}
+.odd {background-color: #DDE8EE; color:inherit; padding: 5px;}
+.foot {background-color: #D1E0E9; color:inherit; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #E1EAF0; color:inherit; padding: 5px;}
+tr.odd td {background-color: #EFF4F8; color:inherit; padding: 5px;}
+th { background-color:#D2DFE8 !important; color: #4f8c31;}
+
+/* core messages */
+.errorMsg { background-color: #FFCCCC;  color:inherit; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;font-weight: bold; padding: 10px;}
+.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa;font-weight: bold; padding: 10px;}
+.resultMsg { background-color : #bbb; color: #333; text-align: center; border-top: 1px solid #ccc; border-left: 1px solid #ccc; font-weight: bold; border-right: 1px solid #666; border-bottom: 1px solid #666; padding: 10px;}
+
+/* codes and quotes */
+.xoopsCode { background-color: #fff; color:inherit; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; max-height: 200px; overflow: auto;}
+.xoopsQuote { background-color: #fff; color:inherit; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; font-style:italic; padding: 0 6px 6px 6px;}
+
+/* articles */
+.item {}
+.itemHead {padding: 3px; background-color:transparent; color: #4F8C31; font-size: 1.2em;}
+.itemInfo {text-align: right; padding: 3px; background-color: transparent; color:inherit;}
+.itemTitle a {font-size: 1.1em; font-weight: bold; font-variant: small-caps; color: #4F8C31; background-color: transparent;}
+.itemPoster {font-size: .9em;;}
+.itemPostDate {font-size: .9em; }
+.itemStats {font-size: .9em; }
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background: transparent; color:inherit;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+/* forums */
+.comTitle { font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .7em; color: #639ACE; font-weight:bold; border: 1px solid #ccc; background-color: #fff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; background-color: inherit; color: #639ACE; font-weight:bold; font-size: .8em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .8em; font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em}
+.comDateCaption {font-weight: bold; font-style: normal; font-size: .8em}
+.signature { font-size:.8em; font-style:italic;}
+

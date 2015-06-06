@@ -1,0 +1,31 @@
+/*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: style.css 430 2009-03-06 14:35:29Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+@import url(layout.css);
+@import url(blocks.css);
+@import url(content.css);
+html { background: #05648A url(../img/ixt008_winter03_bg.png) repeat-x; }
+body { background: url(../img/ixt008_winter03_body-bg.jpg) repeat-y; width: 1003px; color: #555555; font-size: 10pt; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0px auto 0px; padding: 0px; min-width:980px; }
+.clearfix:after { content: "."; display: block; clear: both; margin: 0px; padding: 0px; height: 0; visibility: hidden; }
+#wrap { background: url(../img/ixt008_winter03_wrap2.jpg) top center no-repeat; width: 1003px; padding: 0px; min-height:850px; margin-top:0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; }
+table { width:100%; }
+table td { padding:0; border-width:0; vertical-align:top; }
+th { background-color:#666666; color:#fff; padding:2px; vertical-align:middle; }
+img { border:0; }
+a { color:#666; text-decoration:none; font-weight:bold; }
+a:link, a:visited { color: #9D0700; text-decoration: none; position: relative; outline:none; }
+a:hover { color:#9D0700;text-decoration: underline; outline:none;}
+h1 { font-size:1.4em; }
+h2 { font-size:1.2em; }
+h3 { font-size:1em; }
+h4 { font-size:1em; }
+h5 { font-size:.9em; }
+h6 { font-size:.8em; }
+select { background:#DCFCFB; }

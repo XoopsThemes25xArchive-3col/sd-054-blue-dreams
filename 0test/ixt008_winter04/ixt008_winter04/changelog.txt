@@ -1,0 +1,63 @@
+IXThemes ChangeLog
+
+== IXThemes ixt008 ==
+
+===2009-03-06 : 1.5 ===
+
+Improved:
+- The common size of a theme is reduced. Not used logos and icons are deleted.
+- Support of not system modules is temporarily eliminated.
+
+===2009-02-27 : 1.2 ===
+
+Fixed:
+- Tracker: IXThemes #2645692: At usage IE7 or Maxthon browser the picture in a page header overlaps the
+main content
+
+===2009-02-17 : 1.1 ===
+
+Fixed:
+- Assign "theme_top_order" and "theme_bottom_order" to value "clr" in theme.html
+- "a:hover" html-tag dotted border removed (Firefox bug)
+
+===2009-01-09 : 1.0 ===
+
+The first release of a themes collection ixt008
+
+Some features of a themes collection
+==================================
+
+New system blocks templates:
+------------------------
+- Language Selection (en,ru,de,pt_br,it)
+- Search (en,ru,de,pt_br,it)
+- Login (en,ru,de,pt_br,it)
+- User Menu (en,ru,de,pt_br,it)
+- Main Menu (en,ru,de,pt_br,it)
+- Waiting Contents (en,ru,de,pt_br,it)
+- Site Info (en,ru,de,pt_br,it)
+- Who's Online (en,ru,de,pt_br,it)
+- Themes (en,ru,de,pt_br,it)
+- Top Posters (en,ru,de,pt_br,it)
+- New Members (en,ru,de,pt_br,it)
+- Content Menu (en,ru,de,pt_br,it)
+
+Additional support of multilanguage graphics files:
+------------------------
+- English (en)
+- Russian (ru)
+- German (de)
+- Portuguese Brazilian (pt_br)
+- Italian (it)
+
+New blocks templates of modules:
+------------------------
+- ImLinks
+-- Recent imLinks (en,ru,de,pt_br,it)
+-- Top imLinks (en,ru,de,pt_br,it)
+- ImGlossary
+-- Newest Terms (en,ru,de,pt_br,it)
+-- Most Read Terms (en,ru,de,pt_br,it)
+-- Random term (en,ru,de,pt_br,it)
+- ImPression
+-- Spotlight (en,ru,de,pt_br,it)

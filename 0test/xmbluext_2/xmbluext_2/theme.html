@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<{assign var=theme_name value=$xoTheme->folderName}>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="Red México Soft www.redmexico.com.mx" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="RM+Soft" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_imageurl}>favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<{$xoops_module_header}>
+</head>
+<body>
+<div id="wrapper">
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="3">
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="150" rowspan="2" class="head_logo"><a href="#"><img src="<{$xoops_imageurl}>images/logo_head_xt.gif" width="150" height="134" /></a></td>
+            <td width="4" rowspan="2" class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+            <td width="14" rowspan="2" class="head_left"><img src="<{$xoops_imageurl}>images/head_left.gif" width="14" height="134" /></td>
+            <td colspan="2" align="left" class="head_body">
+              <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="400" style="font-size: 10px; text-align: left; color: #FFFFFF; ">Publicidade:<br></td>
+                <td width="316" align="center" valign="middle" class="t_login">
+                  <!-- Mostramos el formulario de ingreso -->
+                  <{if !$xoops_isuser}>
+                  <{include file="$theme_name/theme_login.html"}>
+                  <{else}>
+                  <{include file="$theme_name/theme_user.html"}>
+                  <{/if}>
+                </td>
+              </tr>
+              </table>
+            </td>
+            <td rowspan="2" class="head_right"><img src="<{$xoops_imageurl}>images/head_right.gif" width="16" height="134" /></td>
+          </tr>
+          <tr>
+            <td width="400" align="center" class="head_foot">
+              <a href="#"><img src="<{$xoops_imageurl}>images/xt.ico" width="20" height="20" align="absmiddle" alt="XoopsTotal" /></a>&nbsp; |&nbsp;
+              <a href="#">Testes xoops</a>&nbsp; |&nbsp;
+              <a href="#">Desenvolvimento</a>&nbsp; |&nbsp;
+              <a href="#">Temas</a>&nbsp; |&nbsp;
+              <a href="#">Tradux</a>&nbsp; |&nbsp;
+              <a href="#"><img src="<{$xoops_imageurl}>images/xoopsmexico.gif" width="20" height="20" align="absmiddle" alt="XoopsMexico" /></a>
+            </td>
+            <td width="316" class="head_foot2">
+              <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                <td width="26" align="left"><img src="<{$xoops_imageurl}>images/head_foot_left.gif" width="26" height="38" /></td>
+                <td class="t_green_link">
+                  <a href="<{$xoops_url}>"><img src="<{$xoops_imageurl}>images/home.gif" width="20" height="20" align="absmiddle" alt="Início"></a>&nbsp; |&nbsp;
+                  <a href="<{$xoops_url}>/modules/newbb"><img src="<{$xoops_imageurl}>images/forum.gif" width="20" height="20" align="absmiddle" alt="Fórum"></a>&nbsp; |&nbsp;
+                  <a href="<{$xoops_url}>/modules/mydownloads"><img src="<{$xoops_imageurl}>images/downloads.gif" width="20" height="20" align="absmiddle" alt="Downloads"></a>&nbsp; |&nbsp;
+                  <a href="<{$xoops_url}>/modules/wffaq"><img src="<{$xoops_imageurl}>images/faq.gif" width="20" height="20" align="absmiddle" alt="F.A.Q"></a>&nbsp; |&nbsp;
+                  <a href="<{$xoops_url}>/modules/wfsections"><img src="<{$xoops_imageurl}>images/sections.gif" width="20" height="20" align="absmiddle" alt="Tutoriais"></a>
+                </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="4" colspan="3"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+    </tr>
+    <tr valign="top">
+      <td width="150" class="t_rblock">
+        <table width="100%" class="t_rblock"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3" class="t_rtop"><img src="<{$xoops_imageurl}>images/br_top.gif" width="150" height="11" /></td>
+          </tr>
+          <tr>
+            <td class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+            <td width="142" class="t_lbcontent">
+              <{foreach item=block from=$xoops_lblocks}>
+                <{include file="$theme_name/left_block.htm"}>
+              <{/foreach}>
+            </td>
+            <td class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="t_rbot">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+      <td rowspan="2" class="t_content">
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="11" height="11" valign="top"><img src="<{$xoops_imageurl}>images/content_tleft.gif" width="11" height="11" /></td>
+            <td class="t_content_top"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+            <td width="11" height="11" align="left" valign="top"><img src="<{$xoops_imageurl}>images/content_tright.gif" width="11" height="11" /></td>
+          </tr>
+          <tr>
+            <td class="t_content_left"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+            <td class="t_content_content">
+              <table width="724" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="574" valign="top" style="padding-right: 8px; ">
+                    
+                  <{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+                      
+                      <{foreach item=block from=$xoBlocks.page_topcenter}>
+                        <{include file="$theme_name/cc_block.htm"}>
+                      <{/foreach}>
+                      
+                        <table width="100%" border="0" cellspacing="3">
+                          <tr>
+                            <td width="50%" align="center" valign="top">
+                            <{foreach item=block from=$xoBlocks.page_topleft}>
+                              <{include file="$theme_name/cc_block.htm"}>
+                            <{/foreach}>
+                            </td>
+                            <td width="50%" align="center" valign="top">
+                            <{foreach item=block from=$xoBlocks.page_topright}> 
+                              <{include file="$theme_name/cc_block.htm"}>
+                            <{/foreach}>
+                            </td>
+                          </tr>				
+                        </table>
+                    <{/if}>
+                      
+                    <{$xoops_contents}>
+                    
+                  <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+                    
+                    <{if $xoBlocks.page_bottomcenter}>
+                      <{foreach from=$xoBlocks.page_bottomcenter item=block}>
+                        <{include file="$theme_name/cc_block.htm"}>
+                      <{/foreach}>
+                    <{/if}>
+                    
+                    <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+                      <table width="100%" border="0" cellspacing="3">
+                        <tr>
+                          <td width="50%" align="center" valign="top">
+                          
+                          <{foreach from=$xoBlocks.page_bottomleft item=block}>
+                            <{include file="$theme_name/cc_block.htm"}>
+                          <{/foreach}>
+
+                          </td>
+                          <td width="50%" align="center" valign="top">
+                          
+                          <{foreach from=$xoBlocks.page_bottomright item=block}>
+                            <{include file="$theme_name/cc_block.htm"}>
+                          <{/foreach}>
+
+                          </td>
+                        </tr>				
+                      </table>
+                    <{/if}>
+                    
+                  <{/if}> 
+                      
+                  </td>
+                  <td width="150" valign="top" class="rbcontent">
+                    <{foreach item=block from=$xoops_rblocks}>
+                      <{include file="$theme_name/right_block.htm"}>
+                    <{/foreach}>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="t_content_right"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+          </tr>
+          <tr>
+            <td width="11" height="11" valign="bottom"><img src="<{$xoops_imageurl}>images/content_b_left.gif" width="11" height="11" /></td>
+            <td class="t_content_bot"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+            <td width="11" height="11" align="right" valign="bottom"><img src="<{$xoops_imageurl}>images/content_bright.gif" width="11" height="11" /></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td>
+        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><span class="t_rbot"><img src="<{$xoops_imageurl}>images/br_bot.gif" width="150" height="11" /></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="right">
+        <table width="95%"  border="0" cellpadding="0" cellspacing="0" class="t_rblock">
+          <tr>
+            <td colspan="3" class="t_rtop"><img src="<{$xoops_imageurl}>images/br_top.gif" width="150" height="11" /></td>
+          </tr>
+          <tr>
+            <td width="1" class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+            <td width="142" align="center" class="t_rcontent">Resolução mínima:<br>1024 x 768 pix.  </td>
+            <td width="1" class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="t_rbot"><img src="<{$xoops_imageurl}>images/br_bot.gif" width="150" height="11" /></td>
+          </tr>
+        </table>
+      </td>
+      <td><span class="head_seplogo"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1" /></span></td>
+      <td>
+        <table width="100%"  border="0" class="t_foot" cellspacing="0" cellpadding="0">
+          <tr>
+            <{include file="$theme_name/rodape.htm"}>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

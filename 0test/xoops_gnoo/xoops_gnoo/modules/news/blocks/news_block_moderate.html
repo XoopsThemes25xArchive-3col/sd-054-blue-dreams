@@ -1,0 +1,21 @@
+<{$xoTheme->addStylesheet('modules/news/news.css')}>
+<!-- if you don't use morphogenesis gabarit : <div id="news"> -->
+<table class="outer">
+<tr>
+	<th>&nbsp;<{$block.lang_story_title}></th>
+    <th><{$block.lang_story_topic}></th>
+    <th><{$block.lang_story_date}></th>
+    <th><{$block.lang_story_author}></th>
+    <th class="right"><{$block.lang_story_action}>&nbsp;</th>
+</tr>
+<{foreach item=news from=$block.stories}>
+<tr class="even" onmouseout="this.className='even';" onmouseover="this.className='odd';">
+	<td align="left"><{$news.title}></td>
+    <td align="left"><{$news.topic_title}></td>
+    <td align="left"><{$news.date}></td>
+    <td align="left"><{$news.author}></td>
+    <td align="right"><{$news.action}></td>
+</tr>
+<{/foreach}>
+</table>
+<!-- if you don't use morphogenesis gabarit : </div> -->

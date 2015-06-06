@@ -1,0 +1,62 @@
+/*======= Style pour les formulaires, boutons, zones de texte, ... ========*/
+
+.xo-block form {
+	margin:						0px;
+	padding:						0px;
+}
+#xo-content form {
+	margin:						0px;
+	background:					transparent;
+}
+
+.xo-block .formButtons {
+	text-align:					center;
+	padding:						.5em;
+}
+
+label {
+	display:						block;
+	padding:						0px;
+	background:					transparent;
+}
+
+.xo-formfield {
+	margin-bottom:				.2em;
+	background:					transparent;
+}
+.xo-formbuttons {
+	font-family: 				Geneva, Arial, Helvetica, sans-serif;
+	color: 						#ccc;
+	background-color: 		#000;
+	font-size:					.9em;
+	border: 						1px solid #ccc;
+	font-variant: 				small-caps;
+}
+
+#xo-content .xo-formfield.required label:after {
+	content:						'*';
+	color:						#ff0000;
+	background-color: 		#fff;
+}
+select {
+	font-size: 					.9em;
+}
+select[name=timezone_offset] {
+	font-size:					.9em;
+}
+
+input[type=text], input[type=password], textarea {
+	border:						1px solid #999;
+	margin:						2px 0px;
+	padding-left:				.2em;
+	font-size:					.9em;
+}
+input[type=text], input[type=password] {}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	border-color:				#666F7D;
+	outline:						1px solid #666F7D;
+}
+
+textarea { width: 			95%; font-size:1.1em;}
+

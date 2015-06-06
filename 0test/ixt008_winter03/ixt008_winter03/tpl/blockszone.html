@@ -1,0 +1,70 @@
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: blockszone.html 333 2009-02-28 18:51:40Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if $blocks}>
+ <div class="ixt-blockszone x2-secondary<{if $zoneClass}> <{$zoneClass}><{/if}>"<{if $zoneId}> id="<{$zoneId}>"<{/if}>>
+  <{foreach from=$blocks item=block}>
+   <div class="ixt-block <{$block.module}>">
+    <div id="ixt-canvas-columns2-top"></div>
+    <div id="ixt-canvas-columns2-head">
+    <{if $block.title}>
+     <div class="ixt-blocktitle">
+      <{if $ixt_langcode == "ru" || $ixt_langcode == "en" || $ixt_langcode == "de" || $ixt_langcode == "pt_br" || $ixt_langcode == "it"}>
+       <{if $block.title|escape:"htmlall":"utf-8"|truncate:10:"" == "Поиск" || $block.title == "Search" || $block.title == "Suche" || $block.title == "Procurar" || $block.title == "Cerca" }>
+        <div id="search-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:8:"" == "Темы" || $block.title == "Themes" || $block.title == "Themen" || $block.title == "Temas" || $block.title == "Temi" }>
+        <div id="themes-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:34:"" == "Меню пользователя" || $block.title == "User Menu" || $block.title == "Mitgliedsmenü" || $block.title == "Menu Pessoal" || $block.title == "Menu utente" }>
+        <div id="usermenu-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:26:"" == "Основное меню" || $block.title == "Main Menu" || $block.title == "Hauptmenü" || $block.title == "Menu principal" || $block.title == "Menu principale" }>
+        <div id="menu-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:22:"" == "Выбор языка" || $block.title == "Language Selection" || $block.title == "Auswahl der Sprache" || $block.title == "Escolher Idioma" || $block.title == "Language Selection" }>
+        <div id="languages-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:8:"" == "Вход" || $block.title == "Login" || $block.title == "Einloggen" || $block.title == "Entrar" || $block.title == "Login" }>
+        <div id="login-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:36:"" == "Контент в ожидании" || $block.title == "Waiting Contents" || $block.title == "Wartende Übermittlungen" || $block.title == "Conteúdo pendente" || $block.title == "Contenuti in attesa" }>
+        <div id="waiting-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:36:"" == "Информация о сайте" || $block.title == "Site Info" || $block.title == "Websiteinfos" || $block.title == "Sobre o site" || $block.title == "Dati del sito" }>
+        <div id="siteinfo-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:26:"" == "Кто в онлайне" || $block.title|truncate:3:"" == "Who" || $block.title == "Wer ist online" || $block.title == "Usuários online" || $block.title == "Utenti online" }>
+        <div id="wonline-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:36:"" == "Активные участники" || $block.title == "Top Posters" || $block.title == "Aktivste Mitglieder" || $block.title|escape:"htmlall":"utf-8"|truncate:19:"" == "Mais Participativos" || $block.title|escape:"htmlall":"utf-8"|truncate:9:"" == "Utenti pi" }>
+        <div id="topposters-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:30:"" == "Новые участники" || $block.title == "New Members" || $block.title == "Neue Mitglieder" || $block.title == "Novos usuários" || $block.title == "Nuovi utenti" }>
+        <div id="newmembers-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:26:"" == "Меню контента" || $block.title == "Content Menu" || $block.title == "Content Menu" || $block.title == "Menu de Conteúdo" || $block.title == "Menu contenuti" }>
+        <div id="contmenu-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:32:"" == "Последние ссылки" || $block.title == "Recent imLinks" || $block.title == "Neueste WF-Links" || $block.title == "Links recentes" || $block.title == "Recent imLinks" }>
+        <div id="lastlinks-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:34:"" == "Популярные ссылки" || $block.title == "Top imLinks" || $block.title == " Die besten WF-Links" || $block.title == "Melhores links" || $block.title == "Top imLinks" }>
+        <div id="toplinks-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:32:"" == "Новейшие термины" || $block.title == "Newest Terms" || $block.title == "Neueste Begriffe" || $block.title == "Últimos Termos" || $block.title == "Newest Terms" }>
+        <div id="newterms-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:36:"" == "Популярные термины" || $block.title == "Most Read Terms" || $block.title == "Meistgelesene Begriffe" || $block.title == "Termos mais visitados" || $block.title == "Most Read Terms" }>
+        <div id="topterms-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:32:"" == "Случайный термин" || $block.title == "Random term" || $block.title == "Zufälliger Begriff" || $block.title == "Termo Randômico" || $block.title == "Random term" }>
+        <div id="randomterm-<{$ixt_langcode}>"></div>
+       <{elseif $block.title|escape:"htmlall":"utf-8"|truncate:22:"" == "Первый план" || $block.title == "Spotlight" || $block.title == "Spotlight" || $block.title == "Spotlight" || $block.title == "Spotlight" }>
+        <div id="hotspot-<{$ixt_langcode}>"></div>
+       <{else}>
+        <h3><{$block.title}></h3>
+       <{/if}>
+      <{else}>
+       <h3><{$block.title}></h3>
+      <{/if}>
+     </div>
+    <{/if}>
+    </div>
+    <div id="ixt-canvas-columns2-body"><div class="ixt-blockcontent"><{$block.content}></div></div>
+    <div id="ixt-canvas-columns2-bottom"></div>
+   </div>
+  <{/foreach}>
+ </div>
+<{/if}>

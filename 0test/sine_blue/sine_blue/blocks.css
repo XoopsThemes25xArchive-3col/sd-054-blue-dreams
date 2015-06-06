@@ -1,0 +1,120 @@
+/* based on morphogenesis 1.1.2 */
+
+/*========== listes dans les colonnes ==========*/
+.xo-canvas-column ul {
+	list-style-type:				none;
+	padding:							.5em;
+	margin:							0;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0;
+	padding-bottom:				0;
+	padding-left:					1em;
+
+}
+/* ====== format des cellules dans les colonnes ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	border: 							0 !important;
+	padding:							0;
+	margin:							0;
+}
+/*===== Styles Colonne de Gauche =======*/
+#xo-canvas-leftcolumn .xo-block {
+	padding-top:					4px;
+	margin-right:					11px;
+	margin-bottom:					10px;
+}
+#xo-canvas-leftcolumn .xo-blocktitle:first-letter {
+	font-size: 						1.2em;
+	color:							#0066FF;
+	background-color:				inherit;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	padding-left:					6px;
+	padding-bottom:				5px;
+	background-color: 			inherit;
+	color:							#60A3D7;
+	font-size:						1.2em;
+	font-weight:					bold;
+	text-align:						center;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+	min-height:						60px;
+	padding: 2px 8px 10px 0;
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-leftcolumn .xo-blockcontent a {}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {}
+#xo-canvas-leftcolumn img {
+	border: 							1px solid #666;
+	padding: 						3px;
+	margin: 							3px 3px 0 7px;
+}
+#xo-canvas-leftcolumn img:hover {border: 1px solid #4ABEEF;}
+/*======== Styles Colonne de Droite ========*/
+#xo-canvas-rightcolumn {}
+#xo-canvas-rightcolumn a {}
+#xo-canvas-rightcolumn a:hover {}
+#xo-canvas-rightcolumn .xo-blocktitle:first-letter {
+	font-size: 						1.2em;
+	color:							#0066ff;
+	background-color:				inherit;
+}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	font-size:						1.2em;
+	font-weight:					bold;
+	color:							#60A3D7;
+	background-color: 			inherit;
+	text-align:						center;
+	padding-bottom:				5px;
+}	
+#xo-canvas-rightcolumn .xo-blockcontent {
+	padding: 						2px 2px 10px 2px;
+}
+#xo-canvas-rightcolumn img {
+	border: 							1px solid #66ccff;
+	padding: 						3px;
+	margin: 							3px 3px 0 7px;
+}
+#xo-canvas-rightcolumn img:hover {border: 1px solid #66ccff;}
+/* ======= Styles du "Contenu Centre" ===========*/
+#xo-page .xo-blockszone > .xo-block {}
+.xo-block ul {
+	margin:							0;
+	padding:							0;
+	list-style-type:				none;
+}
+#xo-page .xo-blockszone .xo-blocktitle:first-letter {
+	font-size: 						1.2em;
+	color:							#0066ff;
+	background-color:				inherit;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	font-size:						1.2em;
+	font-weight:					bold;
+	color:							#60A3D7;
+	margin:							0 .5em;
+	padding:							0 .25em;
+	border-bottom:					1px dotted #333;
+	background-color: 			inherit;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	padding:							.5em;
+	text-align: 					justify;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	border: 							1px solid #66ccff !important;
+	padding: 						3px;
+	margin: 							3px 3px 0 7px;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+	border: 							1px solid #66ccff !important;
+	background-color: 			#111 !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {}
+
+
+

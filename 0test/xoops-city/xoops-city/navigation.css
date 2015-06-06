@@ -1,0 +1,334 @@
+/* Mor.pho.GEN.e.sis version 1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 1.2) - 28 janvier 2009 */
+/*Thème :  Xoops City Design by SabOUm  (http://www.saboum.com) */
+
+/*============= Style pour l'include globalnav0.html================*/
+#xo-globalnav0 {				 
+	height:									26px;
+	padding-left:						25%;
+	border:									none;
+	color:								#FF0000;
+	background:							transparent;
+	background-position: 		top center;
+	font-size:								1em;
+	
+}
+* html #xo-globalnav0 { height: 		26px; }
+
+#xo-globalnav0 .x2-label {display:	none;		color:									#FFF;}
+#xo-globalnav0 ul {list-style-type:	none;}
+#xo-globalnav0 ul li {
+	float:									left;
+	position:								relative;
+	z-index:									auto !important /*Non-IE6*/;
+	z-index:									1000 /*IE6*/;
+	background-color: 					transparent;
+}
+#xo-globalnav0 ul li a {
+	float:									none !important /*Non-IE6*/;
+	color:									#FFF;
+	float:									left /*IE-6*/;
+	display:								block;
+	height:									26px;
+	line-height:							2em;
+	padding: 								0 10px 0 10px;
+	text-decoration:						none;
+		background-color: 					transparent;
+	font-weight:							bold;
+}
+#xo-globalnav0 ul li a:hover {
+	color:								#FFFF33;
+	background-color: 						transparent;
+	font-style: 							normal;
+	text-decoration:						none;
+	background-position: 		top center;
+}
+#xo-globalnav0 ul li ul {
+	display:									none;		color:#FF0000;
+	border:									none;
+	
+}
+/*============= Style pour l'include globalnav.html, le mainmenu et l'usermenu ================*/
+#xo-globalnav {
+	z-index:							100;
+	height:									26px;
+	padding-left:							26px;
+	border:									none;
+	color:  #FFFF33;
+	background:						url(img/globalnav.png) no-repeat ;
+	font-size:								1em;
+	
+}
+* html #xo-globalnav { height: 		26px; }
+
+#xo-globalnav .x2-label {display:	none;		color:	#FFFF33;}
+#xo-globalnav ul {list-style-type:	none;}
+#xo-globalnav ul li {
+	float:									left;
+	position:								relative;
+	z-index:									auto !important /*Non-IE6*/;
+	z-index:									1000 /*IE6*/;
+
+}
+#xo-globalnav ul li a {
+	float:									none !important /*Non-IE6*/;
+	color:									#FFF;
+	float:									left /*IE-6*/;
+	display:								block;
+	height:									26px;
+	line-height:							2em;
+	padding: 								0 10px 0 10px;
+	text-decoration:						none;
+	background-color:						transparent;
+	font-weight:							bold;
+}
+#xo-globalnav ul li a:hover {
+	color:								#FFFF33;
+	background-color:						transparent;
+	font-style: 							normal;
+	text-decoration:						none;
+}
+#xo-globalnav ul li ul {
+	display:									none;		
+	color:#FFFF33;
+	border:									none;
+	
+}
+/*Non-IE6 hovering*/
+#xo-globalnav ul li:hover a {} 
+#xo-globalnav ul li:hover ul {
+	display:								block;
+	width:								90px;
+	position:							absolute;
+	z-index:								999;
+	top:									30px;
+	margin-top:							0em;
+	left:									0;
+}
+#xo-globalnav ul li ul li {border-right: 1px solid #AFAFAF;}
+#xo-globalnav ul li:hover ul li a {
+	display:								block;
+	width:								90px;
+	height:								auto;
+	line-height:						1.3em;
+	margin-left:						-1px;
+	padding:								4px 16px 4px 16px;
+	border-left: 						1px solid #AFAFAF;
+	border-bottom: 					1px solid #AFAFAF;
+	background-color: 				#FFF;
+	color:								#FFF;
+	font-weight:						normal;
+}
+#xo-globalnav ul li:hover ul li a:hover {
+	color:							#FFFF33;
+	background-color: 				#FB0200;
+	text-decoration:					underline;
+}
+
+/*Paramètres spécifiques pour IE6*/
+#xo-globalnav table {
+	position:							absolute;
+	top:									-1px;
+	left:									0;
+	border-collapse:					collapse;
+}
+#xo-globalnav ul li a:hover {
+    color:								#FFFF33;
+	background-color: 				#3267B5;
+	text-decoration:					none;
+}
+#xo-globalnav ul li a:hover ul {
+	display:								block;
+	width:								90px;
+	position:							absolute;
+	z-index:								999;
+	top:									30px;
+	left:									0;
+	margin-top:							0.1em;
+}
+#xo-globalnav ul li a:hover ul li a {
+	display:								block;
+	width:								90px;
+	height:								1px;
+	line-height:						1.3em;
+	padding:								4px 16px 4px 16px;
+	border-left: 						1px solid #AFAFAF;
+	border-bottom: 					1px solid #AFAFAF;
+	background-color: 				#704d4e;
+	font-weight:						normal;
+}
+#xo-globalnav ul li a:hover ul li a:hover {
+	background-color: 				#000;
+	text-decoration:					none;
+}
+
+/*============= Style pour l'include globalnav-foot.html================*/
+#xo-globalnav-foot {				 
+	height:									26px;
+	padding-left:						25%;
+	border:									none;
+	color:								#FF0000;
+	background:							transparent;
+	background-position: 		top center;
+	font-size:								1em;
+	
+}
+* html #xo-globalnav-foot { height: 		90px; }
+
+#xo-globalnav-foot .x2-label {display:	none;		color:	#FFF;}
+#xo-globalnav-foot ul {list-style-type:	none;}
+#xo-globalnav-foot ul li {
+	float:									left;
+	position:								relative;
+	z-index:									auto !important /*Non-IE6*/;
+	z-index:									1000 /*IE6*/;
+	background-color: 					transparent;
+}
+#xo-globalnav-foot ul li a {
+	float:									none !important /*Non-IE6*/;
+	color:									#FFF;
+	float:									left /*IE-6*/;
+	display:								block;
+	height:									26px;
+	line-height:							2em;
+	padding: 								0 10px 0 10px;
+	text-decoration:						none;
+	background-color: 					transparent;
+	font-weight:							bold;
+}
+#xo-globalnav-foot ul li a:hover {
+	color:								#FFFF33;
+	background-color: 						transparent;
+	font-style: 							normal;
+	text-decoration:						none;
+
+	background-position: 		top center;
+}
+#xo-globalnav-foot  ul li ul {
+	display:									none;	
+	color:#FF0000;
+	border:									none;
+	
+}
+/*Non-IE6 hovering*/
+#xo-globalnav-foot ul li:hover a {} 
+#xo-globalnav-foot ul li:hover ul {
+	display:								block;
+	width:								90px;
+	position:							absolute;
+	z-index:								999;
+	top:									30px;
+	margin-top:							0em;
+	left:									0;
+}
+#xo-globalnav-foot ul li ul li {border-right: 1px solid #AFAFAF;}
+#xo-globalnav-foot ul li:hover ul li a {
+	display:								block;
+	width:								90px;
+	height:								auto;
+	line-height:						1.3em;
+	margin-left:						-1px;
+	padding:								4px 16px 4px 16px;
+	border-left: 						1px solid #AFAFAF;
+	border-bottom: 					1px solid #AFAFAF;
+	background-color: 				#FFF;
+		color:								#000;
+	font-weight:						normal;
+}
+#xo-globalnav-foot ul li:hover ul li a:hover {
+	color:								#FFFF33;
+	background-color: 						transparent;
+	text-decoration:					underline;
+}
+
+/*Paramètres spécifiques pour IE6*/
+#xo-globalnav-foot table {
+	position:							absolute;
+	top:									-1px;
+	left:									0;
+	border-collapse:					collapse;
+}
+#xo-globalnav-foot ul li a:hover {
+    color:								#FFF;
+	background-color: 				#3267B5;
+	text-decoration:					none;
+}
+#xo-globalnav-foot ul li a:hover ul {
+	display:								block;
+	width:								90px;
+	position:							absolute;
+	z-index:								999;
+	top:									30px;
+	left:									0;
+	margin-top:							0.1em;
+}
+#xo-globalnav-foot ul li a:hover ul li a {
+	display:								block;
+	width:								90px;
+	height:								1px;
+	line-height:						1.3em;
+	padding:								4px 16px 4px 16px;
+	border-left: 						1px solid #AFAFAF;
+	border-bottom: 					1px solid #AFAFAF;
+	background-color: 				#704d4e;
+	font-weight:						normal;
+}
+#xo-globalnav-foot ul li a:hover ul li a:hover {
+	background-color: 				#000;
+	text-decoration:					none;
+}
+
+/*========== Menu principal dans bloc =============*/
+#mainmenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						1px;
+	font-weight: 					500;
+	background-color: 						transparent;
+}
+#mainmenu a:hover {
+	text-decoration:				none !important;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 8px;	background-color: transparent; }
+#mainmenu a.menuSub {
+	padding: 						1px 0 1px 15px;
+	color:							#fff;
+	background-color: 						transparent;
+	font-size:						.8em;
+	font-style: 					italic;
+}
+#mainmenu a.menuSub:hover {
+	color:							#FFF;
+	background-color: 						transparent;
+}
+
+/*============ Menu utilisateur dans bloc ============*/
+#usermenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						2px;
+	color:							#FFF;
+	background-color: 						transparent;
+	position:							inherit;
+	font-weight: 					normal;
+	font-size: 						0.8em;
+	line-height: 					1em;
+}
+#usermenu a:hover {
+	color:							#FFF;
+	background-color: 						transparent;
+	padding-left: 					3em;
+	font-style: 					italic;
+	text-decoration:				none !important;
+	border-left:					1px solid #666;
+	border-bottom:					1px solid #666;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	color: 							#FFF;
+	background-color: 						transparent;
+}
+
+/*=========== Règles nécessaires pour les anciens templates des modules ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}

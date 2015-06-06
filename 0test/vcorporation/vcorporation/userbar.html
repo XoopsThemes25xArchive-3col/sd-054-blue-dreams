@@ -1,0 +1,28 @@
+		<div id="xo-userbar">
+		<{if !$xoops_isuser}>
+			<!-- menu en mode anonyme -->
+			<form method="post" action="<{xoAppUrl /user.php op=login}>">
+				<{$smarty.const._LOGIN}>&nbsp;
+				<input name="uname" type="text" />&nbsp;&nbsp;<input name="pass" type="password" />
+				<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+				<button type="submit"><img src="<{xoImgUrl /img/home.png}>" alt="<{$smarty.const._LOGIN}>" /></button>
+			</form>
+			<a href="<{xoAppUrl /register.php}>" class="register">S'enregistrer</a>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<a href="<{xoAppUrl /user.php}>" alt="" title="Tout à propos de moi">Mon compte</a>
+<!--, nous sommes le <{$smarty.now|date_format:"%d %B %Y"}> si vous voulez afficher la date du jour il faut décommenter la ligne -->
+			<{xoInboxCount assign=pmcount}>
+			<a href="<{xoAppUrl www/viewpmsg.php}>">
+			<!-- pour ma messagerie -->
+			<{if $pmcount}><!-- si j'ai des messages -->(<{$pmcount}>) Messages
+			<{else}>
+			<!-- si je n'ai pas de message -->
+			Boîte de réception<{/if}></a>
+			<!-- fin de ma messagerie -->
+			<a href="<{xoAppUrl /notifications.php}>">Notifications</a>				
+			<a href="<{xoAppUrl /user.php}>">Mon profil</a>
+			<a href="<{xoAppUrl /search.php}>">Rechercher</a>
+			<a href="<{xoAppUrl /user.php op=logout}>">Déconnexion</a>
+		<{/if}>
+		</div>

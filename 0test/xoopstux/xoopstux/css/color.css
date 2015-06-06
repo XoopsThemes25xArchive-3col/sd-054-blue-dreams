@@ -1,0 +1,373 @@
+#tellafriend #xopage, #liaise #xopage, #sitemap #xo-page, #system #xo-page, #news #xo-tux, #mydownloads #xo-page, #mylinks #xo-page, #extgallery #xo-page, #contact #xo-page, #d3pipes #xo-page, #fluxrss #xo-page {
+  background-position: bottom right;
+}
+
+#system #xo-tux, #flux #xo-page{
+  background-position: top right;
+}
+
+#sitemap #xo-page, #system #xo-tux, #system #xo-page{
+  background-color: #363636;
+  background-image: url(../img/tux_home_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+#news #xo-tux {
+  background-color: #363636;
+  background-image: url(../img/tux_articles_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+#mydownloads #xo-page{
+  background-color: #363636;
+  background-image: url(../img/tux_telechargement_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+#mylinks #xo-page{
+  background-color: #363636;
+  background-image: url(../img/tux_annuaire_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+/*#xoopspoll #xo-page,*/ #extgallery #xo-page{
+  background-color: #363636;
+  background-image: url(../img/tux_themes_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+#d3pipes #xo-page, #fluxrss #xo-page, #flux #xo-page {
+  background-color: #363636;
+  background-image: url(../img/tux_flux_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+#contact #xo-page, #liaise #xo-page, #tellafriend #xo-page{
+  background-color: #363636;
+  background-image: url(../img/tux_contact_256.png);
+  background-repeat: no-repeat;
+  min-height: 256px;
+}
+
+#xo-globalnav{
+  clear: both;
+  border: 0px;
+  padding-left: 2.5em;
+  margin: 0;
+  z-index: 5;
+  text-align: center;
+}
+
+* html #xo-globalnav{
+  height: 30px;
+}
+
+#xo-globalnav ul{
+  min-height: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 500;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+#xo-globalnav li{
+  display: inline;
+  float: left;
+  min-height: 26px;
+  position: relative;
+  text-align: left;
+  padding: 5px 14px 5px 14px;
+  margin: 0;
+  font-size: .9em;
+}
+
+#xo-globalnav li ul{
+  width: 128px;
+  height: auto;
+  top: 100%;
+  left: 0px;
+  font-weight: normal;
+  font-size: 1em;
+  border-top: 1px solid #000;
+  padding: 0 2px 0 2px;
+}
+
+#xo-globalnav li ul li{
+  text-align: left;
+  width: 100px;
+  height: auto;
+  min-height: auto;
+  display: block;
+}
+
+#xo-globalnav li.LargeMenu ul li{
+  text-align: left;
+  width: 156px;
+  height: auto;
+  min-height: auto;
+  display: block;
+}
+
+#xo-globalnav ul li a{
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+#xo-globalnav a:hover{
+  text-decoration: none;
+}
+
+#xo-globalnav li li ul{
+  top: 0;
+  left: 0;
+}
+
+#xo-globalnav li li:hover ul{
+  left: 150px;
+}
+
+#xo-globalnav ul ul, #xo-globalnav ul li:hover ul ul, #xo-globalnav ul ul li:hover ul ul, #xo-globalnav ul ul ul li:hover ul ul, #xo-globalnav ul ul ul ul li:hover ul ul{
+  position: absolute;
+  display: none;
+}
+
+#xo-globalnav li:hover ul, #xo-globalnav ul li:hover ul, #xo-globalnav ul ul li:hover ul, #xo-globalnav ul ul ul li:hover ul, #xo-globalnav ul ul ul ul li:hover ul, #xo-globalnav ul ul ul ul ul li:hover ul{
+  display: block;
+}
+
+#xo-globalnav #PhpWebcontent{
+  display: none;
+}
+
+#xo-globalnav, #xo-globalnav a, #xo-globalnav a:active, #xo-globalnav a:hover, #xo-globalnav a:visited, #xo-page textarea{}
+
+#xo-globalnav ul li ul li{
+  background-color: #3b3b3b;
+}
+
+#xo-globalnav ul li ul li:hover{
+  background-color: #4b4b4b;
+}
+
+#xo-globalnav .sitemap a{
+  color: #639ace;
+}
+
+#xo-globalnav a:visited.sitemap{
+  color: #91b8dd;
+}
+
+#xo-globalnav .sitemap a:hover{
+  color: #3676b0;
+}
+
+#xo-globalnav a.news{
+  color: #54d143;
+}
+
+#xo-globalnav a:visited.news{
+  color: #87df7b;
+}
+
+#xo-globalnav a:hover.news{
+  color: #44aa37;
+}
+
+#xo-globalnav a.mydownloads{
+  color: #f34c30;
+}
+
+#xo-globalnav a:visited.mydownloads{
+  color:#f7816e;
+}
+
+#xo-globalnav a:hover.mydownloads{
+  color: #cc4129;
+}
+
+#xo-globalnav a.mylinks{
+  color: #fa8a0a;
+}
+
+#xo-globalnav a:visited.mylinks{
+  color: #fbad53;
+}
+
+#xo-globalnav a:hover.mylinks{
+  color: #d47508;
+}
+
+#xo-globalnav a.extgallery, #xo-globalnav a.xoopspoll{
+  color: #a7b560;
+}
+
+#xo-globalnav a:visited.extgallery, #xo-globalnav a:visited.xoopspoll{
+  color: #c1cb8f;
+}
+
+#xo-globalnav a:hover.extgallery, #xo-globalnav a:hover.xoopspoll{
+  color: #848f4c;
+}
+
+#xo-globalnav a.flux, #xo-globalnav a.fluxrss, #xo-globalnav a.d3pipes{
+  color: #dadada;
+}
+
+#xo-globalnav a:visited.flux, #xo-globalnav a:visited.fluxrss, #xo-globalnav a:visited.d3pipes{
+  color: #d6d6d6;
+}
+
+#xo-globalnav a:hover.flux, #xo-globalnav a:hover.fluxrss, #xo-globalnav a:hover.d3pipes {
+  color: #c3c3c3;
+}
+
+#xo-globalnav a.contact, #xo-globalnav a.liaise, #xo-globalnav a.tellafriend{
+  color: #de9b59;
+}
+
+#xo-globalnav a:visited.contact, #xo-globalnav a:visited.liaise, #xo-globalnav a:visited.tellafriend{
+  color: #e8b98a;
+}
+
+#xo-globalnav a:hover.contact, #xo-globalnav a:hover.liaise, #xo-globalnav a:hover.tellafriend{
+  color: #b88149;
+}
+
+.xo-block form{
+  margin: 0;
+  padding: 0;
+}
+
+#xo-content form{
+  margin: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+.xo-formfield{
+  margin-bottom: .2em;
+  background-color: transparent;
+  color: inherit;
+}
+
+.xo-block .formButtons{
+  padding: .5em;
+  text-align: center;
+}
+
+.xo-formbuttons,.formButton, button{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color:#848383 !important;
+  color: #ccc;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  font-variant: small-caps;
+  border: 1px solid #ccc;
+}
+
+.xo-formbuttons:hover,.formButton:hover, button:hover{
+  background-color: #dcdcdc;
+  color: #505050;
+  border:1px solid #505050 !important;
+  cursor: pointer;
+}
+
+#xo-content .xo-formfield .required label:after{
+  background-color: #fff;
+  color: #f00;
+  content: '*';
+}
+
+select{
+  background-color: #fff;
+  color: #333;
+  font-size: .9em;
+  border: 2px inset #f1f3f8;
+}
+
+select [name=timezone_offset]{
+  background-color: #fff;
+  color: #333;
+  font-size: .9em;
+}
+
+input[type=submit], input[type=reset], input[type=button], #xo-searchbar input[type=button]{
+  background-color:#848383 !important;
+  color:#dcdcdc !important;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  font-variant: small-caps;
+  border: 1px solid #ccc;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, #xo-searchbar input[type=button]:hover{
+  background-color:#dcdcdc !important;
+  color:#848383 !important;
+  border: 1px solid #505050;
+  cursor: pointer;
+}
+
+input[type=text], input[type=password], input[type=checkbox], textarea, #xo-searchbar input[type=text]{
+  margin: 2px 0;
+  padding-left: .2em;
+  background-color: #c6c7c9;
+  color: #333;
+  border: 1px solid #999;
+}
+
+input[type=text]:hover, input[type=password]:hover, #xo-searchbar input[type=text]:hover {
+  background-color: #E2E2E2;
+  color: #333;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:hover, textarea:focus{
+  border-color: #848383;
+  outline: 1px solid #848383;
+}
+
+#xo-page fieldset{
+  padding: 1em;
+  line-height: 1.8em;
+}
+
+#xo-page fieldset a{
+  background-color: inherit;
+  color: #f00;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#xo-page fieldset a:hover{
+  text-decoration: underline;
+}
+
+legend{
+  font-size:1.1em !important;
+  font-weight: bold;
+  margin-bottom: .5em;
+  border-bottom: 1px dotted #666;
+}
+
+#xo-page label{
+  background-color: transparent;
+  padding: 0;
+  color: #848383;
+  font-weight: bold;
+}
+
+textarea{
+  width: 80%;
+  max-height: 100px;
+  overflow: auto;
+}

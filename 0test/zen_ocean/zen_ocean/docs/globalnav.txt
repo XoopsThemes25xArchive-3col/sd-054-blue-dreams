@@ -1,0 +1,23 @@
+<ul id="xo-globalnav" class="x2-nl x2-navigation">
+		<!-- menu en mode anonyme -->
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Accueil</a></li>
+		<{if !$xoops_isuser}>
+		<li><a href="<{xoAppUrl modules/myCredits/}>" accesskey="" title="Modules 1a">Module 1a</a></li>
+		<li><a href="<{xoAppUrl modules/google/}>" accesskey="" title="Modules 2a">Module 2a</a></li>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+		<li><a href="<{xoAppUrl modules/news/}>" accesskey=""  title="Modules 1">Module 1</a></li>
+		<li><a href="<{xoAppUrl modules/newbb/}>" accesskey=""  title="Modules 2">Module 2</a></li>
+		<li><a href="<{xoAppUrl modules/xcgal/}>" accesskey="" title="Modules 3">Module 3</a></li>
+		<li><a href="<{xoAppUrl modules/smartmedia/}>" accesskey="" title="Modules 4">Module 4</a></li>
+		<li><a href="<{xoAppUrl modules/addresses/}>" accesskey="" title="Modules 5">Module 5</a></li>
+		
+		<{if $xoops_isadmin}>
+		<!-- lien supplémentaire si je suis administrateur -->
+		<li><a href="<{xoAppUrl modules/xoopsinfo/}>" accesskey="" title="Modules 6">Module 6</a></li>
+		<li><a href="<{xoAppUrl modules/protector/}>" accesskey="" title="Modules 7">Module 7</a></li>
+		<{/if}>
+		<{/if}>
+		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="Contact">Contact</a></li>
+	</ul>

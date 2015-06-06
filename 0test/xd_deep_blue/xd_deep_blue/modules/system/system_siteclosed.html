@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<title><{$sitename}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+</head>
+<body>
+  <table style="text-align:center; color:#FFFFFF; margin-top:100px; padding-bottom:60px;" align="center"; >
+    <tr>
+      <td align="center"><div style="text-align: center; font-weight: bold; padding: 10px;"><h2><{$lang_siteclosemsg}></h2></div></td>
+    </tr>
+  </table>
+  
+  <form action="<{$xoops_url}>/user.php" method="post">
+    <table cellspacing="0" align="center" style="width: 200px; color:#FFFFFF; ">
+      <tr>
+      </tr>
+      <tr>
+        <td style="padding: 2px;"><{$lang_username}></td><td style="padding: 2px;"><input type="text" name="uname" size="12" value="" /></td>
+      </tr>
+      <tr>
+        <td style="padding: 2px;"><{$lang_password}></td><td style="padding: 2px;"><input type="password" name="pass" size="12" /></td>
+      </tr>
+      <tr>
+        <td style="padding: 2px;">&nbsp;</td>
+        <td style="padding: 2px;">
+        	<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+        	<input type="hidden" name="xoops_login" value="1" />
+        	<input type="submit" value="<{$lang_login}>" /></td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>

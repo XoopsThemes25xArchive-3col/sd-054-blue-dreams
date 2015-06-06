@@ -1,0 +1,284 @@
+@import url(layout.css);
+@import url(blocks.css);
+@import url(content.css);
+
+
+/* ------ General styles ------ */
+
+html, body {
+	font-family: Helvetica,Arial,sans-serif;
+	line-height: 1.3em;
+	margin: 0px;
+	font-size: 12px;
+	color: #333;
+	background: #fff url(images/bg.jpg) top center repeat-x;
+}
+
+#xo-canvas {
+margin:0 auto;
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	padding: 0;
+	border-width: 0;
+	vertical-align: top;
+}
+
+img {
+	border: 0;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: normal;
+	color:#4F8C31;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+input.button {
+ cursor: pointer;
+ background:none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align:justify;
+}
+
+h1 {font-size: 1.4em; }
+h2 {font-size: 1.2em;}
+h3 {font-size: 1em;}
+h4 {font-size: 1em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
+
+
+/**************/
+
+#path {
+	width:902px;
+	text-align:left;
+	margin:0 auto;
+}
+.top_bg {
+	width:902px;
+	height:12px;
+	font-size:8px;
+}
+#header {
+	margin:0 auto;
+	width:928px;
+	padding:0px;
+}
+
+#header_bg a, #header_bg a:link, #header_bg a:hover, #header_bg a:visited {
+	font-weight: bold;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 3em;
+	padding:0;
+	margin:0;
+	line-height:1.4em;
+	color:#55803f;
+	text-decoration:none;
+}
+
+.header_b_bg {
+	background: #fff url(images/header_b_bg.jpg) top center repeat-x;
+	width:902px;
+	height:10px;
+	font-size:8px;
+}
+
+div#tabarea {
+	background: url(images/top_menu_m_bg.jpg) top left repeat-x;
+	height:35px;
+}
+
+table.pill {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+td.pill_m {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+
+#pillmenu {
+  white-space: nowrap;
+  float: left;
+}
+
+#pillmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
+
+#pillmenu li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#pillmenu a {
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  float:left;
+  display:block;
+  line-height: 26px;
+  padding: 0px 15px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+#pillmenu a:hover {
+  color: #fff;
+}
+
+#pillmenu a#active_menu-nav {
+}
+
+
+.header_l, .header_r {
+	width:13px;
+	height:164px;
+}
+
+div#header_bg {
+	background: transparent url(images/header_bg.jpg) top right no-repeat;
+	width:882px;
+	height:250px;
+	text-align:left;
+	padding:0 10px;
+}
+
+div#logo_bg {
+	background: transparent url(images/logo.jpg) top center no-repeat;
+	height:164px;	
+}
+
+div#logo_bg div {
+	text-align: center;
+}
+
+#bottom_bg {
+	background: url(images/bottom_bg.jpg) 0 100% repeat-x;
+	margin:0 auto;
+	width:902px;
+	height:10px;
+	font-size:8px;
+}
+
+div#footer {
+clear: both;
+background:url(images/footer.gif) no-repeat;
+height:52px;
+}
+
+#footer a{color:#fff;}
+
+
+/****************/
+
+
+/* ---------- Column left/right rules ---------- */
+
+#xo-canvas-rightcolumn {}
+#xo-canvas-rightcolumn a {}
+#xo-canvas-rightcolumn a:hover {}
+
+#xo-canvas-leftcolumn {}
+#xo-canvas-leftcolumn a {}
+#xo-canvas-leftcolumn a:hover {}
+
+/* ------ Main content ------ */
+
+#xo-canvas-content {	
+	line-height: 1.3em;
+	background: url(images/wrapper_bg.jpg) repeat-y;
+}
+
+/* lists */
+#xo-canvas-content ul {margin: 10px; padding: 5px; text-align: left;}
+#xo-canvas-content li {margin-left: 5px; color: #000; background-color: inherit; line-height: 1.4em; list-style: circle; list-style:disc;}
+
+#xo-page {
+	padding: 0 .5em;
+}
+
+/* ---------- Module display rules ---------- */
+
+#xo-content {
+	padding: 15px 15px;
+}
+
+/* ---------- Redirect ------------ */
+#xo-redirect {
+	margin: 40px 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	background-color: #f7e6bd;
+	color: #222;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid #DDDDFF;
+}
+/* ---------- Site close ------------ */
+#xo-siteclose-login {
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto; 	
+	border:1px solid #DDDDFF;	
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#xo-siteclose-login h2 {
+	background-color: #f3ac03;
+	font-weight: bold;
+	font-size: 1em; 
+	color: white;
+	padding: 2px;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;	
+}
+#xo-siteclose-login form {
+	padding: 0px;
+	margin: 0px;	
+}
+#xo-siteclose-login div{
+	padding: 6px;
+}
+#xo-siteclose-login span.left {
+	float: left;
+	padding-bottom: 3px;
+}
+#xo-siteclose-login span.right {
+	float: right;
+	padding-right: 3px;
+	padding-bottom: 3px;
+}
+#xo-siteclose-login div.button {
+	text-align: right;
+	clear: both;	
+	padding-right: 0px;
+}
+
+

@@ -1,0 +1,28 @@
+		<div id="xo-userbar">
+		<{if !$xoops_isuser}>
+			<!-- menu en mode anonyme -->
+			<form method="post" action="<{xoAppUrl /user.php op=login}>">
+			<input name="uname" type="text" />&nbsp;&nbsp;<input name="pass" type="password" />
+			<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+			<button type="submit"><img src="<{xoImgUrl}>img/access2.gif" alt="<{$smarty.const._LOGIN}>" /></button>
+			</form>
+			<a href="<{xoAppUrl /register.php}>" class="register">S'enregistrer</a>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		Bienvenue&nbsp;<a href="<{xoAppUrl /user.php}>" alt="Mon compte" title="Tout à propos de moi"><span id="xo-uname"><{$xoops_uname}></span></a>
+<!--, nous sommes le <{$smarty.now|date_format:"%d %B %Y"}> si vous voulez afficher la date du jour il faut décommenter la ligne -->&nbsp;: 
+<a href="<{xoAppUrl}>"><img src="<{xoImgUrl}>img/home.gif" alt="Accueil" title="Accueil" /></a>	
+			<{xoInboxCount assign=pmcount}>
+			<a href="<{xoAppUrl www/viewpmsg.php}>">
+			<!-- pour ma messagerie -->
+			<{if $pmcount}><!-- si j'ai des messages --><img src="<{xoImgUrl}>img/inbox-full.gif" alt="(<{$pmcount}>) Messages" title="Vous avez <{$pmcount}> messages non lues" />
+			<{else}>
+			<!-- si je n'ai pas de message -->
+			<img src="<{xoImgUrl}>img/inbox.gif" alt="Boîte de réception" title="Voir sa boîte de réception" /><{/if}></a>
+			<!-- fin de ma messagerie -->
+			<a href="<{xoAppUrl /notifications.php}>"><img src="<{xoImgUrl}>img/note_view.gif" alt="Notifications" title="Voir ses notifications" /></a>				
+			<a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl}>img/profile.gif" alt="Mon profil" title="Voir son profil" /></a>
+			<a href="<{xoAppUrl /search.php}>"><img src="<{xoImgUrl}>img/find.gif" alt="Rechercher sur le site" title="Rechercher sur le site" /></a>
+			<a href="<{xoAppUrl /user.php op=logout}>"><img src="<{xoImgUrl}>img/exit.gif" alt="Déconnexion" title="Cliquez pour vous déconnecter" /></a>
+		<{/if}>
+		</div>

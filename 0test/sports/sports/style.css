@@ -1,0 +1,351 @@
+body {
+	color: #dddddd;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	font-size: 9pt;
+	background-attachment: fixed;
+	background-image: url(images/bc.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-color: #000000; 
+
+}
+
+table {
+	width: 100%;
+}
+table td {
+	padding: 0;
+	border-width: 0;
+	vertical-align: top;
+}
+
+#Main {
+	width: 922px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: dotted;
+	border-left-style: dotted;
+	border-right-color: #ffffff;
+	border-left-color: #ffffff;
+	background-color: #000000;
+}
+#MainWidth {width: 922px;}
+
+#header {
+	background-image: url(images/header.jpg);
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	border-bottom-width: 0px;
+	border-bottom-style: dotted;
+	border-bottom-color: #FFFFFF;
+
+}
+
+a {color: #ffffff; font-weight: normal; background-color: transparent;}
+a:hover {
+	color: #ffffff;
+	text-decoration: italic;
+}
+
+h1 {font-size: 130%;}
+h2 {font-size: 110%;}
+h3 {font-size: 105%;}
+h4 {font-size: 100%;}
+h5 {font-size: 95%;}
+h6 {font-size: 85%;}
+
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #ffffff}
+
+
+input[type=button], input[type=submit], input[type=reset] { 
+    PADDING-RIGHT: 0.5em;
+    PADDING-LEFT: 0.5em;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 1px;
+    BACKGROUND: url(images/hbar.gif) repeat-x;
+    COLOR: #fff;
+    CURSOR: pointer;
+    BORDER-LEFT: 0px solid #ffffff;
+	BORDER-RIGHT: 0px solid #ffffff;
+	BORDER-BOTTOM: none;
+	BORDER-TOP: none;
+}
+input {
+	font-size: 90%;
+	color: #891414;
+	border: 1px solid #ffffff;
+	margin-bottom: 4px;
+	
+}
+
+.item {
+	margin-bottom: 25px;
+}
+.itemHead {
+	padding: 3px;
+	color: #000000;
+}
+
+.itemInfo {
+	text-align: right;
+	padding: 3px;
+	color: #000000;
+}
+.itemTitle a {
+	font-weight: normal;
+	color: #ffffff;
+}
+.itemPoster, .itemPostDate, .itemStats {font-size: 90%; color: #000000;}
+.itemBody {	padding: 5px;}
+.itemText {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	line-height: 1.5em;
+}
+.itemText a , .itemInfo a, .itemFoot a{
+	color: #999999;
+	font-weight: normal;
+}
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+.itemText:first-letter {}
+.itemFoot {
+	text-align: right;
+	padding: 3px;
+	color: #000000;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {
+	color: #ffffff;
+	padding : 2px;
+	vertical-align : middle;
+	font-family: Tahoma;
+}
+
+
+#leftcolumn {
+	width: 200px;
+	border-right: 1px dotted #ffffff;
+	background-color: #000000;
+	color: #ffffff;
+	padding-top: 0px;
+}
+#leftcolumn a {
+	color: #dddddd;
+}
+#leftcolumn a:hover{
+	text-decoration: italic;
+	color: #ffffff;
+}
+
+#rightcolumn {
+	width: 200px;
+	border-left: 1px dotted #ffffff;
+	background-color: #000000;
+}
+
+#leftcolumn th, #rightcolumn th {color: #ffffff; vertical-align: middle;}
+#leftcolumn .blockTitle {
+	padding: 10px 25px;
+	color: #ffffff;
+	font-weight: normal;
+	background-color: #000000;background-image: url(images/menu.png);
+}
+ #rightcolumn .blockTitle {
+	padding: 10px 25px;
+	color: #ffffff;
+	font-weight: normal;
+	background-color: #000000;
+	background-image: url(images/menu.png)
+}
+#leftcolumn .blockContent, #rightcolumn .blockContent {
+	padding: 5px 6px;
+	margin-bottom: 10px;
+}
+
+.centercol {}
+.centercol .blockContent a {
+}
+	
+.centercol .blockContent a:hover {
+}
+
+.centercol .blockTitle {
+	color: #ffffff; 
+	background-image: url(images/hbar.gif); 
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #891414;
+	font-weight: normal;
+	line-height: 2.2em;
+	padding: 0px 8px;
+}
+
+.centercol .blockContent {
+	line-height: 1.8em;
+	margin-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #891414;
+	border-right: 1px solid #891414;
+	border-left: 1px solid #891414;
+	padding-bottom: 12px;
+}
+
+.centercol li {
+}
+
+#centercolumn {
+	padding: 6px;
+}
+
+#centercolumn th {
+	color: #FFFFFF;
+	vertical-align: middle;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	background-color: #ffffff;
+	background-image: url(images/hbar.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+#centerCcolumn, #bottomCcolumn {padding: 0px 3px 1px 3px;}
+#centerLcolumn, #bottomLcolumn {width: 50%; padding: 0px 8px 0px 0px;}
+#centerRcolumn,  #bottomRcolumn {
+	width: 50%;
+	padding: 0px 0px 0px 8px;
+	border-left-width: 0px;
+	border-left-style: dotted;
+	border-left-color: #ffffff;
+}
+
+div#content {text-align: left; padding: 10px 0px;}
+
+#mainmenu {
+	background-color: #000000;	
+}
+#mainmenu a {
+	display: block;
+	margin: 0;
+	font-weight: normal;
+	text-decoration: none;
+	background-image: url(images/on.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#mainmenu a:hover {
+	background-image: url(images/off.gif);
+}
+#mainmenu a.actlink  {	background-image: url(images/off.gif);
+ }
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 10px; }
+#mainmenu a.menuSub {padding-left: 15px; }
+
+#usermenu a {
+	display: block;
+	margin: 0;
+	font-weight: normal;
+	text-decoration: none;
+	background-image: url(images/on.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#usermenu a:hover {	background-image: url(images/off.gif);
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	background-color: #891414;
+	color: #FFFFFF;
+}
+.outer {}
+.head {
+	background-color: #000000;
+	padding: 2px;
+	font-weight: normal;
+    border: 1px solid #E5E5E5;
+}
+.even, tr.even td {background-color: #000000; padding: 1px;}
+.odd, tr.odd td {background-color: #000000; padding: 1px;}
+.foot {
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #000080; font-family: "Tahoma"; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #000080; font-family: "Tahoma",; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: normal; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #ffffff; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #ffffff; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.footer {
+	padding: 10px 3px;
+	text-align: center;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	font-size: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+	background-color: #000000;background-image: url(images/menu blank.png);
+	
+}
+.footer a {
+	text-decoration: underline;
+	font-weight: normal;
+	color: #000000;
+}
+.footer a:hover {
+	text-decoration: italic;
+}
+
+select {
+	font-size: 90%;
+	margin-bottom: 4px;
+}
+
+textarea {
+}

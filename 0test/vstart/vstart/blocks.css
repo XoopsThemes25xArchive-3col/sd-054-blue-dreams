@@ -1,0 +1,152 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : blocks.css (version 2.0) - 22 mai 2007 */
+
+/*========== listes dans les colonnes ==========*/
+.xo-canvas-column ul {
+	list-style-type:				none;
+	padding:							.5em;
+	margin:							0;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0;
+	padding-bottom:				0;
+	padding-left:					1em;
+
+}
+/* ====== format des cellules dans les colonnes ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+	color: 							#32529C;
+	background-color:				#f6f6f6;
+	border:							0 none;
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	margin:							0;
+	padding:							0;
+	border: 							0 !important;
+}
+/*===== Styles Colonne de Gauche =======*/
+#xo-canvas-leftcolumn .xo-block {
+    padding-bottom: 5px;
+	background: url(img/menuseul.gif) no-repeat bottom left;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:							#22A4B8;
+	font-size:						12px;
+	font-weight:					bold;
+	
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+    text-align:left;
+	min-height:						100px;
+	color:							#666;
+	background-color: 			inherit;
+ 
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-leftcolumn .xo-blockcontent a {
+	color:							#666;
+	background-color: 			inherit;
+	text-decoration: 				none;
+}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+    color:							#FFF;
+	background: url(img/ov.gif) repeat-y;
+	text-decoration: 				none;
+}
+#xo-canvas-leftcolumn img {
+	margin: 							3px 3px 0 7px;
+	padding: 						3px;
+	border: 							1px solid #999;
+}
+#xo-canvas-leftcolumn img:hover {border: 1px solid #666;}
+/*======== Styles Colonne de Droite ========*/
+#xo-canvas-rightcolumn {
+	color:							#666;
+	background-color:				#FFF;
+}
+#xo-canvas-rightcolumn .xo-block {
+padding: 2px;
+margin-bottom:10px;
+background-color:				#FFF;
+border:1px dotted #23A4B9 ;
+}
+#xo-canvas-rightcolumn a {
+	color:							#666;
+	background-color: 			inherit;
+	text-decoration:				none;
+}
+#xo-canvas-rightcolumn a:hover {
+	color:							#FFF;
+	background-color:				#23A4B9;
+	text-decoration:				none;
+}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	color:							#666;
+	background-color: 			inherit;
+	font-family:					"Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-size:						10px;
+	font-weight:					bold;
+	text-align:						center;
+}	
+#xo-canvas-rightcolumn .xo-blockcontent {
+    font-size:						12px;
+	padding:						5px;
+	color:							#666;
+}
+#xo-canvas-rightcolumn img {
+	margin: 							3px 3px 0 7px;
+	padding: 						3px;
+	border: 							1px solid #999;
+}
+#xo-canvas-rightcolumn img:hover {border: 1px solid #666;}
+/* ======= Styles du "Contenu Centre" ===========*/
+#xo-page .xo-blockszone > .xo-block {
+	background: url(img/mg.gif) no-repeat top left;
+}
+.xo-block ul {
+	margin:							0;
+	padding:							0;
+	list-style-type:				none;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+    text-transform:capitalize;
+	text-align:left;
+	padding-left: 20px;
+	padding-top:30px;
+	padding-bottom: 10px;
+	color:							#22a4b8;
+	font-size:						16px;
+	font-weight:					bold;
+
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+    padding: 0 20px 20px;
+	color:							#666;
+	text-align: 					justify;
+	background-color: 			inherit;
+	background: url(img/md.gif) no-repeat bottom right;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	margin: 							3px 3px 0 7px;
+	padding: 						3px;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+	background-color: 			#fff !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {
+	color:							#666;
+	background-color:				inherit;
+	text-decoration:				none;
+}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+text-decoration:underline;	
+background-color:				inherit;
+}
+
+
+

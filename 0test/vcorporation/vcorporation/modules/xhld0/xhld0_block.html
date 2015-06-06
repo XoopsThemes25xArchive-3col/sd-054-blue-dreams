@@ -1,0 +1,25 @@
+<{if $image.url == ""}>
+<a href="<{$site_url|escape}>" target="_blank"><{$site_name|escape}></a><br />
+<{/if}>
+<{if $image.url != ""}>
+<a href="<{$site_url|escape}>" target="_blank">
+<img src="<{$image.url|escape}>" alt="<{$image.title|escape}>" /><br />
+</a>
+<{/if}>
+
+<ul>
+<{section name=i loop=$items}>
+  <{if $items[i].title != ""}>
+  <{* <li><a href="<{$mod_url}>/index.php?id=<{$site_id}>#<{$items[i].link|escape}>"><{$items[i].title|escape}></a></li> *}>
+  <li>
+    <{if $items[i].pubdate != "" }>
+      <script type="text/javascript">document.write(phpDate('<{$dtfmt_short|escape}>', <{$items[i].pubdate|escape}>));</script>
+      <noscript><{$items[i].date_short|escape}></noscript>
+      &nbsp;
+    <{/if}>
+    <a href="<{$items[i].link|escape}>" target="_blank"><{$items[i].title|escape}></a>
+  </li>
+  <{/if}>
+<{/section}>
+<br /><br />
+</ul>

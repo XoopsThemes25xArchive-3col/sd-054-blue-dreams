@@ -1,0 +1,33 @@
+		<div id="xo-userbar">
+		<{if !$xoops_isuser}>
+			<!-- menu en mode anonyme -->
+			<form method="post" style=" color: #fff; " action="<{xoAppUrl /user.php op=login}>">
+				<{$smarty.const._LOGIN}>&nbsp;
+				<input name="uname" type="text" style=" color: #B4C835;" />&nbsp;&nbsp;<input name="pass" type="password" style=" color: #B4C835; " />
+				<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" style=" color: #fff; "/>
+				<button type="submit" style=" color: #fff; "><img src="<{xoImgUrl /img/home.png}>" alt="<{$smarty.const._LOGIN}>" /></button>
+			</form>
+			<a href="<{xoAppUrl /register.php}>" class="register" style=' color:#fff; '>ثبت نام</a>
+		<{else}>
+		<!-- menu en mode enregistr -->
+		<p style=' color:#fff; '>خوش آمدید&nbsp;<a href="<{xoAppUrl /user.php}>" alt="Mon compte" title="نمایش ویژگی های فردی"><span id="xo-uname"><{$xoops_uname}></span></a>
+<!--, nous sommes le <{$smarty.now|date_format:"%d %B %Y"}> si vous voulez afficher la date du jour il faut dcommenter la ligne -->&nbsp;: 
+			<{xoInboxCount assign=pmcount}>
+			<a href="<{xoAppUrl www/viewpmsg.php}>">
+			<!-- pour ma messagerie -->
+			<{if $pmcount}><!-- si j'ai des messages --><img src="<{xoImgUrl img/inbox-full.png}>" alt="(<{$pmcount}>) Messages" title="شما <{$pmcount}> پیام شخصی جدید دارید" />
+			<{else}>
+			<!-- si je n'ai pas de message -->
+			<img src="<{xoImgUrl img/inbox.png}>" alt="Bote de rception" title="پیام شخصی" /><{/if}></a>
+			<!-- fin de ma messagerie -->
+			<a href="<{xoAppUrl /notifications.php}>"><img src="<{xoImgUrl img/note_view.png}>" alt="Notifications" title="آگاهی ها" /></a>				
+			<a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl img/profile.png}>" alt="Mon profil" title="نمایش ویژگی های فردی" /></a>
+			<a href="<{xoAppUrl /search.php}>"><img src="<{xoImgUrl img/find.png}>" alt="Rechercher sur le site" title="جستجو در سایت" /></a>
+			<{if $xoops_isadmin}>
+			<!-- lien supplmentaire si j'ai des droits d'administration de module -->
+			<a href="<{xoAppUrl /admin.php}>"><img src="<{xoImgUrl img/configuration.png}>" alt="Administration" title="منو مدیریت" /></a>
+			<!-- fin du lien supplmentaire -->
+			<{/if}>
+			<a href="<{xoAppUrl /user.php op=logout}>"><img src="<{xoImgUrl img/exit.png}>" alt="Dconnexion" title="خروج" /></a>
+		<{/if}>
+		</div>

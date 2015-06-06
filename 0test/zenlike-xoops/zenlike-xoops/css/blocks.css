@@ -1,0 +1,164 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  *//* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) *//* file name : blocks.css - 12 01 2008 *//*========== list in columns ==========*/
+.xo-canvas-column ul {
+margin: 0;
+padding: .5em;
+list-style-type: none;
+}
+
+.xo-canvas-column ul ul {
+padding-top: 0;
+padding-bottom: 0;
+padding-left: 1em;
+}
+/* ====== cells table in column ========*/
+
+.xo-canvas-column .outer, .xo-canvas-column .outer td {}
+
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+margin: 0;
+padding: 0;
+border:                             0 !important;
+}
+/*===== left column =======*/
+
+#xo-canvas-leftcolumn .xo-block {
+margin-bottom: 10px;
+background-color: transparent;
+color: #666;
+padding-top: 20px;
+}
+
+#xo-canvas-leftcolumn .xo-blocktitle {
+background-color: transparent;
+background: url(../img/db2.gif) no-repeat top left;
+padding-left: 20px;
+padding-bottom: 10px;
+line-height: .9em;
+color: #333;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+background-color: inherit;
+padding: 0 0 30px 0;
+color: #666;
+border-bottom: solid 1px #E1D2BD;
+}
+
+* html #xo-canvas-leftcolumn .xo-blockcontent {
+height: 110px;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a {
+background-color: inherit;
+color: #b96d00;
+text-decoration: underline;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+background-color: inherit;
+color: #b96d00;
+text-decoration: none;
+}
+
+#xo-canvas-leftcolumn img {
+padding: 3px;
+}
+
+#xo-canvas-leftcolumn img:hover {}
+/*======== right column ========*/
+
+#xo-canvas-rightcolumn {}
+
+#xo-canvas-rightcolumn .xo-block {
+margin-bottom: 10px;
+background-color: transparent;
+color: #333;
+padding-top: 20px;
+}
+
+#xo-canvas-rightcolumn a {
+background-color: inherit;
+color: #b96d00;
+text-decoration: underline;
+}
+
+#xo-canvas-rightcolumn a:hover {
+background-color: inherit;
+color: #b96d00;
+text-decoration: none;
+}
+
+#xo-canvas-rightcolumn .xo-blocktitle {
+background-color: transparent;
+background: url(../img/db2.gif) no-repeat top left;
+padding-left: 20px;
+padding-bottom: 10px;
+line-height: .9em;
+color: #333;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#xo-canvas-rightcolumn .xo-blockcontent {
+background-color: inherit;
+padding: 0 0 30px 0;
+color: #333;
+border-bottom: solid 1px #E1D2BD;
+}
+
+#xo-canvas-rightcolumn img {
+padding: 3px;
+}
+
+#xo-canvas-rightcolumn img:hover {}
+/* ======= Content center ===========*/
+
+#xo-page .xo-blockszone > .xo-block {
+border-bottom: solid 1px #eaeaea;
+padding-top: 10px;
+margin: 0 10px 0 10px;
+}
+
+.xo-block ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#xo-page .xo-blockszone .xo-blocktitle {
+background-color: transparent;
+background: url(../img/db2.gif) no-repeat top left;
+padding-left: 20px;
+padding-bottom: 10px;
+line-height: .9em;
+color: #333;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent {
+background-color: transparent;
+padding: 0 0 30px 0;
+color: #666;
+text-align: justify;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img {
+padding: 3px;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img:hover {}
+
+#xo-page .xo-blockszone .xo-blockcontent a {
+background-color: inherit;
+color: #b96d00;
+text-decoration: underline;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+background-color: transparent;
+color: #b96d00;
+text-decoration: none;
+}

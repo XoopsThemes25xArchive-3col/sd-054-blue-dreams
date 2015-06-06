@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: theme.html 221 2009-02-21 19:12:38Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{assign var=theme_name value=$xoTheme->folderName}><{assign var=theme_tpl value=$xoTheme->folderName|cat:'/tpl'}>
+<{includeq file="$theme_tpl/versions.html"}>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<{$ixt_langcode}>" xml:lang="<{$ixt_langcode}>">
+<head>
+<{includeq file="$theme_tpl/metas.html"}>
+<{includeq file="$theme_tpl/scripts.html"}>	
+<{assign var=theme_top_order value=clr}><{assign var=theme_bottom_order value=clr}><{assign var=hide_content value=0}>
+</head>
+<body id="ixt-body_bg">
+ <div align="center" id="body_wrap">
+  <{assign var=columns_layout value="ixt-layout"}>
+  <div id="ixt-wrapper">
+   <div id="ixt-inner">
+    <{includeq file="$theme_tpl/header.html"}>
+    <div id="ixt-content_layout_wrap">
+     <div class="ixt-content_layout">
+      <{includeq file="$theme_tpl/globalnav.html"}>
+      <{includeq file="$theme_tpl/menu.html"}>
+      <{includeq file="$theme_tpl/content.html"}>	
+      <div class="clr"></div>
+     </div>
+    </div>  
+    <div id="ixt-bottom_layout_wrap">
+     <div class="ixt-bottom_layout"></div>
+    </div>
+   </div>
+  </div>
+  <{includeq file="$theme_tpl/footer.html"}>
+ </div>
+</body>
+</html>

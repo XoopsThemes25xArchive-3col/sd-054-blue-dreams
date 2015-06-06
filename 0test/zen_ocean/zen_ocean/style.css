@@ -1,0 +1,495 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 2.0) - 22 mai 2007 */
+
+/* css Zen Garden style "css ocean" v1.0 */
+/* thanks to css-praxis.de for original work */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+
+* { margin: 0; padding: 0; border: none; outline: none; text-decoration: none;}
+
+html {
+	position: 						relative;
+	margin: 							0;
+	padding: 						0;
+	background: 					#002f72 url(img/bg-tiefe1.gif) !important;
+	background-repeat: 			repeat-x !important;
+}
+body {
+	position: 						absolute;
+	margin: 							0; 
+	padding:							0;
+	width: 							100%;
+	font: 							10pt verdana; 
+	color: 							#fff; 
+	background: 					url(img/bg-boden1.jpg) repeat-x bottom left;
+}
+* html body {
+	width: 							100%;
+	text-align: 					center;
+	background: 					url(img/bg-boden1.jpg) repeat-x bottom left;
+	padding: 						0;
+	padding-bottom: 				150px;
+	position: 						/*relative*/ absolute !important;
+}
+* html #xo-wrapper {
+	margin: 							0;
+	background: 					url(img/bg-top.jpg) repeat-x top left;
+	width: 							100%;
+}
+table { width: 					100%;}
+table td {
+	padding: 						0;
+	border-width: 					0;
+	vertical-align: 				top;
+}
+/* ======= encapsulage du thème dans le body ======= */
+#xo-wrapper {
+	position: 						relative;
+	background: 					url(img/bg-top.jpg) repeat-x top left;
+	font-size: 						1em;
+	line-height: 					1.4em;
+	padding: 						0;
+	padding-bottom: 				150px;
+	margin: 							0 auto;
+	z-index: 						20;
+}
+#xo-bgstatic {}
+#xo-canvas { z-index: 			100;}
+* html #xo-wrapper {	/*position: static;*/}
+body.theme-dialog #xo-canvas { margin: 0 6px;}
+/*================= Zone de contenu ===================*/
+#xo-canvas-content {
+	padding:							12px;
+	margin:							0 auto;
+	width: 80%;
+}
+#xo-page {}
+#xo-canvas-rightcolumn {padding: .5em;}
+#xo-content {
+	clear:							both;
+	margin:							0;
+	padding:							.5em;
+}
+#xo-uptop {
+	margin: 							0;
+	padding-top: 					5px;
+	font-size: 						.9em;
+	text-align:						right;
+}
+#xo-uptop a {}
+#xo-uptop a:hover {}
+#xo-logger-output { font-size:	.8em;}
+/* ============== header ================= */
+#xo-header {}
+#xo-top {height:					32px;}
+/* ---------- Bannières ---------- */
+#xo-banner {
+	clear:							both;
+	position:						relative;
+	z-index:							100;
+	width:							100%;
+	height:							100px;
+}
+#xo-banner.commercial {	height: 120px;}
+body.theme-dialog #xo-banner {
+	padding-top:					6px;
+	padding-left:					10px;
+	height:							48px;
+}
+#xo-banner-ad {
+	position:						absolute;
+	top:								10px;
+	right:							55px;
+	width:							480px;
+	height:							72px;
+	background:						url(img/bg-ad-top.png) no-repeat;
+	padding:							6px;
+}
+#xo-banner-ad object, #xo-banner-ad img { display:	block;}
+/*---------------------- Nom du site dans le header ----------------------------*/
+#xo-site-title {
+	position: 						relative;
+	top: 								10px;
+	padding: 						10px 0 0 20px;
+	background-color: 			transparent;
+	font-family: 					Impact, sans-serif;
+	font-size:						2.3em;
+}
+a#xo-site-title {
+	color: 							#1E87C5;
+	background-color: 			transparent;
+	font-weight: 					normal !important;
+}
+a:hover#xo-site-title {
+	color: 							#fff;
+	background-color: 			inherit;
+	text-decoration: 				none;
+}
+#xo-site-title.commercial {
+	margin: 							0 20px;
+	padding: 						10px 0 0 0px;
+ }
+ #xo-site-title .commercial a:hover {
+	color:							#fff;
+	background-color: 			inherit;
+}
+/*----------------------- titre du slogan du site dans le header ------------------------*/
+#xo-site-slogan {
+	position: 						relative;
+	top: 								10px;
+	padding-left: 					70px;
+	color: 							#A6CDDF;
+	background-color:				transparent;
+	font-style: 					italic;
+}
+#xo-site-slogan.commercial {}
+/*------------------------ Affichage du logo ----------------------------*/
+#xo-main-logo {
+	position: 						relative;
+	top: 								15px;
+	padding-left: 					10px;
+	color:							#666;
+	background: 					transparent;
+}
+#xo-main-logo.commercial {}
+/*-------- Affichage des champs de saisie dans le header-----------*/
+#xo-banner form {
+	display:							inline;
+	margin:							0;
+}
+#xo-banner input {
+	margin:							0px 0px 0px 2px;
+	width:							8em;
+	color:							#333;
+	background-color:				#E2E2E2;
+}
+/*============== Styles pour l'include userbar.html =================*/
+#xo-userbar {
+	display:							block;
+	float: 							right;
+	padding-top: 					2px;
+	padding-right:					1em;
+	color: 							#1E87C5;
+	background-color: 			transparent;
+	font-family: 					Impact, sans-serif;
+	font-weight: 					100;
+	letter-spacing: 				1px;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0;
+}
+#xo-userbar button {
+	margin: 							0 -3px;
+	padding:							0;
+	background:						transparent none;
+	border:							none;
+}
+#xo-userbar button img {
+	width: 							22px;
+	height: 							22px;
+ }
+ #xo-userbar button:hover { border: 0 !important;}
+#xo-userbar img {
+	width: 							22px;
+	height: 							22px;
+}
+#xo-userbar input {
+	width: 							80px;
+	border: 							1px dotted #1E87C5;
+}
+#xo-userbar input:hover {}
+#xo-userbar a { font-weight: 	normal;}
+#xo-userbar a:hover { text-decoration: none;}
+#xo-uname {
+	color:							#32529C;
+	background-color:				transparent;
+	font-size:						1.1em;
+	font-weight:					bold;
+}
+/*============== Styles pour l'include searchbar.html =================*/
+#xo-searchbar {
+	display:							block;
+	float: 							left;
+	margin-top: 					5px;
+	margin-left : 					1em;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+#xo-searchbar input[type=text]{
+	border: 							1px dotted #1E87C5;
+	font-style: 					italic;
+}
+#xo-searchbar input[type=text]:hover {}
+/*------------------- Affichage des drapeaux de langues ----------------*/
+#xo-language {
+	display: 						block;
+	float:							left;
+	margin-top :					5px;
+	padding-left: 					1em;
+	color:							#666;
+	background-color: 			transparent;
+}
+#xo-language img{
+	width: 							18px;
+	height: 							18px;
+}
+/*============= Style pour l'include globalnav.html ================*/
+#xo-globalnav {
+	margin:							0px;
+	padding:							2px 45px 0;
+	min-height:						30px;
+	list-style-type:				none;
+	font-size:						1.3em;
+	text-align: 					center;
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+}
+* html #xo-globalnav { height: 30px; }
+
+#xo-globalnav .x2-label {display:	none;}
+#xo-globalnav li {
+	display:							inline;
+	margin:							0;
+	padding-left:					.5em;
+	padding-right:					.5em;
+	font-size: 						.9em;
+}
+#xo-globalnav a {
+	font-weight: 					normal;
+}
+#xo-globalnav a:hover {
+	color: 							#e9e9ab;
+	background-color: 			inherit;
+	border-top: 					2px solid;
+	text-decoration:				none;
+}
+/*=============== Affichage Pied de page - Footer  ====================*/
+#xo-footer {
+	position: 						absolute;
+	bottom: 							22px;
+	left: 							0;
+	height: 							126px;
+	width: 							130px;
+	background: 					url(img/truhe_both.gif);
+	padding: 						50px 0 0 30px;
+	z-index: 						100;
+}
+#xo-footer:hover {
+	background-position: 		0 176px;	
+	z-index:							49;
+}
+* html #xo-footer {
+	background: 					url(img/truhe_auf.gif);	
+	height: 							96px;
+	width: 							115px;
+	padding: 						80px 0 0 45px;
+}
+body.theme-dialog #xo-footer { padding: .2em .5em; font-size:	.8em;}
+#xo-footer a { 
+	color: 							#FEFF71;
+	visibility: 					hidden;
+}
+* html #xo-footer a { visibility: visible;}
+#xo-footer:hover a {	visibility: visible;}	
+#xo-footer a[title*="XHTML"] {
+	display:							block;
+	position: 						absolute;
+	bottom: 							90px;
+	left: 							89px;
+}
+#xo-footer a[title*="CSS"] {
+	display:							block;
+	position: 						absolute;
+	bottom: 							79px;
+	left: 							99px;
+}
+#xo-footer a[title*="FRXOOPS"] {
+	display:							block;
+	position: 						absolute;
+	bottom: 							85px;
+	left: 							41px;
+}
+#xo-footer a[title*="XooFoo"] {
+	display:							block;
+	position: 						absolute;
+	bottom: 							105px;
+	left: 							52px;
+}
+#xo-footer a[title*="RSS"] {
+	display:							block;
+	position: 						absolute;
+	bottom: 							62px;
+	left: 							63px;
+}	
+/*========== Menu principal dans bloc =============*/
+#mainmenu a {
+	padding-bottom: 				2px;
+	padding-left: 					19px !important;
+	background: 					url(img/starfish.gif) no-repeat -2px 0px;
+}
+#mainmenu a:hover {
+	text-decoration:				none !important;
+	background: 					url(img/starfish_ani.gif) no-repeat -2px 0px;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 8px; }
+#mainmenu a.menuSub {
+	padding-left: 					20px !important;
+	color:							#fff;
+	background:						none;
+	font-size:						.7em;
+	font-style: 					italic;
+	line-height: 					1.4em;
+}
+#mainmenu a.menuSub:hover {
+	color:							#FA7534;
+	background-color: 			inherit;
+}
+/*============ Menu utilisateur dans bloc ============*/
+#usermenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						2px;
+	font-weight: 					normal;
+	font-size: 						0.8em;
+	line-height: 					1em;
+}
+#usermenu a:hover {
+	color:							#FA7534;
+	background-color: 			inherit;
+	font-style: 					italic;
+	text-decoration:				none !important;
+	font-weight: 					700;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	color: 							#ccc;
+	background-color: 			#333;
+}
+/*=========== Règles nécessaires pour les anciens templates des modules ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}
+/*============== Styles pour system_siteclosed.html =================*/
+#xo-siteclose {
+	margin:							50px;
+	padding:							30px;
+	width:							400px;
+	border:							1px dashed #A6CDDF;
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+	font-size:						1.6em;
+	font-weight: 					normal;
+	line-height: 					1.4em;
+}
+html #xo-siteclosed {
+	background-color: 			transparent;
+	background-image: 			none;
+}
+/*============== Styles pour system_redirect.html =================*/
+#xo-redirect {
+	width:							780px;
+	margin:							0 auto;
+	padding-top:					150px;
+	text-align:						center;
+	font-weight:					bold;
+}
+#xo-redirect .notreload {
+	padding-top:					10px;
+	height:							38px;
+	background-color:				inherit;
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+	font-size:						1.4em;
+	font-weight: 					normal;
+	line-height: 					1.4em;
+}
+#xo-redirect .notreload a {
+	color:							#cc0000;
+	background-color: 			transparent;
+	font-weight:					bold;
+	text-decoration: 				none;
+}
+#xo-redirect .message {
+	padding:							1em;
+	min-height:						60px;
+	text-align:						center;
+	/*border:							1px dashed #A6CDDF;*/
+	font-family: 					Impact, sans-serif;
+	letter-spacing: 				1px;
+	font-size:						1.6em;
+	font-weight: 					normal;
+	line-height: 					1.4em;
+}
+#xo-redirect .message img{
+	padding:							1em;
+}
+#extraDiv1 {
+	position: 						absolute;
+	width: 							140px;
+	height: 							120px;
+	left: 							392px;
+	bottom: 							0;
+	background: 					url(img/crab_ani.gif) no-repeat bottom;
+}
+* html #extraDiv1 {
+	display: 						none;
+	display: 						block;
+}
+#extraDiv2 {
+	position: 						fixed;
+	top: 								230px;
+	right: 							3%;
+	width: 							100px;
+	height: 							175px;
+	background: 					url(img/taucher.png) no-repeat top;
+	z-index:							10;
+}
+* html #extraDiv2 {display:	none;}
+#extraDiv3 {
+	position: 						fixed;
+	top: 								230px;
+	right: 							3%;
+	width: 							100px;
+	height: 							175px;
+	background: 					url(img/licht.png) no-repeat top;
+	z-index:							8;
+}
+* html #extraDiv3 {display:	none;}
+#extraDiv3:empty {display: 	none;}
+#extraDiv4 {
+	position: 						absolute;
+	top: 								210px;
+	right: 							3%;
+	width: 							100px;
+	height:							1000px;
+	background: 					url(img/trenner.png) repeat-x top;
+	z-index:							9;
+	}
+* html #extraDiv4 {display:	none;}
+#extraDiv4:empty {display:	none;}
+#extraDiv5 {
+	position: 						absolute;
+	bottom: 							22px;
+	left: 							0px;
+	height: 							62px;
+	width: 							130px;
+	background: 					url(img/truhe_ani.gif) no-repeat top left;
+	padding: 						50px 0 0 30px;
+	z-index:							19;
+}
+#extraDiv6 {
+	position: 						absolute;
+	bottom: 							290px;
+	left: 							10px;
+	height: 							73px;
+	width: 							204px;
+	background: 					url(img/hai1.jpg) no-repeat top left;
+	z-index:							-1;
+}

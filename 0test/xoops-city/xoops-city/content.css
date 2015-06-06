@@ -1,0 +1,438 @@
+/* Mor.pho.GEN.e.sis version 1.2 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : style.css (version 1.2) - 28 janvier 2009 */
+/*Thème :  Xoops City Design by SabOUm  (http://www.saboum.com) */
+
+/* ==== liens (désactivés) ci-dessous vers des feuilles de styles spécifiques
+dans le cas de surcharge "générale" et pour les versions de xoops à partir de la 2.3 =====*/
+/*@import url(content-data.css);
+@import url(content-datalists.css);*/
+/*==================== fin des liens =================*/
+
+
+/* Titre sous titre liste... */
+h1 {font-size: 					1.6em;}
+h2 {font-size: 					1.4em;}
+h3 {font-size: 					1.2em;}
+h4 {
+	font-size: 						1em;
+	padding: 						1em .5em .5em .5em;
+}
+h5 {font-size: 					.9em;}
+h6 {font-size: 					.8em;}
+
+h1 {
+	clear:							both;
+	margin-top:						.25em;
+	margin-bottom:					.5em;
+	border-bottom:					1px solid #ccc;
+	padding-left:					.25em;
+	color:							#666F7D;
+	background-color: 			inherit;
+	font-weight:					bold;
+}
+h1 a, h2 a {
+	background-color: 			inherit;
+	text-decoration:				none;
+	color:							#FFF;
+}
+h1 a:hover, h2 a:hover {
+	color: 							#FFF;
+	background-color: 			inherit;
+	text-decoration:				underline;
+}
+a[rel~=alternate] { float:		right;}
+a {
+	color:							#FFF;
+	background-color: 			inherit;
+	text-decoration:				none;
+}
+a:hover {
+	color:							#FFF;
+	background-color: 			#FF0000;
+}
+img {	border:						0;}
+hr {
+	margin-top: 					1em;
+	color:							#FFF;
+	background-color: 			transparent;
+	border-style: 					dashed;
+}
+/*------- styles pour mettre des blocs "flottants" par exemple des images --------*/
+.floatleft {
+	float: 							left;
+	border: 							0;
+	padding-left: 					4px;
+	margin-top: 					1em;
+	margin-right : 				1em;
+}
+.floatright {
+	float: 							right;
+	margin: 							0 0 10px 10px;
+	border: 							0;
+	padding: 						0px;
+}
+/*---------- classes d'alignement -----------*/
+.center { text-align: 			center;}
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.justify { text-align:			justify; }
+
+/*--------- classes d'affichage -------------*/
+.clear { clear: 					both; }
+.block { display: 				block; }
+.hide  { display: 				none; }
+/*---------- acronymes, abbréviation ------------*/
+acronym, abbr {
+	border-bottom: 				#666 1px dashed;
+	cursor: 							help;
+}
+acronym:hover, abbr:hover { border-bottom-color: #FF9900;}
+
+/*------------------- listes ----------------*/
+#xo-canvas-content ul {
+	margin: 							2px;
+	padding: 						2px;
+	list-style: 					decimal inside;
+	text-align: 					left;
+}
+#xo-canvas-content li {
+	margin-left: 					2px;
+	color: 							#FF0000;
+	background-color: 			inherit;
+	font-size: 						.9em;
+	list-style: 					square inside;
+	line-height: 					1.4em;
+}
+
+/* ========== styles utilisés dans les "articles" de contenu (exemple : news) ============*/
+.item {
+	margin-bottom: 				20px;
+    color:							#648EFF;
+	background-color: 			transparent;
+	background:						url(img/item.png) repeat-x;
+	text-align: 				center;
+}
+
+.itemHead {
+	padding: 						3px;
+	color: 							#FFF;
+	background-color: 			inherit;
+}
+.itemInfo {
+	padding: 						3px;
+	color: 							#FFF;
+	background-color: 			inherit;
+	text-align: 					right;
+	font-size: 						.8em;
+	font-style: 					italic;
+}
+.itemTitle a {
+	color:							#FFF;
+	background-color: 			inherit;
+	font-weight: 					bold;
+	text-decoration: 				none;
+}
+.itemTitle a:hover {
+	color: 							#FFF;
+	background-color: 			#C0E0FF;
+	text-decoration: 				underline;
+}
+.itemPoster, .itemPostDate, .itemStats {
+	background-color: 			inherit;
+	font-size: 						.9em;
+	color: 							#FFFF33;
+	}
+.itemPoster a:hover {
+	color:								#FFFF33;
+	background-color: 			inherit;
+	text-decoration: 				underline;
+}
+.itemBody {
+	color:							#FFF;
+	background-color: 			transparent;
+	padding: 						5px;
+}
+.itemText {
+	margin-top: 					1px;
+	margin-bottom: 				1px;
+	color:							#FFF;
+	background-color: 			inherit;
+	text-align:						justify;
+}
+.itemText a , .itemInfo a, .itemFoot a {
+	color: 							#FFF;
+	background-color: 			transparent;
+	font-weight: 					normal;
+	text-decoration: 				none;
+
+}
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover {
+	color: 							#FFF;
+	background-color: 			transparent;
+	text-decoration: 				underline;
+}
+.itemBody a{
+	color:							#FFFF00;
+	background-color: 			transparent;
+
+}
+.itemBody a:hover {
+	color:							#FFF;
+	background-color:				#FF0000;
+	text-decoration: 				none;
+	border-style : outset; 
+}
+.itemText:first-letter {}
+.itemFoot {
+	padding: 						3px;
+	margin-right: 					20px;
+	margin-left: 					20px;
+	color:							#FFF;
+	background-color: 			transparent;
+	text-align: 					right;
+}
+.itemAdminLink {
+	color:							#FFF;
+	background-color: 			inherit;
+	font-size: 						.9em;
+}
+.itemPermaLink {
+	color:							#FF0000;
+	background-color: 			transparent;
+	font-size: 						.9em;
+}
+
+
+/*=============== styles pour les tableaux =================*/
+.outer {
+	color:							#FFF;
+	background:						url(img/inter-body2.jpg)  ;
+	font-size:						.9em;
+}
+.head {
+	padding: 						5px;
+	color: 							#FFF;
+	background-color: 			transparent;
+	font-weight: 					bold;
+}
+.head a {
+	color: 							#FFF;
+	background-color: 			transparent;
+	text-decoration: 				underline;
+}
+.head a:hover {
+	color:							#FF0000;
+	background-color: 			transparent;
+	text-decoration: 				none;
+}
+.even {
+	color:							#FFF;
+	background-color: 			transparent;
+	padding: 						5px;
+}
+.odd {
+	padding: 						5px;
+	color:							#FFF;
+	background-color: 			transparent;
+}
+tr.even td {
+	padding: 						5px;
+	color:							#FFF;
+	background-color: 			transparent;
+}
+tr.odd td {
+	padding: 						5px;
+	color:							#FFF;
+	background-color: 			transparent;
+
+}
+.foot {
+	padding: 						2px;
+	color:							#FFF;
+	background-color: 			transparent;
+	font-weight: 					bold;
+	text-align:						center;
+}
+th {
+	padding: 						2px;
+	color: 							#FFF;
+	background:						url(img/item.png) repeat-x;
+	background-color: 			transparent;
+	vertical-align: 				middle;
+}
+th a {
+	color: 							#FFF;
+	background-color: 			transparent;
+}
+
+/*=========== Styles pour les pages de redirections ==============*/
+div.errorMsg {
+	padding: 						10px;
+	color:							#FFF;
+	background-color: 			transparent;
+	text-align: 					center;
+	border-top: 					1px solid #DDDDFF;
+	border-left: 					1px solid #DDDDFF;
+	border-right: 					1px solid #AAAAAA;
+	border-bottom: 				1px solid #AAAAAA;
+	font-weight: 					bold;
+}
+div.confirmMsg {
+	padding: 						10px;
+	color: 							#FFF;
+	background-color: 			transparent;
+	text-align: 					center;
+	border-top: 					1px solid #DDDDFF;
+	border-left: 					1px solid #DDDDFF;
+	border-right: 					1px solid #AAAAAA;
+	border-bottom: 				1px solid #AAAAAA;
+	font-weight: 					bold;
+}
+div.resultMsg {
+	padding: 						10px;
+	color: 							#FFF;
+	background-color : 			#000;
+	text-align: 					center;
+	border-top: 					1px solid silver;
+	border-left: 					1px solid silver;
+	font-weight: 					bold;
+	border-right: 					1px solid #2F69B3;
+	border-bottom: 				1px solid #2F69B3;
+}
+div.xoopsCode {}
+div.xoopsQuote {}
+
+/*=========== Styles utilisés pour les commentaires (et newbb/cbb également) ===========*/
+.comTitle {
+	margin-bottom: 				2px;
+	color:							#fff;
+	background-color: 			transparent;
+	font-weight: 					bold;
+}
+.comText {
+	padding: 						2px;
+	color:							#FFF;
+	background-color: 			inherit;
+}
+.comUserStat {
+	margin: 							2px;
+	padding: 						2px;
+	color: 							#FFF;
+	background-color: 			transparent;
+	font-size: 						.7em;
+	font-weight:					bold;
+	border: 							1px solid silver;
+}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {
+	margin-left: 					2px;
+	margin-top: 					10px;
+	color: 							#FFF;
+	background-color: 			transparent;
+	font-weight:					bold;
+	font-size: 						.7em;
+}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .7em; font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .7em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+.signature {
+	font-size: 						.9em;
+	font-style: 					italic;
+}
+/*================ Style pour les Citations ================*/
+blockquote {
+	margin-left:					.5em;
+	padding:							.5em;
+	color:							#FFF;
+	background:							transparent;
+	border-width:					1px 1px 1px 6px;
+	border-style: 					solid;
+	border-color: 					#8EC0F9;
+	font-size: 						.9em;
+	font-style: 					italic;
+}
+
+/*================== Style pour les Codes =================*/
+.xoopsCode {
+	padding:							.5em;
+	display:							block;
+	overflow: 						auto;
+	width:							95%;
+	max-height: 					400px;
+	color:							#FFFF33;
+	background-color: 			transparent;
+	font-family:					monospace;
+	font-size: 						.9em;
+	border:							1px solid #d0d0d0;
+}
+
+/*========== styles utilisés dans les versions Xoops à partir de la 2.3 ==============*/
+.x2-note {
+	margin:							1em .5em;
+	padding:							.5em;
+	color:							#666;
+	background-color:				#F4FAFF;
+	border:							1px solid #E4EAEF;
+}
+#xo-content  .x2-contentinfo {
+	margin:							1em .5em;
+	padding:							.5em;
+	color:							#FFF;
+	background-color: 			transparent;
+	border:							1px solid #e0e0e0;
+}
+#xo-content .x2-secondary {
+	margin:							1em .5em;
+	padding:							.5em;
+	color:							#FFF;
+	background-color: 			transparent;
+}
+.x2-seealso {
+	margin:							1em .5em;
+	padding:							.5em 1em;
+	color:							#FFF;
+	background-color: 			transparent;
+	border:							1px solid #efeae4;
+}
+.x2-seealso ul, .x2-note ul {
+	margin:							0;
+	padding-left:					1em;
+	color:							#666;
+	background-color: 			inherit;
+}
+
+.x2-seealso a {
+	color:							#FFF;
+	background-color: 			transparent;
+}
+.x2-seealso a:hover {
+	color:							#FFFF33;
+	background-color: 			transparent;
+}
+
+body.site_closed form {	padding: 1em 35%;}
+
+#system-select_notifications { clear: both;}
+/*========== Style for searchbar.html ==============*/
+#xo-searchbar {
+	display:							block;
+	float: 							left;
+	margin-top: 					5px;
+	margin-left : 					1em;
+}
+#xo-searchbar button {
+	margin-left: 					5px;
+	padding: 						0 2px 2px 2px;
+}
+#xo-searchbar input[type=text]{
+	background-color: 			#000;
+	color:							#FFF;
+}
+#xo-searchbar input[type=text]:hover {
+	background-color:				#648EFF;
+	color:							#FFF;
+}

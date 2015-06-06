@@ -1,0 +1,49 @@
+/*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: blocks.css 257 2009-02-24 10:48:32Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+#ixt-canvas-leftcolumn .ixt-block, #ixt-canvas-rightcolumn .ixt-block {margin-bottom:	15px;}
+#ixt-canvas-leftcolumn .ixt-blocktitle, #ixt-canvas-rightcolumn .ixt-blocktitle {text-align:center;padding-top:3px;padding-bottom:3px;}
+#ixt-canvas-leftcolumn .ixt-block .ixt-blocktitle h3, #ixt-canvas-rightcolumn .ixt-block .ixt-blocktitle h3 {color:#587788;font-size:1.2em;}
+#ixt-canvas-leftcolumn .ixt-blocktitle h3, #ixt-canvas-rightcolumn .ixt-blocktitle h3 {color:#587788;font-weight:bold;margin:0;padding:0;font-size:1.2em;}
+#ixt-canvas-leftcolumn .ixt-blockcontent, #ixt-canvas-rightcolumn .ixt-blockcontent { padding:7px; margin-left:2px; }
+#ixt-canvas-leftcolumn .ixt-blockcontent li, #ixt-canvas-rightcolumn .ixt-blockcontent li { list-style: disc inside; }
+#ixt-canvas-leftcolumn .ixt-blockcontent form, #ixt-canvas-rightcolumn .ixt-blockcontent form {width:150px;font-size:0.85em;}
+#ixt-canvas-leftcolumn .ixt-blockcontent option, #ixt-canvas-rightcolumn .ixt-blockcontent option {width:125px;overflow:hidden;}
+#ixt-canvas-leftcolumn .ixt-block.system .ixt-blockcontent {padding:0;}
+#ixt-canvas-leftcolumn th, #ixt-canvas-rightcolumn th {color:#FFFFFF;font-size:.9em;}
+#ixt-page th, #ixt-page .divth { color:#910200; background: #014B72 url(../img/ixt009_emp05_mbkg.png) repeat-x; }
+#ixt-page .ixt-block {margin-bottom:5px;border:1px solid #ddd;margin-top:5px;overflow:hidden;}
+#ixt-page .ixt-blocktitle { background-color:#DCFCFB; border-bottom:1px solid #ddd; margin:0; padding: 0.2em 0.7em; }
+#ixt-page .ixt-blocktitle h3, #ixt-content h3, #ixt-content h4 {color:#587788;font-weight:bold;padding:0;margin:0;}
+#ixt-content h3 {margin-top:5px;margin-bottom:5px;}
+#ixt-content h4 {margin-top:5px;margin-bottom:2px;}
+#ixt-content table {width:100%;margin-top:15px;margin-bottom:5px;}
+#ixt-page .ixt-blockcontent {padding:.5em; background-color:#FFFFFF;}
+#ixt-page .ixt-blockcontent table td { padding:0.5em;font-size:0.88em;}
+#ixt-page .ixt-blockcontent table th { padding:0.5em; border-right: 1px solid #910200; border-left: 1px solid #910200; }
+#ixt-page .ixt-blockcontent strong { color:#587788;font-weight:bold;}
+#ixt-page .ixt-blockcontent span { color:#587788;}
+#ixt-page .ixt-blockcontent h2 { font-size:1.08em; color:#587788;font-weight:bold; padding-top:8px; padding-bottom:8px;}
+#ixt-page .ixt-blockcontent h3 { font-size:1.08em; color:#587788;font-weight:bold; padding-top:8px; padding-bottom:8px;}
+#ixt-page .ixt-blockcontent a { font-weight:normal;}
+#ixt-page .ixt-blockcontent ul, #ixt-page .ixt-blockcontent ol { padding-top:8px; padding-bottom:4px; }
+#ixt-page .ixt-blockcontent ol li { font-size:0.88em; list-style: decimal inside; padding-left:10px; }
+#ixt-page .ixt-blockcontent ul li { font-size:0.88em; list-style: square inside; padding-left:10px; }
+
+#ixt-redirect { margin-top:10px;margin-left:auto;margin-right:auto;width:65%;color:#222; text-align:center; font-weight:bold; padding:10px;}
+#ixt-siteclose-login {width:330px;margin-left:auto;margin-right:auto;border:1px solid #4A5D94;margin-top:40px;margin-bottom:20px;}
+#ixt-siteclose-login h2 {background-image:url(../img/ixt009_emp05_mbkg.png);background-repeat:repeat-x;font-weight:bold;font-size:1em;color:#910200;padding:2px;margin-top:0px;margin-bottom:0px;text-align:center;}
+#ixt-siteclose-login form {padding:0px;margin:0px;}
+#ixt-siteclose-login div {padding:2px;}
+#ixt-siteclose-login span.left {float:left;padding-bottom:3px;color:#999999;}
+#ixt-siteclose-login span.right {float:right;padding-right:3px;padding-bottom:3px;}
+#ixt-siteclose-login div.button {border:none;background:none;text-align:center;clear:both; padding-top:8px; padding-bottom:8px;}
+#xo-logger-output {font-size:.8em;}
+#xo-logger-queries, #xo-logger-blocks, #xo-logger-timers {text-align:left;}

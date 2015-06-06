@@ -1,0 +1,196 @@
+/* 
+Theme Name: WDC_006
+Description: WDC_006 developed by WebdesignCreators
+Version: 2.1
+Date: June 10th, 2009
+Author: WebdesignCreators
+Author URL: http://www.Webdesigncreators.com
+*/
+
+/*============== Start WDC special styles for WDC_006 =================*/
+
+body {color: #000000; margin-top:0px; font-size:0.9em; font-family: Verdana, Arial, Helvetica, sans-serif; background: url(images/header/wdc_006_header_bg.gif) repeat-x;}
+#wdc_main {margin-left:auto; margin-right:auto; width:866px;}
+#wdc_main_left {float:left; width:8px; height:276px; background: url(images/header/wdc_006_header_left.gif) no-repeat;}
+#wdc_main_right {float:right; width:8px; height:276px; background: url(images/header/wdc_006_header_right.gif) no-repeat;}
+#wdc_header_gray {float:left; width:850px; height:205px; margin-top:34px; background-color:#b1adac;}
+#wdc_header_logo {float:right; text-align:right; width:350px; height:205px;}
+#wdc_header_slogan {float:left; color: #000000; padding-left:20px; padding-top:20px;}
+#wdc_header_slogan a {text-align: left; font-size: 2.5em; font-weight: bold; color: #bbdd58;}
+#wdc_header_slogan a:hover {color: #ffffff;}
+#wdc_content {float:left; width:866px; height:auto; background: url(images/bg/WDC_006_content_bg.gif) repeat-y;}
+#wdc_content_no_leftblock_no_rightblock {float:left; width:99%; margin-bottom:5px; margin-left:8px; height:auto; line-height:100%;} 
+#wdc_content_leftblock {float:right; width:78%;  margin-bottom:5px; margin-right:5px; height:auto; line-height:100%;} 
+#wdc_content_rightblock {float:left; width:79%;  margin-left:5px; margin-bottom:5px; height:auto; line-height:100%;} 
+#wdc_content_leftblock_rightblock {float:left; width:59%; height:auto; margin-bottom:5px; line-height:100%;} 
+#wdc_footerbar {float:left; text-align:center; margin-left:8px; margin-top:10px; padding-top:10px; padding-bottom:10px; vertical-align:middle; width:850px; background: url(images/footer/wdc_006_footer_bg.gif) repeat-x;}
+#wdc_footerbar a {color:#000000;}
+#wdc_footerbar a:hover {color:#ffffff;}
+#wdc_banner {margin-left:auto; margin-right:auto; text-align:center; padding-top:10px;}
+#wdc_ads {line-height:100px; vertical-align:middle; margin-top:10px; margin-bottom:15px; text-align:center;}
+
+/*============== End WDC special styles for WDC_006 =================*/
+
+/*============== Start link styles Header menu for WDC_006 =================*/
+
+#wdc_navbar {float:left; margin-top:2px; line-height:35px; height:35px; width:850px; vertical-align:middle; text-align:center;}
+#wdc_navbar a {padding-top:10px; padding-bottom:9px; line-height:35px; height:35px; padding-left:15px; padding-right:15px; text-align:center; color:#000000;}
+#wdc_navbar a:hover {line-height:35px; height:35px; color:#ffffff; background-color:#bdde59;}
+#wdc_navbar_links .active {font-size:1.1em; font-weight:bold; color:#63aa31; text-align:center; height:49px; padding-left:15px; padding-right:15px;}
+
+a.main_link {text-align:center; font-size:1.1em; font-weight:bold; color: #000000;}
+a.main_link:hover {color: #ffffff;}
+
+/*============== End link styles Header menu for WDC_006 =================*/
+
+/*============== Start link styles for WDC_006 =================*/
+
+a {color: #63aa31; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #44734c}
+a.header_slogan {text-align: left; font-size: 2.5em; font-weight: bold; color: #f93915;}
+a.header_slogan:hover {color: #e04d31;}
+
+/*============== End link styles for WDC_006 =================*/
+
+/*============== Start text styles for WDC_006 =================*/
+
+h1 {font-size:1.8em; color:#a3a3a3; font-weight: bold;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #3f2f2f;}
+
+/*============== End text styles for WDC_006 =================*/
+
+/*============== Start Xoops block styles for WDC_006 =================*/
+
+#leftcolumn {float:left; width:19%; font-size:1.0em; margin-left:8px; margin-right:5px;}
+#leftcolumn .blockTitle {background: #63aa31 url(images/blocks/all/wdc_006_blocks_bg.gif); background-repeat:no-repeat;	background-position: left;	line-height:28px; padding-left:25px;	color:#ffffff;	font-size: 1.0em; margin-top:20px;}
+#leftcolumn .blockContent {padding-left:0px; padding-right:0px; padding-bottom:0px; padding-top:10px; text-align:left; line-height: 1.0em;}
+
+#centercolumn {float:left; width:99%; font-size:1.0em; margin-left:5px;}
+#centercolumn th {background-color: #c0c0c0; color: #3f2f2f; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a {background-color: #c0c0c0; color: #3f2f2f; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+#centercolumn th a:hover {background-color: #4abdda; color: #e04d31; vertical-align: middle; padding-top:5px; padding-bottom:5px;}
+
+#centerCcolumn, #bottomCcolumn {float:left; width:99%; font-size:1.0em; padding-left:0px; padding-right:5px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {background: #63aa31 url(images/blocks/all/wdc_006_blocks_bg.gif);	background-repeat:no-repeat;	background-position:left;	line-height:28px;	padding-left:25px;	color:#ffffff;	font-size: 1.0em; margin-top:20px;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding-top:10px; text-align:left; line-height:1.0em; font-size:1.0em;}
+
+#centerLcolumn, #bottomLcolumn {float:left; width:48%; font-size:1.0em; padding-left:0px; padding-right:5px;}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle {background: #63aa31 url(images/blocks/all/wdc_006_blocks_bg.gif);	background-repeat:no-repeat;	background-position:left;	line-height:28px;	padding-left:25px;	color:#ffffff;	font-size: 1.0em; margin-top:20px;}
+#centerLcolumn .blockContent, #bottomLcolumn .blockContent {padding-top:10px; text-align:left; line-height: 1.0em; font-size:1.0em;}
+
+#centerRcolumn, #bottomRcolumn {float:left; width:48%; font-size:1.0em; padding-left:0px; padding-right:5px;}
+#centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {background: #63aa31 url(images/blocks/all/wdc_006_blocks_bg.gif);	background-repeat:no-repeat;	background-position:left;	line-height:28px;	padding-left:25px;	color:#ffffff;	font-size: 1.0em; margin-top:20px;}
+#centerRcolumn .blockContent, #bottomRcolumn .blockContent {padding-top:10px; text-align:left; line-height: 1.0em; font-size:1.0em;}
+
+#content {width:98%; float:left; padding-left:5px; padding-right:5px; text-align:left; padding-top:5px;}
+
+#rightcolumn {float:right; width:19%; font-size:1.0em; padding-left:0px; margin-right:8px;}
+#rightcolumn .blockTitle {background: #63aa31 url(images/blocks/all/wdc_006_blocks_bg.gif);	background-repeat:no-repeat;	background-position:left;	line-height:28px;	padding-left:25px;	color:#ffffff;	font-size: 1.0em; margin-top:20px;}
+#rightcolumn .blockContent {padding-left:0px; padding-right:10px; padding-top:10px; text-align:left; line-height: 1.0em;}
+
+#mainmenu a {background-color: transparent; display: block; padding: 4px; color:#63aa31}
+#mainmenu a:hover {background-color: transparent; color:#44734c;}
+#mainmenu a.menuTop {padding-left: 3px;}
+#mainmenu a.menuMain {padding-left: 3px;}
+#mainmenu a.menuSub {padding-left: 9px;}
+
+#usermenu {	font-size : .9em;}
+#usermenu a {background-color:transparent; display:block; margin:0; padding:2px;font-weight :normal; color:#63aa31;}
+#usermenu a:hover {background-color: transparent; color:#44734c;}
+#usermenu a.menuTop {}
+#usermenu a.menuMain {}
+#usermenu a.highlight {}
+
+/*============== End Xoops block styles for WDC_006 =================*/
+
+/*============== Start Xoops styles for WDC_006 =================*/
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+.table_bg {}
+
+.item {border: 1px solid #dcdbdb;}
+.itemHead {padding: 3px; background-color: #dcdbdb; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #dcdbdb}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #dcdbdb;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+#header {margin:0; padding:0;	height:80px; background:#f93915; padding:2px;	color:#fff;	border:1px solid #f93915;}
+#headerbanner {width: 100%; vertical-align: middle; text-align:center;}
+#headerlogo img {padding: 0;}
+#headerbar {border-bottom: 1px solid #f93915;}
+
+fieldset {border: 1px solid #858585;}
+
+caption {font-weight: bold;}
+th, thead {padding :2px; color:#484848; vertical-align : middle; background-color:#e8e8e8;}
+.outer {background-color:#9c9e9a; line-height:21px; color:#000000; border: 1px solid #858585; margin-top:10px}
+.head {font-weight:bold; color:#373737; height:24px; line-height:22px; text-align:center; background-color:#63aa31;	border: 1px solid #9c9e9a;}
+.head a {color:#000000;}
+.head {color:#ffffff;}
+.even {background-color: #def2a5;	padding: 5px;	border: 1px solid #9c9e9a;}
+.odd {background-color: #d0e988;	padding: 5px;	border: 1px solid #9c9e9a;}
+.left {font-weight:bold;}
+.foot {background-color: #ffffff; font-weight: bold; border: 1px solid #9c9e9a;}
+tr.even td {background-color: #ffffff; border: 1px solid #9c9e9a;}
+tr.odd td {background-color: #ffffff; border: 1px solid #9c9e9a;}
+tr.even td {padding: 5px;}
+tr.odd td {padding: 5px; border: 1px solid #9c9e9a;}
+tr.foot td {padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  {background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg {background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg {background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a {background-color: transparent; color: #D12F19; }
+.confirmMsg a {background-color: transparent; color: #817134; }
+.successMsg a {background-color: transparent; color: #529214; }
+
+.xoopsCode {background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; height: 200px; overflow: auto; font-size:.9em;}
+.xoopsQuote {background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style : italic; line-height:1.4em;} 
+
+.comTitle {color:#484848; font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #484848; font-weight:bold; border: 1px solid #9c9e9a; background-color: #dcdbdb; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #9c9e9a; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #484848;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+.style1 {border-color: #f93915; border-width: 0;}
+
+/*============== End Xoops styles for WDC_006 =================*/
+
+/*============== Start input styles for WDC_006 =================*/
+
+input.formButton {}
+
+.xo-formButtons, .xo-formButton, button {padding:.25em; text-align:center;}
+
+input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {margin:0px 0 0px 0; background:#ffffff; color:#63aa31; font-size:.9em; font-weight:bold; border:1px solid #63aa31; cursor:pointer;}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover { margin:0px 0 0px 0; background:#63aa31; color:#ffffff; font-size:.9em; font-weight:bold; border:1px solid #63aa31; cursor:pointer;}
+input{border: 1px solid #63aa31;	font:0.9em verdana, arial, helvetica, sans-serif;	background-color: #def2a5;}
+input:hover{border: 1px solid #63aa31;	font:0.9em  verdana, arial, helvetica, sans-serif;	background-color: #edf9cb;}
+input:focus{border: 1px solid #63aa31;	font:0.9em  verdana, arial, helvetica, sans-serif;	background-color: #ffffff;}
+
+/*============== End input styles for WDC_006 =================*/

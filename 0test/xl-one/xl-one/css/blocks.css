@@ -1,0 +1,70 @@
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 170px;
+  padding : 5px;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  margin : 0 0 5px 0;
+  background : url("../icons/arrow.gif") no-repeat left;
+  padding : 3px 3px 3px 18px;  
+  color : #444;
+  font-weight : bold;  
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+  margin-bottom : 10px;
+  padding : 3px 8px 3px 8px;
+  line-height : 1.2em;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+  width : 170px;
+  padding : 5px;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  margin : 0 0 5px 0;  
+  background : url("../icons/arrow.gif") no-repeat left;
+  padding : 3px 3px 3px 18px;
+  color : #444;
+  font-weight : bold;  
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  margin-bottom : 10px;
+  padding : 3px 8px 3px 8px;
+  line-height : 1.2em;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {margin : 10px 5px 5px 5px;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin : 5px 5px 0 5px;
+  background : url("../icons/page.gif") no-repeat left;
+  padding : 3px 3px 3px 22px;  
+  color : #dfa102;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 2px;
+  line-height : 1.5em;
+  text-align : justify;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle {
+  margin : 5px 5px 0 5px;
+  background : url("../icons/page.gif") no-repeat left;
+  padding : 3px 3px 3px 22px;  
+  color : #dfa102;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 2px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.5em;
+  text-align : justify;  
+}

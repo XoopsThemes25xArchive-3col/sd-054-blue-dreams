@@ -1,0 +1,20 @@
+
+XOOPSDESIGN.COM
+Enhancing Xoops
+info@xoopsdesign.com
+
+
+TERMS OF USE :: MOMENTS XOOPS THEME V1
+*********************************************
+
+-------------
+English
+-------------
+This theme is for private and personal use, it is not allowed to remove from the footer the text: "design by Xoopsdesign" with the link to www.xoopsdesign.com . If you wish to make commercial use of this theme please send an email to info@xoopsdesign.com and we will contact you.
+
+
+
+-------------
+Spanish
+-------------
+Este theme es de uso privado, no se permite que sea removido del footer  la marca xoopsdesign.com , si usted desea hacer uso de este theme de manera comercial por favor envie un correo a info@xoopsdesign.com y nosotros entraremos en contacto con usted

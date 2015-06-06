@@ -1,0 +1,5 @@
+<div id="mainmenu">
+  <{foreach item=module from=$block.modules}>
+<a class="menuMain" href="<{$module.adminlink}>"><{$module.lang_linkname}>: <{$module.pendingnum}></a>
+  <{/foreach}>
+</div>

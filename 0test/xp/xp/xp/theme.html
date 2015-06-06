@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="www.iaols.com" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script language="JavaScript1.2">
+
+var bookmarkurl="http://ocean.ezdns.jp"
+var bookmarktitle="OCEAN-NET HOMEPAGE"
+
+function addbookmark(){
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+
+</script>
+
+</head>
+  
+<body topmargin="0">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td id="headerl"><img src="<{$xoops_imageurl}>logo.gif" alt="Welcome"></td>
+<td id="headerc"> </td>
+<td id="headerr">
+	<form action="<{$xoops_url}>/search.php" method="get">
+	<input type="text" name="query" size="20"/>
+	<input type="hidden" name="action" value="results" />
+	<input type="submit" name="searchSubmit" value="¸¡º÷" />
+	</form>
+ </td>
+</tr>
+<tr>
+<td id="headerbar" colspan="3">&nbsp;</td>
+</tr>
+</table>
+
+<font style="font-size:5px"><br></font>
+
+<table cellspacing="0" width=100%>
+    <tr>
+      <td id="leftcolumn" valign="top">
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+          <{include file="xp/theme_blockleft.html"}><br>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+      </td>
+
+
+      <td id="centercolumn" valign="top" width="100%">
+
+        <!-- Display center blocks if any -->
+        <{if $xoops_showcblock == 1}>
+
+        <table cellspacing="0">
+          <tr>
+            <td id="centerCcolumn" colspan="2">
+
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}>
+              <{include file="xp/theme_blockcenter_c.html"}>
+            <{/foreach}>
+            <!-- End center-center blocks loop -->
+
+            </td>
+          </tr>
+
+          <tr>
+            <td id="centerLcolumn">
+
+            <!-- Start center-left blocks loop -->
+              <{foreach item=block from=$xoops_clblocks}>
+                <{include file="xp/theme_blockcenter_l.html"}>
+              <{/foreach}>
+            <!-- End center-left blocks loop -->
+
+            </td><td id="centerRcolumn">
+
+            <!-- Start center-right blocks loop -->
+              <{foreach item=block from=$xoops_crblocks}>
+                <{include file="xp/theme_blockcenter_r.html"}>
+              <{/foreach}>
+            <!-- End center-right blocks loop -->
+
+            </td>
+          </tr>
+        </table>
+
+        <{/if}>
+        <!-- End display center blocks -->
+
+        <div id="content">
+          <{$xoops_contents}>
+        </div>
+      </td>
+
+      <{if $xoops_showrblock == 1}>
+
+      <td id="rightcolumn">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="xp/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+
+      <{/if}>
+
+    </tr>
+  </table>
+
+<div align="center"><center>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="116" background="<{$xoops_imageurl}>topbg.gif"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>start.gif" alt="Home" border="0"></a></td>
+    <td width="100%" background="<{$xoops_imageurl}>topbg.gif"><p align="right"><strong><font color="#FFFFFF" face="Tahoma">
+    <script type="text/javascript">
+<!--   // Array ofmonth Names
+var monthNames = new Array( "January","February","March","April","May","June","July","August","September","October","November","December");
+var now = new Date();
+thisYear = now.getYear();
+if(thisYear < 1900) {thisYear += 1900}; // corrections if Y2K display problem
+document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + thisYear);
+// --></script></font></strong></td>
+    <td width="10" background="<{$xoops_imageurl}>topbg.gif"><img src="<{$xoops_imageurl}>righttopend.jpg" width="10" height="30"></td>
+  </tr>
+</table>
+</center></div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+		<div class="search_field">
+			<form action="<{xoAppUrl search.php}>" method="get">
+				<div class="search_form">
+				<p>Votre mot clé:  <input type="text" name="query" class="search" /><input type="hidden" name="action" value="results" /> <input type="submit" value="Valider" class="submit" /> <a class="grey" href="<{xoAppUrl search.php}>">Avancée</a></p>
+				</div>
+			</form>
+			<p>Nous sommes le <{$smarty.now|date_format:"%d-%m-%Y | Il est %H:%M:%S"}> GMT</p>
+		</div> 

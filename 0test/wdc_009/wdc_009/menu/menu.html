@@ -1,0 +1,64 @@
+<head>
+<script type="text/javascript" src="<{xoImgUrl js/jquery.js}>"></script>
+<script type="text/javascript" src="<{xoImgUrl js/interface.js}>"></script>
+
+<link href="<{xoImgUrl menu/style.css}>" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 7]>
+ <style type="text/css">
+ .dock img { behavior: url(menu/iepngfix.htc) }
+ </style>
+<![endif]-->
+
+</head>
+<body>
+<!--top dock -->
+<div class="dock" id="dock">
+  <div class="dock-container">
+	  <a class="dock-item" href="index.php"><img src="<{xoImgUrl menu/images/025.png}>" alt="Home" /><span>Home</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/028.png}>" alt="News" /><span>News</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/071.png}>" alt="Forums" /><span>Forums</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/026.png}>" alt="Downloads" /><span>Downloads</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/075.png}>" alt="Links" /><span>Links</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/090.png}>" alt="Gallery" /><span>Gallery</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/112.png}>" alt="Polls" /><span>Polls</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/038.png}>" alt="Calendar" /><span>Calendar</span></a> 
+	  <a class="dock-item" href="#"><img src="<{xoImgUrl menu/images/104.png}>" alt="Contact us" /><span>Contact us</span></a>
+  </div> 
+</div>
+
+<!--dock menu JS options -->
+<script type="text/javascript">
+	
+	$(document).ready(
+		function()
+		{
+			$('#dock').Fisheye(
+				{
+					maxWidth: 50,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container',
+					itemWidth: 40,
+					proximity: 90,
+					halign : 'center'
+				}
+			)
+			$('#dock2').Fisheye(
+				{
+					maxWidth: 60,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container2',
+					itemWidth: 40,
+					proximity: 80,
+					alignment : 'left',
+					valign: 'bottom',
+					halign : 'center'
+				}
+			)
+		}
+	);
+
+</script>
+</body>

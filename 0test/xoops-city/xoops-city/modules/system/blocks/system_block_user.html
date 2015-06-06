@@ -1,0 +1,15 @@
+<div id="usermenu">
+<{if $xoops_isadmin}>
+	<a class="menuTop" href="<{xoAppUrl /admin.php}>"><{$block.lang_adminmenu}></a>
+<{/if}>
+	<a class="menuTop" href="<{xoAppUrl /user.php}>"><{$block.lang_youraccount}></a>
+	<a class="menuTop" href="<{xoAppUrl /edituser.php}>"><{$block.lang_editaccount}></a>
+	<a class="menuTop" href="<{xoAppUrl /notifications.php}>"><{$block.lang_notifications}></a>
+	<{if $block.new_messages > 0}>
+	<a class="highlight" href="<{xoAppUrl /viewpmsg.php}>">
+		<strong><{$block.lang_inbox}> (<{$block.new_messages}>)</strong></a>
+	<{else}>
+	<a class="inbox" href="<{xoAppUrl /viewpmsg.php}>"><{$block.lang_inbox}></a>
+	<{/if}>
+	<a class="logout" href="<{xoAppUrl /user.php?op=logout}>"><{$block.lang_logout}></a>
+</div>

@@ -1,0 +1,552 @@
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  skidoo_too.css : 2005.08.29
+* -----------------------------------------------------------------------------
+*  A remake of the skidoo layout with the middle column appearing first in
+*  source ordering.
+*******************************************************************************/
+
+/* begin with generic selectors so that they can be overridden if needed
+ * by classes deeper in the stylesheet
+ */
+.clear
+{
+	clear: both;
+	padding-bottom: 1px;	/* for Gecko-based browsers */
+	margin-bottom: -1px;	/* for Gecko-based browsers */
+}
+.hide
+{
+	display: none !important;
+}
+.inside
+{
+	/* glitch in IE caused by vertical padding in this class, so 0 padding is
+	 * set here and those blocks that need the vertical padding must be 
+	 * applied to the parent element. the purpose of this class is to provide
+	 * horizontal padding without using hacks to get around IE's broken box 
+	 * model. so it's okay to apply vertical padding to the parent element, 
+	 * just not horizontal padding.
+	 */
+	padding: 0 1em;
+}
+
+/* margin values and font sizes for headings, and margins on paragraphs
+ * and lists are not consistent across browser platforms. to achieve a
+ * consistent look we need to explicity set these values here. it may
+ * seem an odd way to declare the margins like this but you never
+ * know what kind of horizontal padding a browser may be using on an
+ * element, and I only want to change the vertical padding.
+ *
+ * pixels are used here, rather than ems, because I want a consistent
+ * margin on the different headings. if I use ems, 1em for an h1 element
+ * is much larger than 1em on an h6 element. I don't wnat this.
+ *
+ * salt to taste
+ */
+ul, ol, dl, p, h1, h2, h3, h4, h5, h6
+{
+	margin-top: 14px;
+	margin-bottom: 14px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+h1
+{
+	font-size: 220%;
+}
+h2
+{
+	font-size: 190%;
+}
+h3
+{
+	font-size: 160%;
+}
+h4
+{
+	font-size: 130%;
+}
+h5
+{
+	font-size: 100%;
+}
+h6
+{
+	font-size: 70%;
+}
+
+/* alter some HTML elements' default style
+ */
+a, a:link, a:visited, a:active
+{
+	text-decoration: underline;
+}
+a:hover
+{
+	text-decoration: none;
+}
+code
+{
+	font-family: "Courier New", Courier, monospace;
+}
+label
+{
+	cursor: pointer;
+}
+table
+{
+	font-size: 100%;
+}
+td, th
+{
+	vertical-align: top;
+}
+
+/* now we craft the core layout of the page. this includes positioning and
+ * gutter space. colors and fonts should not come into play at this point.
+ * when defining a border, default its color to white which is probably
+ * the safest thing to do.
+ */
+body
+{
+	margin: 0 0;	/* margin instead of padding for the gutterspace around 
+	 			   the layout because IE breaks the layout when 
+	 			   horizontal padding is applied to the body element.
+	 			   % over pixels for that horizontal gutterspace so that
+	 			   it automatically goes below 20px on low-res browsers
+	 			   to create more space for the content. */
+	font-size: 100.1%;	/* resolve some font size issues in some layouts for
+				   some browsers. (in other words, i got no clue.) */
+}
+#pageWrapper
+{
+	border: solid 1px #fff;
+	border-width: 0 1px;
+	min-width: 55em;	/* IE doens't understand this property. EMs are used
+				   so that as the font size increases, the proportional
+				   limitations (min-width) increase with it, rather
+				   than creating a middle column that can only fit
+				   3 or 4 characters in it. */
+	width: auto;
+}
+* html #pageWrapper
+{
+	/* \*/
+		word-wrap: break-word;
+	/* invalid CSS but keeps IE from breaking horribly under narrow viewports */
+}
+#masthead
+{
+	border: solid 1px #fff;
+	border-width: 1px 0;
+	padding: 0.5em;
+}
+#masthead h1
+{
+	padding: 0;
+	margin: 0;
+}
+#outerColumnContainer
+{
+	/* reserves space for the left and right columns. you can use either
+	 * padding, margins, or borders, depending on your needs. however you
+	 * can use the border method to create a background color for both left
+	 * and right columns
+	 */
+	border-left: solid 12em #fff;
+	border-right: solid 12em #fff;
+}
+#innerColumnContainer
+{
+	border: solid 1px #fff;
+	border-width: 0 1px;
+	margin: 0 -1px;		/* compensate for the borders because of
+				   100% width declaration */
+	width: 100%;
+	z-index: 1;
+}
+#leftColumn, #middleColumn, #rightColumn, * html #SOWrap
+{
+	overflow: visible;	/* fix for IE italics bug */
+	position: relative;	/* fix some rendering issues */
+}
+#SOWrap
+{
+	float: left;
+	margin: 0 -1px 0 0;
+	width: 100%;
+	z-index: 3;
+}
+#middleColumn
+{
+	float: right;
+	margin: 0 0 0 -1px;
+	width: 100%;
+	z-index: 5;
+	padding:10px 0 10px 0;
+}
+#leftColumn
+{
+	float: left;
+	margin: 0 1px 0 -12em;
+	width: 12em;
+	z-index: 4;
+}
+#rightColumn
+{
+	float: right;
+	width: 12em;
+	margin: 0 -12em 0 1px;
+	z-index: 2;
+}
+#footer
+{
+	border: solid 1px #fff;
+	border-width: 1px 0;
+	padding: 0.5em;
+}
+
+.fontsize-set
+{
+	float: right;
+	margin:0;
+	padding:0;
+}
+.fontsize-set img
+{
+	border-width: 0;
+	margin:-5px 0 -5px 0;
+}
+
+/* horizontal navigation elements. create a DIV element with the class hnav
+ * and stick one unordered list inside it to generate a horizontal menu.
+ */
+.hnav
+{
+	border-bottom: solid 1px #fff;
+	text-align: center;
+}
+.hnav, .hnav ul li a
+{
+	/* need to middor veritcal padding on .hnav and child anchor elements
+	 * because the anchors are _not_ block elements. since they are not
+	 * block elements web browsers will not expand .hnav to contain them
+	 * even with the extra padding. by applying the same padding to both
+	 * the parent .hnav _looks_ like its containing the child anchor
+	 * elements. 
+	 */
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+.hnav ul, .hnav ul li
+{
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.hnav ul li a
+{
+	margin: 0 -1px 0 0;
+	padding-left: 10px;
+	padding-right: 10px;	/* short-hand padding attribute would overwrite top/bottom padding set in a previous rule */
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	white-space: nowrap;
+}
+.hnav ul li a:link, .hnav ul li a:visited, .hnav ul li a:active, .hnav ul li a:hover
+{
+	text-decoration: none;
+}
+.hnav ul li span.divider
+{
+	display: none;
+}
+* html .hnav ul li, * html .hnav ul li a
+{
+	width: 1%; /* IE/Mac needs this */
+	display: inline-block;	/* IE/Mac needs this */
+	/* \*/
+		width: auto;
+		display: inline;
+	/* reset above hack */
+}
+* html .hnav, * html .hnav ul a
+{
+	/* \*/ height: 0.01%; /* hasLayout hack to fix render bugs in IE/Win. 
+				 IE/Mac will ignore this rule. */
+}
+* html .HNAV
+{
+	padding: 0;	/* IE5/Win will resize #hnav to fit the heights of its
+			   inline children that have vertical padding. So this
+			   incorrect case selector hack will be applied only by
+			   IE 5.x/Win */
+}
+
+/* everything below this point is related to the page's "theme" and could be
+ * placed in a separate stylesheet to allow for multiple color/font scemes on
+ * the layout. you should probably leave a default theme within this stylesheet
+ * just to be on the safe side.	
+ */
+#pageWrapper, #masthead, #innerColumnContainer, #footer, .vnav ul, .vnav ul li, .hnav, .hnav ul li a
+{
+	border-color: #565;
+}
+html, body
+{
+	/* note that both html and body elements are in the selector.
+	 * this is because we have margins applied to the body element
+	 * and the HTML's background property will show through if
+	 * it is ever set. _DO_NOT_ apply a font-size value to the
+	 * html or body elements, set it in #pageWrapper.
+	 */
+	background-color: #eee;
+	color: #000;
+	font-family: arial, helvetica, sans-serif;
+}
+#pageWrapper
+{
+	font-size: 80%;	/* set your default font size here. */
+}
+#masthead
+{
+	background-color: #898;
+	color: #fff;
+}
+.hnav
+{
+	background-color: #aba;
+	color: #fff;
+}
+#outerColumnContainer
+{
+	border-left-color: #ded;	/* left column background color */
+	border-right-color: #cdc;	/* right column background color */
+	background-color: #fff;		/* set the background color for the
+					   middle column here */
+}
+.vnav ul li a:link, .vnav ul li a:visited, .vnav ul li a:active
+{
+}
+#rightColumn .vnav ul li a:link, #rightColumn .vnav ul li a:visited, #rightColumn .vnav ul li a:active
+{
+}
+.vnav ul li a:hover, #rightColumn .vnav ul li a:hover
+{
+}
+.hnav ul li a:link, .hnav ul li a:visited
+{
+	background-color: #bcb;
+	color: #000;
+}
+.hnav ul li a:hover
+{
+	background-color: #787;
+	color: #fff;
+}
+#rightColumn .inside
+{
+	/* if you apply a font size to just #rightColumn, then its width,
+	 * which is specified in EMs, will also be affected. you don't want
+	 * that. so apply font size changes to the .inside element which exists
+	 * inside underneath all three columns
+	 */
+	font-size: 90%;
+}
+#rightColumn .inside .vnav
+{
+	font-size: 110%;
+}
+#footer
+{
+	background-color: #898;
+	color: #fff;
+	text-align: center;
+}
+
+/******************************************************************************/
+/* General Formatting */
+
+.pageThreeColumns #centercolumn, .pageLeftColumn  #middleCcolumn { margin-left: 12em; }
+.pageThreeColumns #centercolumn, .pageRightColumn #middleCcolumn { margin-right: 12em; }
+
+fieldset 
+{
+	margin:10px 0 10px 0;
+}
+
+a, a:visited {
+	text-decoration:none;
+	color:#0066FF;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+#masthead a
+{
+color:#ffffff;
+text-decoration:none;
+}
+
+h1 {font-size: 180%;}
+h2 {font-size: 140%;}
+h3 {font-size: 120%;}
+h4 {font-size: 110%;}
+h5 {font-size: 100%;}
+h6 {font-size: 90%;}
+
+table {	width: 100%;}
+
+input.formButton {}
+input, textarea {background-color:#fff; font-size: 90%; border: 1px solid #CEE6FF; margin-bottom: 4px;}
+input:hover {background-color:#FFFF99}
+select {font-size: 90%;	margin-bottom: 4px;}
+
+
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside;}
+
+
+* html .mainmenu ul li a/* hide from IE5.0/Win & IE5/Mac */
+{
+	height: 0.01%;
+}
+* html .mainmenu ul
+{
+	position: relative;	/* IE needs this to fix a rendering problem */
+}
+
+
+/* XOOPS STUFF */
+
+
+/* Start Main Menu */
+.mainmenu {}
+.mainmenu li {list-style:none;display:inline;}
+.mainmenu a {background-color: #E7EEF5; display: block; margin: 0; padding: 4px;text-decoration:none;}
+.mainmenu a:hover {background-color: #ffffff;text-decoration:none;}
+.mainmenu a.menuTop {margin-top:0;padding-left: 3px; border-top: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;}
+.mainmenu a.menuMain {padding-left: 3px; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;}
+.mainmenu a.menuSub {padding-left: 12px; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;background-color:#FFFF99;}
+/* End Main Menu */
+
+/* Start User Menu */
+#usermenu {display:none;} /* for hiding usermenu */
+#usermenu li {list-style:none;display:inline;}
+#usermenu a {color:#000000; background-color: #E7EEF5; display: block; margin: 0; padding: 4px; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;}
+#usermenu a:hover {color:#000000; background-color: #ffffff;text-decoration:none;}
+#usermenu a.menuTop {border-top: 1px solid #CCCCCC;}
+#usermenu a.highlight {background-color:#FFFF99; color: #000;}
+/* End User Menu */
+
+/* Start Table Rows */
+.outer {border: 1px solid #CCCCCC;}
+.head {background-color: #EBEEF1; padding: 5px; font-weight: bold; border: 1px solid #DDDDDD;}
+.even, tr.even td {background-color: #F5F5F5; padding: 5px;	border: 1px solid #DDDDDD;}
+.odd, tr.odd td {background-color: #F2F2F2; padding: 5px; border: 1px solid #DDDDDD;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+/* End Table Rows */
+
+
+/* Start Related */
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+div.xoopsCode, div.xoopsQuote  { background: #FFFFFF; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 70%; color: #2F5376; font-weight:bold; border: 1px solid #CCCCCC; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 70%;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+.itemInfo {font-size:70%;font-style:italic;padding:2px;border:1px solid #cdc;background-color:#ded;}
+.itemFoot {font-size:70%;border:1px solid #cdc;padding:2px;background-color:#ded;margin-bottom:10px;}
+.itemBody {border-left:1px solid #cdc;border-right:1px solid #cdc;padding:5px;}
+.itemFoot a {text-decoration:none;padding:2px;}
+.edit {font-size:x-small;text-align:center;}
+
+/* For hiding notifications*/
+div#notifications 
+{
+margin: 0px 20px 0px 20px;
+display: none;
+}
+
+/* for hiding login block */
+div#hidelogin 
+{
+display: none;
+}
+
+/* End Related */
+
+#logo 
+{
+	float:left;
+	margin:10px 5px 10px 10px;
+}
+
+#title a
+{
+	float:right;
+	margin:0 10px 10px 5px;
+	color:#FFFFFF;
+}
+#content {}
+
+#content .itemTitle, #content .itemTitle a {font-size:120%;font-weight:bold;text-decoration:none;}
+
+#banner {float:right;}
+#copyright {}
+
+#leftColumn .blockTitle, #rightColumn .blockTitle {
+	font-weight:bold;
+}
+
+#leftColumn fieldset
+{
+	border:1px solid #cccccc;
+	padding:5px;
+}
+
+#rightColumn fieldset
+{
+	border:1px solid #cccccc;
+	padding:5px;
+}
+
+.centerCcolumn 
+{
+	border:1px solid #cccccc;
+	margin:0 0 5px 0;
+	padding:5px;
+}
+
+.centerLcolumn 
+{
+	float:left;
+	border:1px solid #cccccc;
+	margin:0 5px 0 0;
+	padding:5px;
+	width:43%;
+}
+
+.centerRcolumn 
+{
+	float:right;
+	border:1px solid #cccccc;
+	margin:0 0 5px 0;
+	padding:5px;
+	width:43%;
+}

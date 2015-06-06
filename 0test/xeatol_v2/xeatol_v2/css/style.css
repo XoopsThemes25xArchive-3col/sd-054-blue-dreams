@@ -1,0 +1,145 @@
+/* --------- Stylesheets incorporation --------- */
+@import url("content.css");
+@import url("extraclass.css");
+@import url("forms.css");
+@import url("templates.css");
+@import url("blocks.css");
+
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {
+	background : #9faec2 url("../img/body_bg.gif") repeat-x;
+	color : #8f8f8f;	
+	font-family : arial, sans-serif;
+	font-size : .9em;	
+}
+#xo-canvas {
+	width : 876px;
+	margin : 0 auto;
+	background-color : #fff;	
+}
+#xo-canvas-content {
+	margin : 10px 0 0 0;
+	background-color : #fff;
+	padding: 0 18px 0 20px;
+}
+#xo-page {padding-top : 0;}
+
+/* --------- Header --------- */
+#xo-header {
+	width : 100%;
+	height : 140px;
+	background: url("../img/head_bg.gif") repeat-x top center;
+}
+#xo-header .r-head {
+  width : 95%;
+	height : 140px;
+	background : url("../img/head_bg2.gif") no-repeat top right;
+	padding : 0 0 0 30px;
+}
+/* --- Logo --- */
+#xo-header h1 {
+  padding-top : 30px;
+  text-transform : uppercase;
+	font-size : 3.8em;
+	font-weight : 100;
+}
+/* --- Slogan --- */
+#xo-header h2 {
+	font-size : 1em;
+	font-style : italic;
+	font-weight : 100;
+}     
+/* --- Banner --- */
+#xo-header .banner {
+  position : relative;
+  float : right;
+  top : 6px;
+  right : 70px;
+  padding-top : 30px;
+}
+
+/* --------- Navigation menu --------- */
+ul#xo-globalnav {   
+	height : 60px;
+	background : url("../img/menu_bg.gif") repeat-x;
+	padding: 11px 0 0 22px;
+	font-size : .9em;
+}
+ul#xo-globalnav li {
+  display : inline;
+  padding: 0 5px 0 5px;
+  list-style : none;
+}
+ul#xo-globalnav a {
+  padding : 2px 4px 2px 5px;
+  color: #fafafa;
+  font-weight : bold;
+}
+ul#xo-globalnav a:hover {color: #d0d0d0;}
+ul#xo-globalnav a:active, ul#xo-globalnav a:focus,
+ul#xo-globalnav a.xo-current  {color : #d0d0d0;}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {  
+	clear : both;
+	width : 100%;	
+	height : 163px;
+	margin : 0 auto;
+	background : url("../img/bottom_bg.gif") no-repeat;
+}
+#xo-footer p {
+  width : 100%;
+	padding : 40px 0 0 0;
+	font-size : .85em;
+	text-align : center;
+}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin : 0;
+  padding : 3px;
+  border-bottom : 1px dotted #e0e0e0;
+}
+#mainmenu a:hover {
+  background-color : #9FAEC2;
+  color : #fff;
+}
+#mainmenu a.menuTop {padding-left : 3px;}
+#mainmenu a.menuMain {padding-left : 3px;}
+#mainmenu a.menuSub {  
+  background-color : #fff;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+}
+#mainmenu a.menuSub:hover {
+  background-color : #9FAEC2;
+  color : #fff;
+}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .85em;}
+#usermenu a {
+  display : block;
+  margin : 0;
+  padding : 2px 2px 2px 4px;
+  border-bottom : 1px dotted #e0e0e0;
+}
+#usermenu a:hover {background-color : #fff;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color : #9FAEC2;}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<{*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: system_siteclosed.html 427 2009-03-06 14:02:14Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{assign var=theme_name value=$xoTheme->folderName}><{assign var=theme_tpl value=$xoTheme->folderName|cat:'/tpl'}>
+<{includeq file="$theme_tpl/versions.html"}>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<{$ixt_langcode}>" xml:lang="<{$ixt_langcode}>">
+<head>
+<{includeq file="$theme_tpl/metas.html"}>
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<{includeq file="$theme_tpl/scripts.html"}>	
+</head>
+<body id="ixt-sclosed">
+ <div id="wrap">
+  <div id="ixt-canvas">
+   <div id="ixt-header-siteclose">
+    <div id="ixt-headerlogo">
+     <a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+   <!--
+     <a href="http://ixthemes.sourceforge.net/" title="IXThemes"><img src="<{xoAppUrl /images/logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+     <{if $cms == "icms"}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoImgUrl img/icms_logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+     <{elseif $cms == "xoops"}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoImgUrl img/xoops_logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+     <{elseif $cms == "exm"}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoImgUrl img/exm_logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+     <{else}><a href="<{xoAppUrl /}>" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="53px" alt="<{$ixt_sitename}>" /></a>
+     <{/if}>
+   -->
+    </div>
+   </div>
+   <div id="ixt-menu"></div>
+   <div id="ixt-canvas-content">
+     <div id="ixt-redirect"><{$lang_siteclosemsg}></div>
+     <div id="ixt-siteclose-login">
+      <h2><{$lang_login}></h2>
+       <form action="<{$xoops_url}>/user.php" method="post">
+        <div align="right" style="_height:100%;overflow:hidden;">
+         <div align="left" style="float:left;overflow:hidden;"><{$lang_username}></div>
+         <input type="text" name="uname" size="21" maxlength="25" value="" />
+        </div>
+        <div align="right" style="_height:100%;overflow:hidden;">
+         <div align="left" style="float:left;overflow:hidden;"><{$lang_password}></div>
+         <input type="password" name="pass" size="21" maxlength="32" />
+         <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+         <input type="hidden" name="xoops_login" value="1" />
+        </div>
+        <div class="button"><input type="submit" value="<{$lang_login}>" /></div>
+       </form>
+     </div>
+    </div>
+   <div><img src="/themes/ixt008_winter03/img/ixt008_winter03_fbkg.jpg" style="padding-left:410px; padding-top:60px;"></div>
+  </div>
+ </div>
+ <div id="ft"><{includeq file="$theme_tpl/footer.html"}></div>
+</body>
+</html>

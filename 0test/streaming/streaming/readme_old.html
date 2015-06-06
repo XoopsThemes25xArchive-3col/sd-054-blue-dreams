@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+<!--
+body {
+	font-family: "Courier New", Courier, mono;
+	font-size: small;
+	color: #596773;
+	padding: 20px;
+}
+a {
+	color: #FF9900;
+	font-weight: bold;
+	text-decoration: none;
+}
+h1 {
+	font-size: 130%;
+	font-weight: bold;
+}
+li {
+}
+.style1 {
+	color: #FF9900;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<h1>astonsthemes.com - Theme obscene_v3_3c - 25 November 2004 </h1>
+<p>This theme is provided free of charge with absolutely no garauntee or warranty implied. You should test theme for suitability to your needs before using. I make themes as a hobby and I only hope that in doing so I am helping out others. All positive or negative feedback, comments or advice is welcome. I can be contacted through my site <a href="http://astonthemes.com" target="_blank">http://astonthemes.com</a> or by <a href="mailto:paul@astonthemes.com">email paul@astonthemes.com</a>.</p>
+<h1>Notes on this theme:</h1>
+<ul>
+  <li>This is the three column version of obscene_v3 </li>
+  <li>Theme comes with templates... the templates have only minor differences to the default templates: <strong>1~</strong> <span class="style1">adds rounded corners to the head of news items.</span> <strong>2~</strong> <span class="style1">adds the little images beside links in the main menu (I didnt do this with CSS because of a bug in I.E.</span> <strong>3~</strong><span class="style1"> changes the head of download and link items to a background color the same as news item head.</span> for the images in menu to show, they must be placed in the xoops images folder /xoops-root/images/... Theme doesnt require the use of these templates, they only provide a few little asthetic improvements (in my oppinion) ... if you use templates without placing the link images in correct folder then your site will produce a 404 for those images. These templates will also work fine with Obscene_v2 but may or may not with other themes. consideration should be taken before deciding to use templates. </li>
+  <li>I have tested this theme in the following browsers: IE 5.1, 5.5 and 6, FireFox 0.93, Opera 7.54 &amp; Mozilla 0.73. As always you should test a theme yourself in various browsers before using. The theme is pretty much uniform across ie6, Mozilla, Firefox and Opera. I haven't access to a MAC or linux system so I can only assume that theme works ok under these platforms. </li>
+  <li>I assume that most people will be able to modify the links in the top nav bar and the Logo etc to their liking. If you dont know  any html or arent sure how to do this then drop me a line and provided I have time I will help ya out. </li>
+  <li>Theme has a &quot;Theme by Astonthemes&quot; link near footer of page, I would appreciatte this being left there but I dont demand it.</li>
+</ul>
+<h1>Important: </h1>
+<p>When you upload the theme, make sure you upload the right folder!!. In the zipping process another folder is usualy created, this means that after unzipping, the actual Theme folder may be inside another folder. The correct folder to upload is the folder that contains the &quot;theme.html&quot; file. If you get a blank site after installing the theme, then this is likely the problem.</p>
+<p>To upload templates: goto administration/system admin/templates/ and you will see the option to upload a tar.gz file. </p>
+<p>Templates will not take effect unless they are selected as default in aministration - general settings - Default Template Set.</p>
+<p>You may have customized your own templates and wish to keep these customizations... below is source for modifications in these templates, you could copy and paste these where needed.</p>
+<p class="style1"> system_block_mainmenu.html:</p>
+<p>&lt;table cellspacing=&quot;0&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;td id=&quot;mainmenu&quot;&gt;<br />
+&lt;img src=&quot;&lt;{$xoops_url}&gt;/images/astonfold.gif&quot; width=&quot;17&quot; height=&quot;19&quot; hspace=&quot;5&quot; align=&quot;left&quot; alt=&quot;&quot; /&gt;&lt;a class=&quot;menuTop&quot; href=&quot;&lt;{$xoops_url}&gt;/&quot;&gt;&amp;nbsp;&lt;{$block.lang_home}&gt;&lt;/a&gt;<br />
+&lt;!-- start module menu loop --&gt;<br />
+&lt;{foreach item=module from=$block.modules}&gt;&lt;img src=&quot;&lt;{$xoops_url}&gt;/images/astonfold.gif&quot; width=&quot;17&quot; height=&quot;19&quot; hspace=&quot;5&quot; align=&quot;left&quot; alt=&quot;&quot; /&gt;<br />
+&lt;a class=&quot;menuMain&quot; href=&quot;&lt;{$xoops_url}&gt;/modules/&lt;{$module.directory}&gt;/&quot;&gt;&amp;nbsp;&lt;{$module.name}&gt;&lt;/a&gt;<br />
+&lt;{foreach item=sublink from=$module.sublinks}&gt;<br />
+&lt;img src=&quot;&lt;{$xoops_url}&gt;/images/astonfold_sub.gif&quot; width=&quot;17&quot; height=&quot;19&quot; hspace=&quot;5&quot; align=&quot;left&quot; alt=&quot;&quot; /&gt;&lt;a class=&quot;menuSub&quot; href=&quot;&lt;{$sublink.url}&gt;&quot;&gt;&amp;nbsp;&lt;{$sublink.name}&gt;&lt;/a&gt;<br />
+&lt;{/foreach}&gt;<br />
+&lt;{/foreach}&gt;<br />
+&lt;!-- end module menu loop --&gt;<br />
+&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;</p>
+<p class="style1"> news_item.html </p>
+<p>&lt;div class=&quot;item&quot;&gt;<br />
+&lt;table cellspacing=&quot;0&quot;&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;obItemHeadL&quot; &gt;&lt;/td&gt;<br />
+&lt;td class=&quot;itemHead&quot; &gt;&lt;span class=&quot;itemTitle&quot;&gt;&lt;{$story.title}&gt;&lt;/span&gt;&lt;/td&gt;<br />
+&lt;td class=&quot;obItemHeadR&quot; &gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+&lt;div class=&quot;itemInfo&quot;&gt;<br />
+&lt;span class=&quot;itemPoster&quot;&gt;&lt;{$lang_postedby}&gt; &lt;{$story.poster}&gt;&lt;/span&gt; &lt;span class=&quot;itemPostDate&quot;&gt;&lt;{$lang_on}&gt; &lt;{$story.posttime}&gt;&lt;/span&gt; (&lt;span class=&quot;itemStats&quot;&gt;&lt;{$story.hits}&gt; &lt;{$lang_reads}&gt;&lt;/span&gt;)<br />
+&lt;/div&gt;<br />
+&lt;div class=&quot;itemBody&quot;&gt;<br />
+&lt;{$story.imglink}&gt;<br />
+&lt;p class=&quot;itemText&quot;&gt;&lt;{$story.text}&gt;&lt;/p&gt;<br />
+&lt;/div&gt;<br />
+&lt;div class=&quot;itemFoot&quot;&gt;<br />
+&lt;span class=&quot;itemAdminLink&quot;&gt;&lt;{$story.adminlink}&gt;&lt;/span&gt; &lt;span class=&quot;itemPermaLink&quot;&gt;&lt;{$story.morelink}&gt;&lt;/span&gt;<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;</p>
+<p class="style1"> mydownloads_download.html </p>
+<p>&lt;table width='100%' cellspacing='0' class='outer'&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;itemHead&quot; colspan='2' align='left' height=&quot;18&quot;&gt;&lt;{$lang_category}&gt; &lt;{$down.category}&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class='even' width='65%' align='left' valign=&quot;bottom&quot;&gt;&lt;a href='visit.php?cid=&lt;{$down.cid}&gt;&amp;amp;lid=&lt;{$down.id}&gt;' target='_blank'&gt;&lt;img src='images/download.gif' border='0' alt='&lt;{$lang_dlnow}&gt;' /&gt;&lt;b&gt;&lt;{$down.title}&gt;&lt;/b&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;td class='even' align='right' width='35%'&gt;&lt;b&gt;&lt;{$lang_version}&gt;:&lt;/b&gt;&amp;nbsp;&lt;{$down.version}&gt;&lt;br /&gt;&lt;b&gt;&lt;{$lang_subdate}&gt;:&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;{$down.updated}&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td colspan='2' class='odd' align='left'&gt;&lt;{$down.adminlink}&gt;&lt;b&gt;&lt;{$lang_description}&gt;&lt;/b&gt;&lt;br /&gt;</p>
+<p>&lt;{if $down.logourl != &quot;&quot;}&gt;<br />
+&lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mydownloads/visit.php?cid=&lt;{$down.cid}&gt;&amp;amp;lid=&lt;{$down.id}&gt;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;&lt;{$xoops_url}&gt;/modules/mydownloads/images/shots/&lt;{$down.logourl}&gt;&quot; width=&quot;&lt;{$shotwidth}&gt;&quot; alt=&quot;&quot; align=&quot;right&quot; vspace=&quot;3&quot; hspace=&quot;7&quot;/&gt;&lt;/a&gt;<br />
+&lt;{/if}&gt;</p>
+<p>&lt;div style=&quot;text-align: justify&quot;&gt;&lt;{$down.description}&gt;&lt;/div&gt;&lt;br /&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td colspan='2' class='even' align='left'&gt;&lt;img src='images/counter.gif' border='0' align='absmiddle' alt='&lt;{$down.lang_dltimes}&gt;' /&gt;<br />
+&amp;nbsp;&lt;{$down.hits}&gt;&amp;nbsp;&amp;nbsp;&lt;img src='images/size.gif' border='0' align='absmiddle' alt='&lt;{$lang_size}&gt;' /&gt;&amp;nbsp;&lt;{$down.size}&gt;&amp;nbsp;&amp;nbsp;&lt;img src='images/platform.gif' border='0' align='absmiddle' alt='&lt;{$lang_platform}&gt;' /&gt;&amp;nbsp;&lt;{$down.platform}&gt;&amp;nbsp;&amp;nbsp;&lt;img src='images/home.gif' border='0' align='absmiddle' alt='&lt;{$lang_homepage}&gt;' /&gt;&amp;nbsp;&lt;a href=&quot;&lt;{$down.homepage}&gt;&quot; target=&quot;_BLANK&quot;&gt;&lt;{$down.homepage}&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td colspan='2' class='foot' align='center'&gt;<br />
+&lt;div&gt;&lt;b&gt;&lt;{$lang_ratingc}&gt;&lt;/b&gt; &lt;{$down.rating}&gt; (&lt;{$down.votes}&gt;)&lt;/div&gt;<br />
+&lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mydownloads/ratefile.php?cid=&lt;{$down.cid}&gt;&amp;amp;lid=&lt;{$down.id}&gt;&quot;&gt;&lt;{$lang_ratethissite}&gt;&lt;/a&gt; | &lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mydownloads/modfile.php?lid=&lt;{$down.id}&gt;&quot;&gt;&lt;{$lang_modify}&gt;&lt;/a&gt; | &lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mydownloads/brokenfile.php?lid=&lt;{$down.id}&gt;&quot;&gt;&lt;{$lang_reportbroken}&gt;&lt;/a&gt; | &lt;a target=&quot;_top&quot; href=&quot;mailto:?subject=&lt;{$down.mail_subject}&gt;&amp;amp;body=&lt;{$down.mail_body}&gt;&quot;&gt;&lt;{$lang_tellafriend}&gt;&lt;/a&gt; | &lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mydownloads/singlefile.php?cid=&lt;{$down.cid}&gt;&amp;amp;lid=&lt;{$down.id}&gt;&quot;&gt;&lt;{$lang_comments}&gt; (&lt;{$down.comments}&gt;)&lt;/a&gt;<br />
+&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+&lt;br /&gt;&lt;br /&gt;</p>
+<p class="style1"> mylinks_link.html</p>
+<p>&lt;table class=&quot;outer&quot; width='100%' cellspacing='0'&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;itemHead&quot; colspan='2' align='left' height=&quot;18&quot;&gt;&lt;{$lang_category}&gt; &lt;{$link.category}&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;even&quot; width='60%' align='left' valign=&quot;bottom&quot;&gt;&lt;a href='visit.php?cid=&lt;{$link.cid}&gt;&amp;amp;lid=&lt;{$link.id}&gt;' target='_blank'&gt;&lt;img src='images/link.gif' border='0' alt='&lt;{$lang_visit}&gt;'&gt;&lt;b&gt;&lt;{$link.title}&gt;&lt;/b&gt;&lt;/a&gt;&lt;/td&gt;<br />
+&lt;td class=&quot;even&quot; align='right' width='40%'&gt;&lt;b&gt;&lt;{$lang_lastupdate}&gt;&lt;/b&gt;&lt;{$link.updated}&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;odd&quot; colspan='2' align='left'&gt;&lt;{$link.adminlink}&gt;&lt;b&gt;&lt;{$lang_description}&gt;&lt;/b&gt;&lt;br /&gt;<br />
+&lt;{if $link.logourl != &quot;&quot;}&gt;<br />
+&lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mylinks/visit.php?cid=&lt;{$link.cid}&gt;&amp;amp;lid=&lt;{$link.id}&gt;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;&lt;{$xoops_url}&gt;/modules/mylinks/images/shots/&lt;{$link.logourl}&gt;&quot; width=&quot;&lt;{$shotwidth}&gt;&quot; alt=&quot;&quot; align=&quot;right&quot; vspace=&quot;3&quot; hspace=&quot;7&quot;/&gt;&lt;/a&gt;<br />
+&lt;{/if}&gt;<br />
+&lt;div style=&quot;text-align: justify&quot;&gt;&lt;{$link.description}&gt;&lt;/div&gt;&lt;br /&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;even&quot; colspan='2' align='center'&gt;&lt;b&gt;&lt;{$lang_hits}&gt;&lt;/b&gt;&lt;{$link.hits}&gt; &lt;b&gt;&amp;nbsp;&amp;nbsp;&lt;{$lang_rating}&gt;&lt;/b&gt;&lt;{$link.rating}&gt; (&lt;{$link.votes}&gt;)&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;tr&gt;<br />
+&lt;td class=&quot;foot&quot; colspan='2' align='center'&gt;&lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mylinks/ratelink.php?cid=&lt;{$link.cid}&gt;&amp;amp;lid=&lt;{$link.id}&gt;&quot;&gt;&lt;{$lang_ratethissite}&gt;&lt;/a&gt; | &lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mylinks/modlink.php?lid=&lt;{$link.id}&gt;&quot;&gt;&lt;{$lang_modify}&gt;&lt;/a&gt; |&lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mylinks/brokenlink.php?lid=&lt;{$link.id}&gt;&quot;&gt;&lt;{$lang_reportbroken}&gt;&lt;/a&gt; | &lt;a target=&quot;_top&quot; href=&quot;mailto:?subject=&lt;{$link.mail_subject}&gt;&amp;amp;body=&lt;{$link.mail_body}&gt;&quot;&gt;&lt;{$lang_tellafriend}&gt;&lt;/a&gt; | &lt;a href=&quot;&lt;{$xoops_url}&gt;/modules/mylinks/singlelink.php?cid=&lt;{$link.cid}&gt;&amp;amp;lid=&lt;{$link.id}&gt;&quot;&gt;&lt;{$lang_comments}&gt; (&lt;{$link.comments}&gt;)&lt;/a&gt;&lt;/td&gt;<br />
+&lt;/tr&gt;<br />
+&lt;/table&gt;<br />
+&lt;br /&gt;</p>
+</body>
+</html>

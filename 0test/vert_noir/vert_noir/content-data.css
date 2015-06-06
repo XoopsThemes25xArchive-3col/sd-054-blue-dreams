@@ -1,0 +1,80 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  */
+/* Mor.pho.GEN.e.sis version 2.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* file name : content-data.css (version 1.0) - 22 mai 2007 */
+
+/*============= Style pour l'include accessibilitybar.html ================*/
+#xo-accessibilitybar {
+	display:							block;
+	float: 							right;
+	padding-top: 					2px;
+	padding-right:					1em;
+}
+#xo-accessibilitybar a {
+	text-decoration: 				none;
+	border: 							none;
+}
+#xo-accessibilitybar img {
+	width: 							22px;
+	height: 							22px;
+}
+/*======== styles pour mettre des blocs "flottants" par exemple des images ======== */
+.floatleft {
+	float: 							left;
+	margin-top: 					1em;
+	margin-right : 				1em;
+	padding-left: 					4px;
+	border: 							0;
+}
+.floatright {
+	float: 							right;
+	margin: 							0 0 10px 10px;
+	padding: 						2px;
+	border: 							0;
+}
+/*========  classes d'alignement ======== */
+.center { text-align: 			center;}
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align:			justify; }
+/*========  classes de largeur ======== */
+.width100 { width: 				100%; }
+.width75 { width: 				75%; }
+.width50 { width: 				50%; }
+.width33 { width: 				33%; }
+.width25 { width: 				25%; }
+/*========  classes d'affichage ======== */
+.clear { clear: 					both; }
+.block { display: 				block; }
+.hide  { display: 				none; }
+/* ======== Mise en forme de certains liens hypertexte ================ */
+a.printable, a.pdf, a.friend {
+	width:							22px;
+	height:							22px;
+	background-repeat:			no-repeat;
+	background-position:			left top;
+	text-indent:					-1000em;
+}
+a.printable	{	background-image: url(icons/action/printable.png); }
+a.pdf	{	background-image: url(icons/action/pdf.png); }
+a.friend	{	background-image: url(icons/action/friend.png); }
+/*======== Pour le body de l'éditeur tinyeditor/inbetwen ======== */
+body.mceContentBody {
+	color: 							#333;
+	background-color: 			#fff;
+	background-image: 			none;
+}
+/* ======== Mise en forme pour l'accessibilité ================ */
+/*a[hreflang]:after {
+	content: "\0000a0[alt+" attr(hreflang) "]";
+}
+a[accesskey]:after {
+	content: "\0000a0[alt+" attr(accesskey) "]";
+}*/
+
+/* -- signature dans CBB/NewBB -- */
+.signature {
+	font-style: italic;
+	font-size: .9em;
+}
+

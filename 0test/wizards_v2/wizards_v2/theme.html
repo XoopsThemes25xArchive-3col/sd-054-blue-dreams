@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<{assign var=theme_name value=$xoTheme->folderName}>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<{$xoops_module_header}>
+</head>
+<body bgcolor="#000000">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="62" height="201">
+			<img border="0" src="<{$xoops_imageurl}>topleft.jpg" width="62" height="201">
+		</td>
+		<td background="<{$xoops_imageurl}>topbg.jpg" width="100%">
+			<span style="font-size: 3.5em; font-weight: 700; color: #6b2c01"><{$xoops_sitename}></span>
+		</td>
+		<td width="218" height="201">
+		<img border="0" src="<{$xoops_imageurl}>topright.jpg" width="218" height="201"></td>
+		<td width="142" height="201">
+		<img border="0" src="<{$xoops_imageurl}>toprightmara.jpg" width="142" height="201"></td>
+	</tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="120" height="58">
+			<img border="0" src="<{$xoops_imageurl}>titright.gif" width="120" height="58">
+		</td>
+		<td background="<{$xoops_imageurl}>titbg.gif" bgcolor="#E7CFAB">
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="right" nowrap background="titbg.gif"><{if $xoops_isuser}>Welcome,
+					<a href="<{$xoops_url}>/user.php"><{$xoops_uname}></a> |<{else}>
+					<a href="<{$xoops_url}>/register.php">Sign up</a>|<{/if}>
+					<{if $xoops_isuser}>
+					<a href="<{$xoops_url}>/user.php?op=logout">Logout</a><{else}>
+					<a href="<{$xoops_url}>/user.php">Login</a><{/if}>
+					</td>
+					<td align="center" valign="middle" width="100%">
+					<form action="<{$xoops_url}>/search.php" method="post">
+						<input type="text" name="query" size="14" /><input type="hidden" name="action" value="results" />
+						<input type="image" align="absmiddle" class="input" src="<{$xoops_imageurl}>search-01.gif" width="19" height="18" alt="Search">
+						<a href="<{$xoops_url}>/search.php">Detailed Search</a></form>
+					</td>
+					</form>
+				</tr>
+			</table>
+		</td>
+		<td width="120" height="58">
+		<img border="0" src="<{$xoops_imageurl}>titleft.gif" width="120" height="58"></td>
+	</tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="24" height="35">
+		<img border="0" src="<{$xoops_imageurl}>tl.gif" width="24" height="35"></td>
+		<td background="<{$xoops_imageurl}>tbg.gif">&nbsp;</td>
+		<td width="24" height="35">
+		<img border="0" src="<{$xoops_imageurl}>tr.gif" width="24" height="35"></td>
+	</tr>
+	<tr>
+		<td background="<{$xoops_imageurl}>l.gif">&nbsp;</td>
+		<td bgcolor="#D7C188" valign="top">
+
+
+
+		<table border="0" width="100%" cellpadding="0" cellspacing="4">
+			<tr>
+						
+				<!-- Start left blocks loop -->
+					<{if $xoops_showlblock}>				
+						<td width="180" valign="top">
+							<{foreach item=block from=$xoBlocks.canvas_left}>
+								<{includeq file="$theme_name/theme_blockleft.html"}>
+							<{/foreach}>
+						</td>
+					<{/if}>
+				<!-- End left blocks loop -->				
+						
+				<td valign="top">		
+									
+						<table>
+							
+							<!-- Display center blocks if any -->
+							<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>		
+							<tr>
+								<td>
+									<table cellspacing="0" width="100%">
+										<tr>
+											<td id="centerCcolumn" colspan="2">
+											<!-- Start center-center blocks loop -->
+											<{foreach item=block from=$xoBlocks.page_topcenter}>
+												<{includeq file="$theme_name/theme_blockcenter_c.html"}>
+											<{/foreach}>
+											<!-- End center-center blocks loop -->
+											</td>
+										</tr>
+										<tr>
+											<td id="centerLcolumn">
+											<!-- Start center-left blocks loop -->
+											<{foreach item=block from=$xoBlocks.page_topleft}>
+												<{includeq file="$theme_name/theme_blockcenter_l.html"}>
+											<{/foreach}>
+											<!-- End center-left blocks loop -->
+											</td>
+											<td id="centerRcolumn">
+											<!-- Start center-right blocks loop -->
+											<{foreach item=block from=$xoBlocks.page_topright}>
+												<{includeq file="$theme_name/theme_blockcenter_r.html"}>
+											<{/foreach}>
+											<!-- End center-right blocks loop -->
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<{/if}>
+							
+							<!-- End display center blocks -->
+							<{if $xoops_contents}>
+							<tr>
+								<td>	
+										<table border="0" width="100%" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="40" height="22">
+												<img border="0" src="<{$xoops_imageurl}>topleft-blockcenter.jpg" width="40" height="22"></td>
+												<td background="<{$xoops_imageurl}>titleblockcenter.jpg">&nbsp;</td>
+												<td width="36" height="22">
+												<img border="0" src="<{$xoops_imageurl}>topright-blockcenter.jpg" width="36" height="22"></td>
+											</tr>
+											<tr>
+												<td background="<{$xoops_imageurl}>left-blockcenter.jpg">&nbsp;</td>
+												<td background="<{$xoops_imageurl}>bgbc.jpg"><{$xoops_contents}>
+										</td>
+												<td background="<{$xoops_imageurl}>right-blockcenter.jpg">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>
+												<img border="0" src="<{$xoops_imageurl}>bottomleftblockcenter.jpg" width="40" height="18"></td>
+												<td background="<{$xoops_imageurl}>bottom-blockcenter.jpg">&nbsp;</td>
+												<td>
+												<img border="0" src="<{$xoops_imageurl}>bottomrightblockcenter.jpg" width="36" height="18"></td>
+											</tr>
+										</table>
+								</td>
+							</tr>
+							<{/if}> 
+							
+							
+							<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+								<tr>
+									<td>
+										<table cellspacing="0">
+											<{if $xoBlocks.page_bottomcenter}>
+												<tr>
+													<td id="bottomCcolumn" colspan="2">
+														<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+															<{include file="$theme_name/theme_blockcenter_c.html"}>
+														<{/foreach}>
+													</td>
+												</tr>
+												<{/if}>
+												<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+												<tr>
+													<td id="bottomLcolumn">
+														<{foreach from=$xoBlocks.page_bottomleft item=block}>
+															<{include file="$theme_name/theme_blockcenter_l.html"}>
+														<{/foreach}>
+													</td>
+													<td id="bottomRcolumn">
+														<{foreach from=$xoBlocks.page_bottomright item=block}>
+															<{include file="$theme_name/theme_blockcenter_r.html"}>
+														<{/foreach}>
+													</td>
+												</tr>
+											<{/if}>
+										</table>
+									</td>
+								</tr>
+							<{/if}> 
+							
+						</table>
+					
+					</td>
+				
+
+				<{if $xoops_showrblock}>
+					<td id="rightcolumn" width="180" valign="top">
+					<!-- Start right blocks loop -->
+					<{foreach item=block from=$xoBlocks.canvas_right}>
+						<{includeq file="$theme_name/theme_blockright.html"}>
+					<{/foreach}>
+					<!-- End right blocks loop -->
+					</td>
+				<{/if}>
+
+				</tr>
+			</table>
+		</td>
+		<td background="<{$xoops_imageurl}>r.gif">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+		<img border="0" src="<{$xoops_imageurl}>bl.gif" width="24" height="35"></td>
+		<td background="<{$xoops_imageurl}>bbg.gif">&nbsp;</td>
+		<td>
+		<img border="0" src="<{$xoops_imageurl}>br.gif" width="24" height="35"></td>
+	</tr>
+</table>
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="24" height="35">
+		<img border="0" src="<{$xoops_imageurl}>tl.gif" width="24" height="35"></td>
+		<td background="<{$xoops_imageurl}>tbg.gif">&nbsp;</td>
+		<td width="24" height="35">
+		<img border="0" src="<{$xoops_imageurl}>tr.gif" width="24" height="35"></td>
+	</tr>
+	<tr>
+		<td background="<{$xoops_imageurl}>l.gif">&nbsp;</td>
+		<td class="footerbar" align="center" bgcolor="#D7C188"><{$xoops_footer}></td>
+		<td background="<{$xoops_imageurl}>r.gif">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+		<img border="0" src="<{$xoops_imageurl}>bl.gif" width="24" height="35"></td>
+		<td background="<{$xoops_imageurl}>bbg.gif">&nbsp;</td>
+		<td>
+		<img border="0" src="<{$xoops_imageurl}>br.gif" width="24" height="35"></td>
+	</tr>
+</table>
+</body>
+</html>

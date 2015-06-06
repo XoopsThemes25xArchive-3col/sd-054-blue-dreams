@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml"	lang="<{$xoops_langcode}>" xml:lang="<{$xoops_langcode}>">
+<head>
+<!-- paramètres pour le positionnement des blocs haut et bas -->
+<{* Center blocks display order valid values are:  lrc (left right / center) lcr (left center right) clr (center / left right)	*}>
+	<{assign var=theme_top_order value=clr}>
+	<{assign var=theme_bottom_order value=clr}>
+<!-- indique le nom du thème -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+
+<!-- titre de la page et meta descriptions -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+
+<!-- chemin du favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl /favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl /icon.png}>" />
+	
+<!-- Css du thème -->
+	<link rel="stylesheet" type="text/css" media="screen" href="<{xoImgUrl /layout-soup.css}>" />
+	<!--<link rel="stylesheet" type="text/css" media="screen" title="Blue" href="<{xoImgUrl /style.css}>" />-->  <!-- lien à utiliser en association avec la feuille print.css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Blue" href="<{xoImgUrl /style.css}>" />  <!-- à commenter si la ligne ci-dessus est active -->
+	<!--<link rel="stylesheet" type="text/css" media="print" href="<{xoImgUrl /print.css}>" />-->  <!-- feuille de style pour l'impression -->
+	<!--<link rel="stylesheet" type="text/css" media="aural" href="<{xoImgUrl /aural.css}>" />-->  <!-- feuille de style pour la fonction audio de certains navigateurs -->
+
+
+
+<!-- pour la transparence des images au format png sous ie -->
+<!--[if lt IE 8]>
+	<script type="text/javascript">
+		var WEBFX_PNG_PATTERN=".*.png";
+		var WEBFX_PNG_BLANK = "<{xoImgUrl /jseffects/img/blank.gif}>";
+	</script>
+	<style type="text/css">
+	img { behavior: url(<{xoImgUrl /jseffects/pngbehavior.htc}>); }
+	</style>
+<![endif]-->
+     <script type="text/javascript">
+	var rememberPositionedInCookie = true;
+	var rememberPosition_cookieName = 'dragable';
+	</script>	
+	<script type="text/javascript" src="<{xoImgUrl /js/dragable-content.js}>"></script>
+
+<{$xoops_module_header}>
+
+</head>
+<body  class="<{$xoops_dirname}> theme-default" id="<{$xoops_dirname}>">
+<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>
+<{elseif $xoBlocks.canvas_left}><{assign var=columns_layout value='leftcolumn-layout'}>
+<{elseif $xoBlocks.canvas_right}><{assign var=columns_layout value='rightcolumn-layout'}>
+<{/if}>
+	<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+		<div id="xo-banner"><!-- avec affichage de la bannière désactivé -->
+		<a id="xo-main-logo" href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/logo.png}>" alt="<{$xoops_sitename}>" /></a>
+		<a id="xo-site-title" href="<{xoAppUrl /}>"><{$xoops_sitename}></a>
+		<div id="xo-site-slogan"><{$xoops_slogan}></div>
+		<!-- include du bloc Utilisateur dans le header -->
+		<{includeq file="$theme_name/userbar.html"}>
+		<!-- fin de l'include du bloc Utilisateur dans le header -->
+		</div>
+
+<!-- Ne pas modifier la partie ci-dessous, c'est supposé être l'architecture standard que chacun doit utiliser -->			
+	<div id="xo-canvas-content">
+		<{if $xoBlocks.canvas_top}>
+		<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
+			zoneClass='' zoneId='xo-canvas-header'
+		}>
+		<{/if}>
+		<table id="xo-canvas-columns" cellspacing="0">
+		<tr>
+			<{if $xoBlocks.canvas_left}>
+			<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_left
+				zoneClass='xo-canvas-column' zoneId='xo-canvas-leftcolumn' zoneTag='td'
+			}>
+			<{/if}>
+			<td id="xo-page">
+				<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+				<div class="xo-blockszone xo-<{$theme_top_order}>pageblocks" id="xo-page-topblocks">
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}>
+				</div>
+				<{/if}>
+				<{if $xoops_contents}>
+                <div class="dragableElement">
+                <div id="xo-content"><{$xoops_contents}></div>
+                </div>
+                <{/if}>
+				<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomcenter or $xoBlocks.page_bottomright}>
+				<div class="xo-blockszone xo-<{$theme_bottom_order}>pageblocks" id="xo-page-bottomblocks">
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}>
+				</div>
+				<{/if}>
+			</td>
+			<{if $xoBlocks.canvas_right}>
+			<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_right
+				zoneClass='xo-canvas-column' zoneId='xo-canvas-rightcolumn' zoneTag='td'
+			}>
+			<{/if}>
+		</tr>
+		</table>
+		<{if $xoBlocks.canvas_bottom}>
+		<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_bottom
+			zoneClass='' zoneId='xo-canvas-footer'
+		}>
+		<{/if}>
+	</div>
+
+	<div id="xo-footer">
+		<a href="#" onclick="resetDragableBoxes();return false">Reset back to default</a>
+<!-- infos sur le designer -->
+		<div class="design">Design : <a href="http://lexode.info/mods/" title="">Venom</a></div>
+<!-- link for rss -->
+		<div class="rss"><a href="<{xoAppUrl /backend.php}>"><img src="<{xoImgUrl img/feed.png}>" alt="Prendre le fil RSS" /></a></div>
+<!-- end rss linkl -->
+		<div class="copyright"><{$xoops_footer}></div>
+	</div></div>
+
+</body>
+</html>

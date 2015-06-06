@@ -1,0 +1,45 @@
+/*
+* Themes and templates for Content Management Systems
+*
+* @license		     http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @package		     IXThemes, http://ixthemes.sourceforge.net
+* @theme_author		 Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version		     $Id: style.css 375 2009-03-02 14:38:29Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+@import url(layout.css);
+@import url(blocks.css);
+@import url(content.css);
+html { background-position:left top; background-color: #263840; background-image: url(../img/ixt009_emp05_bg.png); background-repeat: repeat; }
+table { width:100%; text-align: left; }
+table td {font-size: 12px; padding:0; border-width:0; vertical-align:top; }
+th { background-color:#014B72; color:#910200; padding:2px; vertical-align:middle; }
+img { border:0; }
+a { color:#666; text-decoration:none; }
+a:link, a:visited { color: #00469b; text-decoration: none; outline:none; }
+a:hover { color: #9F0004; text-decoration: underline; outline:none; }
+h1 { font-size:1.4em; }
+h2 { font-size:1.2em; }
+h3 { font-size:1em; }
+h4 { font-size:1em; }
+h5 { font-size:.9em; }
+h6 { font-size:.8em; }
+select { background:#DCFCFB;}
+
+ul { margin: 0px; margin-left: 15px; padding: 0px; }
+ul a:link, ul a:visited { color: #00469B; text-decoration: none; }
+ul a:hover { color: #9F0004; text-decoration: underline; }
+form { margin: 0; padding: 0; position: relative; }
+input, select { font: 11px "Lucida Grande", Tahoma, Verdana, sans-serif; }
+select, .inputbox { padding: 2px; }
+.inputbox { margin: 1px 0; }
+.inputbox:focus { border: 1px solid #BABDB6; background: #FFFFDD; }
+textarea { padding-left: 2px; }
+textarea.inputbox { font: 11px "Lucida Grande", Tahoma, Verdana, sans-serif; width: 95%; }
+fieldset { background: #fff; border: 1px solid #d5d5d5; padding: 10px; }
+.button { padding: 1px 4px; border-top: 1px solid #E1E1E1; border-left: 1px solid #E1E1E1; border-bottom: 1px solid #BABDB6; border-right: 1px solid #BABDB6; background: #f5f5f5; color: #999; cursor: pointer; }
+.button:hover, .button:focus { border-top: 1px solid #BABDB6; border-right: 1px solid #E1E1E1; border-bottom: 1px solid #E1E1E1; border-left: 1px solid #BABDB6; color: #000; }
+.inputbox { border-top: 1px solid #BABDB6; border-right: 1px solid #EDEEEC; border-bottom: 1px solid #EDEEEC; border-left: 1px solid #BABDB6; }
+.inputbox:hover, .inputbox:focus { border: 1px solid #BABDB6; }
+hr { border: none 0; border-top: 1px solid #d5d5d5; height: 1px; }

@@ -1,0 +1,109 @@
+/* ==== liens (désactivés) ci-dessous vers des feuilles de styles spécifiques
+dans le cas de surcharge "générale" et pour les versions de xoops à partir de la 2.3 =====*/
+/*@import url(content-data.css);
+@import url(content-datalists.css);*/
+/*==================== fin des liens =================*/
+
+
+/* Titre sous titre liste... */
+h1 
+h2 
+h3 
+h4 
+h5 
+h6 
+
+h1 
+h1 a, h2 a
+h1 a:hover, h2 a:hover 
+a[rel~=alternate] 
+a 
+a:hover 
+img 
+
+/*------- styles pour mettre des blocs "flottants" par exemple des images --------*/
+.floatleft 
+
+.floatright 
+
+/*---------- acronymes, abbréviation ------------*/
+acronym, abbr 
+acronym:hover, abbr:hover 
+
+/*------------------- listes ----------------*/
+ul 
+li 
+
+/* ========== styles utilisés dans les "articles" de contenu (exemple : news) ============*/
+.item 
+.itemHead 
+.itemInfo 
+.itemTitle a 
+.itemTitle a:hover 
+.itemPoster, .itemPostDate, .itemStats 
+.itemPoster a:hover 
+.itemBody 
+.itemText 
+.itemText a , .itemInfo a, .itemFoot a 
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover 
+.itemBody a
+.itemBody a:hover 
+.itemText:first-letter 
+.itemFoot 
+.itemAdminLink 
+.itemPermaLink 
+
+
+/*=============== styles pour les tableaux =================*/
+.outer 
+.head 
+.head a 
+.head a:hover 
+.even 
+.odd 
+tr.even td 
+tr.odd td 
+.foot 
+th 
+th a 
+
+/*=========== Styles pour les pages de redirections ==============*/
+div.errorMsg 
+div.confirmMsg 
+div.resultMsg 
+div.xoopsCode 
+div.xoopsQuote 
+
+/*=========== Styles utilisés pour les commentaires (et newbb/cbb également) ===========*/
+.comTitle 
+.comText 
+.comUserStat 
+.comUserStatCaption 
+.comUserStatus 
+.comUserRank 
+.comUserRankText 
+.comUserRankImg 
+.comUserName 
+.comUserImg 
+.comDate 
+.comDateCaption 
+
+/*================ Style pour les Citations ================*/
+blockquote 
+
+/*================== Style pour les Codes =================*/
+.xoopsCode 
+
+/*========== styles utilisés dans les versions Xoops à partir de la 2.3 ==============*/
+.x2-note 
+#xo-content  .x2-contentinfo 
+#xo-content .x2-secondary 
+.x2-seealso 
+.x2-seealso ul, .x2-note ul 
+
+.x2-seealso a 
+.x2-seealso a:hover 
+
+body.site_closed form 
+
+#system-select_notifications 
